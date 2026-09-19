@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software or its research artifacts, please cite it."
+title: "FarmSync: Resilient Farmer-in-the-Loop Collective Crop Planning under Market, Resource, and Participation Uncertainty"
+type: software
+authors:
+  - family-names: "Rajasekaran"
+    given-names: "Vishwanath"
+    orcid: "https://orcid.org/0009-0006-2604-0803"
+repository-code: "https://github.com/Rvishwanath19977/FarmSync-Research"
+url: "https://github.com/Rvishwanath19977/FarmSync-Research"
+license: "Apache-2.0"
+version: "1.0.0"
+date-released: "2026-09-20"
+keywords:
+  - agriculture
+  - optimization
+  - fairness
+  - farmer-in-the-loop
+  - uncertainty
+  - collective crop planning
+  - reproducible research
+abstract: >-
+  FarmSync is a reproducible research implementation for fairness-aware
+  collective crop planning under market, resource, participation, and
+  operational uncertainty, with deterministic farmer-consent and
+  reoptimization authority boundaries.

@@ -1,0 +1,30 @@
+﻿FarmSync Research
+Copyright 2026 Vishwanath Rajasekaran
+
+The Apache License 2.0 applies to FarmSync-authored software in this
+repository unless a file states otherwise.
+
+Third-party raw data and source artifacts under:
+
+  data/farmsync/raw_sources/
+
+are NOT relicensed under Apache-2.0. They remain subject to their
+upstream licences, attribution requirements, and terms.
+
+Processed data derived from third-party sources retains its upstream
+provenance and may remain subject to upstream data-licence obligations.
+See DATA_AND_SOURCES.md and:
+
+  data/farmsync/processed/source_manifest.json
+
+The frozen research outputs under results/farmsync/ are preserved as
+scientific records. Inclusion in this repository does not alter any
+third-party rights embedded in source-derived material.
+
+The associated manuscript/article is NOT licensed under Apache-2.0.
+Its publication licence is governed separately by the applicable Wiley
+author agreement and Creative Commons licence selected for the article.
+
+Government names, logos, crests, trademarks, and official marks are not
+licensed by this repository, and use of public government data does not
+imply government endorsement of FarmSync.
