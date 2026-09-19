@@ -19,4 +19,4 @@
 
 # Integrity/provenance records use canonical LF bytes.
 /data/farmsync/raw_sources/SHA256SUMS.txt text eol=lf
-/data/farmsync/processed/source_manifest.json text eol=lf
+/data/farmsync/processed/source_manifest.json -text
