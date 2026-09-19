@@ -20,3 +20,6 @@
 # Integrity/provenance records use canonical LF bytes.
 /data/farmsync/raw_sources/SHA256SUMS.txt text eol=lf
 /data/farmsync/processed/source_manifest.json -text
+
+# Frozen Phase-7 development case set uses canonical LF bytes.
+/results/farmsync/proposed/p7_dev_cases.jsonl text eol=lf
