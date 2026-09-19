@@ -1,0 +1,22 @@
+# FarmSync cross-platform reproducibility rules.
+# These rules override user/global core.autocrlf settings for byte-sensitive files.
+
+/.gitattributes text eol=lf
+
+# Frozen reproducibility identities use canonical LF bytes.
+/results/farmsync/audit/replication_seeds.json text eol=lf
+/results/farmsync/audit/rng_streams.json text eol=lf
+/results/farmsync/audit/experiment_manifest.json text eol=lf
+/docs/EXTRACTION_BASELINE_b590622.json text eol=lf
+
+# Raw AGMARKNET exports retain their original CRLF representation.
+/data/farmsync/raw_sources/agmarknet/*.csv text eol=crlf
+
+# These source artifacts must never undergo Git text conversion.
+/data/farmsync/raw_sources/cost_of_cultivation/cost-of-cultivation.csv -text
+/data/farmsync/raw_sources/cost_of_cultivation/*.xlsx -text
+/data/farmsync/raw_sources/des_apy/*.xls -text
+
+# Integrity/provenance records use canonical LF bytes.
+/data/farmsync/raw_sources/SHA256SUMS.txt text eol=lf
+/data/farmsync/processed/source_manifest.json text eol=lf
