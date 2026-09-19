@@ -1,0 +1,10 @@
+# Full development and QA environment.
+#
+# Includes the optional LLM client and browser-accessibility QA tooling.
+
+-r requirements-llm.txt
+
+pytest==9.1.1
+playwright==1.56.0
+axe-playwright-python==0.1.8
+Pillow==10.1.0

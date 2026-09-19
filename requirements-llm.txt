@@ -1,0 +1,9 @@
+# Optional live-LLM integration.
+#
+# FarmSync's scientific allocation/optimization pipeline does not require
+# this file. Install it only when testing live natural-language parsing
+# and explanation.
+
+-r requirements.txt
+
+openai==2.29.0
