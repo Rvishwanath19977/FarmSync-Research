@@ -1,0 +1,522 @@
+{
+  "evaluation": "LIVE DEVELOPMENT EVALUATION - NOT THE >=300 BENCHMARK",
+  "mode": "live",
+  "model_requested": "gpt-5.6-terra",
+  "schema_version": "farmsync-farmer-request-v1",
+  "frozen_prompt_version": "p7-parse-v1",
+  "integration_prompt_version": "p7-parse-live-v3",
+  "expected_case_file_sha256": "46a005d5089aaf9a2db4f922806ef503d3b9bd7bb8b2a1867ce639f75b2530fe",
+  "expected_semantic_case_set_hash": "da556e3923daec5a",
+  "legacy_manifest_case_set_hash": "9b408d5d013ac284",
+  "case_set_hash_discrepancy_note": "Inherited P7 metadata inconsistency: frozen p7_llm_manifest.json records case_set_hash 9b408d5d013ac284, but the frozen case_set_hash() over the authentic on-disk p7_dev_cases.jsonl yields da556e3923daec5a. The historical cause of the recorded manifest value is UNKNOWN (not established). The case file is authentic (byte SHA-256 matches RESULT_FROZEN PACKAGE_MANIFEST). No frozen artifact was modified; the evaluator gates on the byte SHA-256 + the actual semantic hash and records the legacy manifest value for reference only.",
+  "master_seed": 20260812,
+  "status": "COMPLETE",
+  "live": true,
+  "case_set_identity": {
+    "case_file": "results/farmsync/proposed/p7_dev_cases.jsonl",
+    "case_file_sha256": "46a005d5089aaf9a2db4f922806ef503d3b9bd7bb8b2a1867ce639f75b2530fe",
+    "case_file_sha256_expected": "46a005d5089aaf9a2db4f922806ef503d3b9bd7bb8b2a1867ce639f75b2530fe",
+    "case_file_sha256_match": true,
+    "semantic_case_set_hash": "da556e3923daec5a",
+    "semantic_case_set_hash_expected": "da556e3923daec5a",
+    "semantic_case_set_hash_match": true,
+    "legacy_manifest_case_set_hash": "9b408d5d013ac284",
+    "legacy_manifest_case_set_hash_in_manifest": "9b408d5d013ac284",
+    "legacy_matches_actual": false,
+    "discrepancy_note": "Inherited P7 metadata inconsistency: frozen p7_llm_manifest.json records case_set_hash 9b408d5d013ac284, but the frozen case_set_hash() over the authentic on-disk p7_dev_cases.jsonl yields da556e3923daec5a. The historical cause of the recorded manifest value is UNKNOWN (not established). The case file is authentic (byte SHA-256 matches RESULT_FROZEN PACKAGE_MANIFEST). No frozen artifact was modified; the evaluator gates on the byte SHA-256 + the actual semantic hash and records the legacy manifest value for reference only.",
+    "frozen_case_file_byte_identity_verified": true
+  },
+  "raw_historical_reproduction": {
+    "recomputed_equivalence": {
+      "validated_payload_equivalence_rate": 0.9512,
+      "validated_payload_equivalence_denominator": 41,
+      "boundary_state_execution_equivalence_rate": 1.0,
+      "boundary_state_execution_equivalence_denominator": 12,
+      "boundary_state_execution_equivalence_true": 12,
+      "outcome_equivalence_not_applicable": 29,
+      "note": "EXECUTION-level equivalence over the minimal BoundaryState executor (action applied to independent cloned plan state), NOT the full FarmSync optimiser/reoptimisation handler. Full deterministic FarmSync outcome equivalence (running the actual reopt handler) is a publication-evaluation strengthening item, not built here. Payload equivalence is separate/weaker."
+    },
+    "n_cases": 41,
+    "raw_historical_compatibility_pass": true,
+    "deterministic_boundary_frozen_match": true,
+    "n_cases_frozen_match": true,
+    "validated_payload_equivalence_rate": 0.9512,
+    "validated_payload_equivalence_denominator": 41,
+    "boundary_state_execution_equivalence_rate": 1.0,
+    "boundary_state_execution_equivalence_denominator": 12,
+    "outcome_equivalence_not_applicable": 29,
+    "expected_profile": {
+      "n_cases": 41,
+      "payload_rate": 0.9512,
+      "payload_denominator": 41,
+      "execution_rate": 1.0,
+      "execution_denominator": 12,
+      "outcome_na": 29
+    }
+  },
+  "current_semantics_projection": {
+    "current_semantics_projection_pass": true,
+    "validated_payload_equivalence_rate": 1.0,
+    "validated_payload_equivalence_denominator": 41,
+    "boundary_state_execution_equivalence_rate": 1.0,
+    "boundary_state_execution_equivalence_denominator": 12,
+    "withdraw_execution_not_applicable": true,
+    "recomputed_equivalence": {
+      "validated_payload_equivalence_rate": 1.0,
+      "validated_payload_equivalence_denominator": 41,
+      "boundary_state_execution_equivalence_rate": 1.0,
+      "boundary_state_execution_equivalence_denominator": 12,
+      "boundary_state_execution_equivalence_true": 12,
+      "outcome_equivalence_not_applicable": 29,
+      "note": "EXECUTION-level equivalence over the minimal BoundaryState executor (action applied to independent cloned plan state), NOT the full FarmSync optimiser/reoptimisation handler. Full deterministic FarmSync outcome equivalence (running the actual reopt handler) is a publication-evaluation strengthening item, not built here. Payload equivalence is separate/weaker."
+    }
+  },
+  "reconciliation": {
+    "reconciliation_ids": [
+      "wd0",
+      "wd1"
+    ],
+    "divergent_ids": [
+      "wd0",
+      "wd1"
+    ],
+    "reconciled_cases": [
+      {
+        "id": "wd0",
+        "category": "withdraw_parsing",
+        "legacy_gold_validation_outcome": "NOT_IMPLEMENTED",
+        "legacy_reason_codes": [
+          "WITHDRAW_REQUIRES_POLICY"
+        ],
+        "legacy_gold_payload": null,
+        "current_authoritative_validation_outcome": "VALIDATED",
+        "current_authoritative_payload": {
+          "action": "WITHDRAW",
+          "farmer_id": "F0001",
+          "plot_id": "F0001-P03",
+          "scope": "CYCLE_PARTICIPATION",
+          "administrative_only": false,
+          "physical_crop_immutable": false,
+          "removes_flexible_land_from_decision_set": true,
+          "invalidates_active_consent_for_final_realized": true
+        },
+        "current_reason_codes": [
+          "WITHDRAW_CYCLE_PARTICIPATION"
+        ],
+        "derivation": "frozen validate_request (not hard-coded)",
+        "note": "Legacy Phase-7 WITHDRAW reference (NOT_IMPLEMENTED / WITHDRAW_REQUIRES_POLICY / payload None) predates the action-consent-v1 deterministic withdrawal policy now implemented by the frozen validator; earlier P7 artifacts are intentionally preserved and NOT modified."
+      },
+      {
+        "id": "wd1",
+        "category": "withdraw_parsing",
+        "legacy_gold_validation_outcome": "NOT_IMPLEMENTED",
+        "legacy_reason_codes": [
+          "WITHDRAW_REQUIRES_POLICY"
+        ],
+        "legacy_gold_payload": null,
+        "current_authoritative_validation_outcome": "VALIDATED",
+        "current_authoritative_payload": {
+          "action": "WITHDRAW",
+          "farmer_id": "F0001",
+          "plot_id": "F0001-P03",
+          "scope": "CYCLE_PARTICIPATION",
+          "administrative_only": false,
+          "physical_crop_immutable": false,
+          "removes_flexible_land_from_decision_set": true,
+          "invalidates_active_consent_for_final_realized": true
+        },
+        "current_reason_codes": [
+          "WITHDRAW_CYCLE_PARTICIPATION"
+        ],
+        "derivation": "frozen validate_request (not hard-coded)",
+        "note": "Legacy Phase-7 WITHDRAW reference (NOT_IMPLEMENTED / WITHDRAW_REQUIRES_POLICY / payload None) predates the action-consent-v1 deterministic withdrawal policy now implemented by the frozen validator; earlier P7 artifacts are intentionally preserved and NOT modified."
+      }
+    ],
+    "evaluation_projection_id": "0104854b00e5e8e9",
+    "evaluation_projection_sha256": "0104854b00e5e8e9a47939d248be1b9bdaab30d524dafe5d0a11d4a8caf287ba"
+  },
+  "development_context_projection": {
+    "description": "Development context projection for the 41-case prompt-engineering set ONLY. trusted_context.farmer_id is the authenticated/requesting farmer used server-side by validate_request and is NEVER sent to the model. current_plot_id is exposed to the parser ONLY for the four genuinely implicit-context vague cases (vague0-3); it is NOT provided to missing_plot or any other case. Reconstructed from dev gold for this development set only; the >=300 benchmark MUST carry explicit context from the start and MUST NOT derive context from gold labels.",
+    "implicit_context_ids": [
+      "vague0",
+      "vague1",
+      "vague2",
+      "vague3"
+    ],
+    "entries": [
+      {
+        "case_id": "acc0",
+        "category": "accept_straightforward",
+        "trusted_farmer_id_server_side": "F0003",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "acc1",
+        "category": "accept_straightforward",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "acc2",
+        "category": "accept_straightforward",
+        "trusted_farmer_id_server_side": "F0017",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "rej0",
+        "category": "reject_straightforward",
+        "trusted_farmer_id_server_side": "F0003",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "rej1",
+        "category": "reject_straightforward",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "rej2",
+        "category": "hard_locked_modify",
+        "trusted_farmer_id_server_side": "F0004",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "mod0",
+        "category": "valid_modify",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "mod1",
+        "category": "valid_modify",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "mod2",
+        "category": "valid_modify",
+        "trusted_farmer_id_server_side": "F0003",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "mod3",
+        "category": "valid_modify",
+        "trusted_farmer_id_server_side": "F0003",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "infeas0",
+        "category": "infeasible_crop",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "infeas1",
+        "category": "infeasible_crop",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "infeas2",
+        "category": "infeasible_crop",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "own0",
+        "category": "wrong_ownership",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "own1",
+        "category": "wrong_ownership",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "own2",
+        "category": "wrong_ownership",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "hl0",
+        "category": "hard_locked_modify",
+        "trusted_farmer_id_server_side": "F0004",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "hl1",
+        "category": "hard_locked_modify",
+        "trusted_farmer_id_server_side": "F0004",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "hl2",
+        "category": "hard_locked_modify",
+        "trusted_farmer_id_server_side": "F0004",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "unk0",
+        "category": "unknown_crop",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "unk1",
+        "category": "unknown_crop",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "vague0",
+        "category": "choose_for_me",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": "F0001-P03"
+      },
+      {
+        "case_id": "vague1",
+        "category": "choose_for_me",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": "F0001-P03"
+      },
+      {
+        "case_id": "vague2",
+        "category": "choose_for_me",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": "F0001-P03"
+      },
+      {
+        "case_id": "vague3",
+        "category": "choose_for_me",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": "F0001-P03"
+      },
+      {
+        "case_id": "miss0",
+        "category": "missing_plot",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "miss1",
+        "category": "missing_plot",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "num0",
+        "category": "unit_numeric",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "num1",
+        "category": "unit_numeric",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "num2",
+        "category": "unit_numeric",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "wd0",
+        "category": "withdraw_parsing",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "wd1",
+        "category": "withdraw_parsing",
+        "trusted_farmer_id_server_side": "F0001",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "inj0",
+        "category": "unsupported_injection",
+        "trusted_farmer_id_server_side": "F0004",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "inj1",
+        "category": "unsupported_injection",
+        "trusted_farmer_id_server_side": "F0004",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "inj2",
+        "category": "unsupported_injection",
+        "trusted_farmer_id_server_side": "F0004",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "inj3",
+        "category": "unsupported_injection",
+        "trusted_farmer_id_server_side": "F0004",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "qry0",
+        "category": "query_explain",
+        "trusted_farmer_id_server_side": "F0003",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "qry1",
+        "category": "query_explain",
+        "trusted_farmer_id_server_side": "F0003",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "qry2",
+        "category": "query_explain",
+        "trusted_farmer_id_server_side": "F0003",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "badf0",
+        "category": "invalid_farmer",
+        "trusted_farmer_id_server_side": "F999999",
+        "current_plot_id_exposed_to_parser": null
+      },
+      {
+        "case_id": "badf1",
+        "category": "invalid_farmer",
+        "trusted_farmer_id_server_side": "F999999",
+        "current_plot_id_exposed_to_parser": null
+      }
+    ],
+    "development_context_projection_id": "ba10fa39814446ef",
+    "development_context_projection_sha256": "ba10fa39814446efb2ecae380ad1940f3850cd941b1cba5432a3094dcea651e6"
+  },
+  "n_cases": 41,
+  "duration_s": 75.768,
+  "fixture": {
+    "instance_hash": "5ea24037c2d9cb6a",
+    "instance_hash_verified": true,
+    "processed_dir_readonly": true
+  },
+  "boundary_gate": {
+    "boundary_integrity_pass": true,
+    "validated_payload_equivalence_rate": 1.0,
+    "validated_payload_equivalence_denominator": 41,
+    "boundary_state_execution_equivalence_rate": 1.0,
+    "boundary_state_execution_equivalence_denominator": 12
+  },
+  "reliability": {
+    "n_cases": 41,
+    "OK": 41,
+    "API_ERROR": 0,
+    "MODEL_REFUSAL": 0,
+    "SCHEMA_INVALID": 0,
+    "other_status": 0,
+    "schema_valid": 41,
+    "schema_invalid": 0,
+    "reconciles": true
+  },
+  "latency_ms_summary": {
+    "n": 41,
+    "min": 1330,
+    "max": 4042,
+    "mean": 1844.8
+  },
+  "metrics_legacy_frozen_scorer": {
+    "n_cases": 41,
+    "live_evaluation": true,
+    "client": "live",
+    "api_failures": 0,
+    "api_success": 41,
+    "_group_deterministic_boundary": {
+      "invalid_action_rejection_rate": 0.85,
+      "hard_lock_rejection_rate": 0.25,
+      "unsupported_constraint_handled_rate": 1.0,
+      "source_text_authoritative_rate": 1.0
+    },
+    "_group_equivalence": {
+      "validated_payload_equivalence_rate": 1.0,
+      "validated_payload_equivalence_denominator": 41,
+      "boundary_state_execution_equivalence_rate": 1.0,
+      "boundary_state_execution_equivalence_denominator": 12,
+      "boundary_state_execution_equivalence_true": 12,
+      "outcome_equivalence_not_applicable": 29,
+      "note": "EXECUTION-level equivalence over the minimal BoundaryState executor (action applied to independent cloned plan state), NOT the full FarmSync optimiser/reoptimisation handler. Full deterministic FarmSync outcome equivalence (running the actual reopt handler) is a publication-evaluation strengthening item, not built here. Payload equivalence is separate/weaker."
+    },
+    "_group_explanation": {
+      "explanation_groundedness_rate": 1.0,
+      "numerical_consistency_rate": 1.0,
+      "unsupported_explanation_rate": 0.0
+    },
+    "note": "LIVE DEVELOPMENT evaluation (41-case dev set); parse-side numbers reflect the live model.",
+    "model": "gpt-5.6-terra",
+    "scorer_provenance": "farmsync.proposed.llm_eval._metrics (frozen; formulas reused, not modified)",
+    "_group_parse_metrics_LIVE_development": {
+      "schema_valid_rate": 1.0,
+      "action_exact_match": 0.8049,
+      "field_precision": 0.9683,
+      "field_recall": 0.5446,
+      "field_f1": 0.6971,
+      "crop_extraction_accuracy": 0.6667,
+      "farmer_extraction_accuracy": 0.0,
+      "plot_extraction_accuracy": 0.9512,
+      "numeric_extraction_accuracy": 1.0,
+      "unit_accuracy": 1.0,
+      "clarification_precision": 0.5714,
+      "clarification_recall": 1.0
+    }
+  },
+  "metrics_legacy_note": "frozen llm_eval scorer metrics; farmer-containing field metrics are LEGACY/REFERENCE — v3 sets farmer_id=null when requester identity is not explicit and uses authenticated identity server-side.",
+  "v3_primary_parser_metrics": {
+    "action": {
+      "accuracy": 0.8048780487804879,
+      "denominator": 41
+    },
+    "plot_id": {
+      "accuracy": 0.9512195121951219,
+      "denominator": 41
+    },
+    "requested_crop": {
+      "accuracy": 0.8048780487804879,
+      "denominator": 41
+    },
+    "requested_value": {
+      "accuracy": 0.9512195121951219,
+      "denominator": 41
+    },
+    "unit": {
+      "accuracy": 1.0,
+      "denominator": 41
+    },
+    "clarification_required": {
+      "accuracy": 0.8292682926829268,
+      "denominator": 41,
+      "source": "raw structured response (recording client)"
+    },
+    "_fields_scored": [
+      "action",
+      "plot_id",
+      "requested_crop",
+      "requested_value",
+      "unit",
+      "clarification_required"
+    ],
+    "_excludes_server_authoritative_farmer_id": true,
+    "trusted_identity_supplied_server_side": true,
+    "trusted_identity_sent_to_model": false
+  },
+  "validation_semantics_equivalence": {
+    "denominator": 41,
+    "validation_outcome_equivalence_rate": 0.926829268292683,
+    "reason_code_equivalence_rate": 0.926829268292683,
+    "may_execute_equivalence_rate": 1.0,
+    "semantics_equivalence_pass": false
+  },
+  "validation_semantics_note": "The deterministic boundary reaches the intended reason codes under the SIMULATED v3 parse contract and development context projection; this offline check proves the contract simulation, not Terra prompt adherence (that is measured by the live run).",
+  "development_boundary_integrity_pass": false,
+  "api_key_persisted": false,
+  "raw_text_persisted": false
+}

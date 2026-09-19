@@ -1,0 +1,140 @@
+{
+  "U0": {
+    "baselines": {
+      "B1": {
+        "cash": 14644537.0,
+        "optimal": true,
+        "status": "Optimal"
+      },
+      "B2": {
+        "cash": 13822731.0,
+        "optimal": true,
+        "status": "Optimal"
+      },
+      "B3": {
+        "cash": 13142166.0,
+        "optimal": true,
+        "status": "Optimal"
+      }
+    },
+    "participating_farmers": 500,
+    "proposed": {
+      "action_counts": {
+        "ACCEPT": 322,
+        "MODIFY": 22,
+        "NO_RESPONSE": 7,
+        "REJECT": 18,
+        "WITHDRAW": 12
+      },
+      "conc_status": "Optimal",
+      "consent_coverage_final": 1.0,
+      "renewed_counts": {
+        "ACCEPT": 40,
+        "NO_RESPONSE": 5,
+        "REJECT": 12
+      },
+      "renewed_prompts": 57,
+      "reopt_status": "Optimal",
+      "tiers": {
+        "FINAL_REALIZED": 12362577.0,
+        "INITIAL_REALIZED": 11953688.0,
+        "PLANNED": 13142166.0,
+        "RECOMMENDED_REVISED": 12586101.0
+      },
+      "withdrawn_farmers": 8
+    },
+    "realisation_hash": "8e7716de9796a0e0"
+  },
+  "UJ": {
+    "baselines": {
+      "B1": {
+        "cash": 13158690.0,
+        "optimal": true,
+        "status": "Optimal"
+      },
+      "B2": {
+        "cash": 12545988.0,
+        "optimal": true,
+        "status": "Optimal"
+      },
+      "B3": {
+        "cash": 11930066.0,
+        "optimal": true,
+        "status": "Optimal"
+      }
+    },
+    "channel_summary": {
+      "absorption_states": {
+        "HIGH": 5,
+        "LOW": 2,
+        "NORMAL": 7
+      },
+      "participation_false": 41,
+      "participation_true": 459,
+      "price_cells": 70,
+      "resource_states": {
+        "CONSTRAINED": 158,
+        "NORMAL": 342
+      },
+      "weather_states": {
+        "LOW_EVAPORATIVE_DEMAND": 3,
+        "NORMAL": 7
+      }
+    },
+    "participating_farmers": 459,
+    "proposed": {
+      "action_counts": {
+        "ACCEPT": 285,
+        "MODIFY": 19,
+        "NO_RESPONSE": 10,
+        "REJECT": 16,
+        "WITHDRAW": 8
+      },
+      "conc_status": "Optimal",
+      "consent_coverage_final": 1.0,
+      "renewed_counts": {
+        "ACCEPT": 40,
+        "NO_RESPONSE": 2,
+        "REJECT": 10
+      },
+      "renewed_prompts": 52,
+      "reopt_status": "Optimal",
+      "tiers": {
+        "FINAL_REALIZED": 11208694.0,
+        "INITIAL_REALIZED": 10716058.0,
+        "PLANNED": 11930066.0,
+        "RECOMMENDED_REVISED": 11315824.0
+      },
+      "withdrawn_farmers": 6
+    },
+    "realisation_hash": "daf331e3d0b2a1fc"
+  },
+  "config": {
+    "action_profile": "PRIMARY",
+    "action_protocol": "action-consent-v1",
+    "alpha": 0.4,
+    "config_version": "farmsync-publication-config-v1",
+    "epsilon": 0.95,
+    "fairness": "fairness-v2",
+    "instance_hash": "5ea24037c2d9cb6a",
+    "lambda": 0.05,
+    "uncertainty_protocol": "uncertainty-v1"
+  },
+  "historical_checkpoint_sha256": "536648613c99ea0d9ec071176a0b0c09bb415846c27d1af748ca7904645f8f6c",
+  "population": {
+    "collectives": 10,
+    "farmers": 500,
+    "plots": 911
+  },
+  "provenance": "DEVELOPMENT_CHECKPOINT_SOLVER_AMENDED",
+  "seed": 20260812,
+  "solver_amendment": {
+    "effective_gapRel": 1e-06,
+    "path": "results/farmsync/audit/solver_amendment_pre_final30_v1.json",
+    "sha256": "1d42d59e3c1ba404d13f5c557560e943c222030b1a21ec65094534140cf865b8",
+    "threads": 0,
+    "timeLimit_s": 120
+  },
+  "supersedes_for_exact_reproducibility": "results/farmsync/proposed/ui_dev_checkpoint.json",
+  "warning": "Development checkpoint at seed 20260812 under the pre-Final30 CBC gapRel=1e-6 numerical-reproducibility amendment. NOT a final30 result; final 30-replication statistics are NOT RUN."
+}

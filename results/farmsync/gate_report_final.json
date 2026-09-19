@@ -1,0 +1,567 @@
+{
+  "admitted_combinations": 50,
+  "admitted": [
+    {
+      "crop": "rice",
+      "region": "R2",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Paddy(Common)), cost:DES_CoC_C2, yield:STATE:R2:2022-23)"
+    },
+    {
+      "crop": "rice",
+      "region": "R3",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Paddy(Common)), cost:DES_CoC_C2, yield:ALL_INDIA_FALLBACK)"
+    },
+    {
+      "crop": "rice",
+      "region": "R5",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Paddy(Common)), cost:DES_CoC_C2, yield:STATE:R5:2022-23)"
+    },
+    {
+      "crop": "wheat",
+      "region": "R1",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Wheat), cost:DES_CoC_C2, yield:STATE:R1:2022-23)"
+    },
+    {
+      "crop": "wheat",
+      "region": "R2",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Wheat), cost:DES_CoC_C2, yield:STATE:R2:2022-23)"
+    },
+    {
+      "crop": "wheat",
+      "region": "R3",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Wheat), cost:DES_CoC_C2, yield:STATE:R3:2022-23)"
+    },
+    {
+      "crop": "wheat",
+      "region": "R4",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Wheat), cost:DES_CoC_C2, yield:STATE:R4:2022-23)"
+    },
+    {
+      "crop": "wheat",
+      "region": "R5",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Wheat), cost:DES_CoC_C2, yield:STATE:R5:2022-23)"
+    },
+    {
+      "crop": "maize",
+      "region": "R1",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Maize), cost:DES_CoC_C2, yield:STATE:R1:2022-23)"
+    },
+    {
+      "crop": "maize",
+      "region": "R1",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Maize), cost:DES_CoC_C2, yield:STATE:R1:2022-23)"
+    },
+    {
+      "crop": "maize",
+      "region": "R2",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Maize), cost:DES_CoC_C2, yield:STATE:R2:2022-23)"
+    },
+    {
+      "crop": "maize",
+      "region": "R2",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Maize), cost:DES_CoC_C2, yield:STATE:R2:2022-23)"
+    },
+    {
+      "crop": "maize",
+      "region": "R4",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Maize), cost:DES_CoC_C2, yield:STATE:R4:2022-23)"
+    },
+    {
+      "crop": "maize",
+      "region": "R4",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Maize), cost:DES_CoC_C2, yield:STATE:R4:2022-23)"
+    },
+    {
+      "crop": "maize",
+      "region": "R5",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Maize), cost:DES_CoC_C2, yield:STATE:R5:2022-23)"
+    },
+    {
+      "crop": "maize",
+      "region": "R5",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Maize), cost:DES_CoC_C2, yield:STATE:R5:2022-23)"
+    },
+    {
+      "crop": "sorghum",
+      "region": "R2",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Jowar(Sorghum)), cost:DES_CoC_C2, yield:STATE:R2:2022-23)"
+    },
+    {
+      "crop": "sorghum",
+      "region": "R2",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Jowar(Sorghum)), cost:DES_CoC_C2, yield:STATE:R2:2022-23)"
+    },
+    {
+      "crop": "sorghum",
+      "region": "R4",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Jowar(Sorghum)), cost:DES_CoC_C2, yield:STATE:R4:2022-23)"
+    },
+    {
+      "crop": "sorghum",
+      "region": "R4",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Jowar(Sorghum)), cost:DES_CoC_C2, yield:STATE:R4:2022-23)"
+    },
+    {
+      "crop": "sorghum",
+      "region": "R5",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Jowar(Sorghum)), cost:DES_CoC_C2, yield:STATE:R5:2022-23)"
+    },
+    {
+      "crop": "sorghum",
+      "region": "R5",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Jowar(Sorghum)), cost:DES_CoC_C2, yield:STATE:R5:2022-23)"
+    },
+    {
+      "crop": "pearl_millet",
+      "region": "R2",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Bajra(Pearl Millet/Cumbu)), cost:DES_CoC_C2, yield:STATE:R2:2022-23)"
+    },
+    {
+      "crop": "pearl_millet",
+      "region": "R4",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Bajra(Pearl Millet/Cumbu)), cost:DES_CoC_C2, yield:STATE:R4:2022-23)"
+    },
+    {
+      "crop": "chickpea",
+      "region": "R2",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Bengal Gram(Gram)(Whole)), cost:DES_CoC_C2, yield:STATE:R2:2022-23)"
+    },
+    {
+      "crop": "chickpea",
+      "region": "R4",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Bengal Gram(Gram)(Whole)), cost:DES_CoC_C2, yield:STATE:R4:2022-23)"
+    },
+    {
+      "crop": "chickpea",
+      "region": "R5",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Bengal Gram(Gram)(Whole)), cost:DES_CoC_C2, yield:STATE:R5:2022-23)"
+    },
+    {
+      "crop": "pigeon_pea",
+      "region": "R2",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Red gram/Arhar/Tur(whole)), cost:DES_CoC_C2, yield:STATE:R2:2022-23)"
+    },
+    {
+      "crop": "pigeon_pea",
+      "region": "R5",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Red gram/Arhar/Tur(whole)), cost:DES_CoC_C2, yield:STATE:R5:2022-23)"
+    },
+    {
+      "crop": "groundnut",
+      "region": "R2",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Groundnut), cost:DES_CoC_C2, yield:STATE:R2:2022-23)"
+    },
+    {
+      "crop": "groundnut",
+      "region": "R3",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Groundnut), cost:DES_CoC_C2, yield:STATE:R3:2022-23)"
+    },
+    {
+      "crop": "groundnut",
+      "region": "R4",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Groundnut), cost:DES_CoC_C2, yield:STATE:R4:2022-23)"
+    },
+    {
+      "crop": "groundnut",
+      "region": "R5",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Groundnut), cost:DES_CoC_C2, yield:STATE:R5:2022-23)"
+    },
+    {
+      "crop": "soybean",
+      "region": "R2",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Soyabean), cost:DES_CoC_C2, yield:STATE:R2:2022-23)"
+    },
+    {
+      "crop": "soybean",
+      "region": "R4",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Soyabean), cost:DES_CoC_C2, yield:STATE:R4:2022-23)"
+    },
+    {
+      "crop": "soybean",
+      "region": "R5",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Soyabean), cost:DES_CoC_C2, yield:STATE:R5:2022-23)"
+    },
+    {
+      "crop": "mustard",
+      "region": "R1",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Mustard), cost:DES_CoC_C2, yield:STATE:R1:2022-23)"
+    },
+    {
+      "crop": "mustard",
+      "region": "R3",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Mustard), cost:DES_CoC_C2, yield:STATE:R3:2022-23)"
+    },
+    {
+      "crop": "mustard",
+      "region": "R4",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Mustard), cost:DES_CoC_C2, yield:STATE:R4:2022-23)"
+    },
+    {
+      "crop": "cotton",
+      "region": "R1",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Cotton), cost:DES_CoC_C2, yield:ALL_INDIA_FALLBACK)"
+    },
+    {
+      "crop": "cotton",
+      "region": "R2",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Cotton), cost:DES_CoC_C2, yield:ALL_INDIA_FALLBACK)"
+    },
+    {
+      "crop": "cotton",
+      "region": "R4",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Cotton), cost:DES_CoC_C2, yield:ALL_INDIA_FALLBACK)"
+    },
+    {
+      "crop": "cotton",
+      "region": "R5",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Cotton), cost:DES_CoC_C2, yield:ALL_INDIA_FALLBACK)"
+    },
+    {
+      "crop": "potato",
+      "region": "R3",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Potato), cost:DES_CoC_C2, yield:STATE:R3:2022-23)"
+    },
+    {
+      "crop": "onion",
+      "region": "R2",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Onion), cost:DES_CoC_C2, yield:ALL_INDIA_FALLBACK)"
+    },
+    {
+      "crop": "onion",
+      "region": "R2",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Onion), cost:DES_CoC_C2, yield:ALL_INDIA_FALLBACK)"
+    },
+    {
+      "crop": "onion",
+      "region": "R4",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Onion), cost:DES_CoC_C2, yield:STATE:R4:2022-23)"
+    },
+    {
+      "crop": "onion",
+      "region": "R4",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Onion), cost:DES_CoC_C2, yield:STATE:R4:2022-23)"
+    },
+    {
+      "crop": "onion",
+      "region": "R5",
+      "season": "kharif",
+      "reason": "grounded (price:AGMARKNET_MARKET(Onion), cost:DES_CoC_C2, yield:STATE:R5:2022-23)"
+    },
+    {
+      "crop": "onion",
+      "region": "R5",
+      "season": "rabi",
+      "reason": "grounded (price:AGMARKNET_MARKET(Onion), cost:DES_CoC_C2, yield:STATE:R5:2022-23)"
+    }
+  ],
+  "excluded_combinations": 40,
+  "excluded": [
+    {
+      "crop": "rice",
+      "region": "R1",
+      "season": "kharif",
+      "reason": "no usable price (SPARSE(33.3%))"
+    },
+    {
+      "crop": "rice",
+      "region": "R4",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "maize",
+      "region": "R3",
+      "season": "kharif",
+      "reason": "no usable price (SPARSE(5.6%))"
+    },
+    {
+      "crop": "maize",
+      "region": "R3",
+      "season": "rabi",
+      "reason": "no usable price (SPARSE(5.6%))"
+    },
+    {
+      "crop": "sorghum",
+      "region": "R1",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "sorghum",
+      "region": "R1",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "sorghum",
+      "region": "R3",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "sorghum",
+      "region": "R3",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "pearl_millet",
+      "region": "R1",
+      "season": "kharif",
+      "reason": "no usable price (SPARSE(2.8%))"
+    },
+    {
+      "crop": "pearl_millet",
+      "region": "R3",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "pearl_millet",
+      "region": "R5",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "chickpea",
+      "region": "R1",
+      "season": "rabi",
+      "reason": "no usable price (SPARSE(13.9%))"
+    },
+    {
+      "crop": "chickpea",
+      "region": "R3",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "pigeon_pea",
+      "region": "R1",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "pigeon_pea",
+      "region": "R3",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "pigeon_pea",
+      "region": "R4",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "groundnut",
+      "region": "R1",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "soybean",
+      "region": "R1",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "soybean",
+      "region": "R3",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "mustard",
+      "region": "R2",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "mustard",
+      "region": "R5",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "cotton",
+      "region": "R3",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "potato",
+      "region": "R1",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "potato",
+      "region": "R2",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "potato",
+      "region": "R4",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "potato",
+      "region": "R5",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "onion",
+      "region": "R1",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "onion",
+      "region": "R1",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "onion",
+      "region": "R3",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "onion",
+      "region": "R3",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "tomato",
+      "region": "R1",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "tomato",
+      "region": "R1",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "tomato",
+      "region": "R2",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "tomato",
+      "region": "R2",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "tomato",
+      "region": "R3",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "tomato",
+      "region": "R3",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "tomato",
+      "region": "R4",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "tomato",
+      "region": "R4",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "tomato",
+      "region": "R5",
+      "season": "kharif",
+      "reason": "no cost/ha"
+    },
+    {
+      "crop": "tomato",
+      "region": "R5",
+      "season": "rabi",
+      "reason": "no cost/ha"
+    }
+  ],
+  "admitted_crops": [
+    "chickpea",
+    "cotton",
+    "groundnut",
+    "maize",
+    "mustard",
+    "onion",
+    "pearl_millet",
+    "pigeon_pea",
+    "potato",
+    "rice",
+    "sorghum",
+    "soybean",
+    "wheat"
+  ],
+  "fully_excluded_crops": [
+    "tomato"
+  ],
+  "gate_valid": true
+}

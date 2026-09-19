@@ -1,0 +1,117 @@
+{
+ "provenance": "DEVELOPMENT_CHECKPOINT",
+ "warning": "Development checkpoint at seed 20260812 under the current corrected pipeline. NOT a final30 result; final 30-replication statistics are NOT RUN.",
+ "generated_runtime_s": 30.2,
+ "seed": 20260812,
+ "config": {
+  "config_version": "farmsync-publication-config-v1",
+  "epsilon": 0.95,
+  "lambda": 0.05,
+  "alpha": 0.4,
+  "action_profile": "PRIMARY",
+  "action_protocol": "action-consent-v1",
+  "uncertainty_protocol": "uncertainty-v1",
+  "fairness": "fairness-v2",
+  "instance_hash": "5ea24037c2d9cb6a"
+ },
+ "U0": {
+  "realisation_hash": "8e7716de9796a0e0",
+  "participating_farmers": 500,
+  "baselines": {
+   "B1": {
+    "cash": 14644537.0,
+    "status": "Optimal",
+    "optimal": true
+   },
+   "B2": {
+    "cash": 13822731.0,
+    "status": "Optimal",
+    "optimal": true
+   },
+   "B3": {
+    "cash": 13142166.0,
+    "status": "Optimal",
+    "optimal": true
+   }
+  },
+  "proposed": {
+   "tiers": {
+    "PLANNED": 13142166.0,
+    "INITIAL_REALIZED": 11953688.0,
+    "RECOMMENDED_REVISED": 12586101.0,
+    "FINAL_REALIZED": 12362577.0
+   },
+   "consent_coverage_final": 1.0,
+   "action_counts": {
+    "ACCEPT": 322,
+    "REJECT": 18,
+    "MODIFY": 22,
+    "NO_RESPONSE": 7,
+    "WITHDRAW": 12
+   },
+   "withdrawn_farmers": 8,
+   "renewed_prompts": 57,
+   "reopt_status": "Optimal",
+   "conc_status": "Optimal"
+  }
+ },
+ "UJ": {
+  "realisation_hash": "daf331e3d0b2a1fc",
+  "participating_farmers": 459,
+  "channel_summary": {
+   "weather_states": {
+    "LOW_EVAPORATIVE_DEMAND": 3,
+    "NORMAL": 7
+   },
+   "absorption_states": {
+    "HIGH": 5,
+    "LOW": 2,
+    "NORMAL": 7
+   },
+   "resource_states": {
+    "NORMAL": 342,
+    "CONSTRAINED": 158
+   },
+   "price_cells": 70,
+   "participation_true": 459,
+   "participation_false": 41
+  },
+  "baselines": {
+   "B1": {
+    "cash": 13158690.0,
+    "status": "Optimal"
+   },
+   "B2": {
+    "cash": 12545978.0,
+    "status": "Optimal"
+   },
+   "B3": {
+    "cash": 11930066.0,
+    "status": "Optimal"
+   }
+  },
+  "proposed": {
+   "tiers": {
+    "PLANNED": 11930066.0,
+    "INITIAL_REALIZED": 10716058.0,
+    "RECOMMENDED_REVISED": 11315587.0,
+    "FINAL_REALIZED": 11208457.0
+   },
+   "consent_coverage_final": 1.0,
+   "action_counts": {
+    "ACCEPT": 285,
+    "REJECT": 16,
+    "MODIFY": 19,
+    "NO_RESPONSE": 10,
+    "WITHDRAW": 8
+   },
+   "reopt_status": "Optimal",
+   "conc_status": "Optimal"
+  }
+ },
+ "population": {
+  "farmers": 500,
+  "plots": 911,
+  "collectives": 10
+ }
+}

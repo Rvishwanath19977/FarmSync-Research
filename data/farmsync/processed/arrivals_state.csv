@@ -1,0 +1,63 @@
+region_id,state,crop,total_arrival_mt
+R5,Karnataka,chickpea,261905.4
+R5,Karnataka,cotton,605637.0
+R5,Karnataka,groundnut,286279.4
+R5,Karnataka,maize,1753753.9
+R5,Karnataka,mustard,5313.9
+R5,Karnataka,onion,2198619.7
+R5,Karnataka,pearl_millet,96618.9
+R5,Karnataka,pigeon_pea,476128.1
+R5,Karnataka,potato,906612.7
+R5,Karnataka,rice,1668578.8
+R5,Karnataka,sorghum,63091.8
+R5,Karnataka,soybean,263293.6
+R5,Karnataka,tomato,1645230.4
+R5,Karnataka,wheat,91756.6
+R2,Maharashtra,chickpea,1685967.1
+R2,Maharashtra,cotton,2072934.5
+R2,Maharashtra,groundnut,77027.8
+R2,Maharashtra,maize,1966311.8
+R2,Maharashtra,mustard,10378.1
+R2,Maharashtra,onion,22864131.4
+R2,Maharashtra,pearl_millet,213936.0
+R2,Maharashtra,pigeon_pea,1528828.8
+R2,Maharashtra,potato,2413344.0
+R2,Maharashtra,rice,363351.5
+R2,Maharashtra,sorghum,631554.4
+R2,Maharashtra,soybean,5077897.7
+R2,Maharashtra,tomato,2291393.5
+R2,Maharashtra,wheat,1302675.9
+R1,Punjab,chickpea,7.0
+R1,Punjab,cotton,101094.5
+R1,Punjab,maize,528096.8
+R1,Punjab,mustard,5432.7
+R1,Punjab,onion,821972.5
+R1,Punjab,pearl_millet,3.0
+R1,Punjab,potato,1036367.2
+R1,Punjab,rice,20030629.1
+R1,Punjab,tomato,268697.1
+R1,Punjab,wheat,15534438.4
+R4,Rajasthan,chickpea,832564.8
+R4,Rajasthan,cotton,1216376.8
+R4,Rajasthan,groundnut,668107.4
+R4,Rajasthan,maize,1143997.7
+R4,Rajasthan,mustard,4319331.8
+R4,Rajasthan,onion,1226828.5
+R4,Rajasthan,pearl_millet,1038239.6
+R4,Rajasthan,pigeon_pea,7151.6
+R4,Rajasthan,potato,1034331.3
+R4,Rajasthan,rice,2754404.6
+R4,Rajasthan,sorghum,45644.7
+R4,Rajasthan,soybean,1435416.5
+R4,Rajasthan,tomato,481226.9
+R4,Rajasthan,wheat,4918609.4
+R3,West Bengal,chickpea,842.3
+R3,West Bengal,groundnut,979.1
+R3,West Bengal,maize,1226.5
+R3,West Bengal,mustard,79530.0
+R3,West Bengal,onion,754981.6
+R3,West Bengal,pigeon_pea,4663.4
+R3,West Bengal,potato,1752701.0
+R3,West Bengal,rice,353933.3
+R3,West Bengal,tomato,242010.6
+R3,West Bengal,wheat,74866.3

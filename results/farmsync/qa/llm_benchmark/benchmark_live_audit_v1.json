@@ -1,0 +1,208 @@
+{
+  "action_mismatch": {
+    "case_ids": [
+      "b121_vague",
+      "b123_vague",
+      "b125_vague",
+      "b127_vague",
+      "b128_vague",
+      "b131_vague",
+      "b133_vague",
+      "b135_vague",
+      "b136_vague",
+      "b137_vague",
+      "b141_vague_ctx",
+      "b143_vague_ctx",
+      "b144_vague_ctx",
+      "b145_vague_ctx",
+      "b146_vague_ctx",
+      "b214_qry",
+      "b228_qry",
+      "b238_inj",
+      "b246_inj",
+      "b258_injlike",
+      "b285_polite"
+    ],
+    "confusion_pairs": {
+      "MODIFY->ACCEPT": 2,
+      "MODIFY->CLARIFY": 15,
+      "MODIFY->QUERY": 2,
+      "QUERY->CLARIFY": 2
+    },
+    "count": 21
+  },
+  "benchmark_identity": {
+    "benchmark_version": "farmsync-parser-benchmark-v1",
+    "case_count": 322,
+    "case_file_sha256": "f340323d64ae89a31b846a82a2761eb3a5f1e00de3d9000e7e1f0f27c9390e29",
+    "manifest_fixture_instance_hash": "5ea24037c2d9cb6a",
+    "manifest_model": "gpt-5.6-terra",
+    "prompt_version": "p7-parse-live-v3",
+    "schema_version": "farmsync-farmer-request-v1",
+    "semantic_case_set_hash": "ce2a6fabeb2ae641"
+  },
+  "clarification_mismatch": {
+    "case_ids": [
+      "b228_qry"
+    ],
+    "count": 1
+  },
+  "data_nature": "SYNTHETIC_CONSTRUCTED",
+  "deterministic_mismatch": {
+    "may_execute": {
+      "case_ids": [
+        "b258_injlike",
+        "b285_polite"
+      ],
+      "count": 2
+    },
+    "reason_codes": {
+      "case_ids": [
+        "b214_qry",
+        "b228_qry",
+        "b258_injlike",
+        "b285_polite"
+      ],
+      "count": 4
+    },
+    "validated_payload": {
+      "case_ids": [
+        "b214_qry",
+        "b228_qry",
+        "b258_injlike",
+        "b285_polite"
+      ],
+      "count": 4
+    },
+    "validation_outcome": {
+      "case_ids": [
+        "b214_qry",
+        "b228_qry"
+      ],
+      "count": 2
+    }
+  },
+  "execution_equivalence": {
+    "applicable_denominator": 104,
+    "equivalent_count": 104,
+    "non_applicable_count": 218,
+    "rate": 1.0
+  },
+  "field_mismatch_case_ids": {
+    "plot_id": [],
+    "requested_crop": [],
+    "requested_value": [],
+    "unit": []
+  },
+  "may_execute_directional": {
+    "conservative_true_to_false": {
+      "case_ids": [
+        "b258_injlike",
+        "b285_polite"
+      ],
+      "count": 2
+    },
+    "unsafe_false_to_true": {
+      "case_ids": [],
+      "count": 0
+    }
+  },
+  "mismatch_breakdown": {
+    "by_category": {
+      "authority_override": 2,
+      "polite_indirect": 1,
+      "prompt_injection_like": 1,
+      "query_explain": 2,
+      "vague_modify": 10,
+      "vague_modify_implicit_plot": 5
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "hard": 18,
+      "medium": 1
+    },
+    "union_mismatch_case_ids": [
+      "b121_vague",
+      "b123_vague",
+      "b125_vague",
+      "b127_vague",
+      "b128_vague",
+      "b131_vague",
+      "b133_vague",
+      "b135_vague",
+      "b136_vague",
+      "b137_vague",
+      "b141_vague_ctx",
+      "b143_vague_ctx",
+      "b144_vague_ctx",
+      "b145_vague_ctx",
+      "b146_vague_ctx",
+      "b214_qry",
+      "b228_qry",
+      "b238_inj",
+      "b246_inj",
+      "b258_injlike",
+      "b285_polite"
+    ]
+  },
+  "n_cases": 322,
+  "parser_metrics_derived": {
+    "action": {
+      "accuracy": 0.934783,
+      "correct": 301,
+      "denominator": 322
+    },
+    "clarification_required": {
+      "accuracy": 0.996894,
+      "correct": 321,
+      "denominator": 322
+    },
+    "plot_id": {
+      "accuracy": 1.0,
+      "correct": 322,
+      "denominator": 322
+    },
+    "requested_crop": {
+      "accuracy": 1.0,
+      "correct": 322,
+      "denominator": 322
+    },
+    "requested_value": {
+      "accuracy": 1.0,
+      "correct": 322,
+      "denominator": 322
+    },
+    "unit": {
+      "accuracy": 1.0,
+      "correct": 322,
+      "denominator": 322
+    }
+  },
+  "reconciliation": {
+    "n_cases_equals_322": true,
+    "status_sum_equals_n": true
+  },
+  "reliability": {
+    "latency_ms": {
+      "max": 7928,
+      "mean": 2436.5,
+      "min": 1427,
+      "n": 322
+    },
+    "reconciles": true,
+    "status_counts": {
+      "OK": 322
+    }
+  },
+  "result_label": "LIVE BENCHMARK RESULT",
+  "source_files": {
+    "predictions": {
+      "path": "results/farmsync/qa/llm_benchmark/benchmark_predictions_live_p7-parse-live-v3.json",
+      "sha256": "05ca4ad6a30599847a7474f33c82d629acdec4dd73faeb48503ad5917b26d2ee"
+    },
+    "report": {
+      "path": "results/farmsync/qa/llm_benchmark/benchmark_report_live_p7-parse-live-v3.json",
+      "sha256": "636d8e784572488d127ddf28908fc24facf38e0246536e97072a1b562bc859a5"
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "artifact_kind": "controlled_ab_case_study",
+  "boundaries": {
+    "causal_generalisation": false,
+    "constructed_behaviour": true,
+    "empirical_farmer_response_rates": false,
+    "resilience_backup_optimiser": false,
+    "stress_reoptimisation": false
+  },
+  "dataset_hash": "1f271676f5317088",
+  "delta_b_minus_a": {
+    "affirmative_consent_coverage": -0.016181229773462813,
+    "all_farmer_abs_cash_gini": 0.008352326787381958,
+    "all_farmer_per_ha_gini": 0.03613034392989345,
+    "farmers_with_realised": -34,
+    "farmers_without_realised": 34,
+    "final_plan_projected_cash": -2350005,
+    "final_realised_area_ha": -39.87399999999997,
+    "hhi_crop_share": 0.001799999999999996,
+    "max_crop_share": -0.002599999999999991,
+    "not_realised_plots": 46,
+    "participant_only_per_ha_gini": 0.008175127247499914,
+    "realisation_rate_offered": -0.12073490813648291,
+    "realised_plots": -46
+  },
+  "interpretation_boundary": "Scenario B is a constructed illustrative behavioural case study. Differences are conditional on this frozen action manifest and are not estimates of empirical farmer response probabilities.",
+  "protocol_version": "scenario-ab-v3",
+  "scenario_a": {
+    "final_plan_hash": "0fe59eeb7c68a1a2",
+    "headline": {
+      "affirmative_consent_coverage": 1.0,
+      "all_farmer_abs_cash_gini": 0.8647169535448647,
+      "all_farmer_per_ha_gini": 0.7412712106521944,
+      "farmers_with_realised": 273,
+      "farmers_without_realised": 227,
+      "final_plan_projected_cash": 12089277,
+      "final_realised_area_ha": 295.484,
+      "hhi_crop_share": 0.1894,
+      "max_crop_share": 0.3159,
+      "not_realised_plots": 561,
+      "participant_only_per_ha_gini": 0.526137748447244,
+      "realisation_rate_offered": 0.9186351706036745,
+      "realised_plots": 350
+    },
+    "initial_action_counts": {},
+    "renewed_decision_counts": {
+      "ACCEPT": 19
+    },
+    "resilience": {
+      "baseline": {
+        "expected_cash_net_return": 12089277.0,
+        "n_active_crops": 8,
+        "n_realised_hazard_zones": 14,
+        "n_realised_plots": 350,
+        "realised_area_ha": 295.484
+      },
+      "hazard_representative": {
+        "affected_allocations": 36,
+        "affected_area_ha": 27.028,
+        "cash_loss": 883865.0,
+        "cash_loss_fraction": 0.073111,
+        "reoptimization": false,
+        "zone": "R1-HZ1"
+      },
+      "n_realised_hazard_zones": 14,
+      "nminus1": {
+        "affected_allocations": 2,
+        "cash_loss": 110952.0,
+        "cash_loss_fraction": 0.009178,
+        "failed_area_ha": 2.296,
+        "failed_farmer": "F0178",
+        "reoptimization": false,
+        "target_crop": "cotton",
+        "target_loss_fraction": 0.512668
+      },
+      "post_shock_recovery_available": false,
+      "post_shock_recovery_reason": "Post-shock recovery: Not evaluated for the current interactive plan. The frozen Phase-5 backup optimiser is defined over its own Stage-3/Stage-5 decision state and is not applied to this working plan."
+    },
+    "stress": {
+      "UJ": {
+        "area_with_weather_or_resource_exposure": 132.764,
+        "n_plots_with_weather_or_resource_exposure": 145
+      },
+      "UM": {
+        "baseline_cash": 12089277.0,
+        "cash_change": -3015438.0,
+        "cash_change_pct": -24.943,
+        "n_absorption_exposed_crops": 2,
+        "stressed_cash": 9073839.0
+      },
+      "UR": {
+        "exposed_area_ha": 97.218,
+        "n_evaluable_farmers": 273,
+        "n_exposed_farmers": 69,
+        "n_exposed_plots": 98
+      },
+      "UW": {
+        "n_evaluable_plots": 350,
+        "n_water_exposed_plots": 60,
+        "water_exposed_area_ha": 51.414
+      }
+    }
+  },
+  "scenario_b": {
+    "final_plan_hash": "1dd4988e70547369",
+    "headline": {
+      "affirmative_consent_coverage": 0.9838187702265372,
+      "all_farmer_abs_cash_gini": 0.8730692803322466,
+      "all_farmer_per_ha_gini": 0.7774015545820878,
+      "farmers_with_realised": 239,
+      "farmers_without_realised": 261,
+      "final_plan_projected_cash": 9739272,
+      "final_realised_area_ha": 255.61,
+      "hhi_crop_share": 0.1912,
+      "max_crop_share": 0.3133,
+      "not_realised_plots": 607,
+      "participant_only_per_ha_gini": 0.534312875694744,
+      "realisation_rate_offered": 0.7979002624671916,
+      "realised_plots": 304
+    },
+    "initial_action_counts": {
+      "NO_RESPONSE": 16,
+      "REJECT": 32,
+      "WITHDRAW": 8
+    },
+    "renewed_decision_counts": {
+      "ACCEPT": 29,
+      "NO_RESPONSE": 2,
+      "REJECT": 3
+    },
+    "resilience": {
+      "baseline": {
+        "expected_cash_net_return": 9739272.0,
+        "n_active_crops": 8,
+        "n_realised_hazard_zones": 14,
+        "n_realised_plots": 304,
+        "realised_area_ha": 255.61
+      },
+      "hazard_representative": {
+        "affected_allocations": 30,
+        "affected_area_ha": 21.014,
+        "cash_loss": 687197.0,
+        "cash_loss_fraction": 0.070559,
+        "reoptimization": false,
+        "zone": "R1-HZ1"
+      },
+      "n_realised_hazard_zones": 14,
+      "nminus1": {
+        "affected_allocations": 2,
+        "cash_loss": 110952.0,
+        "cash_loss_fraction": 0.011392,
+        "failed_area_ha": 2.296,
+        "failed_farmer": "F0178",
+        "reoptimization": false,
+        "target_crop": "cotton",
+        "target_loss_fraction": 0.547171
+      },
+      "post_shock_recovery_available": false,
+      "post_shock_recovery_reason": "Post-shock recovery: Not evaluated for the current interactive plan. The frozen Phase-5 backup optimiser is defined over its own Stage-3/Stage-5 decision state and is not applied to this working plan."
+    },
+    "stress": {
+      "UJ": {
+        "area_with_weather_or_resource_exposure": 105.001,
+        "n_plots_with_weather_or_resource_exposure": 119
+      },
+      "UM": {
+        "baseline_cash": 9739272.0,
+        "cash_change": -2516205.0,
+        "cash_change_pct": -25.836,
+        "n_absorption_exposed_crops": 1,
+        "stressed_cash": 7223067.0
+      },
+      "UR": {
+        "exposed_area_ha": 73.919,
+        "n_evaluable_farmers": 239,
+        "n_exposed_farmers": 58,
+        "n_exposed_plots": 81
+      },
+      "UW": {
+        "n_evaluable_plots": 304,
+        "n_water_exposed_plots": 46,
+        "water_exposed_area_ha": 41.429
+      }
+    },
+    "withdrawal_affected_offer_rows": 8,
+    "withdrawn_farmer_count": 7,
+    "withdrawn_farmer_ids": [
+      "F0254",
+      "F0286",
+      "F0314",
+      "F0316",
+      "F0334",
+      "F0392",
+      "F0499"
+    ]
+  },
+  "source_commit": "d19e1d51c4d7f204e77cac3cdf506e5fcd238439"
+}

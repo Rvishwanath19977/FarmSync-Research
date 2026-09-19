@@ -1,0 +1,215 @@
+{
+  "completion": "COMPLETE",
+  "dataset_attestation_sha256": "fd42123f24a6823484dc0fa0f5d34192c8c23ea9a03e45d4674e42515bb3514e",
+  "family": "ACTION_ROBUSTNESS",
+  "matrix_sha256": "b339a43ab581a0d481da230b84918363bc82f771b993f575c50ea903cdecc0f0",
+  "parameters": {
+    "alpha_fixed": 0.4,
+    "lambda_fixed": 0.05,
+    "profile": "S1"
+  },
+  "payload": {
+    "consent_coverage_final": 1.0,
+    "disruption": {
+      "changed_soft_area": 0.9,
+      "disruption_rate": 0.014354066985645933,
+      "soft_lock_area": 62.7
+    },
+    "profile": "S1",
+    "proposed": {
+      "action_counts": {
+        "ACCEPT": 281,
+        "MODIFY": 44,
+        "NO_RESPONSE": 29,
+        "REJECT": 53,
+        "WITHDRAW": 11
+      },
+      "alpha": 0.4,
+      "concentration_constraint_scope": "RECOMMENDED_REVISED only",
+      "consent_coverage_final": 1.0,
+      "failed_stage": null,
+      "fairness_v2_final": {
+        "benefit_loss_vs_b1": {
+          "better": 0,
+          "mean_delta": -9415,
+          "median_delta": 0,
+          "p10_delta": -22108,
+          "p90_delta": 0,
+          "tolerance": 1.0,
+          "unchanged": 364,
+          "worse": 136
+        },
+        "fixed_cohort_mean_cash": {
+          "bottom_125_B1ref": 0.0,
+          "bottom_50_B1ref": 0.0
+        },
+        "n_farmers": 500,
+        "n_participating": 259,
+        "participation_rate_pct": 51.8,
+        "per_ha_gini_all": 0.7683
+      },
+      "fairness_v2_initial": {
+        "benefit_loss_vs_b1": {
+          "better": 0,
+          "mean_delta": -12882,
+          "median_delta": 0,
+          "p10_delta": -26390,
+          "p90_delta": 0,
+          "tolerance": 1.0,
+          "unchanged": 324,
+          "worse": 176
+        },
+        "fixed_cohort_mean_cash": {
+          "bottom_125_B1ref": 0.0,
+          "bottom_50_B1ref": 0.0
+        },
+        "n_farmers": 500,
+        "n_participating": 226,
+        "participation_rate_pct": 45.2,
+        "per_ha_gini_all": 0.8125
+      },
+      "final_realized_concentration": {
+        "active_crops": [
+          "groundnut",
+          "maize",
+          "onion",
+          "pigeon_pea",
+          "rice",
+          "sorghum",
+          "soybean"
+        ],
+        "max_LPS": 0.3502,
+        "mean_HHI": 0.0885,
+        "median_HHI": 0.0739,
+        "n_active_crops": 7,
+        "target_violations": 0
+      },
+      "instance_hash": "7d6aa268c9bada47",
+      "lambda": 0.05,
+      "ledger_event_count": 1250,
+      "ledger_sha256": "57b311862ea97d295af23e5d882bd41c6a96a150c3c298c55d5eeba9295e5282",
+      "optimal": true,
+      "profile": "S1",
+      "protocol": "action-consent-v1",
+      "recommendation_realisation_ratio_vs_planned": 0.8816,
+      "recommendation_realisation_ratio_vs_recommended": 0.9345,
+      "recommended_revised_concentration": {
+        "active_crops": [
+          "groundnut",
+          "maize",
+          "onion",
+          "pigeon_pea",
+          "rice",
+          "sorghum",
+          "soybean"
+        ],
+        "max_LPS": 0.3297,
+        "mean_HHI": 0.0795,
+        "median_HHI": 0.0665,
+        "n_active_crops": 7,
+        "target_violations": 0
+      },
+      "recommended_revised_phase4": {
+        "alpha": 0.4,
+        "e_star_alpha": 12980512.0,
+        "status": "Optimal",
+        "t_floor_alpha": 278.1148
+      },
+      "recommended_revised_stability": {
+        "changed_flex": 13,
+        "changed_flex_area": 4.8,
+        "changed_soft": 4,
+        "changed_soft_area": 0.9,
+        "crop_change_counts": {
+          "rice->groundnut": 8,
+          "rice->maize": 1,
+          "sorghum->maize": 3,
+          "sorghum->pigeon_pea": 2,
+          "soybean->maize": 2,
+          "soybean->onion": 1
+        },
+        "e_star": 12980512.0,
+        "epsilon": 0.95,
+        "fairness_floor_tolerance": 0.0,
+        "fairness_structure": "BOTH: E>=eps*E*_alpha AND min_norm>=t_floor_alpha",
+        "flex_area": 147.7,
+        "formulation_version": "ilp-ref-v1",
+        "hard_lock_changes": 0,
+        "hard_lock_ok": true,
+        "lambda": 0.05,
+        "rejected_recovered": 38,
+        "rejected_recovered_area": 22.4,
+        "runtime_s": 0.28,
+        "soft_lock_area": 62.7,
+        "status": "Optimal",
+        "t_floor": 278.11479
+      },
+      "renewed_counts": {
+        "ACCEPT": 68,
+        "NO_RESPONSE": 12,
+        "REJECT": 24
+      },
+      "renewed_prompts": 104,
+      "runtime_s": 14.520296599977883,
+      "status": "Optimal",
+      "tiers": {
+        "FINAL_REALIZED": {
+          "area": 286.649,
+          "cash": 11899387.0,
+          "cash_per_allocated_ha": 41512.04783550614,
+          "n": 336
+        },
+        "INITIAL_REALIZED": {
+          "area": 232.151,
+          "cash": 10166207.0,
+          "cash_per_allocated_ha": 43791.35562629495,
+          "n": 281
+        },
+        "PLANNED": {
+          "area": 350.21,
+          "cash": 13497163.0,
+          "cash_per_allocated_ha": 38540.19873790012,
+          "n": 418
+        },
+        "RECOMMENDED_REVISED": {
+          "area": 315.292,
+          "cash": 12733400.0,
+          "cash_per_allocated_ha": 40386.05483171156,
+          "n": 372
+        }
+      },
+      "withdrawn_farmers": 8
+    },
+    "tiers": {
+      "FINAL_REALIZED": {
+        "area": 286.649,
+        "cash": 11899387.0,
+        "cash_per_allocated_ha": 41512.04783550614,
+        "n": 336
+      },
+      "INITIAL_REALIZED": {
+        "area": 232.151,
+        "cash": 10166207.0,
+        "cash_per_allocated_ha": 43791.35562629495,
+        "n": 281
+      },
+      "PLANNED": {
+        "area": 350.21,
+        "cash": 13497163.0,
+        "cash_per_allocated_ha": 38540.19873790012,
+        "n": 418
+      },
+      "RECOMMENDED_REVISED": {
+        "area": 315.292,
+        "cash": 12733400.0,
+        "cash_per_allocated_ha": 40386.05483171156,
+        "n": 372
+      }
+    }
+  },
+  "reused_from": null,
+  "schema": "farmsync-final30-cell-v1",
+  "seed": 385101,
+  "source_commit": "86129ec71998288db29bf562a7e1b1a9bcc2c9ae",
+  "written_utc": "2026-09-18T23:01:30+00:00"
+}

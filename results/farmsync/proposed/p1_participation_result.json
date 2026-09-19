@@ -1,0 +1,163 @@
+{
+  "run": "PROPOSED_PHASE1_participation",
+  "run_id": "p1_dev",
+  "status": "development/checkpoint",
+  "master_seed": 20260812,
+  "instance_hash": "5ea24037c2d9cb6a",
+  "planned_source": "B3_ILP_v2",
+  "canonical_b3_epsilon": 0.95,
+  "fairness_version": "fairness-v2",
+  "acceptance_model": {
+    "base_accept_prob": 0.85,
+    "risk_sensitivity": 0.2,
+    "provenance": "SYNTHETIC_EXPERIMENTAL",
+    "note": "experimental assumption; NOT observed Indian farmer acceptance prevalence; risk_tolerance is a provenance-labelled synthetic farmer attribute"
+  },
+  "offers": 381,
+  "accepted": 331,
+  "rejected": 50,
+  "accept_rate": 0.8688,
+  "reject_rate": 0.1312,
+  "planned_cash_return": 13142166,
+  "realised_cash_return": 11464341,
+  "cash_realisation_ratio": 0.8723,
+  "planned_allocated_area_ha": 327.1,
+  "realised_allocated_area_ha": 274.0,
+  "area_realisation_ratio": 0.8377,
+  "planned_participating_farmers": 294,
+  "realised_participating_farmers": 263,
+  "realised_subset_of_planned": true,
+  "realised_return_le_planned": true,
+  "hard_constraints_satisfied": true,
+  "hard_violations": 0,
+  "runtime_s_planned_b3": 0.24,
+  "fairness_v2_planned": {
+    "impl_version": "fairness-v2",
+    "primary": {
+      "per_ha_gini_all": 0.7182,
+      "participation_rate_pct": 58.8,
+      "n_participating": 294,
+      "n_farmers": 500,
+      "fixed_cohort_mean_cash": {
+        "bottom_50_B1ref": 0.0,
+        "bottom_125_B1ref": 0.0
+      },
+      "benefit_loss_vs_b1": {
+        "better": 0,
+        "worse": 91,
+        "unchanged": 409,
+        "mean_delta": -3005,
+        "median_delta": 0,
+        "p10_delta": -8558,
+        "p90_delta": 0,
+        "tolerance": 1.0
+      }
+    },
+    "supporting": {
+      "abs_gini_all": 0.8572,
+      "per_ha_gini_participants": 0.5208,
+      "abs_gini_participant_only": 0.7571
+    },
+    "efficiency": {
+      "return_per_allocated_ha": 40175.7,
+      "total_cash_return": 13142166.0
+    },
+    "denominators": {
+      "per_ha_gini_all": "farmer cash / total operated area, all 500 incl zeros",
+      "abs_gini_participant_only": "participating farmers only (== legacy frozen gini basis)"
+    }
+  },
+  "fairness_v2_realised": {
+    "impl_version": "fairness-v2",
+    "primary": {
+      "per_ha_gini_all": 0.7493,
+      "participation_rate_pct": 52.6,
+      "n_participating": 263,
+      "n_farmers": 500,
+      "fixed_cohort_mean_cash": {
+        "bottom_50_B1ref": 0.0,
+        "bottom_125_B1ref": 0.0
+      },
+      "benefit_loss_vs_b1": {
+        "better": 0,
+        "worse": 125,
+        "unchanged": 375,
+        "mean_delta": -6360,
+        "median_delta": 0,
+        "p10_delta": -18277,
+        "p90_delta": 0,
+        "tolerance": 1.0
+      }
+    },
+    "supporting": {
+      "abs_gini_all": 0.8712,
+      "per_ha_gini_participants": 0.5233,
+      "abs_gini_participant_only": 0.7551
+    },
+    "efficiency": {
+      "return_per_allocated_ha": 41839.3,
+      "total_cash_return": 11464341.0
+    },
+    "denominators": {
+      "per_ha_gini_all": "farmer cash / total operated area, all 500 incl zeros",
+      "abs_gini_participant_only": "participating farmers only (== legacy frozen gini basis)"
+    }
+  },
+  "crop_accept_reject": {
+    "cotton": {
+      "accepted": 4,
+      "rejected": 0
+    },
+    "groundnut": {
+      "accepted": 22,
+      "rejected": 3
+    },
+    "maize": {
+      "accepted": 103,
+      "rejected": 14
+    },
+    "onion": {
+      "accepted": 46,
+      "rejected": 4
+    },
+    "pigeon_pea": {
+      "accepted": 10,
+      "rejected": 3
+    },
+    "rice": {
+      "accepted": 82,
+      "rejected": 14
+    },
+    "sorghum": {
+      "accepted": 24,
+      "rejected": 3
+    },
+    "soybean": {
+      "accepted": 40,
+      "rejected": 9
+    }
+  },
+  "region_accept_reject": {
+    "R1:kharif": {
+      "accepted": 66,
+      "rejected": 9
+    },
+    "R2:kharif": {
+      "accepted": 45,
+      "rejected": 11
+    },
+    "R3:kharif": {
+      "accepted": 96,
+      "rejected": 16
+    },
+    "R4:kharif": {
+      "accepted": 5,
+      "rejected": 1
+    },
+    "R5:kharif": {
+      "accepted": 119,
+      "rejected": 13
+    }
+  },
+  "region_note": "descriptive only; cross-region comparison limited by unequal source-supported choice sets"
+}

@@ -1,0 +1,17 @@
+{
+  "aggregate_hash_match": true,
+  "duplicate_identities": [],
+  "extra_in_raw": [],
+  "generated_utc": "2026-09-19T09:07:17+00:00",
+  "hash_mismatches": [],
+  "integrity_pass": true,
+  "ledger_entries": 900,
+  "missing_from_raw": [],
+  "raw_cell_files": 900,
+  "recomputed_cell_set_sha256": "71f43479f4048f7cf208b819bacb223e2fcb8fd9ff428e8bd36015d30c4de605",
+  "run_manifest_bookkeeping_note": "RUN_MANIFEST.json remains IN_PROGRESS because the frozen runner has no run-level completion finalization step. It was not modified post-run.",
+  "run_manifest_status_preserved": "IN_PROGRESS",
+  "schema": "farmsync-final30-integrity-report-v1",
+  "sealed_cell_set_sha256": "71f43479f4048f7cf208b819bacb223e2fcb8fd9ff428e8bd36015d30c4de605",
+  "structural_errors": []
+}

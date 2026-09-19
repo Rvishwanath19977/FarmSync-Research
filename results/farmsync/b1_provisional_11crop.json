@@ -1,0 +1,213 @@
+{
+  "experiment": "B1",
+  "dataset_master_seed": 20260812,
+  "n_farmers": 500,
+  "gate": true,
+  "metrics": {
+    "total_return": 10213886.0,
+    "mean_farmer_return": 20428.0,
+    "median_farmer_return": 12982.0,
+    "min_farmer_return": 782.0,
+    "plots_allocated": 498,
+    "plots_fallow": 413,
+    "land_utilisation_pct": 56.8,
+    "crop_diversity": 7,
+    "crop_area_ha": {
+      "pearl_millet": 184.9,
+      "maize": 148.7,
+      "soybean": 40.6,
+      "groundnut": 36.4,
+      "pigeon_pea": 21.6,
+      "cotton": 6.8,
+      "rice": 3.5
+    }
+  },
+  "hard_constraints_satisfied": true,
+  "allocations_sample": [
+    {
+      "farmer_id": "F0001",
+      "plot_id": "F0001-P03",
+      "crop": "groundnut",
+      "area_ha": 3.466,
+      "net_return": 174537.0,
+      "cost": 349073.0,
+      "labour_pd": 294.6
+    },
+    {
+      "farmer_id": "F0001",
+      "plot_id": "F0001-P02",
+      "crop": "pearl_millet",
+      "area_ha": 4.996,
+      "net_return": 78140.0,
+      "cost": 124134.0,
+      "labour_pd": 249.8
+    },
+    {
+      "farmer_id": "F0002",
+      "plot_id": "F0002-P01",
+      "crop": "pearl_millet",
+      "area_ha": 0.485,
+      "net_return": 7586.0,
+      "cost": 12051.0,
+      "labour_pd": 24.2
+    },
+    {
+      "farmer_id": "F0003",
+      "plot_id": "F0003-P02",
+      "crop": "soybean",
+      "area_ha": 0.413,
+      "net_return": 7797.0,
+      "cost": 15594.0,
+      "labour_pd": 18.6
+    },
+    {
+      "farmer_id": "F0004",
+      "plot_id": "F0004-P02",
+      "crop": "maize",
+      "area_ha": 0.364,
+      "net_return": 9520.0,
+      "cost": 16094.0,
+      "labour_pd": 23.7
+    },
+    {
+      "farmer_id": "F0005",
+      "plot_id": "F0005-P01",
+      "crop": "maize",
+      "area_ha": 0.636,
+      "net_return": 16634.0,
+      "cost": 28120.0,
+      "labour_pd": 41.3
+    },
+    {
+      "farmer_id": "F0006",
+      "plot_id": "F0006-P01",
+      "crop": "maize",
+      "area_ha": 0.572,
+      "net_return": 14960.0,
+      "cost": 25291.0,
+      "labour_pd": 37.2
+    },
+    {
+      "farmer_id": "F0007",
+      "plot_id": "F0007-P02",
+      "crop": "pearl_millet",
+      "area_ha": 1.66,
+      "net_return": 25963.0,
+      "cost": 41246.0,
+      "labour_pd": 83.0
+    },
+    {
+      "farmer_id": "F0009",
+      "plot_id": "F0009-P01",
+      "crop": "pearl_millet",
+      "area_ha": 0.254,
+      "net_return": 3973.0,
+      "cost": 6311.0,
+      "labour_pd": 12.7
+    },
+    {
+      "farmer_id": "F0010",
+      "plot_id": "F0010-P01",
+      "crop": "pearl_millet",
+      "area_ha": 0.36,
+      "net_return": 5631.0,
+      "cost": 8945.0,
+      "labour_pd": 18.0
+    },
+    {
+      "farmer_id": "F0011",
+      "plot_id": "F0011-P04",
+      "crop": "pearl_millet",
+      "area_ha": 2.994,
+      "net_return": 46828.0,
+      "cost": 74391.0,
+      "labour_pd": 149.7
+    },
+    {
+      "farmer_id": "F0012",
+      "plot_id": "F0012-P02",
+      "crop": "maize",
+      "area_ha": 0.2,
+      "net_return": 5231.0,
+      "cost": 8843.0,
+      "labour_pd": 13.0
+    },
+    {
+      "farmer_id": "F0013",
+      "plot_id": "F0013-P01",
+      "crop": "pearl_millet",
+      "area_ha": 0.682,
+      "net_return": 10667.0,
+      "cost": 16945.0,
+      "labour_pd": 34.1
+    },
+    {
+      "farmer_id": "F0015",
+      "plot_id": "F0015-P02",
+      "crop": "pearl_millet",
+      "area_ha": 0.162,
+      "net_return": 2534.0,
+      "cost": 4025.0,
+      "labour_pd": 8.1
+    },
+    {
+      "farmer_id": "F0015",
+      "plot_id": "F0015-P01",
+      "crop": "pearl_millet",
+      "area_ha": 0.065,
+      "net_return": 1017.0,
+      "cost": 1615.0,
+      "labour_pd": 3.2
+    },
+    {
+      "farmer_id": "F0016",
+      "plot_id": "F0016-P01",
+      "crop": "pearl_millet",
+      "area_ha": 1.068,
+      "net_return": 16704.0,
+      "cost": 26536.0,
+      "labour_pd": 53.4
+    },
+    {
+      "farmer_id": "F0017",
+      "plot_id": "F0017-P05",
+      "crop": "groundnut",
+      "area_ha": 3.281,
+      "net_return": 165221.0,
+      "cost": 330441.0,
+      "labour_pd": 278.9
+    },
+    {
+      "farmer_id": "F0018",
+      "plot_id": "F0018-P01",
+      "crop": "soybean",
+      "area_ha": 0.948,
+      "net_return": 17897.0,
+      "cost": 35794.0,
+      "labour_pd": 42.7
+    },
+    {
+      "farmer_id": "F0019",
+      "plot_id": "F0019-P01",
+      "crop": "pearl_millet",
+      "area_ha": 0.75,
+      "net_return": 11730.0,
+      "cost": 18635.0,
+      "labour_pd": 37.5
+    },
+    {
+      "farmer_id": "F0020",
+      "plot_id": "F0020-P01",
+      "crop": "maize",
+      "area_ha": 1.715,
+      "net_return": 44853.0,
+      "cost": 75828.0,
+      "labour_pd": 111.5
+    }
+  ],
+  "status": "PROVISIONAL \u2014 11-crop development run (MSP-floor price basis); NOT the final research result",
+  "final_blockers": [
+    "vegetable cost/ha and AGMARKNET market prices",
+    "operational market prices for MSP crops"
+  ]
+}

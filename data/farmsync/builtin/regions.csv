@@ -1,0 +1,6 @@
+region_id,name,dominant_soil,rainfall_regime,irrigation_propensity,synthetic
+R1,Indo-Gangetic Plain,alluvial,moderate,0.75,True
+R2,Deccan Plateau,black,low,0.4,True
+R3,Eastern Delta,alluvial,high,0.55,True
+R4,Semi-arid West,sandy,low,0.3,True
+R5,Southern Peninsula,red,moderate,0.5,True

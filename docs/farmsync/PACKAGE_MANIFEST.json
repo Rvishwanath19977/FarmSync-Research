@@ -1,0 +1,1459 @@
+{
+  "package_identifier": "farmsync-phase7-integration-2026-08-19",
+  "package_filename": "farmsync_phase7_askvish_integration.zip",
+  "generated": "2026-08-19",
+  "master_seed": 20260812,
+  "schema_version": "farmsync-farmer-request-v1",
+  "prompt_version": "p7-parse-v1",
+  "p7_case_set_hash": "9b408d5d013ac284",
+  "dataset_hash": "9984aa9948740c06",
+  "instance_hash": "5ea24037c2d9cb6a",
+  "solver": "pulp==3.3.2 (CBC 2.10.3)",
+  "n_files": 168,
+  "note": "manifest excludes itself; ZIP SHA256 in final report",
+  "files": [
+    {
+      "relative_path": "app.py",
+      "filename": "app.py",
+      "size_bytes": 87889,
+      "sha256": "effa468294cf08d82ca05726168e7f9cb3908e358212af528e03bbcd19afdd8b",
+      "category": "INTEGRATION",
+      "status": "UPDATED_EXISTING"
+    },
+    {
+      "relative_path": "data/farmsync/builtin/climate_scenarios.csv",
+      "filename": "climate_scenarios.csv",
+      "size_bytes": 4058,
+      "sha256": "434621377a3e2c84a0a4e172720c72e67ed8fb4398999dd9ea0c5e6ee65202cd",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/builtin/collectives.csv",
+      "filename": "collectives.csv",
+      "size_bytes": 996,
+      "sha256": "fe6be2032af292051dc08ea643e2d341365c6ea0e485863ab79de05fe4a9cc34",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/builtin/crop_region_season_params.csv",
+      "filename": "crop_region_season_params.csv",
+      "size_bytes": 15091,
+      "sha256": "3db64adbefc30c5c4d840c8a80e8f32a10b180f93b1c9b3ab3650ab5046fe907",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/builtin/crops.csv",
+      "filename": "crops.csv",
+      "size_bytes": 702,
+      "sha256": "69f9ae15dd9b8c8d87490f2f9dedca3b1279256e437c7319d3e8a5c016f1fb31",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/builtin/dataset_dictionary.csv",
+      "filename": "dataset_dictionary.csv",
+      "size_bytes": 910,
+      "sha256": "86eb9db4565406294ed535f0621d33f4428f2c1ef407f1509107778f369145bd",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/builtin/farmer_preferences.csv",
+      "filename": "farmer_preferences.csv",
+      "size_bytes": 77,
+      "sha256": "7a6b107e2fea3aa7a1b84c8bed7d94cd856d0f16dca3f5ea12f4904ac21447dd",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/builtin/farmers.csv",
+      "filename": "farmers.csv",
+      "size_bytes": 42855,
+      "sha256": "c02753913130a7067d0e05e97552694f2327359facd947090502171f0841e1ab",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/builtin/hazard_zones.csv",
+      "filename": "hazard_zones.csv",
+      "size_bytes": 247,
+      "sha256": "fc991f6bdb976ec25daf197e5ec685f7d58ac74382654442556180df40fd2e5e",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/builtin/market_scenarios.csv",
+      "filename": "market_scenarios.csv",
+      "size_bytes": 71,
+      "sha256": "d0abfc2ca6c097755e7737cb0797c43e7335041107380a2588cf842d586553f8",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/builtin/parameter_provenance.csv",
+      "filename": "parameter_provenance.csv",
+      "size_bytes": 56850,
+      "sha256": "26ab8d944623cdda0f85014bda9f44c593238a07222b0b19f117ca7e18cb6630",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/builtin/participation_scenarios.csv",
+      "filename": "participation_scenarios.csv",
+      "size_bytes": 231,
+      "sha256": "d5c6e0901bf099ceea20bbb9ed1a78d7a55817eb92dd98963da0d52c308f06af",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/builtin/plot_crop_suitability.csv",
+      "filename": "plot_crop_suitability.csv",
+      "size_bytes": 38,
+      "sha256": "1df63a4cafade73f01b2f588a64ae714d123ca699df750f66a2dd6b08de9d653",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/builtin/plots.csv",
+      "filename": "plots.csv",
+      "size_bytes": 105238,
+      "sha256": "fe6dc8d110c80511a06c2e9f6a3be83c4383ae89164590b19397c227aec76963",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/builtin/regions.csv",
+      "filename": "regions.csv",
+      "size_bytes": 293,
+      "sha256": "e81061eaca993d692d8109a3036dab834d5e5a543f51f1ae04a34a10f06536c7",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/processed/absorption_proxy.csv",
+      "filename": "absorption_proxy.csv",
+      "size_bytes": 1450,
+      "sha256": "ab6b2dcc8927a63af8af73755c65d8021d32e9378a2f18b8e5c624301b318683",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "PROCESSED_DERIVATIVE"
+    },
+    {
+      "relative_path": "data/farmsync/processed/arrivals_state.csv",
+      "filename": "arrivals_state.csv",
+      "size_bytes": 1897,
+      "sha256": "de650f64a6b0395b5545f35d3f2b4db114d793937027305e6c4e7be7467efc5d",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "PROCESSED_DERIVATIVE"
+    },
+    {
+      "relative_path": "data/farmsync/processed/cost_state.csv",
+      "filename": "cost_state.csv",
+      "size_bytes": 7816,
+      "sha256": "bc013de7874db1023e6c2c297d59f37486bb269a3790ec4c32c5afe2e2192386",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "PROCESSED_DERIVATIVE"
+    },
+    {
+      "relative_path": "data/farmsync/processed/market_price_state.csv",
+      "filename": "market_price_state.csv",
+      "size_bytes": 11013,
+      "sha256": "89f39fb0fc8a20325e8ab0a45b0c548c97871ceb7e2e9ad5ece66e4ac35399b4",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "PROCESSED_DERIVATIVE"
+    },
+    {
+      "relative_path": "data/farmsync/processed/source_manifest.json",
+      "filename": "source_manifest.json",
+      "size_bytes": 2289,
+      "sha256": "064fd558267cecdd101cd523c74d02c73944df222b55374893aab60309d3ba63",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "PROCESSED_DERIVATIVE"
+    },
+    {
+      "relative_path": "data/farmsync/processed/yield_state.csv",
+      "filename": "yield_state.csv",
+      "size_bytes": 11235,
+      "sha256": "d0018c46171b6c30f7a6c2278e411d0a99c7b9636a4397d89922717c875792ae",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "PROCESSED_DERIVATIVE"
+    },
+    {
+      "relative_path": "data/farmsync/raw_sources/SHA256SUMS.txt",
+      "filename": "SHA256SUMS.txt",
+      "size_bytes": 1119,
+      "sha256": "cc271fdd594451b2d0dd0fd1f5fb1de19bd5ab4743a11d595e82d012842bb657",
+      "category": "RAW_SOURCE",
+      "status": "RAW_SOURCE",
+      "provenance_role": "ORIGINAL_SOURCE"
+    },
+    {
+      "relative_path": "data/farmsync/raw_sources/agmarknet/All_Type_of_Report__All_Grades__14-08-2026_02-49-13_PM.csv",
+      "filename": "All_Type_of_Report__All_Grades__14-08-2026_02-49-13_PM.csv",
+      "size_bytes": 345654,
+      "sha256": "aa3c30277710f5152e4247814f4d3911764a9425a163933e5bda5f727442df5f",
+      "category": "RAW_SOURCE",
+      "status": "RAW_SOURCE",
+      "provenance_role": "ORIGINAL_SOURCE"
+    },
+    {
+      "relative_path": "data/farmsync/raw_sources/agmarknet/All_Type_of_Report__All_Grades__14-08-2026_02-56-15_PM.csv",
+      "filename": "All_Type_of_Report__All_Grades__14-08-2026_02-56-15_PM.csv",
+      "size_bytes": 536816,
+      "sha256": "b6f4b401cc536fb677c3ba6d26957dd88412537261f1192c2fbaa9cc5d318d4c",
+      "category": "RAW_SOURCE",
+      "status": "RAW_SOURCE",
+      "provenance_role": "ORIGINAL_SOURCE"
+    },
+    {
+      "relative_path": "data/farmsync/raw_sources/agmarknet/All_Type_of_Report__All_Grades__14-08-2026_03-01-10_PM.csv",
+      "filename": "All_Type_of_Report__All_Grades__14-08-2026_03-01-10_PM.csv",
+      "size_bytes": 274908,
+      "sha256": "9b177688e32685181f66df23742f62e91d0624accad5ad522d6e90c765ed6d01",
+      "category": "RAW_SOURCE",
+      "status": "RAW_SOURCE",
+      "provenance_role": "ORIGINAL_SOURCE"
+    },
+    {
+      "relative_path": "data/farmsync/raw_sources/agmarknet/All_Type_of_Report__All_Grades__14-08-2026_03-03-54_PM.csv",
+      "filename": "All_Type_of_Report__All_Grades__14-08-2026_03-03-54_PM.csv",
+      "size_bytes": 43030,
+      "sha256": "758e970e07e4c4894ab340589f0a1b34b923789f4dee6dcea1545f53403a770f",
+      "category": "RAW_SOURCE",
+      "status": "RAW_SOURCE",
+      "provenance_role": "ORIGINAL_SOURCE"
+    },
+    {
+      "relative_path": "data/farmsync/raw_sources/agmarknet/All_Type_of_Report__All_Grades__14-08-2026_06-19-55_PM.csv",
+      "filename": "All_Type_of_Report__All_Grades__14-08-2026_06-19-55_PM.csv",
+      "size_bytes": 226859,
+      "sha256": "4d8a1c584885d20c37f3af4d1702ac80202370fda26c50efef2d854602428e29",
+      "category": "RAW_SOURCE",
+      "status": "RAW_SOURCE",
+      "provenance_role": "ORIGINAL_SOURCE"
+    },
+    {
+      "relative_path": "data/farmsync/raw_sources/cost_of_cultivation/Cost_of_Cultivation_codebook.xlsx",
+      "filename": "Cost_of_Cultivation_codebook.xlsx",
+      "size_bytes": 36058,
+      "sha256": "74f74ea6396f9a0aad786f311a992e4f0e67d017e8413bfee6fd4340fcfe913b",
+      "category": "RAW_SOURCE",
+      "status": "RAW_SOURCE",
+      "provenance_role": "ORIGINAL_SOURCE"
+    },
+    {
+      "relative_path": "data/farmsync/raw_sources/cost_of_cultivation/cost-of-cultivation.csv",
+      "filename": "cost-of-cultivation.csv",
+      "size_bytes": 1673840,
+      "sha256": "8419c53ce27e4cfe05de6fd18a2f9d195b530ee72f792e67df7a6a1f56f0f945",
+      "category": "RAW_SOURCE",
+      "status": "RAW_SOURCE",
+      "provenance_role": "ORIGINAL_SOURCE"
+    },
+    {
+      "relative_path": "data/farmsync/raw_sources/des_apy/horizontal_crop_vertical_year_report.xls",
+      "filename": "horizontal_crop_vertical_year_report.xls",
+      "size_bytes": 28733402,
+      "sha256": "77f9de2764334885e419fa3a20cab5ba7e2b460ab00e92bcc157a07a8ec74566",
+      "category": "RAW_SOURCE",
+      "status": "RAW_SOURCE",
+      "provenance_role": "ORIGINAL_SOURCE"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/_manifest.json",
+      "filename": "_manifest.json",
+      "size_bytes": 866,
+      "sha256": "259abf6c244aa2f5a5ff9f3ec939f4747e242286ee191ac07167cf02ee772777",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/climate_scenarios.csv",
+      "filename": "climate_scenarios.csv",
+      "size_bytes": 4058,
+      "sha256": "434621377a3e2c84a0a4e172720c72e67ed8fb4398999dd9ea0c5e6ee65202cd",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/collectives.csv",
+      "filename": "collectives.csv",
+      "size_bytes": 996,
+      "sha256": "fe6be2032af292051dc08ea643e2d341365c6ea0e485863ab79de05fe4a9cc34",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/crop_region_season_params.csv",
+      "filename": "crop_region_season_params.csv",
+      "size_bytes": 15091,
+      "sha256": "3db64adbefc30c5c4d840c8a80e8f32a10b180f93b1c9b3ab3650ab5046fe907",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/crops.csv",
+      "filename": "crops.csv",
+      "size_bytes": 702,
+      "sha256": "69f9ae15dd9b8c8d87490f2f9dedca3b1279256e437c7319d3e8a5c016f1fb31",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/dataset_dictionary.csv",
+      "filename": "dataset_dictionary.csv",
+      "size_bytes": 910,
+      "sha256": "86eb9db4565406294ed535f0621d33f4428f2c1ef407f1509107778f369145bd",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/farmer_preferences.csv",
+      "filename": "farmer_preferences.csv",
+      "size_bytes": 77,
+      "sha256": "7a6b107e2fea3aa7a1b84c8bed7d94cd856d0f16dca3f5ea12f4904ac21447dd",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/farmers.csv",
+      "filename": "farmers.csv",
+      "size_bytes": 42855,
+      "sha256": "c02753913130a7067d0e05e97552694f2327359facd947090502171f0841e1ab",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/hazard_zones.csv",
+      "filename": "hazard_zones.csv",
+      "size_bytes": 247,
+      "sha256": "fc991f6bdb976ec25daf197e5ec685f7d58ac74382654442556180df40fd2e5e",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/market_scenarios.csv",
+      "filename": "market_scenarios.csv",
+      "size_bytes": 71,
+      "sha256": "d0abfc2ca6c097755e7737cb0797c43e7335041107380a2588cf842d586553f8",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/parameter_provenance.csv",
+      "filename": "parameter_provenance.csv",
+      "size_bytes": 56850,
+      "sha256": "26ab8d944623cdda0f85014bda9f44c593238a07222b0b19f117ca7e18cb6630",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/participation_scenarios.csv",
+      "filename": "participation_scenarios.csv",
+      "size_bytes": 231,
+      "sha256": "d5c6e0901bf099ceea20bbb9ed1a78d7a55817eb92dd98963da0d52c308f06af",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/plot_crop_suitability.csv",
+      "filename": "plot_crop_suitability.csv",
+      "size_bytes": 38,
+      "sha256": "1df63a4cafade73f01b2f588a64ae714d123ca699df750f66a2dd6b08de9d653",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/plots.csv",
+      "filename": "plots.csv",
+      "size_bytes": 105238,
+      "sha256": "fe6dc8d110c80511a06c2e9f6a3be83c4383ae89164590b19397c227aec76963",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "data/farmsync/snapshots/farmsync-20260813115640-72a0cfde14c8375c/regions.csv",
+      "filename": "regions.csv",
+      "size_bytes": 293,
+      "sha256": "e81061eaca993d692d8109a3036dab834d5e5a543f51f1ae04a34a10f06536c7",
+      "category": "DATA",
+      "status": "DATA",
+      "provenance_role": "SYNTHETIC"
+    },
+    {
+      "relative_path": "docs/farmsync/INTEGRATION_README.md",
+      "filename": "INTEGRATION_README.md",
+      "size_bytes": 4923,
+      "sha256": "96e6c0ff1ec7c4cc131dea9e26727a91a93f49cddc74fc706a5b4ef0f75573aa",
+      "category": "DOC",
+      "status": "DOC"
+    },
+    {
+      "relative_path": "docs/farmsync/POST_COPY_COMMANDS.txt",
+      "filename": "POST_COPY_COMMANDS.txt",
+      "size_bytes": 2307,
+      "sha256": "fd27eb2ebe807b4ed6e58e184e95003e31f3e7d5bef5bb78d257542a46cdfb13",
+      "category": "DOC",
+      "status": "DOC"
+    },
+    {
+      "relative_path": "docs/farmsync/PROGRESS.md",
+      "filename": "PROGRESS.md",
+      "size_bytes": 126649,
+      "sha256": "d1b3f9d0d080691aeb89234d49f366b59a696aecf019c55373240ab082b22390",
+      "category": "DOC",
+      "status": "DOC"
+    },
+    {
+      "relative_path": "docs/farmsync/RAW_SOURCE_AUDIT.md",
+      "filename": "RAW_SOURCE_AUDIT.md",
+      "size_bytes": 2494,
+      "sha256": "712797a3376e81585bc639632b1605ae41fbc3a0a057cce08912b49c5bc9057c",
+      "category": "DOC",
+      "status": "DOC"
+    },
+    {
+      "relative_path": "docs/farmsync/REQUIREMENTS_DIFF.md",
+      "filename": "REQUIREMENTS_DIFF.md",
+      "size_bytes": 1499,
+      "sha256": "a5a7a357d0bdd2b5b6cdc402a0c31a52c593ca12f610e0f2f56ff7887ffb27c5",
+      "category": "DOC",
+      "status": "DOC"
+    },
+    {
+      "relative_path": "docs/farmsync/TREE.txt",
+      "filename": "TREE.txt",
+      "size_bytes": 11639,
+      "sha256": "f51463b0bb75c37ddc04d25755c049b5ca4b89a6422ea9904bf861ff7d5f75aa",
+      "category": "DOC",
+      "status": "DOC"
+    },
+    {
+      "relative_path": "farmsync/__init__.py",
+      "filename": "__init__.py",
+      "size_bytes": 1110,
+      "sha256": "43e42dca8b1fe18f714a7cf081053fef52b09e003ef466ca1870ded35d45aae3",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/baselines.py",
+      "filename": "baselines.py",
+      "size_bytes": 15113,
+      "sha256": "ab4773a35070bb709308aeaa59c65ef2e98eb1d30265a776f84d0608541c5665",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/build_builtin_dataset.py",
+      "filename": "build_builtin_dataset.py",
+      "size_bytes": 9863,
+      "sha256": "eb4fb261432dc23684d7f109b0bda6a74160a09840d5d8d0ff8a659e4cc0b84e",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/climate.py",
+      "filename": "climate.py",
+      "size_bytes": 10885,
+      "sha256": "b6607c4f3a6c0bcef80055f5f24677b76d5b85b4fdec83b700fde39e2beb8b30",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/config.py",
+      "filename": "config.py",
+      "size_bytes": 1832,
+      "sha256": "d4b3202a209df17833687cb84d5a8a1723c9e174f7430cd8a4350e6093af52f2",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/crop_agronomy.py",
+      "filename": "crop_agronomy.py",
+      "size_bytes": 4280,
+      "sha256": "86cdcd850d8328a6432cdc4ea58a8c14f03199ae384c3935b09bccc61ba697e3",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/crop_economics.py",
+      "filename": "crop_economics.py",
+      "size_bytes": 7035,
+      "sha256": "531eb279c06de9e2ddaf500184511e726d60c0e9a559b98107611d53138de866",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/crop_water.py",
+      "filename": "crop_water.py",
+      "size_bytes": 9783,
+      "sha256": "9e343562d8444f0f16622a6ccebb14698929de92ba88b8ac18828095c4d02ae2",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/crop_yield.py",
+      "filename": "crop_yield.py",
+      "size_bytes": 10389,
+      "sha256": "8b65ff662abc038f569583d4c2888456bcf8dca161db7f6163b8c253ab20cbd4",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/dataset_manager.py",
+      "filename": "dataset_manager.py",
+      "size_bytes": 16740,
+      "sha256": "2704d367bc6187fa1ef565a2f339f4c95586775f231d478eb11ff054e21c3b4a",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/experiment.py",
+      "filename": "experiment.py",
+      "size_bytes": 4214,
+      "sha256": "ca409d9bcaf8d292e650694890c8c2e273379b2f98cf67dacfd7ef2bc38cb977",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/fairness.py",
+      "filename": "fairness.py",
+      "size_bytes": 4283,
+      "sha256": "a89061d9fe364556b7b7f5ece256c21c1648645f226de90a64524e705cad15b7",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/feasibility.py",
+      "filename": "feasibility.py",
+      "size_bytes": 11765,
+      "sha256": "425eb8288daa55eb42140143feca840da586805b8f32b74e339a8a405d3befd5",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/generate.py",
+      "filename": "generate.py",
+      "size_bytes": 16228,
+      "sha256": "dbaa11e4a4684199d9d5f329393ce4bddc7fadd1af86b56de45ee43210c9ab85",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/ilp_reference.py",
+      "filename": "ilp_reference.py",
+      "size_bytes": 14895,
+      "sha256": "987c2dd1e1386b8c12bf70660a5fa3764681910d53620de79c7a4c43573ff165",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/ingest/__init__.py",
+      "filename": "__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/ingest/commodity_map.py",
+      "filename": "commodity_map.py",
+      "size_bytes": 3735,
+      "sha256": "83e24a138d9ebd167dad9ba99de2c28f6d6c057d51a6f7f1e63ab10fc664e044",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/ingest/operational.py",
+      "filename": "operational.py",
+      "size_bytes": 4068,
+      "sha256": "0ea58a0cdc2c255fec7327783ab9e8ef8c70ccf106299918b14803f71f6f13eb",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/ingest/pipeline.py",
+      "filename": "pipeline.py",
+      "size_bytes": 8717,
+      "sha256": "386240cb8b270421871d470cad77304cacface15d2b846e6191bd09c5669aede",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/ingest/run_ingest.py",
+      "filename": "run_ingest.py",
+      "size_bytes": 4392,
+      "sha256": "e897419f5c40ab106fda8ec9456750ea8772619ecda421a7cf7d2afd2675f275",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/market.py",
+      "filename": "market.py",
+      "size_bytes": 4225,
+      "sha256": "f2c32617705dcf74cf4a18d1fe6ffdffd9d3ca80cfe95e33c56ec14e18d56332",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/market_ingest.py",
+      "filename": "market_ingest.py",
+      "size_bytes": 5343,
+      "sha256": "8b057f20075737d765ef0bc8e9b15ab267267f75ae20319146105d8016554508",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/market_price.py",
+      "filename": "market_price.py",
+      "size_bytes": 4290,
+      "sha256": "30197ea61b64390765f8db0b2cfebf7a43e16446fd1e1a59499eed702fc9c50e",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/parameters.py",
+      "filename": "parameters.py",
+      "size_bytes": 4368,
+      "sha256": "220e620933844b07c2b1c067361ffb6df5f36f6d5a7d5f2dced14f950048dac0",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/planning.py",
+      "filename": "planning.py",
+      "size_bytes": 9606,
+      "sha256": "47b1520826918e2d8955f3f6a602fbc5a73ca6582c0e189656b4729b880bb63d",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/proposed/__init__.py",
+      "filename": "__init__.py",
+      "size_bytes": 224,
+      "sha256": "cbbe0a8ae3a623d3dd6ecfcc21ea1fe704b93ae48d8d2f2f70fbd07903abc0ef",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/proposed/commitment.py",
+      "filename": "commitment.py",
+      "size_bytes": 8243,
+      "sha256": "6458de26c085d70450ea2f8dae0c604d314107c1219b835d3bf7fa3453b95ce6",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/proposed/concentration.py",
+      "filename": "concentration.py",
+      "size_bytes": 9914,
+      "sha256": "deb17db7172163cf3e0d4d038f9623b2345abe8e38e5e5b50ee5732351ec8c4e",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/proposed/llm_eval.py",
+      "filename": "llm_eval.py",
+      "size_bytes": 9958,
+      "sha256": "a762c87867eeeea4870e01d2fe1f74c3a8355e2992fad2340d84fb74ba671e52",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/proposed/llm_interaction.py",
+      "filename": "llm_interaction.py",
+      "size_bytes": 28321,
+      "sha256": "fae310b52234f0a574a3691c511f31308956473a0240a3335feb6298dbed698b",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/proposed/participation.py",
+      "filename": "participation.py",
+      "size_bytes": 3630,
+      "sha256": "e3e480b9c254f5684cdd4f250d3e2575cbf0f23283d72b92eb445ecab627c0b6",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/proposed/pipeline.py",
+      "filename": "pipeline.py",
+      "size_bytes": 19713,
+      "sha256": "63d56464d3119b43d16f2e8ca56016a51a93c419a08d7dac15e7ab54dda59ab3",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/proposed/reoptimize.py",
+      "filename": "reoptimize.py",
+      "size_bytes": 12117,
+      "sha256": "61d96a63df0d31ca9626a2b5c4f981e30adcd76a2bb33df423e57f6aa30f03a3",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/proposed/resilience.py",
+      "filename": "resilience.py",
+      "size_bytes": 7003,
+      "sha256": "c73384944be6f53b31ec138c8cd1b7a2b8bef633871838f0a89542c7a79cd7bf",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/provenance.py",
+      "filename": "provenance.py",
+      "size_bytes": 4952,
+      "sha256": "ca9ace3485b77abbc8769412cec5c3a360ac5b86ae79bc6c31c0d5aadf893aaa",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/quality.py",
+      "filename": "quality.py",
+      "size_bytes": 3255,
+      "sha256": "c9c0c4fbcfb5cdf53b9defe119e2f513a33111507dd27f0360d1bb2d8c5e69f8",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/schemas.py",
+      "filename": "schemas.py",
+      "size_bytes": 6736,
+      "sha256": "8c9120c84b92c47fabc00d5436ffd2ee5dbcecb159fa30fc7de7e78458185f36",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync/sourcing_report.py",
+      "filename": "sourcing_report.py",
+      "size_bytes": 4799,
+      "sha256": "eb1dae3ea2546a747725626712f058262b8e88a10c37e22a803a4f3b0432da8f",
+      "category": "FARMSYNC_CODE",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "farmsync_routes.py",
+      "filename": "farmsync_routes.py",
+      "size_bytes": 8376,
+      "sha256": "c79626ce0aaaaae5ae2d56faef811c75e3b2dd5821e5ba924230ef585399027d",
+      "category": "INTEGRATION",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "requirements.txt",
+      "filename": "requirements.txt",
+      "size_bytes": 823,
+      "sha256": "12282e9a83039acf8e4da547d508c9d4bd9ffeca1ab0ed51bf2008968042de45",
+      "category": "INTEGRATION",
+      "status": "UPDATED_EXISTING"
+    },
+    {
+      "relative_path": "results/farmsync/audit/audit_results.json",
+      "filename": "audit_results.json",
+      "size_bytes": 1170,
+      "sha256": "6dfc56eaae6a1ea25b43b32abc68ae4be44e895752ed56557d76db90ecb33cb9",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/audit/b3_epsilon_frontier.json",
+      "filename": "b3_epsilon_frontier.json",
+      "size_bytes": 1122,
+      "sha256": "d2a5dd54da69386283293991f9ae091dac2b9a3c7f9832b4dc4f183eff5c3ff0",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/audit/experiment_manifest.json",
+      "filename": "experiment_manifest.json",
+      "size_bytes": 2342,
+      "sha256": "e92d6db3fcd316fde7c9a9c24cd62980c771e55bc6eebe5692269f289b83d4f8",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/audit/experiment_runs.json",
+      "filename": "experiment_runs.json",
+      "size_bytes": 14794,
+      "sha256": "de1589abfea6a0b6ce0b6fa39ab25e5f9614c44e6db342abb25a26dde08ffdcb",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/audit/replication_seeds.json",
+      "filename": "replication_seeds.json",
+      "size_bytes": 647,
+      "sha256": "7224b558c8afc0071152f0b9d3bcc4d9972452f52a480ef333233facc981bf40",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/audit/rng_streams.json",
+      "filename": "rng_streams.json",
+      "size_bytes": 6577,
+      "sha256": "3bd23959a9e93e0fdf87c580c9a0c9f140de5a9889f28b859144862f4c257ec9",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b1_budget_sensitivity.json",
+      "filename": "b1_budget_sensitivity.json",
+      "size_bytes": 631,
+      "sha256": "4569a38593aebef33956394df7fbeec9a8b12db7e2e8efb8673b9ef31dc04595",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b1_final.json",
+      "filename": "b1_final.json",
+      "size_bytes": 860,
+      "sha256": "83c982a3ff5a314d5999e728c1fe8849cfe8cd75576b511fb66e42cc42fb495d",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b1_final_allocations.csv",
+      "filename": "b1_final_allocations.csv",
+      "size_bytes": 19455,
+      "sha256": "c50dd915d48a9e39ae90c87ab6c8650317793223d32b0de1cf1708ab5afd5e05",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b1_ilp_v2.json",
+      "filename": "b1_ilp_v2.json",
+      "size_bytes": 2238,
+      "sha256": "009d89e6fecd31cb0f38c949911f5fd96218bfe4230427ae11e4d825f0a7f06e",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b1_ilp_v2_allocations.csv",
+      "filename": "b1_ilp_v2_allocations.csv",
+      "size_bytes": 20997,
+      "sha256": "f131de880d61d2da099bdd65e000f3cffd181f74a19a6adad5514dfef1e70662",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b1_provisional_11crop.json",
+      "filename": "b1_provisional_11crop.json",
+      "size_bytes": 4821,
+      "sha256": "e5eb238e4391148a9ce8099fc09e6af4e16eebdc4d7cc1dfd48add51f7feecc5",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b1_provisional_11crop_allocations.csv",
+      "filename": "b1_provisional_11crop_allocations.csv",
+      "size_bytes": 26701,
+      "sha256": "2371c22af7a84903c42e538caede6a4486d4c4e94512aa7ab08f62a3544267d1",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b2_final.json",
+      "filename": "b2_final.json",
+      "size_bytes": 919,
+      "sha256": "764885e9115823681f1308c32e1e50028b131fd932e8a5d7d7cbef96d9078bc6",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b2_final_allocations.csv",
+      "filename": "b2_final_allocations.csv",
+      "size_bytes": 19817,
+      "sha256": "65327d20996a453d77acef17e4ebd749e9dd68d3bd7a437bde2a0533d509bcfb",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b2_ilp_v2.json",
+      "filename": "b2_ilp_v2.json",
+      "size_bytes": 2245,
+      "sha256": "6a52c4814b4c37891c8e46fb0611682acf745ea2e6e1c44ee4aead591d360c4a",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b2_ilp_v2_allocations.csv",
+      "filename": "b2_ilp_v2_allocations.csv",
+      "size_bytes": 21150,
+      "sha256": "847b90596873991c4b2aca96e93e36e04041b0a3ff63674f07cd03b07613bdc8",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b3_final.json",
+      "filename": "b3_final.json",
+      "size_bytes": 860,
+      "sha256": "1c94153097688ea10b158131001db64ee66b2f90e72a4b429b775617d3415c90",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b3_final_allocations.csv",
+      "filename": "b3_final_allocations.csv",
+      "size_bytes": 20367,
+      "sha256": "77d9fcd5661fbfca7b969efb191a4d119d3aa45e4c85a74c351a405d0a1e76b8",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b3_ilp_v2.json",
+      "filename": "b3_ilp_v2.json",
+      "size_bytes": 2388,
+      "sha256": "4e1b604ac6df92a2ff39fb5e7be537b799e5226cae8d083ffb87692933e3804c",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/b3_ilp_v2_allocations.csv",
+      "filename": "b3_ilp_v2_allocations.csv",
+      "size_bytes": 20108,
+      "sha256": "23f19e830f3da5c67a82b40125e8c9360492f66cb6f789b409903fd97be9eb0c",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/baseline_comparison.json",
+      "filename": "baseline_comparison.json",
+      "size_bytes": 985,
+      "sha256": "7292244f0fc30f448ba45f3bd9ec732de66297388b07b7bb155b6b63cad32f48",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/baseline_comparison_ilp_v2.json",
+      "filename": "baseline_comparison_ilp_v2.json",
+      "size_bytes": 726,
+      "sha256": "826e3cdcdc50da9f3507204af7f25242c7347bec18c2ed7a43a8b0050fe26a37",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/gate_report_final.json",
+      "filename": "gate_report_final.json",
+      "size_bytes": 14550,
+      "sha256": "9f81463dd4c127a5caa940f873853d23b89d4f98ab4901fd103a6de4e2a606f7",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p1_participation_offers.csv",
+      "filename": "p1_participation_offers.csv",
+      "size_bytes": 59216,
+      "sha256": "45fc35e0b860c964b2c7547192cc52a73fea777db11e94dffd2f25b33413e782",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p1_participation_realised_allocations.csv",
+      "filename": "p1_participation_realised_allocations.csv",
+      "size_bytes": 17461,
+      "sha256": "4a2ef2b1242513935a544e6813299e441aea51f17afe9d97deaa8d0d88e0344e",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p1_participation_result.json",
+      "filename": "p1_participation_result.json",
+      "size_bytes": 4208,
+      "sha256": "54e38b9288d18ccd294edfef895aa52704f61aa1b28669287c3f74b581b49f60",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p2_commitment_result.json",
+      "filename": "p2_commitment_result.json",
+      "size_bytes": 3409,
+      "sha256": "d67ac99f4564cdfb19b4890a6414ae115490f8dd252ca9585b7385ceefcb3399",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p2_commitment_timeline.csv",
+      "filename": "p2_commitment_timeline.csv",
+      "size_bytes": 244725,
+      "sha256": "f0b949e4e7cbc175bd0c9d1bce6215c5a01654529d2dc3d7e7c2c885e47ad5e1",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p2_lock_snapshot.csv",
+      "filename": "p2_lock_snapshot.csv",
+      "size_bytes": 20009,
+      "sha256": "b55d182f06f11f83257f394d5cf9d089ea72d4a5b3cd513b3fdc43a523482985",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p3_lambda_frontier.csv",
+      "filename": "p3_lambda_frontier.csv",
+      "size_bytes": 622,
+      "sha256": "eb42a57325dc3ff20c48aaacd520fca38ea647cb24c8f33d1adf0b11eed70ce0",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p3_reopt_result.json",
+      "filename": "p3_reopt_result.json",
+      "size_bytes": 5151,
+      "sha256": "cb32575a5e26b3d329a4ee1d429d6c2083e00ef1701754c7bab187dbb252b11a",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p3_revised_plan_lambda0.csv",
+      "filename": "p3_revised_plan_lambda0.csv",
+      "size_bytes": 16560,
+      "sha256": "4091c4c22389a0cbf88b61a9535ff75af3fd25cd7d11d4a52573d85328ac1cee",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p4_alpha_frontier.csv",
+      "filename": "p4_alpha_frontier.csv",
+      "size_bytes": 935,
+      "sha256": "836b7ab31155ef2213d590bcefab858090a17423178792726c2205ac51dad20e",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p4_concentration_result.json",
+      "filename": "p4_concentration_result.json",
+      "size_bytes": 14829,
+      "sha256": "8cc8b4e68b2d99d07f7d49bf4d1e0ef766ffea71c9a583c97aabc3a743ce5287",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p4_crop_concentration.csv",
+      "filename": "p4_crop_concentration.csv",
+      "size_bytes": 2067,
+      "sha256": "4c0ab12f08bbfb84442b20bd511353ef4102c474f3f894d2e16e76bf357fb3f9",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p4_revised_plan_alpha040.csv",
+      "filename": "p4_revised_plan_alpha040.csv",
+      "size_bytes": 20062,
+      "sha256": "aa5d06b9704a1111c7f50d7cf386e3464cf1b4db8f73c09dc0005da69841dfa3",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p5_backup_plan_repr_alpha040.csv",
+      "filename": "p5_backup_plan_repr_alpha040.csv",
+      "size_bytes": 30546,
+      "sha256": "bb24050907e9c75be7ac54105aedc3096ce55e7df54fa64e490d290617fa2193",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p5_hazard_scenarios.csv",
+      "filename": "p5_hazard_scenarios.csv",
+      "size_bytes": 6587,
+      "sha256": "4baab1d984a30f00b2691d83e7e9d93d7b9afe0ebacbfa7e1c91b124ff0c9346",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p5_nminus1_scenarios.csv",
+      "filename": "p5_nminus1_scenarios.csv",
+      "size_bytes": 3739,
+      "sha256": "d15809e298f8eb18cc2ecbf476df674664cb07c12176f350faa04ad8b20e5a3d",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p5_nminus1_summary.csv",
+      "filename": "p5_nminus1_summary.csv",
+      "size_bytes": 617,
+      "sha256": "c2f308d70543fbc35a1c9057cdbcc91fb35f33e3e955c6964284c82c6b163255",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p5_resilience_result.json",
+      "filename": "p5_resilience_result.json",
+      "size_bytes": 11409,
+      "sha256": "38b9084a8e2da5fd95c1fe222cff84f53e0afd55e2646218dd90d2b63b044851",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p6_event_ledger.csv",
+      "filename": "p6_event_ledger.csv",
+      "size_bytes": 299468,
+      "sha256": "f154aaec0a4b80ce22ed8bba1030557ba4b9f277bf3ac31872a1ed946c959d9f",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p6_final_revised_plan.csv",
+      "filename": "p6_final_revised_plan.csv",
+      "size_bytes": 43629,
+      "sha256": "06a3b61b8859909a37295848f17818e384819577867fcd4e6befdbee87416ffb",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p6_integration_manifest.json",
+      "filename": "p6_integration_manifest.json",
+      "size_bytes": 1358,
+      "sha256": "a8bed666c449b54d640ff2b1df7987e43c8b4062727d9729951b75f26e72e079",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p6_pipeline_result.json",
+      "filename": "p6_pipeline_result.json",
+      "size_bytes": 6008,
+      "sha256": "44c34c016430a8178a5b180c3df202d20be619afbf8a5dd0b878ab14c0e78fdc",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p6_stage_summary.csv",
+      "filename": "p6_stage_summary.csv",
+      "size_bytes": 456,
+      "sha256": "c235649414ccf14fe2aafb7d9d297f928906257f7fabf306ee226782a8b50740",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p7_dev_cases.jsonl",
+      "filename": "p7_dev_cases.jsonl",
+      "size_bytes": 12081,
+      "sha256": "46a005d5089aaf9a2db4f922806ef503d3b9bd7bb8b2a1867ce639f75b2530fe",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p7_dev_metrics.json",
+      "filename": "p7_dev_metrics.json",
+      "size_bytes": 1797,
+      "sha256": "2e60041685e35c5667bbadf56dcb41dac5a879a9818658a0095aa233b52fb704",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p7_dev_predictions.jsonl",
+      "filename": "p7_dev_predictions.jsonl",
+      "size_bytes": 46208,
+      "sha256": "66efa8e0f6d41cdb6a51daf78688e249e2b7a5cf14585521ec58693b2086d634",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p7_interaction_examples.json",
+      "filename": "p7_interaction_examples.json",
+      "size_bytes": 11833,
+      "sha256": "0902268ed0122ed5f8b9b89c3eb726cbb0682cb2da35bcce974b03059fe158a7",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p7_llm_manifest.json",
+      "filename": "p7_llm_manifest.json",
+      "size_bytes": 1098,
+      "sha256": "8abef60ea4fd4e0013923cbb7c86f0044d7e123a6ca72878e3def008292e9381",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/proposed/p7_llm_schema.json",
+      "filename": "p7_llm_schema.json",
+      "size_bytes": 1248,
+      "sha256": "43de5c5c82c93cb0a2880ea2369e676d950b6a9bdc208374062c811f5a16449c",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/sourcing_report.csv",
+      "filename": "sourcing_report.csv",
+      "size_bytes": 82078,
+      "sha256": "4c39053ffef8a5d1a2b5fc603520362eb3dfba4b4d9896ee39013843a3947363",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "results/farmsync/sourcing_report.json",
+      "filename": "sourcing_report.json",
+      "size_bytes": 53868,
+      "sha256": "6cdf837121f1c48a78c67ad2837a71abbec54ae440bb23c88aa1e47043062ec4",
+      "category": "RESULT",
+      "status": "RESULT_FROZEN",
+      "provenance_role": "GENERATED_RESULT"
+    },
+    {
+      "relative_path": "scripts/p7_live_smoketest.py",
+      "filename": "p7_live_smoketest.py",
+      "size_bytes": 6485,
+      "sha256": "8b6b18b055c181f4914a4743830087a2b410fe393c3f8f63c5978e462bed2b09",
+      "category": "SCRIPT",
+      "status": "SCRIPT"
+    },
+    {
+      "relative_path": "static/css/farmsync.css",
+      "filename": "farmsync.css",
+      "size_bytes": 6491,
+      "sha256": "e474a961729a5219abbb47bee407a55d3ebf567080cae4831987779e27257ad6",
+      "category": "INTEGRATION",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "static/js/farmsync.js",
+      "filename": "farmsync.js",
+      "size_bytes": 5937,
+      "sha256": "c1d5a5a56f84db568c54ec96e2684019585299277ec55a2bbe1b5adf2de548ab",
+      "category": "INTEGRATION",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "templates/farmsync.html",
+      "filename": "farmsync.html",
+      "size_bytes": 4090,
+      "sha256": "a6157662b4faeed6b46f9f8901290bd3d3bdbf00d49189f8d5cab770e62a4da7",
+      "category": "INTEGRATION",
+      "status": "NEW"
+    },
+    {
+      "relative_path": "tests/test_farmsync_b1.py",
+      "filename": "test_farmsync_b1.py",
+      "size_bytes": 3920,
+      "sha256": "7e2534888ef3de0dd861521a395569bf158731dc7c1326e224ae06a7d4ebe64a",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_climate.py",
+      "filename": "test_farmsync_climate.py",
+      "size_bytes": 2878,
+      "sha256": "d8a18f4be8b3e4cea652ce104450ed115221150fcd53bdb9f3faeb944109b578",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_data.py",
+      "filename": "test_farmsync_data.py",
+      "size_bytes": 4365,
+      "sha256": "4b2a7aea36183714eaf15f55ed93076c88e5d32e16aa9f90c6993bed2cb0d300",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_dataset_manager.py",
+      "filename": "test_farmsync_dataset_manager.py",
+      "size_bytes": 5200,
+      "sha256": "97c24fd2c071f787712bac34fee266b33f72681bb2734f4a209a89b0684d861b",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_economics.py",
+      "filename": "test_farmsync_economics.py",
+      "size_bytes": 1663,
+      "sha256": "173e7cdd1fa617f3ad59a8819c326f1e6d71d728be9ffd9f1510f38a4b6a1d1e",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_feasibility.py",
+      "filename": "test_farmsync_feasibility.py",
+      "size_bytes": 4488,
+      "sha256": "087f4a8709cf781fb75816deb8bae516d2b6bac3eb129528e9d671978a135409",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_ilp_v2.py",
+      "filename": "test_farmsync_ilp_v2.py",
+      "size_bytes": 3791,
+      "sha256": "79f95198f37eb596787a402f4e37f4de1527f79c8a90e97f2d43122122af46c8",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_ingest.py",
+      "filename": "test_farmsync_ingest.py",
+      "size_bytes": 2891,
+      "sha256": "ab35c07a1f5b6e3c24e383f153713bb7ec207b91bb6f0e59cca81eb3709fb029",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_ingest_real.py",
+      "filename": "test_farmsync_ingest_real.py",
+      "size_bytes": 3903,
+      "sha256": "096232e3efdb13d9dd3ea4ea775ef633a1530c0db6c4855853e99229a0e63e41",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_params.py",
+      "filename": "test_farmsync_params.py",
+      "size_bytes": 2410,
+      "sha256": "254abb25262452197b2347f1690c27c544f8d52f82bc94181e44f4c14beb56de",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_proposed_p1.py",
+      "filename": "test_farmsync_proposed_p1.py",
+      "size_bytes": 5229,
+      "sha256": "87d531c6d70a4f68ee9312e13dc6142fea44ff04ec320b36a8c809f4c8dcd471",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_proposed_p2.py",
+      "filename": "test_farmsync_proposed_p2.py",
+      "size_bytes": 4537,
+      "sha256": "994827ce838c39f8e1330a9185cf087a8a4b1d38fd69243aa01bdb23497d5112",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_proposed_p3.py",
+      "filename": "test_farmsync_proposed_p3.py",
+      "size_bytes": 5689,
+      "sha256": "05bd15906c50658cc2f7b96a732cea266aa81d1f71f9525ed611a7b04840b165",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_proposed_p4.py",
+      "filename": "test_farmsync_proposed_p4.py",
+      "size_bytes": 8265,
+      "sha256": "7b575adcc87019533c7308f5599c71bb7d7b0f03ffd311acdb31668a7b8c876c",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_proposed_p5.py",
+      "filename": "test_farmsync_proposed_p5.py",
+      "size_bytes": 11125,
+      "sha256": "f37b82f92ea5c88ef1132adef0bb40beb9b7d77e498f9c5d045bf75b16e3da08",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_proposed_p6.py",
+      "filename": "test_farmsync_proposed_p6.py",
+      "size_bytes": 6716,
+      "sha256": "6791a344ad043ab88f450f9860913d5a55fce861e96003fe7e1b4e292bb24223",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_proposed_p7.py",
+      "filename": "test_farmsync_proposed_p7.py",
+      "size_bytes": 31241,
+      "sha256": "04dadec8ebcfc8303242dd74289de85a12c1a84666f9b2009da353f3d9434217",
+      "category": "TEST",
+      "status": "TEST"
+    },
+    {
+      "relative_path": "tests/test_farmsync_yield.py",
+      "filename": "test_farmsync_yield.py",
+      "size_bytes": 2741,
+      "sha256": "a3c8fe38e6bcddc90cef3757bc4e538351a53106a988504e059bb274ee6e81c1",
+      "category": "TEST",
+      "status": "TEST"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "phase": "browser",
+  "mode": "real",
+  "generated": "2026-09-09T15:45:07Z",
+  "environment": {
+    "playwright": "1.56.0",
+    "python": "3.12.8",
+    "mode": "real",
+    "requested_browsers": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "browser_versions": {
+      "playwright": "1.56.0",
+      "chromium": "141.0.7390.37",
+      "firefox": "142.0.1",
+      "webkit": "26.0"
+    },
+    "browsers_executed": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ]
+  },
+  "browsers_executed": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "required_categories": [
+    "server_lifecycle",
+    "chromium_core",
+    "firefox_core",
+    "webkit_core",
+    "chromium_cross_engine",
+    "firefox_cross_engine",
+    "webkit_cross_engine",
+    "workflow_gating",
+    "farmer_accept_ui",
+    "farmer_reject_ui",
+    "farmer_modify_ui",
+    "farmer_no_response_ui",
+    "farmer_withdraw_ui",
+    "farmer_exact_plot_binding",
+    "farmer_reset_edit_ui",
+    "farmer_askwhy_readonly",
+    "replan_ui",
+    "renewed_accept_ui",
+    "renewed_reject_ui",
+    "renewed_no_response_ui",
+    "renewed_edit_ui",
+    "renewed_exact_crop_anchor",
+    "bulk_accept_pending_only",
+    "bulk_reject_pending_only",
+    "consent_alternative_browsing",
+    "candidate_askwhy_exact_crop",
+    "current_askwhy_exact_crop",
+    "use_recommendation_all_buttons",
+    "alternative_exhaustion",
+    "return_original_branch",
+    "final_ui_accounting",
+    "final_ui_filters",
+    "final_ui_pagination",
+    "final_ui_911_traversal",
+    "analyse_reconciliation",
+    "consent_metrics_display",
+    "fairness_display",
+    "concentration_display",
+    "uncertainty_unavailable_ui",
+    "resilience_unavailable_ui",
+    "data_explorer_ui",
+    "read_only_mutation_guard",
+    "workflow_revision_guard",
+    "network",
+    "console_page_errors",
+    "no_solver_on_reads",
+    "no_live_llm",
+    "responsive_layout",
+    "accessibility_light",
+    "accessibility_dark",
+    "keyboard_navigation",
+    "dom_text_sanity",
+    "duplicate_inert_controls",
+    "browser_repeatability",
+    "visual_stability",
+    "protected_hashes",
+    "mutable_state_isolation",
+    "hard_refresh_known_limitation"
+  ],
+  "missing_required_categories": [],
+  "categories": {
+    "server_lifecycle": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "ephemeral real-mode server started on http://127.0.0.1:48930",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "server stopped deterministically (port closed after teardown)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "chromium_core": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "Home renders workflow/CTA",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "synthetic-data disclosure present",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "LLM/allocation disclosure present",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "'starts from the B3 initial planned allocation' present in DOM",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Initial Plan shows 'Plots in dataset'",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "working run created by UI",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "fresh browser-owned run re-established after isolated Farmer matrix",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "firefox_core": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "Home renders workflow/CTA",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "synthetic-data disclosure present",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "LLM/allocation disclosure present",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "'starts from the B3 initial planned allocation' present in DOM",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Initial Plan shows 'Plots in dataset'",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "working run created by UI",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "webkit_core": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "Home renders workflow/CTA",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "synthetic-data disclosure present",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "LLM/allocation disclosure present",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "'starts from the B3 initial planned allocation' present in DOM",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Initial Plan shows 'Plots in dataset'",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "working run created by UI",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "chromium_cross_engine": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "chromium: dataset/plan reachable (911)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "chromium: consent stage renders",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "chromium: candidate Ask Why names exact crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "chromium: Use -> exact revised crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "chromium: renewed consent ACCEPT click executes",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "chromium: Final filter interaction works",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "chromium: analyse reachable",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "chromium: keyboard Tab moves focus",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "chromium: no 5xx/failed",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "chromium: no console/page errors",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "chromium: no unexpected external requests (Google Fonts shell assets allowed)",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "firefox_cross_engine": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "firefox: dataset/plan reachable (911)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "firefox: consent stage renders",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "firefox: candidate Ask Why names exact crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "firefox: Use -> exact revised crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "firefox: renewed consent ACCEPT click executes",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "firefox: Final filter interaction works",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "firefox: analyse reachable",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "firefox: keyboard Tab moves focus",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "firefox: no 5xx/failed",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "firefox: no console/page errors",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "firefox: no unexpected external requests (Google Fonts shell assets allowed)",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "webkit_cross_engine": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "webkit: dataset/plan reachable (911)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "webkit: consent stage renders",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "webkit: candidate Ask Why names exact crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "webkit: Use -> exact revised crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "webkit: renewed consent ACCEPT click executes",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "webkit: Final filter interaction works",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "webkit: analyse reachable",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "webkit: keyboard Tab moves focus",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "webkit: no 5xx/failed",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "webkit: no console/page errors",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "webkit: no unexpected external requests (Google Fonts shell assets allowed)",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "workflow_gating": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "consent stage locked before prerequisites",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "final stage locked before prerequisites",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "fairness stage locked before prerequisites",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "hash #final does not bypass into a finalised view",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "hash bypass attempt did not mutate state",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "farmer_accept_ui": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "ACCEPT: exact farmer+plot row found (F0005/F0005-P01)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "ACCEPT: working_response==ACCEPT",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "ACCEPT: response_rev increments on real UI change",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "farmer_reject_ui": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "REJECT: exact farmer+plot row found (F0005/F0005-P01)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "REJECT: working_response==REJECT",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "REJECT: response_rev increments on real UI change",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "farmer_modify_ui": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "MODIFY via Farmer AI Use -> working_response==MODIFY",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "MODIFY requested_crop persists == maize",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "MODIFY via UI increments response_rev",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "farmer_no_response_ui": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "NO_RESPONSE: exact farmer+plot row found (F0005/F0005-P01)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "NO_RESPONSE: working_response==NO_RESPONSE",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "NO_RESPONSE: response_rev increments on real UI change",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "farmer_withdraw_ui": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "WITHDRAW: exact farmer+plot row found (F0005/F0005-P01)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "WITHDRAW: working_response==WITHDRAW",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "WITHDRAW: response_rev increments on real UI change",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "farmer_exact_plot_binding": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "ACCEPT: SAME-FARMER sibling F0005/F0005-P02 unchanged",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "REJECT: SAME-FARMER sibling F0005/F0005-P02 unchanged",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "NO_RESPONSE: SAME-FARMER sibling F0005/F0005-P02 unchanged",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "WITHDRAW: SAME-FARMER sibling F0005/F0005-P02 unchanged",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "farmer_reset_edit_ui": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "#wpReset restores recorded state (working_response cleared)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "farmer_askwhy_readonly": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "Farmer Ask Why UI is read-only",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Farmer Ask Why explains exact candidate crop maize",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "replan_ui": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "explicit Run Replan sets replan_current",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "renewed_accept_ui": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "UI ACCEPT -> renewed_response==ACCEPT",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "renewed_reject_ui": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "UI REJECT -> renewed_response==REJECT",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "renewed_no_response_ui": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "UI NO_RESPONSE -> renewed_response==NO_RESPONSE",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "renewed_edit_ui": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "edit-response control present and re-opens a resolved row",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "renewed_exact_crop_anchor": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "ACCEPT consent_for_crop==exact revised crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "ACCEPT consent_for_replan_anchor==current anchor",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "REJECT consent_for_crop==exact revised crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "REJECT consent_for_replan_anchor==current anchor",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "NO_RESPONSE consent_for_crop==exact revised crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "NO_RESPONSE consent_for_replan_anchor==current anchor",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "bulk_accept_pending_only": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "bulk ACCEPT preserves existing REJECT",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "bulk ACCEPT preserves existing NO_RESPONSE",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "bulk ACCEPT sets only pending -> ACCEPT",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "bulk_reject_pending_only": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "bulk REJECT preserves existing ACCEPT (pending-only)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "consent_alternative_browsing": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "explore renders a candidate",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "candidate != current revised crop (maize vs groundnut)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "candidate_askwhy_exact_crop": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "candidate Ask Why host names exact candidate crop (maize)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "candidate Ask Why did not substitute current revised crop",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "current_askwhy_exact_crop": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "current Ask Why host names exact current revised crop (groundnut)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "use_recommendation_all_buttons": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "at least one Use candidate discovered (4)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Use[maize] -> revised_crop == exact crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Use[maize] clears renewed_response (choosing != consent)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Use[maize] clears crop+anchor consent -> PENDING",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Use[soybean] -> revised_crop == exact crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Use[soybean] clears renewed_response (choosing != consent)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Use[soybean] clears crop+anchor consent -> PENDING",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Use[pearl_millet] -> revised_crop == exact crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Use[pearl_millet] clears renewed_response (choosing != consent)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Use[pearl_millet] clears crop+anchor consent -> PENDING",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Use[sorghum] -> revised_crop == exact crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Use[sorghum] clears renewed_response (choosing != consent)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Use[sorghum] clears crop+anchor consent -> PENDING",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "EVERY discovered Use handler exercised in isolation (4/4)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "alternative_exhaustion": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "no duplicate candidate before exhaustion (maize)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no duplicate candidate before exhaustion (soybean)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no duplicate candidate before exhaustion (pearl_millet)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "at least one actual browse occurred (3)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "product explicitly reached exhaustion wording",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "dedicated Ask-Why host exists at exhaustion (count>0)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Review-from-beginning resets browse history (a candidate reappears)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "return_original_branch": {
+      "status": "SEMANTIC_BACKEND_COVERED",
+      "checks": [],
+      "detail": "built-in K is not browser-constructible; authoritative Phase-1 consent_original_branch fixture PASS"
+    },
+    "final_ui_accounting": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "Final shows 'Plots in dataset'",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Final shows 'Initially allocated'",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Final shows 'No initial allocation'",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Final shows 'Finally realised'",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Final shows 'Not realised'",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "Final table header 'Farmer'",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "Final table header 'Plot'",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "Final table header 'Final crop'",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "Final table header 'Consent basis'",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "Final table header 'Realised'",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "realised+not_realised==911",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "offered+no_offer==911",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "unrealised rows show em dash",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "final_ui_filters": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "default filter is Realised",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "filter 'realised' clickable",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "filter 'not_realised' clickable",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "filter 'all' clickable",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "final_ui_pagination": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "All-plots UI traversal yields exactly 911 unique plot IDs (got 911)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "filter/pagination did not mutate final revision",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "final_ui_911_traversal": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "911 unique plot IDs collected from DOM across all pages (no dup, no omission)",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "analyse_reconciliation": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "Analyse shows CURRENT_WORKING_FINAL_PLAN provenance",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "500 farmers / 911 plots",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "realised+not==911",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "initial history==offered",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "renewed outcomes reconcile",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "not-realised reasons reconcile",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "composition reconciles",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "consent_metrics_display": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "affirmative consent coverage in [0,1]",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "consent + realisation metrics displayed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "REJECT/NO_RESPONSE never affirmative (basis check)",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "fairness_display": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "all_farmer_abs_cash_gini finite in [0,1]",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "all_farmer_per_ha_gini finite in [0,1]",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "participant_only_per_ha_gini finite in [0,1]",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "zero-realisation farmers included (participants+zero==500)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "affirmative consent coverage shown",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "concentration_display": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "HHI finite",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "alpha 0.40 reference only",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "concentration basis label visible",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "uncertainty_unavailable_ui": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "Uncertainty honestly unavailable",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "resilience_unavailable_ui": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "Resilience honestly unavailable",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "data_explorer_ui": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "Data Explorer opens",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "explorer search usable",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "Explorer view does not change planning_source",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "explorer malformed pagination safe (200)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no 'undefined' leak in explorer",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no '[object Object]' leak in explorer",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no 'Traceback' leak in explorer",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "read_only_mutation_guard": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "navigation/reads did not mutate working-run state",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "workflow_revision_guard": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "response_rev/replan_anchor/final_revision/final_anchor unchanged by reads+pagination",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "network": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "no 5xx responses (0)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no requestfailed (0)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no unexpected external network requests (0); Google Fonts shell assets allowed (108)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no 5xx responses (0)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no requestfailed (0)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no unexpected external network requests (0); Google Fonts shell assets allowed (11)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no 5xx responses (0)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no requestfailed (0)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no unexpected external network requests (0); Google Fonts shell assets allowed (4)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "console_page_errors": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "no console.error (0)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no pageerror/unhandled (0)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no console.error (0)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no pageerror/unhandled (0)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no console.error (0)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no pageerror/unhandled (0)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "no_solver_on_reads": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "no PuLP/CBC imported by page-load/navigation reads (chromium)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no PuLP/CBC imported by page-load/navigation reads (firefox)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no PuLP/CBC imported by page-load/navigation reads (webkit)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "no_live_llm": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "no live LLM SDK loaded (live_llm_calls=0)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no live LLM SDK loaded (live_llm_calls=0)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no live LLM SDK loaded (live_llm_calls=0)",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "responsive_layout": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "390x844 no clipped enabled controls (0)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "390x844 no document horizontal overflow (0)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "390x844 no zero-size enabled controls",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "768x1024 no clipped enabled controls (0)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "768x1024 no document horizontal overflow (0)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "768x1024 no zero-size enabled controls",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "1366x768 no clipped enabled controls (0)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "1366x768 no document horizontal overflow (0)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "1366x768 no zero-size enabled controls",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "1920x1080 no clipped enabled controls (0)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "1920x1080 no document horizontal overflow (0)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "1920x1080 no zero-size enabled controls",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "accessibility_light": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "light: zero CRITICAL a11y (0)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "light: zero SERIOUS a11y (0)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "accessibility_dark": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "dark: zero CRITICAL a11y (0)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "dark: zero SERIOUS a11y (0)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "keyboard_navigation": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "Use-built-in CTA reachable by keyboard Tab",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "focused control has a visible focus indicator",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "Enter activates the CTA (dataset selected)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "locked stage present and not activatable",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "a renewed-consent control is keyboard-reachable",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "Final filter control keyboard-reachable",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "dom_text_sanity": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "no 'undefined' leak in rendered text",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no '[object Object]' leak in rendered text",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no 'NaN' leak in rendered text",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no 'Infinity' leak in rendered text",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no 'Traceback' leak in rendered text",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no 'ValueError' leak in rendered text",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no 'KeyError' leak in rendered text",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no 'ModuleNotFoundError' leak in rendered text",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no 'Internal Server Error' leak in rendered text",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "duplicate_inert_controls": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "no duplicate element IDs (none)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "no zero-size enabled interactive controls (0)",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "browser_repeatability": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "browser UI journey substantive results identical across two clean runs",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "visual_stability": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "same-source screenshots stable across reruns (unstable=0)",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "protected_hashes": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "protected artifacts byte-identical",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "mutable_state_isolation": {
+      "status": "PASS",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "pre-existing runtime state byte-identical",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "hard_refresh_known_limitation": {
+      "status": "KNOWN_LIMITATION",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "hard refresh did not mutate/replan/finalise server run",
+          "defect": true
+        },
+        {
+          "ok": false,
+          "msg": "hard refresh did not invoke solver",
+          "defect": false
+        }
+      ],
+      "detail": "hard refresh routes Home while server run persists byte-identically (documented limitation)"
+    }
+  },
+  "defects": [],
+  "artifact_diff": {
+    "added_protected_artifacts": [],
+    "removed_protected_artifacts": [],
+    "modified_protected_artifacts": []
+  },
+  "runtime_isolation": {
+    "removed": [],
+    "added": [],
+    "modified": []
+  },
+  "phase2_status": "PASS",
+  "ready_for_pre_eval_freeze": "YES"
+}

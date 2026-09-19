@@ -1,0 +1,152 @@
+{
+  "baseline_optimal_runs": {
+    "B1": 30,
+    "B2": 30,
+    "B3": 30
+  },
+  "comparison_boundary": {
+    "baseline_state": "PLANNED",
+    "proposed_states": [
+      "PLANNED",
+      "INITIAL_REALIZED",
+      "RECOMMENDED_REVISED",
+      "FINAL_REALIZED"
+    ],
+    "rule": "Do not interpret baseline PLANNED cash and Proposed FINAL_REALIZED cash as equivalent treatment states."
+  },
+  "descriptive_statistics": [
+    {
+      "analysis_scope": "all_30_primary_seeds",
+      "max": 17924836.0,
+      "mean": 14729243.266666668,
+      "median": 14581457.0,
+      "method": "B1",
+      "metric": "cash",
+      "min": 11907597.0,
+      "n": 30,
+      "sd": 1631754.4244390693,
+      "state": "PLANNED"
+    },
+    {
+      "analysis_scope": "all_30_primary_seeds",
+      "max": 17152116.0,
+      "mean": 14006371.633333333,
+      "median": 13816291.5,
+      "method": "B2",
+      "metric": "cash",
+      "min": 11907597.0,
+      "n": 30,
+      "sd": 1503411.3083689897,
+      "state": "PLANNED"
+    },
+    {
+      "analysis_scope": "all_30_primary_seeds",
+      "max": 16331308.0,
+      "mean": 13314895.866666667,
+      "median": 13126546.5,
+      "method": "B3",
+      "metric": "cash",
+      "min": 11317399.0,
+      "n": 30,
+      "sd": 1432426.0802319748,
+      "state": "PLANNED"
+    },
+    {
+      "analysis_scope": "optimal_proposed_only",
+      "max": 16331308.0,
+      "mean": 13361873.5,
+      "median": 13126546.5,
+      "method": "PROPOSED",
+      "metric": "cash",
+      "min": 11317399.0,
+      "n": 26,
+      "sd": 1430751.4856388234,
+      "state": "PLANNED"
+    },
+    {
+      "analysis_scope": "optimal_proposed_only",
+      "max": 12797649.0,
+      "mean": 10880986.423076924,
+      "median": 10711398.0,
+      "method": "PROPOSED",
+      "metric": "cash",
+      "min": 9187238.0,
+      "n": 26,
+      "sd": 1022609.4077406945,
+      "state": "INITIAL_REALIZED"
+    },
+    {
+      "analysis_scope": "optimal_proposed_only",
+      "max": 14603372.0,
+      "mean": 12207736.73076923,
+      "median": 11666591.0,
+      "method": "PROPOSED",
+      "metric": "cash",
+      "min": 10096135.0,
+      "n": 26,
+      "sd": 1344680.9542051097,
+      "state": "RECOMMENDED_REVISED"
+    },
+    {
+      "analysis_scope": "optimal_proposed_only",
+      "max": 14341497.0,
+      "mean": 11961110.307692308,
+      "median": 11517925.5,
+      "method": "PROPOSED",
+      "metric": "cash",
+      "min": 9866936.0,
+      "n": 26,
+      "sd": 1267604.0933540335,
+      "state": "FINAL_REALIZED"
+    },
+    {
+      "analysis_scope": "optimal_proposed_only",
+      "max": 0.971140387287876,
+      "mean": 0.8960488273600744,
+      "median": 0.8872859208628667,
+      "method": "PROPOSED",
+      "metric": "ratio",
+      "min": 0.8089197651442633,
+      "n": 26,
+      "sd": 0.039264927753578836,
+      "state": "FINAL_vs_PLANNED"
+    },
+    {
+      "analysis_scope": "optimal_proposed_only",
+      "max": 0.9970071236995627,
+      "mean": 0.9803715088218778,
+      "median": 0.9873119643838607,
+      "method": "PROPOSED",
+      "metric": "ratio",
+      "min": 0.9163346672336937,
+      "n": 26,
+      "sd": 0.0172403358383293,
+      "state": "FINAL_vs_RECOMMENDED"
+    },
+    {
+      "analysis_scope": "optimal_proposed_only",
+      "max": 2608391.0,
+      "mean": 1400763.1923076923,
+      "median": 1361016.5,
+      "method": "PROPOSED",
+      "metric": "cash_loss",
+      "min": 339642.0,
+      "n": 26,
+      "sd": 575991.2922108471,
+      "state": "PLANNED_MINUS_FINAL"
+    }
+  ],
+  "n_primary_seeds": 30,
+  "proposed": {
+    "nonoptimal_runs": 4,
+    "nonoptimal_seeds": [
+      196157,
+      496928,
+      621609,
+      627177
+    ],
+    "optimal_rate_pct": 86.6667,
+    "optimal_runs": 26
+  },
+  "schema": "farmsync-primary-summary-v1"
+}

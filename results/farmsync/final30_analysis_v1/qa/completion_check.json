@@ -1,0 +1,29 @@
+{
+  "actual_cells": 900,
+  "bad_seed_counts": {},
+  "complete_cells": 900,
+  "duplicate_identity_count": 0,
+  "expected_cells": 900,
+  "expected_family_counts": {
+    "ACTION_ROBUSTNESS": 90,
+    "ALPHA_CONCENTRATION": 150,
+    "EPSILON_SENSITIVITY": 120,
+    "LAMBDA_STABILITY": 180,
+    "PRIMARY": 30,
+    "SCALABILITY": 150,
+    "UNCERTAINTY": 180
+  },
+  "family_counts": {
+    "ACTION_ROBUSTNESS": 90,
+    "ALPHA_CONCENTRATION": 150,
+    "EPSILON_SENSITIVITY": 120,
+    "LAMBDA_STABILITY": 180,
+    "PRIMARY": 30,
+    "SCALABILITY": 150,
+    "UNCERTAINTY": 180
+  },
+  "generated_utc": "2026-09-19T09:07:17+00:00",
+  "schema": "farmsync-final30-completion-check-v1",
+  "unique_identities": 900,
+  "unique_seed_count": 30
+}

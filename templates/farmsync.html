@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+
+{% block title %}FarmSync — Farmer-in-the-Loop Collective Crop Planning{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/farmsync.css') }}">
+<meta name="description" content="FarmSync — a research demonstrator for farmer-in-the-loop collective crop planning under uncertainty with fairness-aware reoptimisation. Synthetic population; LLM does not allocate crops.">
+{% endblock %}
+
+{% block content %}
+<div class="fs-app" id="fsApp">
+
+  <!-- Hero (preserved) -->
+  <section class="farmsync-hero">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-grid"></div>
+      <div class="forge-particles" id="fsParticles"></div>
+    </div>
+    <div class="section-container">
+      <div class="farmsync-hero-content">
+        <span class="section-tag animate-fade-up">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          Research Demonstrator
+        </span>
+        <h1 class="farmsync-title animate-fade-up delay-1">
+          <span class="title-line">FarmSync</span>
+          <span class="gradient-text title-highlight">Farmer-in-the-Loop Collective Crop Planning</span>
+        </h1>
+        <p class="farmsync-subtitle animate-fade-up delay-2">
+          FarmSync builds collective crop plans from agricultural, market and resource constraints, lets
+          farmers accept, reject, modify, or withhold, then reoptimises while respecting fairness,
+          commitments and consent. The LLM understands and explains requests, but the LLM does not allocate crops &mdash; the deterministic optimiser keeps allocation authority.
+        </p>
+        <div class="farmsync-hero-badges animate-fade-up delay-3">
+          <span class="fs-badge fs-badge-final" id="fsEnvBadge" title="Final30 raw evaluation and derived analysis are sealed">FINAL30 SEALED</span>
+          <span class="fs-badge fs-badge-muted">Research prototype</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main workbench -->
+  <section class="farmsync-main">
+    <div class="section-container">
+
+      <!-- Workflow stepper -->
+      <div class="fs-workflow" id="fsWorkflow" aria-label="FarmSync workflow"></div>
+
+      <div class="fs-body">
+        <nav class="fs-nav" aria-label="FarmSync navigation">
+          <div class="fs-navgroup">
+            <span class="fs-navgroup-h">Main</span>
+            <ul>
+              <li><button class="fs-navbtn is-active" data-ws="home">Home</button></li>
+              <li><button class="fs-navbtn" data-ws="plan">Initial Plan</button></li>
+              <li><button class="fs-navbtn" data-ws="farmer">Farmer Responses</button></li>
+              <li><button class="fs-navbtn" data-ws="replan">Replan</button></li>
+              <li><button class="fs-navbtn" data-ws="consent">Renewed Consent</button></li>
+              <li><button class="fs-navbtn" data-ws="final">Final Plan</button></li>
+            </ul>
+          </div>
+          <div class="fs-navgroup">
+            <span class="fs-navgroup-h">Analyse</span>
+            <ul>
+              <li><button class="fs-navbtn" data-ws="fairness">Fairness &amp; Concentration</button></li>
+              <li><button class="fs-navbtn" data-ws="uncertainty">Uncertainty</button></li>
+              <li><button class="fs-navbtn" data-ws="resilience">Resilience</button></li>
+            </ul>
+          </div>
+          <div class="fs-navgroup">
+            <span class="fs-navgroup-h">Data</span>
+            <ul>
+              <li><button class="fs-navbtn" data-ws="data">Data Explorer</button></li>
+            </ul>
+          </div>
+          <div class="fs-navgroup fs-navgroup-advanced">
+            <span class="fs-navgroup-h">Advanced</span>
+            <ul>
+              <li><button class="fs-navbtn" data-ws="final30">Final30 Results</button></li>
+              <li><button class="fs-navbtn" data-ws="uncresults">Uncertainty Results</button></li>
+              <li><button class="fs-navbtn" data-ws="sensitivity">Sensitivity &amp; Robustness Results</button></li>
+              <li><button class="fs-navbtn" data-ws="scale">Scalability Results</button></li>
+              <li><button class="fs-navbtn" data-ws="reliability">Reliability &amp; Statistical Evidence</button></li>
+              <li><button class="fs-navbtn" data-ws="scenario">Scenario A/B Results</button></li>
+              <li><button class="fs-navbtn" data-ws="repro">Research details &amp; reproducibility</button></li>
+            </ul>
+          </div>
+        </nav>
+
+        <main class="fs-main" id="fsMain">
+          <section class="fs-ws is-active" id="ws-home" aria-label="Home" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-plan" aria-label="Plan" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-farmer" aria-label="Farmer Responses" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-replan" aria-label="Replan" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-consent" aria-label="Renewed Consent" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-final" aria-label="Final Plan" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-fairness" aria-label="Fairness and Concentration" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-uncertainty" aria-label="Uncertainty" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-resilience" aria-label="Resilience" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-data" aria-label="Data and Provenance" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-final30" aria-label="Final30 Results" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-uncresults" aria-label="Uncertainty Results" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-sensitivity" aria-label="Sensitivity and Robustness Results" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-scale" aria-label="Scalability Results" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-reliability" aria-label="Reliability and Statistical Evidence" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-scenario" aria-label="Scenario A/B Results" tabindex="-1"></section>
+          <section class="fs-ws" id="ws-repro" aria-label="Research Details and Reproducibility" tabindex="-1"></section>
+        </main>
+      </div>
+
+      <div class="fs-foot">
+        <span>FarmSync research demonstrator &middot; single-user in-process session &middot; every record synthetic and labelled.</span>
+      </div>
+    </div>
+  </section>
+
+  <template id="fsDatasetTpl">
+    <div class="fs-dm fs-dm-root">
+      <div class="fs-modes">
+        <div class="fs-card">
+          <h3>Use built-in research dataset</h3>
+          <p>Load the frozen FarmSync dataset &mdash; no upload needed.</p>
+          <div class="fs-card-actions">
+            <button class="fs-btn fs-btn-primary" id="btnBuiltin">Load built-in dataset</button>
+          </div>
+        </div>
+        <div class="fs-card">
+          <h3>Upload complete dataset package</h3>
+          <p>A .zip containing the supported CSV files. Paths are validated; only expected CSVs are read.</p>
+          <div class="fs-card-actions">
+            <label class="fs-file"><input type="file" id="filePackage" accept=".zip" hidden><span class="fs-btn">Choose .zip&hellip;</span></label>
+            <button class="fs-btn fs-btn-primary" id="btnPackage" disabled>Upload &amp; validate</button>
+          </div>
+        </div>
+        <div class="fs-card">
+          <h3>Custom farmer dataset</h3>
+          <p>Provide only farmers / plots / collectives; reuse built-in crops, parameters, climate and market data.</p>
+          <div class="fs-card-actions">
+            <label class="fs-file"><input type="file" id="fileFarmers" accept=".csv" hidden><span class="fs-btn">farmers.csv</span></label>
+            <label class="fs-file"><input type="file" id="filePlots" accept=".csv" hidden><span class="fs-btn">plots.csv</span></label>
+            <label class="fs-file"><input type="file" id="fileColl" accept=".csv" hidden><span class="fs-btn">collectives.csv</span></label>
+            <button class="fs-btn fs-btn-primary" id="btnFarmers">Upload &amp; validate</button>
+          </div>
+        </div>
+      </div>
+      <details class="fs-replace">
+        <summary>Replace an individual file (research / debugging)</summary>
+        <div class="fs-replace-body">
+          <select id="replaceName" disabled><option value="" disabled selected>Load a dataset first&hellip;</option></select>
+          <label class="fs-file"><input type="file" id="replaceFile" accept=".csv" hidden><span class="fs-btn">Choose CSV&hellip;</span></label>
+          <button class="fs-btn" id="btnReplace">Replace &amp; re-validate</button>
+        </div>
+      </details>
+      <section class="fs-report" id="report" hidden>
+        <div class="fs-report-head">
+          <h2>Dataset Validation: <span id="verdict" class="fs-verdict"></span></h2>
+          <span class="fs-source" id="reportSource"></span>
+        </div>
+        <div class="fs-report-body" id="reportBody"></div>
+        <div class="fs-actions">
+          <button class="fs-btn fs-btn-primary" id="btnActivate" disabled>Activate as versioned dataset</button>
+          <span class="fs-active" id="activeInfo"></span>
+        </div>
+      </section>
+      <section class="fs-inspect" id="inspect" hidden>
+        <div class="fs-inspect-head">
+          <select id="inspectTable" disabled><option value="" disabled selected>Load a dataset first&hellip;</option></select>
+          <input type="search" id="inspectSearch" placeholder="Filter rows&hellip;">
+        </div>
+        <div class="fs-tablewrap"><table id="inspectTableEl"><thead></thead><tbody></tbody></table></div>
+        <div class="fs-pager"><button id="prevPage" class="fs-btn">Prev</button><span id="pageInfo"></span><button id="nextPage" class="fs-btn">Next</button></div>
+      </section>
+    </div>
+  </template>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/farmsync.js') }}"></script>
+{% endblock %}

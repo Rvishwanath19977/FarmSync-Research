@@ -1,0 +1,193 @@
+{
+  "completion": "COMPLETE",
+  "dataset_attestation_sha256": "fd42123f24a6823484dc0fa0f5d34192c8c23ea9a03e45d4674e42515bb3514e",
+  "family": "LAMBDA_STABILITY",
+  "matrix_sha256": "b339a43ab581a0d481da230b84918363bc82f771b993f575c50ea903cdecc0f0",
+  "parameters": {
+    "alpha_fixed": 0.4,
+    "lambda": 0.0,
+    "profile_fixed": "PRIMARY"
+  },
+  "payload": {
+    "disruption": {
+      "changed_soft_area": 3.8,
+      "disruption_rate": 0.04561824729891957,
+      "soft_lock_area": 83.3
+    },
+    "economic_retention_final_vs_planned": 0.885107814052235,
+    "economic_retention_recommended_vs_planned": 0.900110563435539,
+    "lambda": 0.0,
+    "proposed": {
+      "action_counts": {
+        "ACCEPT": 346,
+        "MODIFY": 25,
+        "NO_RESPONSE": 11,
+        "REJECT": 31,
+        "WITHDRAW": 12
+      },
+      "alpha": 0.4,
+      "concentration_constraint_scope": "RECOMMENDED_REVISED only",
+      "consent_coverage_final": 1.0,
+      "failed_stage": null,
+      "fairness_v2_final": {
+        "benefit_loss_vs_b1": {
+          "better": 0,
+          "mean_delta": -6557,
+          "median_delta": 0,
+          "p10_delta": -17008,
+          "p90_delta": 0,
+          "tolerance": 1.0,
+          "unchanged": 405,
+          "worse": 95
+        },
+        "fixed_cohort_mean_cash": {
+          "bottom_125_B1ref": 0.0,
+          "bottom_50_B1ref": 0.0
+        },
+        "n_farmers": 500,
+        "n_participating": 283,
+        "participation_rate_pct": 56.6,
+        "per_ha_gini_all": 0.6997
+      },
+      "fairness_v2_initial": {
+        "benefit_loss_vs_b1": {
+          "better": 0,
+          "mean_delta": -8442,
+          "median_delta": 0,
+          "p10_delta": -23744,
+          "p90_delta": 0,
+          "tolerance": 1.0,
+          "unchanged": 371,
+          "worse": 129
+        },
+        "fixed_cohort_mean_cash": {
+          "bottom_125_B1ref": 0.0,
+          "bottom_50_B1ref": 0.0
+        },
+        "n_farmers": 500,
+        "n_participating": 263,
+        "participation_rate_pct": 52.6,
+        "per_ha_gini_all": 0.7309
+      },
+      "final_realized_concentration": {
+        "active_crops": [
+          "cotton",
+          "groundnut",
+          "maize",
+          "onion",
+          "pigeon_pea",
+          "rice",
+          "sorghum",
+          "soybean"
+        ],
+        "max_LPS": 0.4111,
+        "mean_HHI": 0.1148,
+        "median_HHI": 0.0819,
+        "n_active_crops": 8,
+        "target_violations": 0
+      },
+      "instance_hash": "a1161b9d4baf5133",
+      "lambda": 0.0,
+      "ledger_event_count": 1281,
+      "ledger_sha256": "86c30c55fdd83fd95bb05122d5216ac304cafbe3f5c2bf7251580dd8c42eea91",
+      "optimal": true,
+      "profile": "PRIMARY",
+      "protocol": "action-consent-v1",
+      "recommendation_realisation_ratio_vs_planned": 0.8851,
+      "recommendation_realisation_ratio_vs_recommended": 0.9833,
+      "recommended_revised_concentration": {
+        "active_crops": [
+          "cotton",
+          "groundnut",
+          "maize",
+          "onion",
+          "pigeon_pea",
+          "rice",
+          "sorghum",
+          "soybean"
+        ],
+        "max_LPS": 0.3885,
+        "mean_HHI": 0.1059,
+        "median_HHI": 0.0819,
+        "n_active_crops": 8,
+        "target_violations": 0
+      },
+      "recommended_revised_phase4": {
+        "alpha": 0.4,
+        "e_star_alpha": 11747726.0,
+        "status": "Optimal",
+        "t_floor_alpha": 281.4978
+      },
+      "recommended_revised_stability": {
+        "changed_flex": 11,
+        "changed_flex_area": 5.0,
+        "changed_soft": 10,
+        "changed_soft_area": 3.8,
+        "crop_change_counts": {
+          "groundnut->rice": 1,
+          "maize->pigeon_pea": 1,
+          "onion->cotton": 1,
+          "pigeon_pea->onion": 1,
+          "rice->groundnut": 7,
+          "sorghum->maize": 7,
+          "soybean->maize": 3
+        },
+        "e_star": 11747726.0,
+        "epsilon": 0.95,
+        "fairness_floor_tolerance": 0.0,
+        "fairness_structure": "BOTH: E>=eps*E*_alpha AND min_norm>=t_floor_alpha",
+        "flex_area": 132.8,
+        "formulation_version": "ilp-ref-v1",
+        "hard_lock_changes": 0,
+        "hard_lock_ok": true,
+        "lambda": 0.0,
+        "rejected_recovered": 20,
+        "rejected_recovered_area": 20.8,
+        "runtime_s": 0.49,
+        "soft_lock_area": 83.3,
+        "status": "Optimal",
+        "t_floor": 281.49784
+      },
+      "renewed_counts": {
+        "ACCEPT": 60,
+        "NO_RESPONSE": 4,
+        "REJECT": 6
+      },
+      "renewed_prompts": 70,
+      "runtime_s": 23.745029700017767,
+      "status": "Optimal",
+      "tiers": {
+        "FINAL_REALIZED": {
+          "area": 323.085,
+          "cash": 11438158.0,
+          "cash_per_allocated_ha": 35402.93730751969,
+          "n": 385
+        },
+        "INITIAL_REALIZED": {
+          "area": 298.947,
+          "cash": 10495462.0,
+          "cash_per_allocated_ha": 35108.10277407032,
+          "n": 346
+        },
+        "PLANNED": {
+          "area": 362.738,
+          "cash": 12922898.0,
+          "cash_per_allocated_ha": 35625.98349221752,
+          "n": 425
+        },
+        "RECOMMENDED_REVISED": {
+          "area": 333.955,
+          "cash": 11632037.0,
+          "cash_per_allocated_ha": 34831.150903564856,
+          "n": 395
+        }
+      },
+      "withdrawn_farmers": 9
+    }
+  },
+  "reused_from": null,
+  "schema": "farmsync-final30-cell-v1",
+  "seed": 52314,
+  "source_commit": "86129ec71998288db29bf562a7e1b1a9bcc2c9ae",
+  "written_utc": "2026-09-18T20:49:20+00:00"
+}

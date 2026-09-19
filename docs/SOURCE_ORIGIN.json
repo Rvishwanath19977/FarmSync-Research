@@ -1,0 +1,9 @@
+{
+  "project": "FarmSync-Research",
+  "source_repository": "https://github.com/Rvishwanath19977/ai-powered-portfolio.git",
+  "source_commit": "b590622",
+  "source_snapshot": "farmsync_source_audit_b590622.zip",
+  "source_snapshot_sha256": "6bdd8e67b32f56163a5179d860f3852b5d8e1c589ae039bcaf34a9f02b854669",
+  "extraction_policy": "Initial byte-preserving scientific/reproducibility extraction. No standalone adaptations applied yet.",
+  "extracted_at_utc": "2026-09-19T17:25:14.945745+00:00"
+}

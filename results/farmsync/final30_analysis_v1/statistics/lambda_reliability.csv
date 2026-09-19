@@ -1,0 +1,7 @@
+lambda,total_runs,optimal_runs,nonoptimal_runs,optimal_rate_pct,failure_types_json
+0.0,30,26,4,86.6667,"{""Infeasible|proposed.reopt_phase3"": 4}"
+0.05,30,26,4,86.6667,"{""Infeasible|proposed.reopt_phase3"": 4}"
+0.1,30,26,4,86.6667,"{""Infeasible|proposed.reopt_phase3"": 4}"
+0.25,30,26,4,86.6667,"{""Infeasible|proposed.reopt_phase3"": 4}"
+0.5,30,26,4,86.6667,"{""Infeasible|proposed.reopt_phase3"": 4}"
+1.0,30,26,4,86.6667,"{""Infeasible|proposed.reopt_phase3"": 4}"

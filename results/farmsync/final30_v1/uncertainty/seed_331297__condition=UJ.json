@@ -1,0 +1,88 @@
+{
+  "completion": "COMPLETE",
+  "dataset_attestation_sha256": "fd42123f24a6823484dc0fa0f5d34192c8c23ea9a03e45d4674e42515bb3514e",
+  "family": "UNCERTAINTY",
+  "matrix_sha256": "b339a43ab581a0d481da230b84918363bc82f771b993f575c50ea903cdecc0f0",
+  "parameters": {
+    "condition": "UJ"
+  },
+  "payload": {
+    "uncertainty": {
+      "baselines": {
+        "B1": {
+          "area": 336.723,
+          "cash": 14061159.0,
+          "failed_stage": null,
+          "n": 364,
+          "optimal": true,
+          "status": "Optimal"
+        },
+        "B2": {
+          "area": 343.479,
+          "cash": 13519301.0,
+          "failed_stage": null,
+          "n": 361,
+          "optimal": true,
+          "status": "Optimal"
+        },
+        "B3": {
+          "area": 331.165,
+          "cash": 12847264.0,
+          "failed_stage": null,
+          "n": 348,
+          "optimal": true,
+          "status": "Optimal"
+        }
+      },
+      "channel_summary": {
+        "absorption_states": {
+          "HIGH": 2,
+          "LOW": 1,
+          "NORMAL": 11
+        },
+        "participation_false": 40,
+        "participation_true": 460,
+        "price_cells": 70,
+        "resource_states": {
+          "CONSTRAINED": 141,
+          "NORMAL": 359
+        },
+        "weather_states": {
+          "HIGH_EVAPORATIVE_DEMAND": 2,
+          "LOW_EVAPORATIVE_DEMAND": 1,
+          "NORMAL": 7
+        }
+      },
+      "meta": {
+        "channels": [
+          "M",
+          "P",
+          "R",
+          "W"
+        ],
+        "condition": "UJ",
+        "instance_hash": "72de6505d5e984fd",
+        "protocol": "uncertainty-v1",
+        "provenance": "SYNTHETIC_EXPERIMENTAL",
+        "realisation_hash": "672342819e7783cb",
+        "seed": 331297
+      },
+      "participating_farmers": 460,
+      "participating_plots": 837,
+      "proposed": {
+        "cash": null,
+        "failed_stage": "proposed.reopt_phase3",
+        "optimal": false,
+        "realisation_hash": "672342819e7783cb",
+        "realisation_hash_match": true,
+        "status": "Infeasible",
+        "uncertainty_condition": "UJ"
+      }
+    }
+  },
+  "reused_from": null,
+  "schema": "farmsync-final30-cell-v1",
+  "seed": 331297,
+  "source_commit": "86129ec71998288db29bf562a7e1b1a9bcc2c9ae",
+  "written_utc": "2026-09-18T22:58:05+00:00"
+}

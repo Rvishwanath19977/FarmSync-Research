@@ -1,0 +1,7 @@
+condition,total_runs,proposed_optimal_runs,proposed_nonoptimal_runs,optimal_rate_pct,failure_types_json
+U0,30,26,4,86.6667,"{""Infeasible|proposed.reopt_phase3"": 4}"
+UW,30,27,3,90.0,"{""Infeasible|proposed.reopt_phase3"": 3}"
+UM,30,24,6,80.0,"{""Infeasible|proposed.phase4_e_star_alpha"": 1, ""Infeasible|proposed.reopt_phase3"": 5}"
+UR,30,26,4,86.6667,"{""Infeasible|proposed.reopt_phase3"": 4}"
+UP,30,25,5,83.3333,"{""Infeasible|proposed.reopt_phase3"": 5}"
+UJ,30,25,5,83.3333,"{""Infeasible|proposed.phase4_e_star_alpha"": 1, ""Infeasible|proposed.reopt_phase3"": 4}"

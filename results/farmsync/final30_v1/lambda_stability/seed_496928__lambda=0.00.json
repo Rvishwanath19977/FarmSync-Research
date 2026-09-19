@@ -1,0 +1,36 @@
+{
+  "completion": "COMPLETE",
+  "dataset_attestation_sha256": "fd42123f24a6823484dc0fa0f5d34192c8c23ea9a03e45d4674e42515bb3514e",
+  "family": "LAMBDA_STABILITY",
+  "matrix_sha256": "b339a43ab581a0d481da230b84918363bc82f771b993f575c50ea903cdecc0f0",
+  "parameters": {
+    "alpha_fixed": 0.4,
+    "lambda": 0.0,
+    "profile_fixed": "PRIMARY"
+  },
+  "payload": {
+    "disruption": {
+      "changed_soft_area": null,
+      "disruption_rate": null,
+      "soft_lock_area": null
+    },
+    "economic_retention_final_vs_planned": null,
+    "economic_retention_recommended_vs_planned": null,
+    "lambda": 0.0,
+    "proposed": {
+      "alpha": 0.4,
+      "failed_stage": "proposed.reopt_phase3",
+      "lambda": 0.0,
+      "optimal": false,
+      "profile": "PRIMARY",
+      "runtime_s": 11.477700499992352,
+      "status": "Infeasible",
+      "tiers": null
+    }
+  },
+  "reused_from": null,
+  "schema": "farmsync-final30-cell-v1",
+  "seed": 496928,
+  "source_commit": "86129ec71998288db29bf562a7e1b1a9bcc2c9ae",
+  "written_utc": "2026-09-18T23:15:02+00:00"
+}

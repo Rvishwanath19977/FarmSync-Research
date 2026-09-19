@@ -1,0 +1,42 @@
+{
+  "n_cases": 41,
+  "live_evaluation": false,
+  "client": "mock",
+  "api_failures": 0,
+  "api_success": 41,
+  "_group_parse_metrics_MOCK_architecture_validation_only": {
+    "schema_valid_rate": 1.0,
+    "action_exact_match": 1.0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_f1": 1.0,
+    "crop_extraction_accuracy": 1.0,
+    "farmer_extraction_accuracy": 1.0,
+    "plot_extraction_accuracy": 1.0,
+    "numeric_extraction_accuracy": 1.0,
+    "unit_accuracy": 1.0,
+    "clarification_precision": 1.0,
+    "clarification_recall": 1.0
+  },
+  "_group_deterministic_boundary": {
+    "invalid_action_rejection_rate": 1.0,
+    "hard_lock_rejection_rate": 1.0,
+    "unsupported_constraint_handled_rate": 1.0,
+    "source_text_authoritative_rate": 1.0
+  },
+  "_group_equivalence": {
+    "validated_payload_equivalence_rate": 1.0,
+    "validated_payload_equivalence_denominator": 41,
+    "boundary_state_execution_equivalence_rate": 1.0,
+    "boundary_state_execution_equivalence_denominator": 12,
+    "boundary_state_execution_equivalence_true": 12,
+    "outcome_equivalence_not_applicable": 29,
+    "note": "EXECUTION-level equivalence over the minimal BoundaryState executor (action applied to independent cloned plan state), NOT the full FarmSync optimiser/reoptimisation handler. Full deterministic FarmSync outcome equivalence (running the actual reopt handler) is a publication-evaluation strengthening item, not built here. Payload equivalence is separate/weaker."
+  },
+  "_group_explanation": {
+    "explanation_groundedness_rate": 1.0,
+    "numerical_consistency_rate": 1.0,
+    "unsupported_explanation_rate": 0.0
+  },
+  "note": "DEVELOPMENT / prompt-engineering set with MOCK client; live LLM parse accuracy NOT RUN. Parse-side numbers reflect the mock, not a live model."
+}

@@ -1,0 +1,130 @@
+{
+  "completion": "COMPLETE",
+  "dataset_attestation_sha256": "fd42123f24a6823484dc0fa0f5d34192c8c23ea9a03e45d4674e42515bb3514e",
+  "family": "UNCERTAINTY",
+  "matrix_sha256": "b339a43ab581a0d481da230b84918363bc82f771b993f575c50ea903cdecc0f0",
+  "parameters": {
+    "condition": "UP"
+  },
+  "payload": {
+    "uncertainty": {
+      "baselines": {
+        "B1": {
+          "area": 330.075,
+          "cash": 13764060.0,
+          "failed_stage": null,
+          "n": 383,
+          "optimal": true,
+          "status": "Optimal"
+        },
+        "B2": {
+          "area": 339.271,
+          "cash": 12549438.0,
+          "failed_stage": null,
+          "n": 385,
+          "optimal": true,
+          "status": "Optimal"
+        },
+        "B3": {
+          "area": 343.819,
+          "cash": 11922247.0,
+          "failed_stage": null,
+          "n": 372,
+          "optimal": true,
+          "status": "Optimal"
+        }
+      },
+      "channel_summary": {
+        "absorption_states": {},
+        "participation_false": 59,
+        "participation_true": 441,
+        "price_cells": 0,
+        "resource_states": {},
+        "weather_states": {}
+      },
+      "meta": {
+        "channels": [
+          "P"
+        ],
+        "condition": "UP",
+        "instance_hash": "a1161b9d4baf5133",
+        "protocol": "uncertainty-v1",
+        "provenance": "SYNTHETIC_EXPERIMENTAL",
+        "realisation_hash": "6c19559c94187c77",
+        "seed": 52314
+      },
+      "participating_farmers": 441,
+      "participating_plots": 804,
+      "proposed": {
+        "action_counts": {
+          "ACCEPT": 304,
+          "MODIFY": 21,
+          "NO_RESPONSE": 7,
+          "REJECT": 29,
+          "WITHDRAW": 11
+        },
+        "conc_status": "Optimal",
+        "consent_coverage_final": 1.0,
+        "fairness_v2_final": {
+          "benefit_loss_vs_b1": {
+            "better": 0,
+            "mean_delta": -7810,
+            "median_delta": 0,
+            "p10_delta": -19196,
+            "p90_delta": 0,
+            "tolerance": 1.0,
+            "unchanged": 337,
+            "worse": 104
+          },
+          "fixed_cohort_mean_cash": {
+            "bottom_125_B1ref": 0.0,
+            "bottom_50_B1ref": 0.0
+          },
+          "n_farmers": 441,
+          "n_participating": 253,
+          "participation_rate_pct": 57.4,
+          "per_ha_gini_all": 0.7121
+        },
+        "optimal": true,
+        "realisation_hash": "6c19559c94187c77",
+        "realisation_hash_match": true,
+        "renewed_counts": {
+          "ACCEPT": 44,
+          "NO_RESPONSE": 4,
+          "REJECT": 5
+        },
+        "renewed_prompts": 53,
+        "reopt_status": "Optimal",
+        "tiers": {
+          "FINAL_REALIZED": {
+            "area": 300.825,
+            "cash": 10320001.0,
+            "n": 334
+          },
+          "INITIAL_REALIZED": {
+            "area": 284.607,
+            "cash": 9782416.0,
+            "n": 304
+          },
+          "PLANNED": {
+            "area": 343.819,
+            "cash": 11922247.0,
+            "n": 372
+          },
+          "RECOMMENDED_REVISED": {
+            "area": 313.681,
+            "cash": 10781562.0,
+            "n": 343
+          }
+        },
+        "uncertainty_condition": "UP",
+        "withdrawn_farmers": 8
+      }
+    }
+  },
+  "reused_from": null,
+  "schema": "farmsync-final30-cell-v1",
+  "seed": 52314,
+  "source_commit": "86129ec71998288db29bf562a7e1b1a9bcc2c9ae",
+  "written_utc": "2026-09-18T20:55:36+00:00"
+}

@@ -1,0 +1,75 @@
+{
+  "processed_dataset_hash": "9984aa9948740c06",
+  "raw_source_manifest_hash": "cc271fdd594451b2",
+  "gate_hash": "9f81463dd4c127a5",
+  "generator_file_hash": "dbaa11e4a4684199",
+  "budget_calibration": {
+    "anchor_a2fl_per_ha": 55000,
+    "tightness": "base(1.2)",
+    "heterogeneity": "U(0.85,1.15)"
+  },
+  "fairness_impl_version": "fairness-v2 (committed: farmsync/fairness.py)",
+  "optimizer_formulation_version": "ilp-ref-v1",
+  "solver": {
+    "pulp": "3.3.2",
+    "engine": "CBC",
+    "gapRel": 0.0001,
+    "threads": 1,
+    "timeLimit_s": 120
+  },
+  "crop_region_season_config": {
+    "crops": 14,
+    "admitted": 13,
+    "regions": 5,
+    "seasons": [
+      "kharif",
+      "rabi"
+    ]
+  },
+  "replication_seed_file_hash": "7224b558c8afc007",
+  "git_commit": null,
+  "b3_selected_epsilon": 0.95,
+  "b3_epsilon_selection_rule": "highest eps with min_norm >= 0.99*max_attainable (=> 0.95)",
+  "versioned_baseline_family": [
+    "b1_ilp_v2.json",
+    "b2_ilp_v2.json",
+    "b3_ilp_v2.json",
+    "baseline_comparison_ilp_v2.json"
+  ],
+  "seed_instance_hashes": {
+    "52314": "a1161b9d4baf5133",
+    "57684": "4fbc4ea64eb8f732",
+    "65693": "12904a1ba63a1347",
+    "80120": "11a9f660bea9e5bd",
+    "192338": "fb7fe487cab8983b",
+    "196157": "a8af144b775c4306",
+    "200768": "7532a0700f757bc6",
+    "222335": "c1dfacd5e976fa93",
+    "262122": "6ea4bc599346bf70",
+    "288572": "b6f5efc75ff72922",
+    "320290": "cd0f8302662d9ad7",
+    "321611": "c98ac5d03f02b959",
+    "331297": "72de6505d5e984fd",
+    "385101": "7d6aa268c9bada47",
+    "449132": "92509e170dfa251b",
+    "496928": "ebc3912d67104586",
+    "514942": "c6d603471950c0a9",
+    "621609": "51783b59a9d24289",
+    "627177": "1dd4f4ed37cd2155",
+    "637394": "25cf08a08ddd92e2",
+    "651976": "46315aa874f4cd05",
+    "679242": "25d82fea54ef715c",
+    "720982": "912d5e4df8e4cd9d",
+    "737579": "51d7f5bd91bf285b",
+    "750647": "f328f231c87a44e5",
+    "803466": "6047442a739151e7",
+    "870215": "c41f2d168d927b01",
+    "885219": "c5f835a9fd8e55f7",
+    "908270": "8567f3d787d64d89",
+    "947906": "18ea44f847c012b3"
+  },
+  "experiment_runs_file_hash": "de1589abfea6a0b6",
+  "self_note": "fairness-v2+ilp-v2+harness",
+  "canonical_b2_tstar": 13822731,
+  "config_source": "farmsync/config.py (CANONICAL_B3_EPSILON, FORMULATION_VERSION, FAIRNESS_VERSION, TSTAR_TOLERANCE)"
+}

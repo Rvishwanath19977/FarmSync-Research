@@ -1,0 +1,4 @@
+profile,total_runs,optimal_runs,nonoptimal_runs,optimal_rate_pct,failure_types_json
+PRIMARY,30,26,4,86.6667,"{""Infeasible|proposed.reopt_phase3"": 4}"
+S1,30,27,3,90.0,"{""Infeasible|proposed.reopt_phase3"": 3}"
+S2,30,25,5,83.3333,"{""Infeasible|proposed.reopt_phase3"": 5}"

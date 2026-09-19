@@ -1,0 +1,83 @@
+{
+  "analysis_rule": "Raw results are immutable. Non-Optimal outcomes must not be zero-imputed or retrospectively rerun under altered scientific settings. Outcome summaries must distinguish solver reliability from Optimal-only performance analysis.",
+  "cell_set_sha256": "71f43479f4048f7cf208b819bacb223e2fcb8fd9ff428e8bd36015d30c4de605",
+  "classification_by_family": {
+    "ACTION_ROBUSTNESS": {
+      "CLEAN": 78,
+      "Infeasible|proposed.reopt_phase3": 12
+    },
+    "ALPHA_CONCENTRATION": {
+      "CLEAN": 130,
+      "Infeasible|proposed.reopt_phase3": 20
+    },
+    "EPSILON_SENSITIVITY": {
+      "CLEAN": 118,
+      "Not Solved|None": 2
+    },
+    "LAMBDA_STABILITY": {
+      "CLEAN": 156,
+      "Infeasible|proposed.reopt_phase3": 24
+    },
+    "PRIMARY": {
+      "CLEAN": 26,
+      "Infeasible|proposed.reopt_phase3": 4
+    },
+    "SCALABILITY": {
+      "CLEAN": 68,
+      "Infeasible|proposed.phase3_e_star": 1,
+      "Infeasible|proposed.phase4_e_star_alpha": 64,
+      "Infeasible|proposed.reopt_phase3": 17
+    },
+    "UNCERTAINTY": {
+      "CLEAN": 153,
+      "Infeasible|proposed.phase4_e_star_alpha": 2,
+      "Infeasible|proposed.reopt_phase3": 25
+    }
+  },
+  "dataset_attestation_sha256": "fd42123f24a6823484dc0fa0f5d34192c8c23ea9a03e45d4674e42515bb3514e",
+  "dev_checkpoint_sha256": "207ea314537d0df4aa3ba578dd76d3f4127d63a9917b587bf960ee19f921fc09",
+  "effective_solver": {
+    "engine": "CBC",
+    "gapRel": 1e-06,
+    "threads": 0,
+    "timeLimit_s": 120
+  },
+  "family_counts": {
+    "ACTION_ROBUSTNESS": 90,
+    "ALPHA_CONCENTRATION": 150,
+    "EPSILON_SENSITIVITY": 120,
+    "LAMBDA_STABILITY": 180,
+    "PRIMARY": 30,
+    "SCALABILITY": 150,
+    "UNCERTAINTY": 180
+  },
+  "integrity": {
+    "actual_cells": 900,
+    "cells_marked_complete": 900,
+    "clean_cells": 729,
+    "duplicate_identities": 0,
+    "expected_cells": 900,
+    "non_clean_cells": 171,
+    "structural_errors": 0,
+    "unique_cell_identities": 900
+  },
+  "matrix_sha256": "b339a43ab581a0d481da230b84918363bc82f771b993f575c50ea903cdecc0f0",
+  "raw_cell_count": 900,
+  "raw_directory": "results/farmsync/final30_v1",
+  "run_manifest_bookkeeping_note": "RUN_MANIFEST.json remains IN_PROGRESS because the frozen runner has no run-level completion finalization step. It was not modified post-run.",
+  "run_manifest_sha256": "c285f65def80ab131f5f8c9b084c6f7fa573ae1553cd3c2357459b050bb09809",
+  "run_manifest_status_preserved": "IN_PROGRESS",
+  "schema": "farmsync-final30-freeze-v1",
+  "scientific_boundaries": {
+    "llm_calls": false,
+    "overwrite_existing_cells": false,
+    "post_hoc_tuning": false,
+    "statistics_in_this_stage": false,
+    "zero_imputation_for_nonoptimal": false
+  },
+  "sealed_utc": "2026-09-19T09:04:23+00:00",
+  "solver_amendment_sha256": "1d42d59e3c1ba404d13f5c557560e943c222030b1a21ec65094534140cf865b8",
+  "source_commit": "86129ec71998288db29bf562a7e1b1a9bcc2c9ae",
+  "status": "SEALED",
+  "unique_seed_count": 30
+}

@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-09-18T20:48:04+00:00",
+  "dataset_attestation_sha256": "fd42123f24a6823484dc0fa0f5d34192c8c23ea9a03e45d4674e42515bb3514e",
+  "dataset_file_count": 20,
+  "dev_checkpoint_sha256": "207ea314537d0df4aa3ba578dd76d3f4127d63a9917b587bf960ee19f921fc09",
+  "effective_solver": {
+    "engine": "CBC",
+    "gapRel": 1e-06,
+    "threads": 0,
+    "timeLimit_s": 120
+  },
+  "matrix_commit": "9d068294bfa30ccb2050203433a99dee35112694",
+  "matrix_sha256": "b339a43ab581a0d481da230b84918363bc82f771b993f575c50ea903cdecc0f0",
+  "planned_cells": 900,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "pre_eval_freeze_sha256": "77171f6e0217933ae840e949e126beafa9b812a35b521c501b25efab7f87eed7",
+  "provenance_manifest_sha256": "e92d6db3fcd316fde7c9a9c24cd62980c771e55bc6eebe5692269f289b83d4f8",
+  "python": "3.12.8",
+  "replication_seeds_sha256": "7224b558c8afc0071152f0b9d3bcc4d9972452f52a480ef333233facc981bf40",
+  "required_implementation_base_commit": "18c18b44dd31de993c9d952d0153b553cd682147",
+  "rng_streams_sha256": "3bd23959a9e93e0fdf87c580c9a0c9f140de5a9889f28b859144862f4c257ec9",
+  "schema": "farmsync-final30-runner-v1",
+  "scientific_boundaries": {
+    "llm_calls": false,
+    "overwrite_existing_cells": false,
+    "post_hoc_tuning": false,
+    "statistics_in_this_stage": false,
+    "zero_imputation_for_nonoptimal": false
+  },
+  "seed_count": 30,
+  "solver_amendment_sha256": "1d42d59e3c1ba404d13f5c557560e943c222030b1a21ec65094534140cf865b8",
+  "source_commit": "86129ec71998288db29bf562a7e1b1a9bcc2c9ae",
+  "status": "IN_PROGRESS"
+}

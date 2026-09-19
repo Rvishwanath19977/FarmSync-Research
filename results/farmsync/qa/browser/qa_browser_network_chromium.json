@@ -1,0 +1,3008 @@
+{
+  "total_requests": 576,
+  "by_method": {
+    "GET": 470,
+    "POST": 106
+  },
+  "responses_5xx": [],
+  "failed_requests": [],
+  "external_requests": [
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2"
+  ],
+  "external_request_count": 108,
+  "allowed_external_hosts": [
+    "fonts.googleapis.com",
+    "fonts.gstatic.com"
+  ],
+  "unexpected_external_requests": [],
+  "unexpected_external_request_count": 0,
+  "all_requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/explore-validation",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/explore-tables",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/explore/climate_scenarios?page=1&q=",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-0d4375fd6b35/response",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-0d4375fd6b35",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-dc5f1624433e/response",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-dc5f1624433e",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-ad44f97bb729/response",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-ad44f97bb729",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-60a97c700ba9/response",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-60a97c700ba9",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/ai-parse",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-56a6f0e174ff/recommend",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-56a6f0e174ff/response",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-56a6f0e174ff",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-bb13299e478c/response",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-bb13299e478c",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-bb13299e478c/reset",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-bb13299e478c",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/farmer-response/F0005/F0005-P01",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/ai-parse",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-179fc45ee948/recommend",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-179fc45ee948/explain",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-956e82ac8b6a",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-956e82ac8b6a",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-956e82ac8b6a/replan",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-956e82ac8b6a",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-956e82ac8b6a",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-956e82ac8b6a/consent",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-956e82ac8b6a",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-956e82ac8b6a/consent",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-956e82ac8b6a",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-956e82ac8b6a/consent",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-956e82ac8b6a",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-294b901d67c7",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-294b901d67c7/replan",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-294b901d67c7",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-294b901d67c7",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-294b901d67c7/consent-bulk",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-294b901d67c7",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-1581c3bfa5b6",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-1581c3bfa5b6/replan",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-1581c3bfa5b6",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-1581c3bfa5b6",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-1581c3bfa5b6/consent-bulk",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-1581c3bfa5b6",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-ce86cca1b111",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-ce86cca1b111/replan",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-ce86cca1b111",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-ce86cca1b111",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-ce86cca1b111/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-ce86cca1b111/explain",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-ce86cca1b111/explain",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c9fa1eb640f2",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c9fa1eb640f2/replan",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c9fa1eb640f2",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c9fa1eb640f2",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c9fa1eb640f2/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c9fa1eb640f2/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c9fa1eb640f2/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c9fa1eb640f2/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-5ba66430fbce",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-5ba66430fbce/replan",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-5ba66430fbce",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-5ba66430fbce",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-5ba66430fbce/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-5ba66430fbce/select-recommendation",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-5ba66430fbce",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c1d5e2dffa25",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c1d5e2dffa25/replan",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c1d5e2dffa25",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c1d5e2dffa25",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c1d5e2dffa25/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c1d5e2dffa25/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c1d5e2dffa25/select-recommendation",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-c1d5e2dffa25",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-74f702a1155d",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-74f702a1155d/replan",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-74f702a1155d",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-74f702a1155d",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-74f702a1155d/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-74f702a1155d/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-74f702a1155d/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-74f702a1155d/select-recommendation",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-74f702a1155d",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-41bb07f8042c",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-41bb07f8042c/replan",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-41bb07f8042c",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-41bb07f8042c",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-41bb07f8042c/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-41bb07f8042c/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-41bb07f8042c/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-41bb07f8042c/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-41bb07f8042c/select-recommendation",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-41bb07f8042c",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-f5b02b687ebe",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-f5b02b687ebe/replan",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-f5b02b687ebe",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-f5b02b687ebe",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-f5b02b687ebe/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-f5b02b687ebe/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-f5b02b687ebe/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-f5b02b687ebe/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-f5b02b687ebe/consent-alternative",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/replan",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/finalise",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=realised&page=1",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=realised&page=1",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=not_realised&page=1",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=1",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=1",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=2",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=3",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=4",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=5",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=6",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=7",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=8",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=9",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=10",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=11",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=12",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=13",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=14",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=15",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=16",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=17",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=18",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=all&page=19",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-132b4b73f3df/final-rows?filter=not_realised&page=1",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9/replan",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9/final-rows?filter=realised&page=1",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9/analysis",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9/analysis",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9/analysis",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d4b571851aa9/analysis",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/explore-validation",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/explore-tables",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/explore/climate_scenarios?page=1&q=",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/explore/climate_scenarios?page=1&q=R1",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/explore-validation",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/explore-tables",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/explore/climate_scenarios?page=1&q=",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d54d0b5d1b4c",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d54d0b5d1b4c/replan",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d54d0b5d1b4c",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/run-d54d0b5d1b4c",
+      "resource_type": "fetch"
+    }
+  ]
+}

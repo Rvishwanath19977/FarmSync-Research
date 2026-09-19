@@ -1,0 +1,7 @@
+| Profile | Optimal n | Mean FINAL_REALIZED cash | SD | Mean FINAL/PLANNED ratio | Optimal runs | Optimal rate |
+| --- | --- | --- | --- | --- | --- | --- |
+| PRIMARY | 26 | 11,961,110 | 1,267,604 | 0.8960 | 26/30 | 86.7% |
+| S1 | 27 | 10,536,838 | 1,215,183 | 0.7939 | 27/30 | 90.0% |
+| S2 | 25 | 12,811,318 | 1,420,469 | 0.9625 | 25/30 | 83.3% |
+
+*Note: PRIMARY is the frozen action profile; S1 and S2 are predeclared robustness profiles.*

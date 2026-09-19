@@ -1,0 +1,52 @@
+{
+  "all_checks_pass": true,
+  "checks": {
+    "different_final_plan_hashes": true,
+    "initial_no_response_quota_exact": true,
+    "initial_reject_quota_exact": true,
+    "no_stale_modulus_metadata": true,
+    "no_stale_v1_metadata": true,
+    "no_stale_v2_metadata": true,
+    "protocol_is_scenario_ab_v3": true,
+    "renewed_accept_remainder_exact": true,
+    "renewed_no_response_quota_exact": true,
+    "renewed_reject_quota_exact": true,
+    "same_dataset": true,
+    "same_resilience_protocol": true,
+    "same_uncertainty_protocol": true,
+    "sanitized_repeat_identical": true,
+    "scenario_a_911_plot_reconciliation": true,
+    "scenario_a_analysis_integrity": true,
+    "scenario_a_resilience_current": true,
+    "scenario_a_uncertainty_current": true,
+    "scenario_b_911_plot_reconciliation": true,
+    "scenario_b_analysis_integrity": true,
+    "scenario_b_has_no_modify": true,
+    "scenario_b_resilience_current": true,
+    "scenario_b_uncertainty_current": true,
+    "single_remaining_offer_denominator": true,
+    "single_renewed_denominator": true,
+    "single_withdraw_candidate_denominator": true,
+    "single_withdraw_quota": true,
+    "withdraw_quota_exact": true,
+    "withdraw_rows_farmer_cycle_scoped": true,
+    "withdrawn_farmer_count_matches": true,
+    "withdrawn_farmer_ids_match_manifest": true
+  },
+  "dataset_hash": "1f271676f5317088",
+  "identity": {
+    "initial_manifest_hash_a": "3a08bd6441c1752f",
+    "initial_manifest_hash_b": "cb8c6ac3931f8815",
+    "renewed_manifest_hash_a": "8aca968db352a36c",
+    "renewed_manifest_hash_b": "7cc49321a602bc25",
+    "scenario_a_final_plan_hash": "0fe59eeb7c68a1a2",
+    "scenario_b_final_plan_hash": "1dd4988e70547369"
+  },
+  "protocol_version": "scenario-ab-v3",
+  "pytest": {
+    "command": "python -m pytest tests/test_farmsync_scenario_ab.py -q",
+    "passed": true,
+    "return_code": 0
+  },
+  "source_commit": "d19e1d51c4d7f204e77cac3cdf506e5fcd238439"
+}

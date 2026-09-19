@@ -1,0 +1,46 @@
+{
+  "artifact_kind": "controlled_ab_case_study",
+  "dataset_hash": "1f271676f5317088",
+  "interpretation_boundary": "Scenario B is a constructed illustrative behavioural case study. Differences are conditional on this frozen action manifest and are not estimates of empirical farmer response probabilities.",
+  "protocol_version": "scenario-ab-v3",
+  "resilience_protocol_version": "interactive-resilience-v1",
+  "scenario_definition": {
+    "A": {
+      "initial_intervention": "none",
+      "label": "Reference workflow",
+      "renewed_consent": "ACCEPT all genuinely pending changed rows"
+    },
+    "B": {
+      "interpretation": "Constructed case-study inputs only. The behavioural proportions are experimental scenario definitions, not estimates of empirical farmer behaviour.",
+      "label": "Constructed illustrative behavioural scenario",
+      "modify": "Not used in scenario-ab-v3. Crop-preference perturbation is kept separate from this participation-and-consent case study.",
+      "population_scope": "Farmer withdrawal eligibility is defined over farmers with at least one reference-ACCEPT offer. A selected withdrawal is farmer-cycle scoped and therefore applies to all offered rows belonging to that farmer.",
+      "remaining_initial_actions": {
+        "MODIFY_rate": 0.0,
+        "NO_RESPONSE_rate": 0.05,
+        "REJECT_rate": 0.1,
+        "denominator": "remaining reference-ACCEPT offer rows after selected withdrawn farmers are removed",
+        "quota_rule": "deterministic round-half-up",
+        "selection": "SHA-256 deterministic ranking of farmer_id + plot_id",
+        "unit": "offer_row"
+      },
+      "renewed_consent": {
+        "ACCEPT": "all remaining rows",
+        "NO_RESPONSE_rate": 0.05,
+        "REJECT_rate": 0.1,
+        "quota_rule": "deterministic round-half-up",
+        "selection": "SHA-256 deterministic ranking of farmer_id + plot_id",
+        "unit": "genuinely_pending_changed_row"
+      },
+      "withdrawal": {
+        "quota_rule": "deterministic round-half-up",
+        "rate": 0.025,
+        "scope": "all offered rows for each selected farmer",
+        "selection": "SHA-256 deterministic ranking of eligible farmer_id values",
+        "unit": "farmer"
+      }
+    }
+  },
+  "source_commit": "d19e1d51c4d7f204e77cac3cdf506e5fcd238439",
+  "uncertainty_protocol_version": "interactive-stress-v1"
+}

@@ -1,0 +1,11 @@
+{
+  "epsilon": 0.95,
+  "lambda": 0.05,
+  "alpha": 0.4,
+  "fairness_version": "fairness-v2",
+  "action_policy_version": "action-consent-v1",
+  "uncertainty_version": "uncertainty-v1",
+  "instance_hash": "5ea24037c2d9cb6a",
+  "replication_seeds_present": true,
+  "replication_seeds_sha256": "7224b558c8afc0071152f0b9d3bcc4d9972452f52a480ef333233facc981bf40"
+}

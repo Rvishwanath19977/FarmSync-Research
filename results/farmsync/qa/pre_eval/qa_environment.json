@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-06T15:21:28Z",
+  "repo_root": "R:\\portfolio",
+  "python": "3.12.8 (tags/v3.12.8:2dc476b, Dec  3 2024, 19:30:04) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "packages": {
+    "flask": "3.0.0",
+    "pulp": "3.3.2",
+    "pandas": "3.0.5",
+    "numpy": "2.4.1"
+  },
+  "pip_check": "No broken requirements found."
+}

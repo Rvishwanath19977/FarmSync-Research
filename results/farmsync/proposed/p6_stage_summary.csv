@@ -1,0 +1,6 @@
+stage,state,cash,gini,status,contains_unconsented,counterfactual
+stage1_static_plan,PLANNED,13142166,0.7182,Optimal,False,False
+stage2_initial_response,REALIZED_INITIAL,11464341,0.7493,n/a,False,False
+stage4_stability_reopt,REVISED,12340519,0.7294,Optimal,True,False
+stage5_concentration,CONCENTRATION_CONTROLLED_REVISED_PLAN,12285254,0.7281,Optimal,True,False
+stage6_resilience_demo,COUNTERFACTUAL_POST_SHOCK_BACKUP_PLAN,12273775,,Optimal,True,True

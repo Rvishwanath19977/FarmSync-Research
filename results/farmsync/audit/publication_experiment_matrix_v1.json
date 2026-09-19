@@ -1,0 +1,319 @@
+{
+  "families": {
+    "ACTION_ROBUSTNESS": {
+      "ci": "deterministic bootstrap 95% CI",
+      "effect_size": "matched-pairs rank-biserial",
+      "method": "PROPOSED",
+      "metrics": [
+        "PLANNED",
+        "INITIAL_REALIZED",
+        "RECOMMENDED_REVISED",
+        "FINAL_REALIZED",
+        "consent_coverage",
+        "disruption"
+      ],
+      "multiplicity": "Holm within action family",
+      "output": "behavioural robustness",
+      "paired_key": [
+        "seed"
+      ],
+      "profiles": [
+        "PRIMARY",
+        "S1",
+        "S2"
+      ],
+      "reference": "PRIMARY",
+      "seed_count": 30,
+      "seed_set": "FROZEN_REPLICATION_SEEDS_V1",
+      "test": "two-sided paired Wilcoxon"
+    },
+    "ALPHA_CONCENTRATION": {
+      "ci": "deterministic bootstrap 95% CI",
+      "effect_size": null,
+      "method": "PROPOSED",
+      "metrics": [
+        "max_LPS",
+        "HHI",
+        "economic_retention",
+        "concentration_violations"
+      ],
+      "multiplicity": null,
+      "output": "alpha concentration frontier",
+      "paired_key": [
+        "seed"
+      ],
+      "primary": 0.4,
+      "seed_count": 30,
+      "seed_set": "FROZEN_REPLICATION_SEEDS_V1",
+      "test": "descriptive",
+      "values": [
+        1.0,
+        0.6,
+        0.5,
+        0.4,
+        0.33
+      ]
+    },
+    "EPSILON_SENSITIVITY": {
+      "ci": "deterministic bootstrap 95% CI",
+      "effect_size": "matched-pairs rank-biserial",
+      "method": "B3",
+      "metrics": [
+        "min_normalized_return",
+        "efficiency_retained",
+        "fairness-v2"
+      ],
+      "multiplicity": "Holm within epsilon family",
+      "output": "epsilon frontier",
+      "paired_key": [
+        "seed"
+      ],
+      "reference": 0.95,
+      "seed_count": 30,
+      "seed_set": "FROZEN_REPLICATION_SEEDS_V1",
+      "test": "descriptive plus paired Wilcoxon versus epsilon=0.95",
+      "values": [
+        0.8,
+        0.9,
+        0.95,
+        1.0
+      ]
+    },
+    "LAMBDA_STABILITY": {
+      "ci": "deterministic bootstrap 95% CI",
+      "effect_size": null,
+      "method": "PROPOSED",
+      "metrics": [
+        "soft_disruption_rate",
+        "economic_retention"
+      ],
+      "multiplicity": null,
+      "output": "lambda stability frontier",
+      "paired_key": [
+        "seed"
+      ],
+      "primary": 0.05,
+      "seed_count": 30,
+      "seed_set": "FROZEN_REPLICATION_SEEDS_V1",
+      "test": "descriptive",
+      "values": [
+        0.0,
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        1.0
+      ]
+    },
+    "PRIMARY": {
+      "ci": "deterministic bootstrap 95% CI",
+      "effect_size": "matched-pairs rank-biserial",
+      "metrics": [
+        "cash",
+        "area",
+        "fairness-v2",
+        "LPS",
+        "HHI",
+        "consent_coverage",
+        "disruption",
+        "infeasibility",
+        "runtime"
+      ],
+      "multiplicity": "Holm within predefined family",
+      "output": "T1 main results",
+      "paired_key": [
+        "seed"
+      ],
+      "seed_count": 30,
+      "seed_set": "FROZEN_REPLICATION_SEEDS_V1",
+      "test": "two-sided paired Wilcoxon signed-rank",
+      "treatments": [
+        "B1",
+        "B2",
+        "B3",
+        "PROPOSED"
+      ]
+    },
+    "SCALABILITY": {
+      "ci": "deterministic bootstrap 95% CI",
+      "effect_size": null,
+      "generator_call": "build_instance(seed, n_farmers=n)",
+      "metrics": [
+        "runtime",
+        "solver_status",
+        "cash_per_ha"
+      ],
+      "multiplicity": null,
+      "n_farmers_values": [
+        25,
+        50,
+        100,
+        250,
+        500
+      ],
+      "output": "scalability figure",
+      "paired_key": [
+        "seed",
+        "n_farmers"
+      ],
+      "population_semantics": "n_farmers is the TOTAL number of farmers in the generated synthetic instance, not farmers per collective.",
+      "seed_count": 30,
+      "seed_set": "FROZEN_REPLICATION_SEEDS_V1",
+      "test": "descriptive"
+    },
+    "UNCERTAINTY": {
+      "ci": "deterministic bootstrap 95% CI",
+      "conditions": [
+        "U0",
+        "UW",
+        "UM",
+        "UR",
+        "UP",
+        "UJ"
+      ],
+      "continuous_test": "two-sided paired Wilcoxon on both-Optimal pairs",
+      "effect_size": "matched-pairs rank-biserial",
+      "feasibility_test": "exact paired McNemar",
+      "metrics": [
+        "tiers",
+        "infeasibility",
+        "consent_coverage"
+      ],
+      "multiplicity": "Holm within uncertainty family",
+      "output": "uncertainty table",
+      "paired_continuous_rule": "Compare by seed using seeds where both compared runs are Optimal.",
+      "paired_key": [
+        "seed"
+      ],
+      "realisation_identity": "One deterministic realisation is drawn for each seed?condition and reused across compared methods within that condition.",
+      "reference": "U0",
+      "reliability_rule": "Every frozen seed remains in feasibility/reliability analysis; infeasible outcomes are never zero-imputed.",
+      "seed_count": 30,
+      "seed_set": "FROZEN_REPLICATION_SEEDS_V1"
+    }
+  },
+  "interpretation_boundaries": [
+    "Synthetic experiment; not empirical farmer-population inference.",
+    "Farmer-response and renewed-consent simulation apply only to Proposed.",
+    "Do not compare Proposed FINAL_REALIZED to baseline PLANNED as equivalent treatment states.",
+    "Sensitivity families remain separate; no epsilon?lambda?alpha?action?uncertainty Cartesian product.",
+    "No parameter may be changed after observing Final30 without an explicit protocol amendment."
+  ],
+  "manifest_kind": "FarmSync publication experiment matrix",
+  "primary_configuration": {
+    "action_profile": "PRIMARY",
+    "action_protocol": "action-consent-v1",
+    "alpha": 0.4,
+    "epsilon": 0.95,
+    "fairness_version": "fairness-v2",
+    "lambda": 0.05,
+    "publication_config_version": "farmsync-publication-config-v1",
+    "uncertainty_protocol": "uncertainty-v1"
+  },
+  "reproducibility": {
+    "design_source_commit": "e4528440a08a9211b499600e95b4695a39c9eb1e",
+    "provenance_manifest_path": "results/farmsync/audit/experiment_manifest.json",
+    "provenance_manifest_sha256": "e92d6db3fcd316fde7c9a9c24cd62980c771e55bc6eebe5692269f289b83d4f8",
+    "replication_seeds_path": "results/farmsync/audit/replication_seeds.json",
+    "replication_seeds_sha256": "7224b558c8afc0071152f0b9d3bcc4d9972452f52a480ef333233facc981bf40",
+    "rng_streams_path": "results/farmsync/audit/rng_streams.json",
+    "rng_streams_sha256": "3bd23959a9e93e0fdf87c580c9a0c9f140de5a9889f28b859144862f4c257ec9",
+    "runtime_initialisation": {
+      "processed_data_path": "data/farmsync/processed",
+      "reason": "Scientific runtime requires the existing frozen operational processed data to be loaded before optimisation. Final30 must consume it read-only.",
+      "regenerate_processed_data_during_final30": false,
+      "required_operation": "farmsync.ingest.operational.load(existing processed directory)",
+      "run_ingest_during_final30": false
+    },
+    "seed_count": 30,
+    "seed_list": [
+      52314,
+      57684,
+      65693,
+      80120,
+      192338,
+      196157,
+      200768,
+      222335,
+      262122,
+      288572,
+      320290,
+      321611,
+      331297,
+      385101,
+      449132,
+      496928,
+      514942,
+      621609,
+      627177,
+      637394,
+      651976,
+      679242,
+      720982,
+      737579,
+      750647,
+      803466,
+      870215,
+      885219,
+      908270,
+      947906
+    ],
+    "seed_set_id": "FROZEN_REPLICATION_SEEDS_V1"
+  },
+  "scientific_scope": {
+    "dataset": "synthetic",
+    "llm_in_scientific_optimisation": false,
+    "no_post_hoc_tuning": true,
+    "paired_design": true,
+    "paired_population_key": "master_seed",
+    "replication_count": 30
+  },
+  "statistics": {
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260812,
+    "bootstrap_seed_role": "analysis-only; not scientific RNG substream",
+    "ci_level": 0.95,
+    "infeasibility_policy": {
+      "continuous_metrics": "Optimal-only",
+      "never_impute_zero": true,
+      "paired_continuous": "both-Optimal seeds only",
+      "paired_feasibility": "exact McNemar",
+      "reliability": "retain every seed"
+    },
+    "multiplicity": "Holm within predefined families",
+    "paired_effect_size": "matched-pairs rank-biserial",
+    "paired_primary_test": "two-sided Wilcoxon signed-rank",
+    "predefined_families": {
+      "A_PLANNING_METHOD_COMPARISON": {
+        "effect_size": "matched-pairs rank-biserial",
+        "multiplicity": "Holm within family",
+        "primary_test": "two-sided paired Wilcoxon signed-rank",
+        "prohibition": "Do not treat Proposed FINAL_REALIZED and baseline PLANNED as equivalent treatment states.",
+        "scope": "Comparable PLANNED/optimised planning outcomes only"
+      },
+      "B_PROPOSED_DEPLOYMENT": {
+        "effect_size": "matched-pairs rank-biserial",
+        "multiplicity": "Holm within family",
+        "primary_test": "two-sided paired Wilcoxon signed-rank where paired continuous comparison applies",
+        "scope": [
+          "FINAL_REALIZED retention",
+          "recommendation-to-realisation",
+          "consent coverage",
+          "action/replanning disruption"
+        ]
+      },
+      "C_RELIABILITY": {
+        "missingness_policy": "No infeasible seed is discarded from reliability analysis.",
+        "paired_feasibility_test": "exact McNemar",
+        "scope": [
+          "solver Optimal/non-Optimal status",
+          "failed stage",
+          "infeasibility rate"
+        ]
+      }
+    },
+    "wilcoxon_zero_handling": "Pratt where supported"
+  },
+  "status": "FROZEN_BEFORE_FINAL30",
+  "version": "publication-experiment-matrix-v1"
+}

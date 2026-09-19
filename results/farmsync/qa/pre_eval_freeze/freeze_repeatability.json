@@ -1,0 +1,61 @@
+{
+  "match": true,
+  "run1": {
+    "crop_composition": {
+      "cotton": 7,
+      "groundnut": 45,
+      "maize": 113,
+      "onion": 44,
+      "pearl_millet": 6,
+      "pigeon_pea": 12,
+      "rice": 81,
+      "sorghum": 24,
+      "soybean": 42
+    },
+    "fairness_gini": 0.8455486116201985,
+    "final_cash": 12713380,
+    "hhi": 0.1844,
+    "integrity_ok": true,
+    "no_offer": 530,
+    "not_realised": 537,
+    "not_realised_reasons": {
+      "INITIAL_NO_RESPONSE": 1,
+      "INITIAL_REJECT_NO_ALTERNATIVE": 2,
+      "NO_INITIAL_OFFER": 530,
+      "RENEWED_NO_RESPONSE": 1,
+      "RENEWED_REJECT": 1,
+      "WITHDRAW": 2
+    },
+    "offered": 381,
+    "realised": 374
+  },
+  "run2": {
+    "crop_composition": {
+      "cotton": 7,
+      "groundnut": 45,
+      "maize": 113,
+      "onion": 44,
+      "pearl_millet": 6,
+      "pigeon_pea": 12,
+      "rice": 81,
+      "sorghum": 24,
+      "soybean": 42
+    },
+    "fairness_gini": 0.8455486116201985,
+    "final_cash": 12713380,
+    "hhi": 0.1844,
+    "integrity_ok": true,
+    "no_offer": 530,
+    "not_realised": 537,
+    "not_realised_reasons": {
+      "INITIAL_NO_RESPONSE": 1,
+      "INITIAL_REJECT_NO_ALTERNATIVE": 2,
+      "NO_INITIAL_OFFER": 530,
+      "RENEWED_NO_RESPONSE": 1,
+      "RENEWED_REJECT": 1,
+      "WITHDRAW": 2
+    },
+    "offered": 381,
+    "realised": 374
+  }
+}

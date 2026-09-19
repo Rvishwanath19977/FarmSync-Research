@@ -1,0 +1,35 @@
+{
+  "run": "B2",
+  "dataset_hash": "9984aa9948740c06",
+  "budget_tightness": "base",
+  "price_basis": "AGMARKNET market median monthly modal 2023-2025",
+  "objective": "cash net return (revenue \u2212 A2+FL)",
+  "economic_return_basis": "C2",
+  "hard_constraints_satisfied": true,
+  "hard_constraint_violations": 0,
+  "metrics": {
+    "total_return": 6878469.0,
+    "total_cash_return": 13779096.0,
+    "gini_farmer_return": 0.741,
+    "mean_farmer_return": 27558.0,
+    "median_farmer_return": 14355.0,
+    "min_farmer_return": 227.0,
+    "plots_allocated": 395,
+    "plots_fallow": 516,
+    "land_utilisation_pct": 43.7,
+    "crop_diversity": 8,
+    "crop_area_ha": {
+      "maize": 119.2,
+      "rice": 63.5,
+      "soybean": 51.8,
+      "onion": 49.6,
+      "groundnut": 28.8,
+      "pigeon_pea": 21.2,
+      "sorghum": 4.7,
+      "cotton": 1.4
+    },
+    "market_cap_binding_crops": [
+      "groundnut"
+    ]
+  }
+}

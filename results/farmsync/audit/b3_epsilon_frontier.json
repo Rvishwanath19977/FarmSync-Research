@@ -1,0 +1,45 @@
+{
+  "canonical_b2_tstar": 13822731.0,
+  "tstar_source": "b2_ilp_total (== run_b2_ilp farmer_cash, verified equal)",
+  "rule": "highest eps with min_norm >= 0.99*max_attainable",
+  "max_attainable_min_norm": 333.9,
+  "selected_epsilon": 0.95,
+  "frontier": {
+    "0.8": {
+      "total_cash": 11657596.0,
+      "pct_of_T*": 84.3,
+      "min_norm": 333.9,
+      "per_ha_gini_all": 0.7105,
+      "participation": 58.8,
+      "status": "Optimal",
+      "runtime_s": 0.13
+    },
+    "0.9": {
+      "total_cash": 12446425.0,
+      "pct_of_T*": 90.0,
+      "min_norm": 333.9,
+      "per_ha_gini_all": 0.7143,
+      "participation": 58.8,
+      "status": "Optimal",
+      "runtime_s": 0.14
+    },
+    "0.95": {
+      "total_cash": 13142166.0,
+      "pct_of_T*": 95.1,
+      "min_norm": 333.9,
+      "per_ha_gini_all": 0.7182,
+      "participation": 58.8,
+      "status": "Optimal",
+      "runtime_s": 0.24
+    },
+    "1.0": {
+      "total_cash": 13822731.0,
+      "pct_of_T*": 100.0,
+      "min_norm": 0.0,
+      "per_ha_gini_all": 0.7076,
+      "participation": 57.6,
+      "status": "Optimal",
+      "runtime_s": 1.02
+    }
+  }
+}

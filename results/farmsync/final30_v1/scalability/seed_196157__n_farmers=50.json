@@ -1,0 +1,358 @@
+{
+  "completion": "COMPLETE",
+  "dataset_attestation_sha256": "fd42123f24a6823484dc0fa0f5d34192c8c23ea9a03e45d4674e42515bb3514e",
+  "family": "SCALABILITY",
+  "matrix_sha256": "b339a43ab581a0d481da230b84918363bc82f771b993f575c50ea903cdecc0f0",
+  "parameters": {
+    "n_farmers": 50,
+    "population_semantics": "total generated synthetic farmers"
+  },
+  "payload": {
+    "instance": {
+      "dataset_version": "v0.1.0",
+      "instance_hash": "2d615c639a665b4f",
+      "master_seed": 196157,
+      "n_farmers": 50,
+      "n_plots": 94,
+      "tightness": "base"
+    },
+    "methods": {
+      "B1": {
+        "area": 38.417,
+        "cash": 2904812.0,
+        "cash_per_allocated_ha": 75612.67147356638,
+        "concentration": {
+          "active_crops": [
+            "groundnut",
+            "maize",
+            "onion",
+            "rice",
+            "soybean"
+          ],
+          "max_LPS": 0.7787,
+          "mean_HHI": 0.3811,
+          "median_HHI": 0.3031,
+          "n_active_crops": 5,
+          "target_violations": 0
+        },
+        "epsilon": null,
+        "fairness_v2": {
+          "efficiency": {
+            "return_per_allocated_ha": 75612.7,
+            "total_cash_return": 2904812.0
+          },
+          "primary": {
+            "benefit_loss_vs_b1": {
+              "better": 0,
+              "mean_delta": 0,
+              "median_delta": 0,
+              "p10_delta": 0,
+              "p90_delta": 0,
+              "tolerance": 1.0,
+              "unchanged": 50,
+              "worse": 0
+            },
+            "fixed_cohort_mean_cash": {
+              "bottom_125_B1ref": 58096.2,
+              "bottom_50_B1ref": 58096.2
+            },
+            "n_farmers": 50,
+            "n_participating": 27,
+            "participation_rate_pct": 54.0,
+            "per_ha_gini_all": 0.7399
+          },
+          "supporting": {
+            "abs_gini_all": 0.8866,
+            "abs_gini_participant_only": 0.79,
+            "per_ha_gini_participants": 0.5183
+          }
+        },
+        "method": "B1",
+        "min_normalized_return": null,
+        "n": 37,
+        "optimal": true,
+        "runtime_s": 0.59,
+        "state": "PLANNED",
+        "status": "Optimal"
+      },
+      "B2": {
+        "area": 45.278,
+        "cash": 2193994.0,
+        "cash_per_allocated_ha": 48456.07138124476,
+        "concentration": {
+          "active_crops": [
+            "groundnut",
+            "maize",
+            "onion",
+            "rice",
+            "soybean"
+          ],
+          "max_LPS": 0.7978,
+          "mean_HHI": 0.4218,
+          "median_HHI": 0.3992,
+          "n_active_crops": 5,
+          "target_violations": 0
+        },
+        "epsilon": null,
+        "fairness_v2": {
+          "efficiency": {
+            "return_per_allocated_ha": 48456.1,
+            "total_cash_return": 2193994.0
+          },
+          "primary": {
+            "benefit_loss_vs_b1": {
+              "better": 0,
+              "mean_delta": -14216,
+              "median_delta": 0,
+              "p10_delta": 0,
+              "p90_delta": 0,
+              "tolerance": 1.0,
+              "unchanged": 49,
+              "worse": 1
+            },
+            "fixed_cohort_mean_cash": {
+              "bottom_125_B1ref": 43879.9,
+              "bottom_50_B1ref": 43879.9
+            },
+            "n_farmers": 50,
+            "n_participating": 27,
+            "participation_rate_pct": 54.0,
+            "per_ha_gini_all": 0.7496
+          },
+          "supporting": {
+            "abs_gini_all": 0.8802,
+            "abs_gini_participant_only": 0.7782,
+            "per_ha_gini_participants": 0.5363
+          }
+        },
+        "method": "B2",
+        "min_normalized_return": null,
+        "n": 39,
+        "optimal": true,
+        "runtime_s": 0.07,
+        "state": "PLANNED",
+        "status": "Optimal"
+      },
+      "B3": {
+        "area": 43.298,
+        "cash": 2108771.0,
+        "cash_per_allocated_ha": 48703.658367592034,
+        "concentration": {
+          "active_crops": [
+            "groundnut",
+            "maize",
+            "onion",
+            "rice",
+            "soybean"
+          ],
+          "max_LPS": 0.786,
+          "mean_HHI": 0.424,
+          "median_HHI": 0.4305,
+          "n_active_crops": 5,
+          "target_violations": 0
+        },
+        "epsilon": 0.95,
+        "fairness_v2": {
+          "efficiency": {
+            "return_per_allocated_ha": 48703.7,
+            "total_cash_return": 2108771.0
+          },
+          "primary": {
+            "benefit_loss_vs_b1": {
+              "better": 0,
+              "mean_delta": -15921,
+              "median_delta": 0,
+              "p10_delta": -5961,
+              "p90_delta": 0,
+              "tolerance": 1.0,
+              "unchanged": 41,
+              "worse": 9
+            },
+            "fixed_cohort_mean_cash": {
+              "bottom_125_B1ref": 42175.4,
+              "bottom_50_B1ref": 42175.4
+            },
+            "n_farmers": 50,
+            "n_participating": 27,
+            "participation_rate_pct": 54.0,
+            "per_ha_gini_all": 0.7798
+          },
+          "supporting": {
+            "abs_gini_all": 0.891,
+            "abs_gini_participant_only": 0.7982,
+            "per_ha_gini_participants": 0.5922
+          }
+        },
+        "method": "B3",
+        "min_normalized_return": 540.1,
+        "n": 34,
+        "optimal": true,
+        "runtime_s": 0.07,
+        "state": "PLANNED",
+        "status": "Optimal"
+      },
+      "PROPOSED": {
+        "action_counts": {
+          "ACCEPT": 31,
+          "MODIFY": 1,
+          "NO_RESPONSE": 1,
+          "REJECT": 1,
+          "WITHDRAW": 0
+        },
+        "alpha": 0.4,
+        "concentration_constraint_scope": "RECOMMENDED_REVISED only",
+        "consent_coverage_final": 1.0,
+        "failed_stage": null,
+        "fairness_v2_final": {
+          "benefit_loss_vs_b1": {
+            "better": 0,
+            "mean_delta": -39577,
+            "median_delta": 0,
+            "p10_delta": -25390,
+            "p90_delta": 0,
+            "tolerance": 1.0,
+            "unchanged": 38,
+            "worse": 12
+          },
+          "fixed_cohort_mean_cash": {
+            "bottom_125_B1ref": 18519.0,
+            "bottom_50_B1ref": 18519.0
+          },
+          "n_farmers": 50,
+          "n_participating": 24,
+          "participation_rate_pct": 48.0,
+          "per_ha_gini_all": 0.8087
+        },
+        "fairness_v2_initial": {
+          "benefit_loss_vs_b1": {
+            "better": 0,
+            "mean_delta": -18728,
+            "median_delta": 0,
+            "p10_delta": -16651,
+            "p90_delta": 0,
+            "tolerance": 1.0,
+            "unchanged": 38,
+            "worse": 12
+          },
+          "fixed_cohort_mean_cash": {
+            "bottom_125_B1ref": 39368.4,
+            "bottom_50_B1ref": 39368.4
+          },
+          "n_farmers": 50,
+          "n_participating": 25,
+          "participation_rate_pct": 50.0,
+          "per_ha_gini_all": 0.7908
+        },
+        "final_realized_concentration": {
+          "active_crops": [
+            "maize",
+            "onion",
+            "rice",
+            "soybean"
+          ],
+          "max_LPS": 0.6117,
+          "mean_HHI": 0.2955,
+          "median_HHI": 0.3433,
+          "n_active_crops": 4,
+          "target_violations": 0
+        },
+        "instance_hash": "2d615c639a665b4f",
+        "lambda": 0.05,
+        "ledger_event_count": 96,
+        "ledger_sha256": "da2bb0f23521a51ffae5f6166b09862c9448ca8a0234237254ca50ba9148f68c",
+        "optimal": true,
+        "profile": "PRIMARY",
+        "protocol": "action-consent-v1",
+        "recommendation_realisation_ratio_vs_planned": 0.4391,
+        "recommendation_realisation_ratio_vs_recommended": 0.9638,
+        "recommended_revised_concentration": {
+          "active_crops": [
+            "maize",
+            "onion",
+            "rice",
+            "soybean"
+          ],
+          "max_LPS": 0.3871,
+          "mean_HHI": 0.2694,
+          "median_HHI": 0.2944,
+          "n_active_crops": 4,
+          "target_violations": 0
+        },
+        "recommended_revised_phase4": {
+          "alpha": 0.4,
+          "e_star_alpha": 960683.0,
+          "status": "Optimal",
+          "t_floor_alpha": 0.0
+        },
+        "recommended_revised_stability": {
+          "changed_flex": 1,
+          "changed_flex_area": 0.9,
+          "changed_soft": 3,
+          "changed_soft_area": 8.0,
+          "crop_change_counts": {
+            "groundnut->rice": 1,
+            "onion->maize": 1,
+            "onion->rice": 1,
+            "soybean->maize": 1
+          },
+          "e_star": 960683.0,
+          "epsilon": 0.95,
+          "fairness_floor_tolerance": 0.0,
+          "fairness_structure": "BOTH: E>=eps*E*_alpha AND min_norm>=t_floor_alpha",
+          "flex_area": 13.2,
+          "formulation_version": "ilp-ref-v1",
+          "hard_lock_changes": 0,
+          "hard_lock_ok": true,
+          "lambda": 0.05,
+          "rejected_recovered": 0,
+          "rejected_recovered_area": 0.0,
+          "runtime_s": 0.06,
+          "soft_lock_area": 14.7,
+          "status": "Optimal",
+          "t_floor": 0.0
+        },
+        "renewed_counts": {
+          "ACCEPT": 3,
+          "NO_RESPONSE": 0,
+          "REJECT": 1
+        },
+        "renewed_prompts": 4,
+        "runtime_s": 1.4122462999948766,
+        "status": "Optimal",
+        "tiers": {
+          "FINAL_REALIZED": {
+            "area": 24.366,
+            "cash": 925950.0,
+            "cash_per_allocated_ha": 38001.72371337109,
+            "n": 28
+          },
+          "INITIAL_REALIZED": {
+            "area": 37.331,
+            "cash": 1968421.0,
+            "cash_per_allocated_ha": 52728.85805362835,
+            "n": 31
+          },
+          "PLANNED": {
+            "area": 43.298,
+            "cash": 2108771.0,
+            "cash_per_allocated_ha": 48703.658367592034,
+            "n": 34
+          },
+          "RECOMMENDED_REVISED": {
+            "area": 30.47,
+            "cash": 960683.0,
+            "cash_per_allocated_ha": 31528.815228093208,
+            "n": 29
+          }
+        },
+        "withdrawn_farmers": 0
+      }
+    },
+    "n_farmers": 50
+  },
+  "reused_from": null,
+  "schema": "farmsync-final30-cell-v1",
+  "seed": 196157,
+  "source_commit": "86129ec71998288db29bf562a7e1b1a9bcc2c9ae",
+  "written_utc": "2026-09-18T21:34:18+00:00"
+}

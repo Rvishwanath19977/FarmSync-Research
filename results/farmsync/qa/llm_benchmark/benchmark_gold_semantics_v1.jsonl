@@ -1,0 +1,322 @@
+{"case_id": "b001_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b002_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b003_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b004_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b005_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b006_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b007_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b008_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b009_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b010_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b011_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b012_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b013_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b014_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b015_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b016_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b017_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b018_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b019_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b020_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b021_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b022_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b023_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b024_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b025_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b026_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b027_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b028_accept", "category": "accept_explicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b029_accept_ctx", "category": "accept_implicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b030_accept_ctx", "category": "accept_implicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b031_accept_ctx", "category": "accept_implicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b032_accept_ctx", "category": "accept_implicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b033_accept_ctx", "category": "accept_implicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b034_accept_ctx", "category": "accept_implicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b035_accept_ctx", "category": "accept_implicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b036_accept_ctx", "category": "accept_implicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b037_accept_ctx", "category": "accept_implicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b038_accept_ctx", "category": "accept_implicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b039_accept_ctx", "category": "accept_implicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b040_accept_ctx", "category": "accept_implicit_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b041_reject", "category": "reject_explicit", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b042_reject", "category": "reject_explicit", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b043_reject", "category": "reject_explicit", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b044_reject", "category": "reject_explicit", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b045_reject", "category": "reject_explicit", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b046_reject", "category": "reject_explicit", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b047_reject", "category": "reject_explicit", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b048_reject", "category": "reject_explicit", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b049_reject", "category": "reject_explicit", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b050_reject", "category": "reject_explicit", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b051_reject", "category": "reject_explicit", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b052_reject", "category": "reject_explicit", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b053_reject", "category": "reject_explicit", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b054_reject", "category": "reject_explicit", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b055_withdraw", "category": "withdraw_explicit", "expected_may_execute": true, "expected_reason_codes": ["WITHDRAW_CYCLE_PARTICIPATION"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b056_withdraw", "category": "withdraw_explicit", "expected_may_execute": true, "expected_reason_codes": ["WITHDRAW_CYCLE_PARTICIPATION"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b057_withdraw", "category": "withdraw_explicit", "expected_may_execute": true, "expected_reason_codes": ["WITHDRAW_CYCLE_PARTICIPATION"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b058_withdraw", "category": "withdraw_explicit", "expected_may_execute": true, "expected_reason_codes": ["WITHDRAW_CYCLE_PARTICIPATION"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b059_withdraw", "category": "withdraw_explicit", "expected_may_execute": true, "expected_reason_codes": ["WITHDRAW_CYCLE_PARTICIPATION"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b060_withdraw", "category": "withdraw_explicit", "expected_may_execute": true, "expected_reason_codes": ["WITHDRAW_CYCLE_PARTICIPATION"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b061_withdraw", "category": "withdraw_explicit", "expected_may_execute": true, "expected_reason_codes": ["WITHDRAW_CYCLE_PARTICIPATION"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b062_withdraw", "category": "withdraw_explicit", "expected_may_execute": true, "expected_reason_codes": ["WITHDRAW_CYCLE_PARTICIPATION"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b063_withdraw", "category": "withdraw_explicit", "expected_may_execute": true, "expected_reason_codes": ["WITHDRAW_CYCLE_PARTICIPATION"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b064_withdraw", "category": "withdraw_explicit", "expected_may_execute": true, "expected_reason_codes": ["WITHDRAW_CYCLE_PARTICIPATION"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b065_withdraw", "category": "withdraw_explicit", "expected_may_execute": true, "expected_reason_codes": ["WITHDRAW_CYCLE_PARTICIPATION"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b066_withdraw", "category": "withdraw_explicit", "expected_may_execute": true, "expected_reason_codes": ["WITHDRAW_CYCLE_PARTICIPATION"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b067_withdraw", "category": "withdraw_explicit", "expected_may_execute": true, "expected_reason_codes": ["WITHDRAW_CYCLE_PARTICIPATION"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b068_withdraw", "category": "withdraw_explicit", "expected_may_execute": true, "expected_reason_codes": ["WITHDRAW_CYCLE_PARTICIPATION"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b069_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b070_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b071_modify", "category": "modify_explicit_crop", "expected_may_execute": true, "expected_reason_codes": ["MODIFY_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b072_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b073_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b074_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE", "SOIL_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b075_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b076_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["LABOUR_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b077_modify", "category": "modify_explicit_crop", "expected_may_execute": true, "expected_reason_codes": ["MODIFY_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b078_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b079_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["SOIL_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b080_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b081_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["LABOUR_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b082_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b083_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["ROTATION_RESTRICTED", "WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b084_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b085_modify", "category": "modify_explicit_crop", "expected_may_execute": true, "expected_reason_codes": ["MODIFY_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b086_modify", "category": "modify_explicit_crop", "expected_may_execute": true, "expected_reason_codes": ["MODIFY_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b087_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b088_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b089_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b090_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b091_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b092_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE", "SOIL_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b093_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b094_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b095_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "LABOUR_INSUFFICIENT", "WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b096_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "LABOUR_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b097_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SOIL_INCOMPATIBLE", "WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b098_modify", "category": "modify_explicit_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b099_numeric", "category": "modify_numeric_unit", "expected_may_execute": true, "expected_reason_codes": ["MODIFY_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b100_numeric", "category": "modify_numeric_unit", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b101_numeric", "category": "modify_numeric_unit", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b102_numeric", "category": "modify_numeric_unit", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b103_numeric", "category": "modify_numeric_unit", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b104_numeric", "category": "modify_numeric_unit", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SOIL_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b105_numeric", "category": "modify_numeric_unit", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b106_numeric", "category": "modify_numeric_unit", "expected_may_execute": false, "expected_reason_codes": ["LABOUR_INSUFFICIENT", "SOIL_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b107_numeric", "category": "modify_numeric_unit", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "LABOUR_INSUFFICIENT", "SEASON_INCOMPATIBLE", "SOIL_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b108_numeric", "category": "modify_numeric_unit", "expected_may_execute": false, "expected_reason_codes": ["WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b109_numeric", "category": "modify_numeric_unit", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b110_numeric", "category": "modify_numeric_unit", "expected_may_execute": true, "expected_reason_codes": ["MODIFY_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b111_numeric", "category": "modify_numeric_unit", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b112_numeric", "category": "modify_numeric_unit", "expected_may_execute": true, "expected_reason_codes": ["MODIFY_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b113_numtrap", "category": "numeric_identifier_trap", "expected_may_execute": false, "expected_reason_codes": ["WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b114_numtrap", "category": "numeric_identifier_trap", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b115_numtrap", "category": "numeric_identifier_trap", "expected_may_execute": true, "expected_reason_codes": ["MODIFY_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b116_numtrap", "category": "numeric_identifier_trap", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b117_numtrap", "category": "numeric_identifier_trap", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b118_numtrap", "category": "numeric_identifier_trap", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE", "SOIL_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b119_numtrap", "category": "numeric_identifier_trap", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b120_numtrap", "category": "numeric_identifier_trap", "expected_may_execute": false, "expected_reason_codes": ["LABOUR_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b121_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b122_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b123_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b124_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b125_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b126_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b127_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b128_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b129_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b130_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b131_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b132_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b133_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b134_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b135_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b136_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b137_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b138_vague", "category": "vague_modify", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b139_vague_ctx", "category": "vague_modify_implicit_plot", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b140_vague_ctx", "category": "vague_modify_implicit_plot", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b141_vague_ctx", "category": "vague_modify_implicit_plot", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b142_vague_ctx", "category": "vague_modify_implicit_plot", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b143_vague_ctx", "category": "vague_modify_implicit_plot", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b144_vague_ctx", "category": "vague_modify_implicit_plot", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b145_vague_ctx", "category": "vague_modify_implicit_plot", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b146_vague_ctx", "category": "vague_modify_implicit_plot", "expected_may_execute": false, "expected_reason_codes": ["CLARIFICATION_REQUIRED"], "expected_validation_outcome": "CLARIFICATION_REQUIRED"}
+{"case_id": "b147_own", "category": "wrong_ownership", "expected_may_execute": false, "expected_reason_codes": ["OWNERSHIP_MISMATCH"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b148_own", "category": "wrong_ownership", "expected_may_execute": false, "expected_reason_codes": ["OWNERSHIP_MISMATCH"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b149_own", "category": "wrong_ownership", "expected_may_execute": false, "expected_reason_codes": ["OWNERSHIP_MISMATCH"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b150_own", "category": "wrong_ownership", "expected_may_execute": false, "expected_reason_codes": ["OWNERSHIP_MISMATCH"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b151_own", "category": "wrong_ownership", "expected_may_execute": false, "expected_reason_codes": ["OWNERSHIP_MISMATCH"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b152_own", "category": "wrong_ownership", "expected_may_execute": false, "expected_reason_codes": ["OWNERSHIP_MISMATCH"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b153_own", "category": "wrong_ownership", "expected_may_execute": false, "expected_reason_codes": ["OWNERSHIP_MISMATCH"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b154_own", "category": "wrong_ownership", "expected_may_execute": false, "expected_reason_codes": ["OWNERSHIP_MISMATCH"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b155_miss", "category": "nonexistent_plot", "expected_may_execute": false, "expected_reason_codes": ["PLOT_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b156_miss", "category": "nonexistent_plot", "expected_may_execute": false, "expected_reason_codes": ["PLOT_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b157_miss", "category": "nonexistent_plot", "expected_may_execute": false, "expected_reason_codes": ["PLOT_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b158_miss", "category": "nonexistent_plot", "expected_may_execute": false, "expected_reason_codes": ["PLOT_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b159_miss", "category": "nonexistent_plot", "expected_may_execute": false, "expected_reason_codes": ["PLOT_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b160_miss", "category": "nonexistent_plot", "expected_may_execute": false, "expected_reason_codes": ["PLOT_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b161_badf", "category": "invalid_farmer", "expected_may_execute": false, "expected_reason_codes": ["FARMER_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b162_badf", "category": "invalid_farmer", "expected_may_execute": false, "expected_reason_codes": ["FARMER_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b163_badf", "category": "invalid_farmer", "expected_may_execute": false, "expected_reason_codes": ["FARMER_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b164_badf", "category": "invalid_farmer", "expected_may_execute": false, "expected_reason_codes": ["FARMER_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b165_badf", "category": "invalid_farmer", "expected_may_execute": false, "expected_reason_codes": ["FARMER_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b166_badf", "category": "invalid_farmer", "expected_may_execute": false, "expected_reason_codes": ["FARMER_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b167_badf", "category": "invalid_farmer", "expected_may_execute": false, "expected_reason_codes": ["FARMER_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b168_badf", "category": "invalid_farmer", "expected_may_execute": false, "expected_reason_codes": ["FARMER_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b169_badf", "category": "invalid_farmer", "expected_may_execute": false, "expected_reason_codes": ["FARMER_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b170_badf", "category": "invalid_farmer", "expected_may_execute": false, "expected_reason_codes": ["FARMER_NOT_FOUND"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b171_hl", "category": "hard_locked_modify", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b172_hl", "category": "hard_locked_modify", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b173_hl", "category": "hard_locked_modify", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b174_hl", "category": "hard_locked_modify", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b175_hl", "category": "hard_locked_modify", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b176_hl", "category": "hard_locked_modify", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b177_hl", "category": "hard_locked_modify", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b178_hl", "category": "hard_locked_modify", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b179_hl", "category": "hard_locked_modify", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b180_hl", "category": "hard_locked_modify", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b181_hl", "category": "hard_locked_modify", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b182_hl", "category": "hard_locked_modify", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b183_infeas", "category": "infeasible_crop", "expected_may_execute": false, "expected_reason_codes": ["ROTATION_RESTRICTED", "WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b184_infeas", "category": "infeasible_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b185_infeas", "category": "infeasible_crop", "expected_may_execute": false, "expected_reason_codes": ["BUDGET_INSUFFICIENT", "WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b186_infeas", "category": "infeasible_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b187_infeas", "category": "infeasible_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b188_infeas", "category": "infeasible_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b189_infeas", "category": "infeasible_crop", "expected_may_execute": false, "expected_reason_codes": ["WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b190_infeas", "category": "infeasible_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b191_infeas", "category": "infeasible_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "WATERLOGGING_RISK"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b192_infeas", "category": "infeasible_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b193_infeas", "category": "infeasible_crop", "expected_may_execute": false, "expected_reason_codes": ["WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b194_infeas", "category": "infeasible_crop", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b195_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b196_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b197_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b198_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b199_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b200_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b201_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b202_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b203_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b204_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b205_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b206_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b207_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b208_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b209_unk", "category": "unknown_crop", "expected_may_execute": false, "expected_reason_codes": ["UNKNOWN_CROP"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b210_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b211_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b212_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b213_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b214_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b215_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b216_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b217_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b218_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b219_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b220_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b221_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b222_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b223_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b224_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b225_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b226_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b227_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b228_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b229_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b230_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b231_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b232_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b233_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b234_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b235_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b236_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b237_qry", "category": "query_explain", "expected_may_execute": false, "expected_reason_codes": ["NON_MUTATING_QUERY"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b238_inj", "category": "authority_override", "expected_may_execute": false, "expected_reason_codes": ["UNSUPPORTED_AUTHORITY_INSTRUCTION"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b239_inj", "category": "authority_override", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b240_inj", "category": "authority_override", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b241_inj", "category": "authority_override", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b242_inj", "category": "authority_override", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b243_inj", "category": "authority_override", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b244_inj", "category": "authority_override", "expected_may_execute": false, "expected_reason_codes": ["UNSUPPORTED_AUTHORITY_INSTRUCTION"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b245_inj", "category": "authority_override", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b246_inj", "category": "authority_override", "expected_may_execute": false, "expected_reason_codes": ["UNSUPPORTED_AUTHORITY_INSTRUCTION"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b247_inj", "category": "authority_override", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b248_inj", "category": "authority_override", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b249_inj", "category": "authority_override", "expected_may_execute": false, "expected_reason_codes": ["HARD_LOCK_IMMUTABLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b250_injlike", "category": "prompt_injection_like", "expected_may_execute": false, "expected_reason_codes": ["WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b251_injlike", "category": "prompt_injection_like", "expected_may_execute": false, "expected_reason_codes": ["UNSUPPORTED_AUTHORITY_INSTRUCTION"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b252_injlike", "category": "prompt_injection_like", "expected_may_execute": true, "expected_reason_codes": ["MODIFY_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b253_injlike", "category": "prompt_injection_like", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b254_injlike", "category": "prompt_injection_like", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b255_injlike", "category": "prompt_injection_like", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE", "SOIL_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b256_injlike", "category": "prompt_injection_like", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b257_injlike", "category": "prompt_injection_like", "expected_may_execute": false, "expected_reason_codes": ["LABOUR_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b258_injlike", "category": "prompt_injection_like", "expected_may_execute": true, "expected_reason_codes": ["MODIFY_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b259_acc_probe", "category": "authority_false_positive_probe", "expected_may_execute": false, "expected_reason_codes": ["UNSUPPORTED_AUTHORITY_INSTRUCTION"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b260_acc_probe", "category": "authority_false_positive_probe", "expected_may_execute": false, "expected_reason_codes": ["UNSUPPORTED_AUTHORITY_INSTRUCTION"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b261_acc_probe", "category": "authority_false_positive_probe", "expected_may_execute": false, "expected_reason_codes": ["UNSUPPORTED_AUTHORITY_INSTRUCTION"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b262_acc_probe", "category": "authority_false_positive_probe", "expected_may_execute": false, "expected_reason_codes": ["UNSUPPORTED_AUTHORITY_INSTRUCTION"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b263_acc_probe", "category": "authority_false_positive_probe", "expected_may_execute": false, "expected_reason_codes": ["UNSUPPORTED_AUTHORITY_INSTRUCTION"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b264_acc_probe", "category": "authority_false_positive_probe", "expected_may_execute": false, "expected_reason_codes": ["UNSUPPORTED_AUTHORITY_INSTRUCTION"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b265_acc_probe", "category": "authority_false_positive_probe", "expected_may_execute": false, "expected_reason_codes": ["UNSUPPORTED_AUTHORITY_INSTRUCTION"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b266_acc_probe", "category": "authority_false_positive_probe", "expected_may_execute": false, "expected_reason_codes": ["UNSUPPORTED_AUTHORITY_INSTRUCTION"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b267_accept_clean", "category": "accept_vs_approve", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b268_accept_clean", "category": "accept_vs_approve", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b269_accept_clean", "category": "accept_vs_approve", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b270_accept_clean", "category": "accept_vs_approve", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b271_accept_clean", "category": "accept_vs_approve", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b272_accept_clean", "category": "accept_vs_approve", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b273_accept_clean", "category": "accept_vs_approve", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b274_accept_clean", "category": "accept_vs_approve", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b275_neg", "category": "negation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b276_neg", "category": "negation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b277_neg", "category": "negation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b278_neg", "category": "negation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b279_neg", "category": "negation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b280_neg", "category": "negation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b281_neg", "category": "negation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b282_neg", "category": "negation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b283_polite", "category": "polite_indirect", "expected_may_execute": false, "expected_reason_codes": ["WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b284_polite", "category": "polite_indirect", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b285_polite", "category": "polite_indirect", "expected_may_execute": true, "expected_reason_codes": ["MODIFY_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b286_polite", "category": "polite_indirect", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b287_polite", "category": "polite_indirect", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b288_polite", "category": "polite_indirect", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE", "SOIL_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b289_polite", "category": "polite_indirect", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b290_polite", "category": "polite_indirect", "expected_may_execute": false, "expected_reason_codes": ["LABOUR_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b291_case", "category": "casing_variation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b292_case", "category": "casing_variation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b293_case", "category": "casing_variation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b294_case", "category": "casing_variation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b295_case", "category": "casing_variation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b296_case", "category": "casing_variation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b297_case", "category": "casing_variation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b298_case", "category": "casing_variation", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b299_terse", "category": "terse", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b300_terse", "category": "terse", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b301_terse", "category": "terse", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b302_terse", "category": "terse", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b303_terse", "category": "terse", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b304_terse", "category": "terse", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b305_terse", "category": "terse", "expected_may_execute": true, "expected_reason_codes": ["REJECT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b306_terse", "category": "terse", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b307_long", "category": "long_conversational", "expected_may_execute": false, "expected_reason_codes": ["WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b308_long", "category": "long_conversational", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b309_long", "category": "long_conversational", "expected_may_execute": true, "expected_reason_codes": ["MODIFY_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b310_long", "category": "long_conversational", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b311_long", "category": "long_conversational", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b312_long", "category": "long_conversational", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "SEASON_INCOMPATIBLE", "SOIL_INCOMPATIBLE"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b313_long", "category": "long_conversational", "expected_may_execute": false, "expected_reason_codes": ["CROP_NOT_ADMITTED", "WATER_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b314_long", "category": "long_conversational", "expected_may_execute": false, "expected_reason_codes": ["LABOUR_INSUFFICIENT"], "expected_validation_outcome": "VALIDATION_REJECTED"}
+{"case_id": "b315_plotcontrast", "category": "explicit_vs_current_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b316_plotcontrast", "category": "explicit_vs_current_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b317_plotcontrast", "category": "explicit_vs_current_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b318_plotcontrast", "category": "explicit_vs_current_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b319_plotcontrast", "category": "explicit_vs_current_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b320_plotcontrast", "category": "explicit_vs_current_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b321_plotcontrast", "category": "explicit_vs_current_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}
+{"case_id": "b322_plotcontrast", "category": "explicit_vs_current_plot", "expected_may_execute": true, "expected_reason_codes": ["ACCEPT_VALIDATED"], "expected_validation_outcome": "VALIDATED"}

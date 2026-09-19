@@ -1,0 +1,17 @@
+{
+  "all_baselines_optimal": true,
+  "b3_equals_proposed_planned_for_feasible_runs": true,
+  "cell_count": 180,
+  "comparison_boundary": "Baseline B1/B2/B3 values are PLANNED. Proposed FINAL_REALIZED is a downstream post-action/post-consent state and must not be treated as an equivalent treatment state.",
+  "condition_counts": {
+    "U0": 30,
+    "UJ": 30,
+    "UM": 30,
+    "UP": 30,
+    "UR": 30,
+    "UW": 30
+  },
+  "consistency_errors": [],
+  "generated_utc": "2026-09-19T09:09:25+00:00",
+  "schema": "farmsync-uncertainty-consistency-v1"
+}

@@ -1,0 +1,104 @@
+{
+  "api_key_persisted": false,
+  "benchmark": "farmsync-parser-benchmark-v1",
+  "benchmark_data_nature": "SYNTHETIC_CONSTRUCTED",
+  "deterministic_metrics": {
+    "boundary_integrity_pass": true,
+    "denominator": 322,
+    "execution_equivalence_denominator": 106,
+    "execution_equivalence_rate": 1.0,
+    "execution_equivalent_count": 106,
+    "execution_non_applicable_count": 216,
+    "may_execute_equivalence_rate": 1.0,
+    "reason_code_equivalence_rate": 1.0,
+    "validated_payload_equivalence_rate": 1.0,
+    "validation_outcome_equivalence_rate": 1.0
+  },
+  "duration_s": 0.34,
+  "fixture_instance_hash": "5ea24037c2d9cb6a",
+  "integrity": {
+    "all_pass": true,
+    "benchmark_data_nature": "SYNTHETIC_CONSTRUCTED",
+    "benchmark_version": "farmsync-parser-benchmark-v1",
+    "case_count": 322,
+    "case_file_sha256": "f340323d64ae89a31b846a82a2761eb3a5f1e00de3d9000e7e1f0f27c9390e29",
+    "checks": {
+      "builder_sha256": true,
+      "case_count": true,
+      "case_file_sha256": true,
+      "context_policy_version": true,
+      "evaluator_sha256": true,
+      "frozen_contract_sha256": true,
+      "gold_semantics_sha256": true,
+      "model_is_terra": true,
+      "runtime_prompt_version": true,
+      "runtime_schema_version": true,
+      "semantic_case_set_hash": true,
+      "service_sha256": true
+    },
+    "manifest_fixture_instance_hash": "5ea24037c2d9cb6a",
+    "manifest_model": "gpt-5.6-terra",
+    "prompt_version": "p7-parse-live-v3",
+    "schema_version": "farmsync-farmer-request-v1",
+    "semantic_case_set_hash": "ce2a6fabeb2ae641"
+  },
+  "mode": "mock",
+  "model_requested": "gpt-5.6-terra",
+  "parser_metrics": {
+    "_excludes_server_authoritative_farmer_id": true,
+    "_fields_scored": [
+      "action",
+      "plot_id",
+      "requested_crop",
+      "requested_value",
+      "unit",
+      "clarification_required"
+    ],
+    "_scoring": "fail-closed: non-OK parse earns no field credit",
+    "action": {
+      "accuracy": 1.0,
+      "denominator": 322
+    },
+    "clarification_required": {
+      "accuracy": 1.0,
+      "denominator": 322,
+      "source": "raw structured response (recording client)"
+    },
+    "plot_id": {
+      "accuracy": 1.0,
+      "denominator": 322
+    },
+    "requested_crop": {
+      "accuracy": 1.0,
+      "denominator": 322
+    },
+    "requested_value": {
+      "accuracy": 1.0,
+      "denominator": 322
+    },
+    "trusted_identity_sent_to_model": false,
+    "trusted_identity_supplied_server_side": true,
+    "unit": {
+      "accuracy": 1.0,
+      "denominator": 322
+    }
+  },
+  "raw_text_persisted": false,
+  "reliability": {
+    "API_ERROR": 0,
+    "MODEL_REFUSAL": 0,
+    "OK": 322,
+    "SCHEMA_INVALID": 0,
+    "latency_ms": {
+      "max": 1,
+      "mean": 0.0,
+      "min": 0,
+      "n": 322
+    },
+    "n_cases": 322,
+    "reconciles": true,
+    "schema_valid": 322
+  },
+  "result_label": "OFFLINE HARNESS SELF-CONSISTENCY (MockLLMClient returns gold by construction; NOT parser accuracy / benchmark performance)",
+  "status": "COMPLETE"
+}

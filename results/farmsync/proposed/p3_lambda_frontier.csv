@@ -1,0 +1,7 @@
+lambda,status,revised_cash,recovery_vs_p1,recovery_fraction_of_loss,area,changed_soft,changed_flex,rejected_recovered,hard_lock_ok,soft_disruption_rate,per_ha_gini_all,runtime_s
+0,Optimal,12359219,894878,0.5334,289.6,17,18,18,True,0.0575,0.729,0.06
+0.05,Optimal,12340519,876178,0.5222,292.0,13,17,18,True,0.0313,0.7294,0.09
+0.1,Optimal,12340519,876178,0.5222,292.0,13,17,18,True,0.0313,0.7294,0.08
+0.25,Optimal,12269254,804913,0.4797,293.5,9,17,18,True,0.0157,0.7314,0.09
+0.5,Optimal,12269254,804913,0.4797,293.5,9,17,18,True,0.0157,0.7314,0.06
+1.0,Optimal,12097429,633088,0.3773,294.5,0,17,18,True,0.0,0.7343,0.08

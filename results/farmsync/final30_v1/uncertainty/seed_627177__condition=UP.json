@@ -1,0 +1,74 @@
+{
+  "completion": "COMPLETE",
+  "dataset_attestation_sha256": "fd42123f24a6823484dc0fa0f5d34192c8c23ea9a03e45d4674e42515bb3514e",
+  "family": "UNCERTAINTY",
+  "matrix_sha256": "b339a43ab581a0d481da230b84918363bc82f771b993f575c50ea903cdecc0f0",
+  "parameters": {
+    "condition": "UP"
+  },
+  "payload": {
+    "uncertainty": {
+      "baselines": {
+        "B1": {
+          "area": 244.909,
+          "cash": 10321435.0,
+          "failed_stage": null,
+          "n": 336,
+          "optimal": true,
+          "status": "Optimal"
+        },
+        "B2": {
+          "area": 247.881,
+          "cash": 10096287.0,
+          "failed_stage": null,
+          "n": 333,
+          "optimal": true,
+          "status": "Optimal"
+        },
+        "B3": {
+          "area": 241.055,
+          "cash": 9591496.0,
+          "failed_stage": null,
+          "n": 324,
+          "optimal": true,
+          "status": "Optimal"
+        }
+      },
+      "channel_summary": {
+        "absorption_states": {},
+        "participation_false": 48,
+        "participation_true": 452,
+        "price_cells": 0,
+        "resource_states": {},
+        "weather_states": {}
+      },
+      "meta": {
+        "channels": [
+          "P"
+        ],
+        "condition": "UP",
+        "instance_hash": "1dd4f4ed37cd2155",
+        "protocol": "uncertainty-v1",
+        "provenance": "SYNTHETIC_EXPERIMENTAL",
+        "realisation_hash": "2d3f2a9780eff518",
+        "seed": 627177
+      },
+      "participating_farmers": 452,
+      "participating_plots": 784,
+      "proposed": {
+        "cash": null,
+        "failed_stage": "proposed.reopt_phase3",
+        "optimal": false,
+        "realisation_hash": "2d3f2a9780eff518",
+        "realisation_hash_match": true,
+        "status": "Infeasible",
+        "uncertainty_condition": "UP"
+      }
+    }
+  },
+  "reused_from": null,
+  "schema": "farmsync-final30-cell-v1",
+  "seed": 627177,
+  "source_commit": "86129ec71998288db29bf562a7e1b1a9bcc2c9ae",
+  "written_utc": "2026-09-18T23:35:33+00:00"
+}

@@ -1,0 +1,1449 @@
+{
+  "alpha": {
+    "reliability": [
+      {
+        "alpha": 1.0,
+        "failure_types_json": "{\"Infeasible|proposed.reopt_phase3\": 4}",
+        "nonoptimal_runs": 4,
+        "optimal_rate_pct": 86.6667,
+        "optimal_runs": 26,
+        "total_runs": 30
+      },
+      {
+        "alpha": 0.6,
+        "failure_types_json": "{\"Infeasible|proposed.reopt_phase3\": 4}",
+        "nonoptimal_runs": 4,
+        "optimal_rate_pct": 86.6667,
+        "optimal_runs": 26,
+        "total_runs": 30
+      },
+      {
+        "alpha": 0.5,
+        "failure_types_json": "{\"Infeasible|proposed.reopt_phase3\": 4}",
+        "nonoptimal_runs": 4,
+        "optimal_rate_pct": 86.6667,
+        "optimal_runs": 26,
+        "total_runs": 30
+      },
+      {
+        "alpha": 0.4,
+        "failure_types_json": "{\"Infeasible|proposed.reopt_phase3\": 4}",
+        "nonoptimal_runs": 4,
+        "optimal_rate_pct": 86.6667,
+        "optimal_runs": 26,
+        "total_runs": 30
+      },
+      {
+        "alpha": 0.33,
+        "failure_types_json": "{\"Infeasible|proposed.reopt_phase3\": 4}",
+        "nonoptimal_runs": 4,
+        "optimal_rate_pct": 86.6667,
+        "optimal_runs": 26,
+        "total_runs": 30
+      }
+    ],
+    "statistics": [
+      {
+        "alpha": 1.0,
+        "analysis_scope": "optimal_only",
+        "max": 16331308.0,
+        "mean": 13361873.5,
+        "median": 13126546.5,
+        "metric": "planned_cash",
+        "min": 11317399.0,
+        "n": 26,
+        "sd": 1430751.4856388234
+      },
+      {
+        "alpha": 1.0,
+        "analysis_scope": "optimal_only",
+        "max": 12797649.0,
+        "mean": 10880986.423076924,
+        "median": 10711398.0,
+        "metric": "initial_realized_cash",
+        "min": 9187238.0,
+        "n": 26,
+        "sd": 1022609.4077406945
+      },
+      {
+        "alpha": 1.0,
+        "analysis_scope": "optimal_only",
+        "max": 14607017.0,
+        "mean": 12250415.461538462,
+        "median": 11743927.5,
+        "metric": "recommended_revised_cash",
+        "min": 10104525.0,
+        "n": 26,
+        "sd": 1337366.1609112811
+      },
+      {
+        "alpha": 1.0,
+        "analysis_scope": "optimal_only",
+        "max": 14345142.0,
+        "mean": 12004787.423076924,
+        "median": 11533604.5,
+        "metric": "final_realized_cash",
+        "min": 9974453.0,
+        "n": 26,
+        "sd": 1258918.2027505734
+      },
+      {
+        "alpha": 1.0,
+        "analysis_scope": "optimal_only",
+        "max": 0.9718875345034079,
+        "mean": 0.8993257775567659,
+        "median": 0.8923920936654521,
+        "metric": "final_vs_planned_ratio",
+        "min": 0.8281385443436385,
+        "n": 26,
+        "sd": 0.03707151960273395
+      },
+      {
+        "alpha": 1.0,
+        "analysis_scope": "optimal_only",
+        "max": 1.0,
+        "mean": 0.6697653846153846,
+        "median": 0.61755,
+        "metric": "max_LPS",
+        "min": 0.2184,
+        "n": 26,
+        "sd": 0.275881197535907
+      },
+      {
+        "alpha": 1.0,
+        "analysis_scope": "optimal_only",
+        "max": 0.2024,
+        "mean": 0.13830384615384617,
+        "median": 0.1333,
+        "metric": "mean_HHI",
+        "min": 0.065,
+        "n": 26,
+        "sd": 0.04169735224945805
+      },
+      {
+        "alpha": 1.0,
+        "analysis_scope": "optimal_only",
+        "max": 0.101,
+        "mean": 0.07065384615384615,
+        "median": 0.0681,
+        "metric": "median_HHI",
+        "min": 0.0555,
+        "n": 26,
+        "sd": 0.01130165406546248
+      },
+      {
+        "alpha": 1.0,
+        "analysis_scope": "optimal_only",
+        "max": 8.0,
+        "mean": 7.846153846153846,
+        "median": 8.0,
+        "metric": "n_active_crops",
+        "min": 7.0,
+        "n": 26,
+        "sd": 0.36794648440311994
+      },
+      {
+        "alpha": 1.0,
+        "analysis_scope": "optimal_only",
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "metric": "target_violations",
+        "min": 0.0,
+        "n": 26,
+        "sd": 0.0
+      },
+      {
+        "alpha": 0.6,
+        "analysis_scope": "optimal_only",
+        "max": 16331308.0,
+        "mean": 13361873.5,
+        "median": 13126546.5,
+        "metric": "planned_cash",
+        "min": 11317399.0,
+        "n": 26,
+        "sd": 1430751.4856388234
+      },
+      {
+        "alpha": 0.6,
+        "analysis_scope": "optimal_only",
+        "max": 12797649.0,
+        "mean": 10880986.423076924,
+        "median": 10711398.0,
+        "metric": "initial_realized_cash",
+        "min": 9187238.0,
+        "n": 26,
+        "sd": 1022609.4077406945
+      },
+      {
+        "alpha": 0.6,
+        "analysis_scope": "optimal_only",
+        "max": 14607017.0,
+        "mean": 12239510.0,
+        "median": 11743927.5,
+        "metric": "recommended_revised_cash",
+        "min": 10101695.0,
+        "n": 26,
+        "sd": 1346878.997718147
+      },
+      {
+        "alpha": 0.6,
+        "analysis_scope": "optimal_only",
+        "max": 14345142.0,
+        "mean": 11994023.5,
+        "median": 11533604.5,
+        "metric": "final_realized_cash",
+        "min": 9872201.0,
+        "n": 26,
+        "sd": 1269253.762446273
+      },
+      {
+        "alpha": 0.6,
+        "analysis_scope": "optimal_only",
+        "max": 0.971140387287876,
+        "mean": 0.8984652999204777,
+        "median": 0.8923057663426375,
+        "metric": "final_vs_planned_ratio",
+        "min": 0.8193546397369876,
+        "n": 26,
+        "sd": 0.037935649215570466
+      },
+      {
+        "alpha": 0.6,
+        "analysis_scope": "optimal_only",
+        "max": 0.5977,
+        "mean": 0.4513846153846154,
+        "median": 0.5012,
+        "metric": "max_LPS",
+        "min": 0.1851,
+        "n": 26,
+        "sd": 0.13227305603880996
+      },
+      {
+        "alpha": 0.6,
+        "analysis_scope": "optimal_only",
+        "max": 0.1537,
+        "mean": 0.10616153846153846,
+        "median": 0.11165,
+        "metric": "mean_HHI",
+        "min": 0.0638,
+        "n": 26,
+        "sd": 0.025286361176303354
+      },
+      {
+        "alpha": 0.6,
+        "analysis_scope": "optimal_only",
+        "max": 0.101,
+        "mean": 0.07003846153846154,
+        "median": 0.06765,
+        "metric": "median_HHI",
+        "min": 0.0555,
+        "n": 26,
+        "sd": 0.010881068952013013
+      },
+      {
+        "alpha": 0.6,
+        "analysis_scope": "optimal_only",
+        "max": 8.0,
+        "mean": 7.730769230769231,
+        "median": 8.0,
+        "metric": "n_active_crops",
+        "min": 7.0,
+        "n": 26,
+        "sd": 0.4523443208612048
+      },
+      {
+        "alpha": 0.6,
+        "analysis_scope": "optimal_only",
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "metric": "target_violations",
+        "min": 0.0,
+        "n": 26,
+        "sd": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "analysis_scope": "optimal_only",
+        "max": 16331308.0,
+        "mean": 13361873.5,
+        "median": 13126546.5,
+        "metric": "planned_cash",
+        "min": 11317399.0,
+        "n": 26,
+        "sd": 1430751.4856388234
+      },
+      {
+        "alpha": 0.5,
+        "analysis_scope": "optimal_only",
+        "max": 12797649.0,
+        "mean": 10880986.423076924,
+        "median": 10711398.0,
+        "metric": "initial_realized_cash",
+        "min": 9187238.0,
+        "n": 26,
+        "sd": 1022609.4077406945
+      },
+      {
+        "alpha": 0.5,
+        "analysis_scope": "optimal_only",
+        "max": 14605454.0,
+        "mean": 12222638.807692308,
+        "median": 11742310.0,
+        "metric": "recommended_revised_cash",
+        "min": 10096135.0,
+        "n": 26,
+        "sd": 1339662.5305164289
+      },
+      {
+        "alpha": 0.5,
+        "analysis_scope": "optimal_only",
+        "max": 14343579.0,
+        "mean": 11976083.423076924,
+        "median": 11531987.0,
+        "metric": "final_realized_cash",
+        "min": 9870062.0,
+        "n": 26,
+        "sd": 1261284.058738496
+      },
+      {
+        "alpha": 0.5,
+        "analysis_scope": "optimal_only",
+        "max": 0.971140387287876,
+        "mean": 0.8971997145080223,
+        "median": 0.887501559931529,
+        "metric": "final_vs_planned_ratio",
+        "min": 0.8107541681003472,
+        "n": 26,
+        "sd": 0.03875219123115894
+      },
+      {
+        "alpha": 0.5,
+        "analysis_scope": "optimal_only",
+        "max": 0.4872,
+        "mean": 0.3819346153846154,
+        "median": 0.4357,
+        "metric": "max_LPS",
+        "min": 0.1851,
+        "n": 26,
+        "sd": 0.09819117248432342
+      },
+      {
+        "alpha": 0.5,
+        "analysis_scope": "optimal_only",
+        "max": 0.1242,
+        "mean": 0.09257307692307692,
+        "median": 0.09620000000000001,
+        "metric": "mean_HHI",
+        "min": 0.0638,
+        "n": 26,
+        "sd": 0.019853131897860504
+      },
+      {
+        "alpha": 0.5,
+        "analysis_scope": "optimal_only",
+        "max": 0.101,
+        "mean": 0.06897307692307693,
+        "median": 0.0665,
+        "metric": "median_HHI",
+        "min": 0.0558,
+        "n": 26,
+        "sd": 0.01124546335878812
+      },
+      {
+        "alpha": 0.5,
+        "analysis_scope": "optimal_only",
+        "max": 8.0,
+        "mean": 7.576923076923077,
+        "median": 8.0,
+        "metric": "n_active_crops",
+        "min": 7.0,
+        "n": 26,
+        "sd": 0.503831473655779
+      },
+      {
+        "alpha": 0.5,
+        "analysis_scope": "optimal_only",
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "metric": "target_violations",
+        "min": 0.0,
+        "n": 26,
+        "sd": 0.0
+      },
+      {
+        "alpha": 0.4,
+        "analysis_scope": "optimal_only",
+        "max": 16331308.0,
+        "mean": 13361873.5,
+        "median": 13126546.5,
+        "metric": "planned_cash",
+        "min": 11317399.0,
+        "n": 26,
+        "sd": 1430751.4856388234
+      },
+      {
+        "alpha": 0.4,
+        "analysis_scope": "optimal_only",
+        "max": 12797649.0,
+        "mean": 10880986.423076924,
+        "median": 10711398.0,
+        "metric": "initial_realized_cash",
+        "min": 9187238.0,
+        "n": 26,
+        "sd": 1022609.4077406945
+      },
+      {
+        "alpha": 0.4,
+        "analysis_scope": "optimal_only",
+        "max": 14603372.0,
+        "mean": 12207736.73076923,
+        "median": 11666591.0,
+        "metric": "recommended_revised_cash",
+        "min": 10096135.0,
+        "n": 26,
+        "sd": 1344680.9542051097
+      },
+      {
+        "alpha": 0.4,
+        "analysis_scope": "optimal_only",
+        "max": 14341497.0,
+        "mean": 11961110.307692308,
+        "median": 11517925.5,
+        "metric": "final_realized_cash",
+        "min": 9866936.0,
+        "n": 26,
+        "sd": 1267604.0933540335
+      },
+      {
+        "alpha": 0.4,
+        "analysis_scope": "optimal_only",
+        "max": 0.971140387287876,
+        "mean": 0.8960488273600744,
+        "median": 0.8872859208628667,
+        "metric": "final_vs_planned_ratio",
+        "min": 0.8089197651442633,
+        "n": 26,
+        "sd": 0.039264927753578836
+      },
+      {
+        "alpha": 0.4,
+        "analysis_scope": "optimal_only",
+        "max": 0.3999,
+        "mean": 0.3411923076923077,
+        "median": 0.3668,
+        "metric": "max_LPS",
+        "min": 0.1851,
+        "n": 26,
+        "sd": 0.06613093631925634
+      },
+      {
+        "alpha": 0.4,
+        "analysis_scope": "optimal_only",
+        "max": 0.1169,
+        "mean": 0.08729615384615384,
+        "median": 0.08905,
+        "metric": "mean_HHI",
+        "min": 0.0638,
+        "n": 26,
+        "sd": 0.015636329000612154
+      },
+      {
+        "alpha": 0.4,
+        "analysis_scope": "optimal_only",
+        "max": 0.101,
+        "mean": 0.06912307692307693,
+        "median": 0.0665,
+        "metric": "median_HHI",
+        "min": 0.0555,
+        "n": 26,
+        "sd": 0.011349090102463993
+      },
+      {
+        "alpha": 0.4,
+        "analysis_scope": "optimal_only",
+        "max": 8.0,
+        "mean": 7.576923076923077,
+        "median": 8.0,
+        "metric": "n_active_crops",
+        "min": 7.0,
+        "n": 26,
+        "sd": 0.503831473655779
+      },
+      {
+        "alpha": 0.4,
+        "analysis_scope": "optimal_only",
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "metric": "target_violations",
+        "min": 0.0,
+        "n": 26,
+        "sd": 0.0
+      },
+      {
+        "alpha": 0.33,
+        "analysis_scope": "optimal_only",
+        "max": 16331308.0,
+        "mean": 13361873.5,
+        "median": 13126546.5,
+        "metric": "planned_cash",
+        "min": 11317399.0,
+        "n": 26,
+        "sd": 1430751.4856388234
+      },
+      {
+        "alpha": 0.33,
+        "analysis_scope": "optimal_only",
+        "max": 12797649.0,
+        "mean": 10880986.423076924,
+        "median": 10711398.0,
+        "metric": "initial_realized_cash",
+        "min": 9187238.0,
+        "n": 26,
+        "sd": 1022609.4077406945
+      },
+      {
+        "alpha": 0.33,
+        "analysis_scope": "optimal_only",
+        "max": 14404150.0,
+        "mean": 12167160.576923076,
+        "median": 11648153.5,
+        "metric": "recommended_revised_cash",
+        "min": 10096135.0,
+        "n": 26,
+        "sd": 1324444.8234812403
+      },
+      {
+        "alpha": 0.33,
+        "analysis_scope": "optimal_only",
+        "max": 14142275.0,
+        "mean": 11922934.423076924,
+        "median": 11500138.0,
+        "metric": "final_realized_cash",
+        "min": 9859538.0,
+        "n": 26,
+        "sd": 1255701.721692701
+      },
+      {
+        "alpha": 0.33,
+        "analysis_scope": "optimal_only",
+        "max": 0.971140387287876,
+        "mean": 0.8933173633685919,
+        "median": 0.8879226714626391,
+        "metric": "final_vs_planned_ratio",
+        "min": 0.798773738874523,
+        "n": 26,
+        "sd": 0.0406616858153599
+      },
+      {
+        "alpha": 0.33,
+        "analysis_scope": "optimal_only",
+        "max": 0.33,
+        "mean": 0.28439615384615385,
+        "median": 0.31245,
+        "metric": "max_LPS",
+        "min": 0.1851,
+        "n": 26,
+        "sd": 0.050589868398873944
+      },
+      {
+        "alpha": 0.33,
+        "analysis_scope": "optimal_only",
+        "max": 0.1119,
+        "mean": 0.07793461538461538,
+        "median": 0.07425000000000001,
+        "metric": "mean_HHI",
+        "min": 0.0596,
+        "n": 26,
+        "sd": 0.013777487210886964
+      },
+      {
+        "alpha": 0.33,
+        "analysis_scope": "optimal_only",
+        "max": 0.101,
+        "mean": 0.06790384615384615,
+        "median": 0.06509999999999999,
+        "metric": "median_HHI",
+        "min": 0.0533,
+        "n": 26,
+        "sd": 0.011811400620391497
+      },
+      {
+        "alpha": 0.33,
+        "analysis_scope": "optimal_only",
+        "max": 8.0,
+        "mean": 7.423076923076923,
+        "median": 7.0,
+        "metric": "n_active_crops",
+        "min": 7.0,
+        "n": 26,
+        "sd": 0.503831473655779
+      },
+      {
+        "alpha": 0.33,
+        "analysis_scope": "optimal_only",
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "metric": "target_violations",
+        "min": 0.0,
+        "n": 26,
+        "sd": 0.0
+      }
+    ]
+  },
+  "consistency": {
+    "alpha_0_40_matches_primary": true,
+    "alpha_cells": 150,
+    "consistency_errors": [],
+    "epsilon_cells": 120,
+    "generated_utc": "2026-09-19T09:10:20+00:00",
+    "lambda_0_05_matches_primary": true,
+    "lambda_cells": 180,
+    "schema": "farmsync-sensitivity-consistency-v1"
+  },
+  "epsilon": {
+    "reliability": [
+      {
+        "epsilon": 0.8,
+        "failure_status_counts_json": "{}",
+        "nonoptimal_runs": 0,
+        "optimal_rate_pct": 100.0,
+        "optimal_runs": 30,
+        "total_runs": 30
+      },
+      {
+        "epsilon": 0.9,
+        "failure_status_counts_json": "{}",
+        "nonoptimal_runs": 0,
+        "optimal_rate_pct": 100.0,
+        "optimal_runs": 30,
+        "total_runs": 30
+      },
+      {
+        "epsilon": 0.95,
+        "failure_status_counts_json": "{}",
+        "nonoptimal_runs": 0,
+        "optimal_rate_pct": 100.0,
+        "optimal_runs": 30,
+        "total_runs": 30
+      },
+      {
+        "epsilon": 1.0,
+        "failure_status_counts_json": "{\"Not Solved\": 2}",
+        "nonoptimal_runs": 2,
+        "optimal_rate_pct": 93.3333,
+        "optimal_runs": 28,
+        "total_runs": 30
+      }
+    ],
+    "statistics": [
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 0.8,
+        "max": 13740385.0,
+        "mean": 11448507.8,
+        "median": 11380600.5,
+        "metric": "cash",
+        "min": 9602714.0,
+        "n": 30,
+        "sd": 1188216.322421608
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 0.8,
+        "max": 351.419,
+        "mean": 309.0486333333333,
+        "median": 305.1735,
+        "metric": "area",
+        "min": 253.782,
+        "n": 30,
+        "sd": 26.38338666855146
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 0.8,
+        "max": 46239.37800532743,
+        "mean": 37179.827273823765,
+        "median": 37038.552116085295,
+        "metric": "cash_per_allocated_ha",
+        "min": 30677.04772831301,
+        "n": 30,
+        "sd": 3870.5842799147526
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 0.8,
+        "max": 861.2,
+        "mean": 390.70666666666665,
+        "median": 304.25,
+        "metric": "min_normalized_return",
+        "min": 273.2,
+        "n": 30,
+        "sd": 177.66048584275867
+      },
+      {
+        "analysis_scope": "all_runs",
+        "epsilon": 0.8,
+        "max": 0.2,
+        "mean": 0.13133333333333333,
+        "median": 0.125,
+        "metric": "runtime_s",
+        "min": 0.1,
+        "n": 30,
+        "sd": 0.02255007199825395
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 0.9,
+        "max": 15552039.0,
+        "mean": 12645853.833333334,
+        "median": 12444699.0,
+        "metric": "cash",
+        "min": 10759340.0,
+        "n": 30,
+        "sd": 1360384.7135879104
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 0.9,
+        "max": 379.392,
+        "mean": 335.5108,
+        "median": 335.5535,
+        "metric": "area",
+        "min": 277.831,
+        "n": 30,
+        "sd": 27.942395316572025
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 0.9,
+        "max": 44799.60148366963,
+        "mean": 37785.37431335346,
+        "median": 38590.8783407977,
+        "metric": "cash_per_allocated_ha",
+        "min": 30232.100307860997,
+        "n": 30,
+        "sd": 3618.7659851509225
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 0.9,
+        "max": 861.2,
+        "mean": 390.70666666666665,
+        "median": 304.25,
+        "metric": "min_normalized_return",
+        "min": 273.2,
+        "n": 30,
+        "sd": 177.66048584275867
+      },
+      {
+        "analysis_scope": "all_runs",
+        "epsilon": 0.9,
+        "max": 0.22,
+        "mean": 0.155,
+        "median": 0.15,
+        "metric": "runtime_s",
+        "min": 0.11,
+        "n": 30,
+        "sd": 0.02046864717663039
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 0.95,
+        "max": 16331308.0,
+        "mean": 13314895.866666667,
+        "median": 13126546.5,
+        "metric": "cash",
+        "min": 11317399.0,
+        "n": 30,
+        "sd": 1432426.0802319748
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 0.95,
+        "max": 400.671,
+        "mean": 346.587,
+        "median": 346.358,
+        "metric": "area",
+        "min": 281.094,
+        "n": 30,
+        "sd": 31.39041130334395
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 0.95,
+        "max": 46038.37074296618,
+        "mean": 38554.23897857898,
+        "median": 39235.00359514161,
+        "metric": "cash_per_allocated_ha",
+        "min": 30198.901342997124,
+        "n": 30,
+        "sd": 3867.1875066255884
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 0.95,
+        "max": 861.2,
+        "mean": 390.70666666666665,
+        "median": 304.25,
+        "metric": "min_normalized_return",
+        "min": 273.2,
+        "n": 30,
+        "sd": 177.66048584275867
+      },
+      {
+        "analysis_scope": "all_runs",
+        "epsilon": 0.95,
+        "max": 0.32,
+        "mean": 0.19533333333333333,
+        "median": 0.19,
+        "metric": "runtime_s",
+        "min": 0.14,
+        "n": 30,
+        "sd": 0.047323780807169855
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 1.0,
+        "max": 17152128.0,
+        "mean": 14096827.642857144,
+        "median": 13833835.0,
+        "metric": "cash",
+        "min": 11907597.0,
+        "n": 28,
+        "sd": 1501020.9854282325
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 1.0,
+        "max": 398.603,
+        "mean": 351.21964285714284,
+        "median": 350.18,
+        "metric": "area",
+        "min": 294.225,
+        "n": 28,
+        "sd": 27.2008500346674
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 1.0,
+        "max": 45727.9384493543,
+        "mean": 40170.34564770083,
+        "median": 40401.12200429523,
+        "metric": "cash_per_allocated_ha",
+        "min": 34060.0025078227,
+        "n": 28,
+        "sd": 3280.0081350690084
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "epsilon": 1.0,
+        "max": 861.2,
+        "mean": 84.23928571428571,
+        "median": 0.0,
+        "metric": "min_normalized_return",
+        "min": 0.0,
+        "n": 28,
+        "sd": 225.06545770358176
+      },
+      {
+        "analysis_scope": "all_runs",
+        "epsilon": 1.0,
+        "max": 120.06,
+        "mean": 10.268,
+        "median": 1.69,
+        "metric": "runtime_s",
+        "min": 0.21,
+        "n": 30,
+        "sd": 29.994699807661423
+      }
+    ]
+  },
+  "lambda": {
+    "reliability": [
+      {
+        "failure_types_json": "{\"Infeasible|proposed.reopt_phase3\": 4}",
+        "lambda": 0.0,
+        "nonoptimal_runs": 4,
+        "optimal_rate_pct": 86.6667,
+        "optimal_runs": 26,
+        "total_runs": 30
+      },
+      {
+        "failure_types_json": "{\"Infeasible|proposed.reopt_phase3\": 4}",
+        "lambda": 0.05,
+        "nonoptimal_runs": 4,
+        "optimal_rate_pct": 86.6667,
+        "optimal_runs": 26,
+        "total_runs": 30
+      },
+      {
+        "failure_types_json": "{\"Infeasible|proposed.reopt_phase3\": 4}",
+        "lambda": 0.1,
+        "nonoptimal_runs": 4,
+        "optimal_rate_pct": 86.6667,
+        "optimal_runs": 26,
+        "total_runs": 30
+      },
+      {
+        "failure_types_json": "{\"Infeasible|proposed.reopt_phase3\": 4}",
+        "lambda": 0.25,
+        "nonoptimal_runs": 4,
+        "optimal_rate_pct": 86.6667,
+        "optimal_runs": 26,
+        "total_runs": 30
+      },
+      {
+        "failure_types_json": "{\"Infeasible|proposed.reopt_phase3\": 4}",
+        "lambda": 0.5,
+        "nonoptimal_runs": 4,
+        "optimal_rate_pct": 86.6667,
+        "optimal_runs": 26,
+        "total_runs": 30
+      },
+      {
+        "failure_types_json": "{\"Infeasible|proposed.reopt_phase3\": 4}",
+        "lambda": 1.0,
+        "nonoptimal_runs": 4,
+        "optimal_rate_pct": 86.6667,
+        "optimal_runs": 26,
+        "total_runs": 30
+      }
+    ],
+    "statistics": [
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.0,
+        "max": 16331308.0,
+        "mean": 13361873.5,
+        "median": 13126546.5,
+        "metric": "planned_cash",
+        "min": 11317399.0,
+        "n": 26,
+        "sd": 1430751.4856388234
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.0,
+        "max": 12797649.0,
+        "mean": 10880986.423076924,
+        "median": 10711398.0,
+        "metric": "initial_realized_cash",
+        "min": 9187238.0,
+        "n": 26,
+        "sd": 1022609.4077406945
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.0,
+        "max": 14613493.0,
+        "mean": 12218245.346153846,
+        "median": 11676255.0,
+        "metric": "recommended_revised_cash",
+        "min": 10105486.0,
+        "n": 26,
+        "sd": 1344278.0151923914
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.0,
+        "max": 14335257.0,
+        "mean": 11967155.5,
+        "median": 11518159.0,
+        "metric": "final_realized_cash",
+        "min": 9883604.0,
+        "n": 26,
+        "sd": 1261431.0734073503
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.0,
+        "max": 0.9727500719064405,
+        "mean": 0.8965118428221578,
+        "median": 0.8875330601972887,
+        "metric": "final_vs_planned_ratio",
+        "min": 0.8095746003355271,
+        "n": 26,
+        "sd": 0.03826725171750369
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.0,
+        "max": 13.1,
+        "mean": 5.996153846153846,
+        "median": 5.199999999999999,
+        "metric": "changed_soft_area",
+        "min": 2.4,
+        "n": 26,
+        "sd": 2.7528139449270115
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.0,
+        "max": 129.6,
+        "mean": 97.2,
+        "median": 95.4,
+        "metric": "soft_lock_area",
+        "min": 69.5,
+        "n": 26,
+        "sd": 16.62742313168219
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.0,
+        "max": 0.12220149253731342,
+        "mean": 0.061546316262430116,
+        "median": 0.057521812552772306,
+        "metric": "disruption_rate",
+        "min": 0.021071115013169446,
+        "n": 26,
+        "sd": 0.024017188013778855
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.05,
+        "max": 16331308.0,
+        "mean": 13361873.5,
+        "median": 13126546.5,
+        "metric": "planned_cash",
+        "min": 11317399.0,
+        "n": 26,
+        "sd": 1430751.4856388234
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.05,
+        "max": 12797649.0,
+        "mean": 10880986.423076924,
+        "median": 10711398.0,
+        "metric": "initial_realized_cash",
+        "min": 9187238.0,
+        "n": 26,
+        "sd": 1022609.4077406945
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.05,
+        "max": 14603372.0,
+        "mean": 12207736.73076923,
+        "median": 11666591.0,
+        "metric": "recommended_revised_cash",
+        "min": 10096135.0,
+        "n": 26,
+        "sd": 1344680.9542051097
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.05,
+        "max": 14341497.0,
+        "mean": 11961110.307692308,
+        "median": 11517925.5,
+        "metric": "final_realized_cash",
+        "min": 9866936.0,
+        "n": 26,
+        "sd": 1267604.0933540335
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.05,
+        "max": 0.971140387287876,
+        "mean": 0.8960488273600744,
+        "median": 0.8872859208628667,
+        "metric": "final_vs_planned_ratio",
+        "min": 0.8089197651442633,
+        "n": 26,
+        "sd": 0.039264927753578836
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.05,
+        "max": 8.4,
+        "mean": 2.2192307692307693,
+        "median": 1.95,
+        "metric": "changed_soft_area",
+        "min": 0.4,
+        "n": 26,
+        "sd": 1.5681885679392593
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.05,
+        "max": 129.6,
+        "mean": 97.2,
+        "median": 95.4,
+        "metric": "soft_lock_area",
+        "min": 69.5,
+        "n": 26,
+        "sd": 16.62742313168219
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.05,
+        "max": 0.06481481481481483,
+        "mean": 0.02223680163625535,
+        "median": 0.019192558254824,
+        "metric": "disruption_rate",
+        "min": 0.0048019207683073235,
+        "n": 26,
+        "sd": 0.012748250713533055
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.1,
+        "max": 16331308.0,
+        "mean": 13361873.5,
+        "median": 13126546.5,
+        "metric": "planned_cash",
+        "min": 11317399.0,
+        "n": 26,
+        "sd": 1430751.4856388234
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.1,
+        "max": 12797649.0,
+        "mean": 10880986.423076924,
+        "median": 10711398.0,
+        "metric": "initial_realized_cash",
+        "min": 9187238.0,
+        "n": 26,
+        "sd": 1022609.4077406945
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.1,
+        "max": 14602621.0,
+        "mean": 12205876.384615384,
+        "median": 11666610.0,
+        "metric": "recommended_revised_cash",
+        "min": 10096135.0,
+        "n": 26,
+        "sd": 1344956.7659530793
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.1,
+        "max": 14340747.0,
+        "mean": 11958880.576923076,
+        "median": 11515094.5,
+        "metric": "final_realized_cash",
+        "min": 9859538.0,
+        "n": 26,
+        "sd": 1267597.0453427911
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.1,
+        "max": 0.971140387287876,
+        "mean": 0.8958792057819509,
+        "median": 0.8872008042010604,
+        "metric": "final_vs_planned_ratio",
+        "min": 0.8089197651442633,
+        "n": 26,
+        "sd": 0.03923247898961001
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.1,
+        "max": 8.4,
+        "mean": 2.0615384615384618,
+        "median": 1.75,
+        "metric": "changed_soft_area",
+        "min": 0.3,
+        "n": 26,
+        "sd": 1.5738047968098008
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.1,
+        "max": 129.6,
+        "mean": 97.2,
+        "median": 95.4,
+        "metric": "soft_lock_area",
+        "min": 69.5,
+        "n": 26,
+        "sd": 16.62742313168219
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.1,
+        "max": 0.06481481481481483,
+        "mean": 0.020682525152361724,
+        "median": 0.018118433689006,
+        "metric": "disruption_rate",
+        "min": 0.0029644268774703555,
+        "n": 26,
+        "sd": 0.01269397404797295
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.25,
+        "max": 16331308.0,
+        "mean": 13361873.5,
+        "median": 13126546.5,
+        "metric": "planned_cash",
+        "min": 11317399.0,
+        "n": 26,
+        "sd": 1430751.4856388234
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.25,
+        "max": 12797649.0,
+        "mean": 10880986.423076924,
+        "median": 10711398.0,
+        "metric": "initial_realized_cash",
+        "min": 9187238.0,
+        "n": 26,
+        "sd": 1022609.4077406945
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.25,
+        "max": 14562771.0,
+        "mean": 12174246.153846154,
+        "median": 11647769.0,
+        "metric": "recommended_revised_cash",
+        "min": 10046705.0,
+        "n": 26,
+        "sd": 1330367.5692267816
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.25,
+        "max": 14300897.0,
+        "mean": 11931893.884615384,
+        "median": 11501610.5,
+        "metric": "final_realized_cash",
+        "min": 9859538.0,
+        "n": 26,
+        "sd": 1255547.79993478
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.25,
+        "max": 0.9697122000481784,
+        "mean": 0.8939387235304166,
+        "median": 0.8843901159869003,
+        "metric": "final_vs_planned_ratio",
+        "min": 0.8089197651442633,
+        "n": 26,
+        "sd": 0.03952371578639435
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.25,
+        "max": 2.3,
+        "mean": 0.7230769230769231,
+        "median": 0.6,
+        "metric": "changed_soft_area",
+        "min": 0.0,
+        "n": 26,
+        "sd": 0.6041904946671652
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.25,
+        "max": 129.6,
+        "mean": 97.2,
+        "median": 95.4,
+        "metric": "soft_lock_area",
+        "min": 69.5,
+        "n": 26,
+        "sd": 16.62742313168219
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.25,
+        "max": 0.022549019607843137,
+        "mean": 0.007191264753109114,
+        "median": 0.00670387238066796,
+        "metric": "disruption_rate",
+        "min": 0.0,
+        "n": 26,
+        "sd": 0.0055325908310445695
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.5,
+        "max": 16331308.0,
+        "mean": 13361873.5,
+        "median": 13126546.5,
+        "metric": "planned_cash",
+        "min": 11317399.0,
+        "n": 26,
+        "sd": 1430751.4856388234
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.5,
+        "max": 12797649.0,
+        "mean": 10880986.423076924,
+        "median": 10711398.0,
+        "metric": "initial_realized_cash",
+        "min": 9187238.0,
+        "n": 26,
+        "sd": 1022609.4077406945
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.5,
+        "max": 14562771.0,
+        "mean": 12161102.653846154,
+        "median": 11647769.0,
+        "metric": "recommended_revised_cash",
+        "min": 10010199.0,
+        "n": 26,
+        "sd": 1332874.4709395838
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.5,
+        "max": 14300897.0,
+        "mean": 11931720.653846154,
+        "median": 11487134.5,
+        "metric": "final_realized_cash",
+        "min": 9859538.0,
+        "n": 26,
+        "sd": 1250842.0737837034
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.5,
+        "max": 0.9690674425056495,
+        "mean": 0.8939594835575001,
+        "median": 0.8860567474311962,
+        "metric": "final_vs_planned_ratio",
+        "min": 0.8054999563028089,
+        "n": 26,
+        "sd": 0.03953887799334573
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.5,
+        "max": 2.3,
+        "mean": 0.5192307692307693,
+        "median": 0.35,
+        "metric": "changed_soft_area",
+        "min": 0.0,
+        "n": 26,
+        "sd": 0.5359247938054225
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.5,
+        "max": 129.6,
+        "mean": 97.2,
+        "median": 95.4,
+        "metric": "soft_lock_area",
+        "min": 69.5,
+        "n": 26,
+        "sd": 16.62742313168219
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 0.5,
+        "max": 0.022549019607843137,
+        "mean": 0.0052448445526030035,
+        "median": 0.0035704573074863814,
+        "metric": "disruption_rate",
+        "min": 0.0,
+        "n": 26,
+        "sd": 0.0051873971637827546
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 1.0,
+        "max": 16331308.0,
+        "mean": 13361873.5,
+        "median": 13126546.5,
+        "metric": "planned_cash",
+        "min": 11317399.0,
+        "n": 26,
+        "sd": 1430751.4856388234
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 1.0,
+        "max": 12797649.0,
+        "mean": 10880986.423076924,
+        "median": 10711398.0,
+        "metric": "initial_realized_cash",
+        "min": 9187238.0,
+        "n": 26,
+        "sd": 1022609.4077406945
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 1.0,
+        "max": 14459368.0,
+        "mean": 12115430.23076923,
+        "median": 11580462.0,
+        "metric": "recommended_revised_cash",
+        "min": 9960723.0,
+        "n": 26,
+        "sd": 1336927.6350803229
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 1.0,
+        "max": 14269384.0,
+        "mean": 11893126.115384616,
+        "median": 11425198.5,
+        "metric": "final_realized_cash",
+        "min": 9847426.0,
+        "n": 26,
+        "sd": 1258584.385123487
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 1.0,
+        "max": 0.9650425511937744,
+        "mean": 0.8909606226604376,
+        "median": 0.8853535424843735,
+        "metric": "final_vs_planned_ratio",
+        "min": 0.8024359517486312,
+        "n": 26,
+        "sd": 0.03874187721522542
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 1.0,
+        "max": 0.5,
+        "mean": 0.026923076923076925,
+        "median": 0.0,
+        "metric": "changed_soft_area",
+        "min": 0.0,
+        "n": 26,
+        "sd": 0.10023050357128735
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 1.0,
+        "max": 129.6,
+        "mean": 97.2,
+        "median": 95.4,
+        "metric": "soft_lock_area",
+        "min": 69.5,
+        "n": 26,
+        "sd": 16.62742313168219
+      },
+      {
+        "analysis_scope": "optimal_only",
+        "lambda": 1.0,
+        "max": 0.005630630630630631,
+        "mean": 0.0002916574260543067,
+        "median": 0.0,
+        "metric": "disruption_rate",
+        "min": 0.0,
+        "n": 26,
+        "sd": 0.0011206904022126284
+      }
+    ]
+  },
+  "schema": "farmsync-sensitivity-summary-v1"
+}

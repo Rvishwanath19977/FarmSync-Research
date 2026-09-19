@@ -1,0 +1,14 @@
+{
+  "total_warnings": 3,
+  "known_categories": [
+    "PerformanceWarning",
+    "DeprecationWarning",
+    "PULP_CBC_CMD",
+    "LpVariable"
+  ],
+  "per_suite": {
+    "test_farmsync_ui.py": 3
+  },
+  "full_suite_coverage": true,
+  "status": "KNOWN_WARNINGS"
+}

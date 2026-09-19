@@ -1,0 +1,14 @@
+family,comparison,n_paired_seeds,A_optimal_B_nonoptimal,A_nonoptimal_B_optimal,discordant_pairs,exact_mcnemar_p_value,test
+UNCERTAINTY,U0_vs_UW,30,1,2,3,1.0,exact McNemar via two-sided binomial test on discordant pairs
+UNCERTAINTY,U0_vs_UM,30,3,1,4,0.625,exact McNemar via two-sided binomial test on discordant pairs
+UNCERTAINTY,U0_vs_UR,30,0,0,0,1.0,exact McNemar via two-sided binomial test on discordant pairs
+UNCERTAINTY,U0_vs_UP,30,1,0,1,1.0,exact McNemar via two-sided binomial test on discordant pairs
+UNCERTAINTY,U0_vs_UJ,30,4,3,7,1.0,exact McNemar via two-sided binomial test on discordant pairs
+EPSILON_SENSITIVITY,epsilon_0.95_vs_1.0,30,2,0,2,0.5,exact McNemar via two-sided binomial test on discordant pairs
+ACTION_ROBUSTNESS,PRIMARY_vs_S1,30,0,1,1,1.0,exact McNemar via two-sided binomial test on discordant pairs
+ACTION_ROBUSTNESS,PRIMARY_vs_S2,30,1,0,1,1.0,exact McNemar via two-sided binomial test on discordant pairs
+ACTION_ROBUSTNESS,S1_vs_S2,30,2,0,2,0.5,exact McNemar via two-sided binomial test on discordant pairs
+SCALABILITY,n500_vs_n25,30,25,1,26,8.046627044677734e-07,exact McNemar via two-sided binomial test on discordant pairs
+SCALABILITY,n500_vs_n50,30,23,1,24,2.9802322387695312e-06,exact McNemar via two-sided binomial test on discordant pairs
+SCALABILITY,n500_vs_n100,30,19,3,22,0.0008554458618164062,exact McNemar via two-sided binomial test on discordant pairs
+SCALABILITY,n500_vs_n250,30,3,3,6,1.0,exact McNemar via two-sided binomial test on discordant pairs

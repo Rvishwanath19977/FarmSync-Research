@@ -1,0 +1,9 @@
+{
+  "action_consistency_errors": [],
+  "action_primary_matches_primary": true,
+  "generated_utc": "2026-09-19T09:11:22+00:00",
+  "scalability_500_matches_primary": true,
+  "scalability_all_baselines_optimal": true,
+  "scalability_consistency_errors": [],
+  "schema": "farmsync-action-scalability-consistency-v1"
+}

@@ -1,0 +1,95 @@
+{
+  "figures": [
+    {
+      "description": "Mean cash across B1/B2/B3 PLANNED and Proposed workflow states with 95% bootstrap confidence intervals.",
+      "figure": 1,
+      "pdf": "results/farmsync/final30_analysis_v1/figures/figure_01_primary_workflow_cash.pdf",
+      "pdf_sha256": "806a0356b2abbbd0b8e9bbf703fe718db004f84970cf6d342ab608217b6520e8",
+      "png": "results/farmsync/final30_analysis_v1/figures/figure_01_primary_workflow_cash.png",
+      "png_sha256": "5ee2c429ba02f1d8cc61e52fdc0cd47ce2b9e8d5bbeb649167c222ed94f0f7b8",
+      "title": "Primary workflow cash"
+    },
+    {
+      "description": "Optimal-only Proposed FINAL_REALIZED cash across U0/UW/UM/UR/UP/UJ.",
+      "figure": 2,
+      "pdf": "results/farmsync/final30_analysis_v1/figures/figure_02_uncertainty_final_cash.pdf",
+      "pdf_sha256": "7b5f13e1af732a892f62b8a401ebb4fb4211b7f687b193c3458211f555458027",
+      "png": "results/farmsync/final30_analysis_v1/figures/figure_02_uncertainty_final_cash.png",
+      "png_sha256": "80c92e56126e02a0011636f6342bbe2b87c1517bec8ae520efc362124261ff84",
+      "title": "Uncertainty final realized cash"
+    },
+    {
+      "description": "B3 PLANNED cash across frozen epsilon sensitivity settings.",
+      "figure": 3,
+      "pdf": "results/farmsync/final30_analysis_v1/figures/figure_03_epsilon_b3_cash.pdf",
+      "pdf_sha256": "1c4a1a3153dda19b2144bd4c5ae207c271f13ab4fb79b325ba00e288b2a345bd",
+      "png": "results/farmsync/final30_analysis_v1/figures/figure_03_epsilon_b3_cash.png",
+      "png_sha256": "9a1ad84b1420c175d5cd48c2047132b9d727d2f9232141bcc64e60dcb20e6e5e",
+      "title": "Epsilon sensitivity"
+    },
+    {
+      "description": "Proposed FINAL_REALIZED cash across lambda settings.",
+      "figure": 4,
+      "pdf": "results/farmsync/final30_analysis_v1/figures/figure_04_lambda_final_cash.pdf",
+      "pdf_sha256": "02349f03d5d07fb1395a3c5ad917d91b3c98da3317ae7ab9b902481244d95faf",
+      "png": "results/farmsync/final30_analysis_v1/figures/figure_04_lambda_final_cash.png",
+      "png_sha256": "a54e17b218c812f690c3a972a10e76a7c7f17df5ec0cea9fe41dd06ab3fda38b",
+      "title": "Lambda final realized cash"
+    },
+    {
+      "description": "Recommended-plan soft-lock disruption rate across lambda settings.",
+      "figure": 5,
+      "pdf": "results/farmsync/final30_analysis_v1/figures/figure_05_lambda_disruption.pdf",
+      "pdf_sha256": "27273181c0e1f77761294e2a49c705502ca23dbd75b8123d271e5d96cb1a2903",
+      "png": "results/farmsync/final30_analysis_v1/figures/figure_05_lambda_disruption.png",
+      "png_sha256": "29b2559d08bfde0a3c781d8200c0bf27b298e1fbc86d37782a99890b3d75d25a",
+      "title": "Lambda disruption"
+    },
+    {
+      "description": "Proposed FINAL_REALIZED cash across concentration alpha settings.",
+      "figure": 6,
+      "pdf": "results/farmsync/final30_analysis_v1/figures/figure_06_alpha_final_cash.pdf",
+      "pdf_sha256": "f6687d23d234d9d94599271b3e7c955ef083f997348cf967ec14f22b8370868c",
+      "png": "results/farmsync/final30_analysis_v1/figures/figure_06_alpha_final_cash.png",
+      "png_sha256": "0ef53e655e1e31eb55465d49597a9fb924d4e76bdf43869777fee56d0d57e44f",
+      "title": "Alpha final realized cash"
+    },
+    {
+      "description": "Recommended-plan maximum LPS across alpha settings.",
+      "figure": 7,
+      "pdf": "results/farmsync/final30_analysis_v1/figures/figure_07_alpha_max_lps.pdf",
+      "pdf_sha256": "d8a16a4b34361fb0ebe10153d5261235fd81b5ab48845051616a654a1edff047",
+      "png": "results/farmsync/final30_analysis_v1/figures/figure_07_alpha_max_lps.png",
+      "png_sha256": "a9c6186d91840534f27800a2ca3a3360339aa0fda11a1b1b4ff3a14d0c85b80a",
+      "title": "Alpha maximum LPS"
+    },
+    {
+      "description": "Proposed FINAL_REALIZED cash across PRIMARY/S1/S2 action profiles.",
+      "figure": 8,
+      "pdf": "results/farmsync/final30_analysis_v1/figures/figure_08_action_final_cash.pdf",
+      "pdf_sha256": "c3e21d0d011d4163933bdf66a3ba3e9660ffdcd2698db2dac14fba85f97f5bef",
+      "png": "results/farmsync/final30_analysis_v1/figures/figure_08_action_final_cash.png",
+      "png_sha256": "3bc4f76527e8202b3450ad680d08e8431deb4e8ec8d3be043b9bfd19b7c64a0e",
+      "title": "Action robustness"
+    },
+    {
+      "description": "Proposed Optimal rate with 95% Wilson intervals across population sizes.",
+      "figure": 9,
+      "pdf": "results/farmsync/final30_analysis_v1/figures/figure_09_scalability_feasibility.pdf",
+      "pdf_sha256": "d71a35a659d40a0638ccef4875a38cf5a2addde45706d1b90e63b9d44c46ef7b",
+      "png": "results/farmsync/final30_analysis_v1/figures/figure_09_scalability_feasibility.png",
+      "png_sha256": "d1ae9a7e87b7653f6a9731c82e947e1c91a14bab9465edda7c7971ea74ca1b48",
+      "title": "Scalability feasibility"
+    },
+    {
+      "description": "Mean Proposed pipeline runtime across population sizes.",
+      "figure": 10,
+      "pdf": "results/farmsync/final30_analysis_v1/figures/figure_10_scalability_runtime.pdf",
+      "pdf_sha256": "19000b27026f786d174678b53f6da6ef1004c4f2b4ef97d51de93b9466db4bff",
+      "png": "results/farmsync/final30_analysis_v1/figures/figure_10_scalability_runtime.png",
+      "png_sha256": "3483535e88446913751cf53605ae1c8d3ced9aa0c244b7b78c4347dff2eb648c",
+      "title": "Scalability runtime"
+    }
+  ],
+  "schema": "farmsync-figure-index-v1"
+}

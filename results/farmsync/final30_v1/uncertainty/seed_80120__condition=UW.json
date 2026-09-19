@@ -1,0 +1,78 @@
+{
+  "completion": "COMPLETE",
+  "dataset_attestation_sha256": "fd42123f24a6823484dc0fa0f5d34192c8c23ea9a03e45d4674e42515bb3514e",
+  "family": "UNCERTAINTY",
+  "matrix_sha256": "b339a43ab581a0d481da230b84918363bc82f771b993f575c50ea903cdecc0f0",
+  "parameters": {
+    "condition": "UW"
+  },
+  "payload": {
+    "uncertainty": {
+      "baselines": {
+        "B1": {
+          "area": 360.683,
+          "cash": 14559352.0,
+          "failed_stage": null,
+          "n": 397,
+          "optimal": true,
+          "status": "Optimal"
+        },
+        "B2": {
+          "area": 369.381,
+          "cash": 13406933.0,
+          "failed_stage": null,
+          "n": 406,
+          "optimal": true,
+          "status": "Optimal"
+        },
+        "B3": {
+          "area": 372.032,
+          "cash": 12736749.0,
+          "failed_stage": null,
+          "n": 394,
+          "optimal": true,
+          "status": "Optimal"
+        }
+      },
+      "channel_summary": {
+        "absorption_states": {},
+        "participation_false": 0,
+        "participation_true": 500,
+        "price_cells": 0,
+        "resource_states": {},
+        "weather_states": {
+          "HIGH_EVAPORATIVE_DEMAND": 1,
+          "LOW_EVAPORATIVE_DEMAND": 2,
+          "NORMAL": 7
+        }
+      },
+      "meta": {
+        "channels": [
+          "W"
+        ],
+        "condition": "UW",
+        "instance_hash": "11a9f660bea9e5bd",
+        "protocol": "uncertainty-v1",
+        "provenance": "SYNTHETIC_EXPERIMENTAL",
+        "realisation_hash": "eacf173f85dab651",
+        "seed": 80120
+      },
+      "participating_farmers": 500,
+      "participating_plots": 926,
+      "proposed": {
+        "cash": null,
+        "failed_stage": "proposed.reopt_phase3",
+        "optimal": false,
+        "realisation_hash": "eacf173f85dab651",
+        "realisation_hash_match": true,
+        "status": "Infeasible",
+        "uncertainty_condition": "UW"
+      }
+    }
+  },
+  "reused_from": null,
+  "schema": "farmsync-final30-cell-v1",
+  "seed": 80120,
+  "source_commit": "86129ec71998288db29bf562a7e1b1a9bcc2c9ae",
+  "written_utc": "2026-09-18T21:21:51+00:00"
+}

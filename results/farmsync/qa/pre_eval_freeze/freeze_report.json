@@ -1,0 +1,140 @@
+{
+  "authority": {
+    "phase1": {
+      "consent_original_branch": "PASS",
+      "full_suite_coverage": "YES",
+      "phase1_status": "PASS",
+      "ready_for_phase_2": "YES"
+    },
+    "phase2": {
+      "all_categories_allowed": true,
+      "browsers_executed": [
+        "chromium",
+        "firefox",
+        "webkit"
+      ],
+      "defects": [],
+      "missing_required_categories": [],
+      "phase2_status": "PASS",
+      "ready_for_pre_eval_freeze": "YES"
+    }
+  },
+  "browser_authority_guard": {
+    "note": "Creating only Phase-3 freeze script/test/evidence does not invalidate Phase-2.",
+    "touched_guarded_files": []
+  },
+  "checks": {
+    "authority": true,
+    "browser_authority_still_valid": true,
+    "config_seed": true,
+    "manifest_verify": true,
+    "pre_post_zero_drift": true,
+    "reconciliation_911": true,
+    "regressions": true,
+    "repeatability": true,
+    "solver_free_read": true
+  },
+  "config_seed": {
+    "expected": {
+      "action_policy_version": "action-consent-v1",
+      "alpha": 0.4,
+      "epsilon": 0.95,
+      "fairness_version": "fairness-v2",
+      "instance_hash": "5ea24037c2d9cb6a",
+      "lambda": 0.05,
+      "uncertainty_version": "uncertainty-v1"
+    },
+    "got": {
+      "action_policy_version": "action-consent-v1",
+      "alpha": 0.4,
+      "epsilon": 0.95,
+      "fairness_version": "fairness-v2",
+      "instance_hash": "5ea24037c2d9cb6a",
+      "lambda": 0.05,
+      "uncertainty_version": "uncertainty-v1"
+    },
+    "match": true,
+    "replication_seeds_sha256": "7224b558c8afc0071152f0b9d3bcc4d9972452f52a480ef333233facc981bf40"
+  },
+  "freeze_status": "PASS",
+  "generated": "2026-09-09T18:33:20Z",
+  "manifest_core_sha256": "5365968196407f5983401c92a7636548ecbae6151f24220b8eb8837329805576",
+  "ready_for_live_llm_integration": "YES",
+  "reconciliation_911": {
+    "ledger_rows": 911,
+    "match": true
+  },
+  "regressions": {
+    "node_check": {
+      "pass": true,
+      "rc": 0
+    },
+    "tests/test_farmsync_browser.py": {
+      "expected": 43,
+      "match": true,
+      "passed": 43,
+      "rc": 0
+    },
+    "tests/test_farmsync_ilp_v2.py": {
+      "expected": 6,
+      "match": true,
+      "passed": 6,
+      "rc": 0
+    },
+    "tests/test_farmsync_qa_backend.py": {
+      "expected": 19,
+      "match": true,
+      "passed": 19,
+      "rc": 0
+    },
+    "tests/test_farmsync_ui.py": {
+      "expected": 183,
+      "match": true,
+      "passed": 183,
+      "rc": 0
+    }
+  },
+  "repeatability": {
+    "match": true
+  },
+  "scope_counts": {
+    "authoritative_reports": 3,
+    "datasets": 20,
+    "frozen_artifacts": 52,
+    "qa_authority": 7,
+    "routes_templates_static": 4,
+    "scientific_source": 43,
+    "scientific_tests": 22,
+    "seed_rng_manifest": 2
+  },
+  "solver_free_read": {
+    "fresh_process": true,
+    "ran": true,
+    "rc": 0,
+    "solver_loaded_on_reads": false,
+    "tail": [
+      "SOLVER_LOADED=False"
+    ]
+  },
+  "verify": {
+    "artifact_diff": {
+      "added": [],
+      "modified": [],
+      "removed": []
+    },
+    "current_in_scope_count": 153,
+    "manifest_core_sha256_ok": true,
+    "pass": true,
+    "recorded_artifact_count": 153,
+    "rediscovered_scope_counts": {
+      "authoritative_reports": 3,
+      "datasets": 20,
+      "frozen_artifacts": 52,
+      "qa_authority": 7,
+      "routes_templates_static": 4,
+      "scientific_source": 43,
+      "scientific_tests": 22,
+      "seed_rng_manifest": 2
+    }
+  }
+}

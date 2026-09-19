@@ -1,0 +1,80 @@
+{
+  "completion": "COMPLETE",
+  "dataset_attestation_sha256": "fd42123f24a6823484dc0fa0f5d34192c8c23ea9a03e45d4674e42515bb3514e",
+  "family": "EPSILON_SENSITIVITY",
+  "matrix_sha256": "b339a43ab581a0d481da230b84918363bc82f771b993f575c50ea903cdecc0f0",
+  "parameters": {
+    "epsilon": 0.9
+  },
+  "payload": {
+    "b2_total_cash_reference": 13727092.0,
+    "b3": {
+      "area": 322.867,
+      "cash": 12381281.0,
+      "cash_per_allocated_ha": 38347.929642856034,
+      "concentration": {
+        "active_crops": [
+          "groundnut",
+          "maize",
+          "onion",
+          "pigeon_pea",
+          "rice",
+          "sorghum",
+          "soybean"
+        ],
+        "max_LPS": 0.2808,
+        "mean_HHI": 0.0718,
+        "median_HHI": 0.0555,
+        "n_active_crops": 7,
+        "target_violations": 0
+      },
+      "epsilon": 0.9,
+      "fairness_v2": {
+        "efficiency": {
+          "return_per_allocated_ha": 38347.9,
+          "total_cash_return": 12381281.0
+        },
+        "primary": {
+          "benefit_loss_vs_b1": {
+            "better": 0,
+            "mean_delta": -3000,
+            "median_delta": 0,
+            "p10_delta": -5833,
+            "p90_delta": 0,
+            "tolerance": 1.0,
+            "unchanged": 423,
+            "worse": 77
+          },
+          "fixed_cohort_mean_cash": {
+            "bottom_125_B1ref": 0.0,
+            "bottom_50_B1ref": 0.0
+          },
+          "n_farmers": 500,
+          "n_participating": 299,
+          "participation_rate_pct": 59.8,
+          "per_ha_gini_all": 0.6909
+        },
+        "supporting": {
+          "abs_gini_all": 0.8256,
+          "abs_gini_participant_only": 0.7084,
+          "per_ha_gini_participants": 0.4831
+        }
+      },
+      "method": "B3",
+      "min_normalized_return": 329.6,
+      "n": 375,
+      "optimal": true,
+      "runtime_s": 0.11,
+      "state": "PLANNED",
+      "status": "Optimal"
+    },
+    "efficiency_retained": 0.9019594973210641,
+    "epsilon": 0.9,
+    "min_normalized_return": 329.6
+  },
+  "reused_from": null,
+  "schema": "farmsync-final30-cell-v1",
+  "seed": 262122,
+  "source_commit": "86129ec71998288db29bf562a7e1b1a9bcc2c9ae",
+  "written_utc": "2026-09-18T21:51:47+00:00"
+}

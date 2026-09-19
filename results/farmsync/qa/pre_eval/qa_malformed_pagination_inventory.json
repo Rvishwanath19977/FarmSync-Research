@@ -1,0 +1,55 @@
+{
+  "sites": [
+    [
+      313,
+      "/api/farmsync/explore/<table>",
+      "page"
+    ],
+    [
+      329,
+      "/api/farmsync/inspect/<table>",
+      "page"
+    ],
+    [
+      330,
+      "/api/farmsync/inspect/<table>",
+      "size"
+    ],
+    [
+      590,
+      "/api/farmsync/working-plan/<run_id>/final-rows",
+      "page"
+    ]
+  ],
+  "probes": [
+    {
+      "source_line": 313,
+      "route": "/api/farmsync/explore/<table>",
+      "parameter": "page",
+      "malformed_value": "abc",
+      "http_result": 200
+    },
+    {
+      "source_line": 329,
+      "route": "/api/farmsync/inspect/<table>",
+      "parameter": "page",
+      "malformed_value": "abc",
+      "http_result": 200
+    },
+    {
+      "source_line": 330,
+      "route": "/api/farmsync/inspect/<table>",
+      "parameter": "size",
+      "malformed_value": "abc",
+      "http_result": 200
+    },
+    {
+      "source_line": 590,
+      "route": "/api/farmsync/working-plan/<run_id>/final-rows",
+      "parameter": "page",
+      "malformed_value": "abc",
+      "http_result": 200
+    }
+  ],
+  "affected_routes": []
+}

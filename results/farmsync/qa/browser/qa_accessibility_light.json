@@ -1,0 +1,474 @@
+{
+  "theme": "light",
+  "stages": [
+    "home",
+    "plan",
+    "farmer",
+    "replan",
+    "consent",
+    "final",
+    "fairness",
+    "uncertainty",
+    "resilience",
+    "data"
+  ],
+  "populated": true,
+  "browser_owned_run_id": "run-e954932e1570",
+  "per_stage": {
+    "home": {
+      "available": true,
+      "context": "#fsApp",
+      "counts": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 2,
+        "minor": 0
+      },
+      "buckets": {
+        "critical": [],
+        "serious": [],
+        "moderate": [
+          {
+            "id": "landmark-main-is-top-level",
+            "help": "Main landmark should not be contained in another landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+              }
+            ]
+          },
+          {
+            "id": "landmark-no-duplicate-main",
+            "help": "Document should not have more than one main landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+              }
+            ]
+          }
+        ],
+        "minor": []
+      }
+    },
+    "plan": {
+      "available": true,
+      "context": "#fsApp",
+      "counts": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 2,
+        "minor": 0
+      },
+      "buckets": {
+        "critical": [],
+        "serious": [],
+        "moderate": [
+          {
+            "id": "landmark-main-is-top-level",
+            "help": "Main landmark should not be contained in another landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+              }
+            ]
+          },
+          {
+            "id": "landmark-no-duplicate-main",
+            "help": "Document should not have more than one main landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+              }
+            ]
+          }
+        ],
+        "minor": []
+      }
+    },
+    "farmer": {
+      "available": true,
+      "context": "#fsApp",
+      "counts": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 2,
+        "minor": 0
+      },
+      "buckets": {
+        "critical": [],
+        "serious": [],
+        "moderate": [
+          {
+            "id": "landmark-main-is-top-level",
+            "help": "Main landmark should not be contained in another landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+              }
+            ]
+          },
+          {
+            "id": "landmark-no-duplicate-main",
+            "help": "Document should not have more than one main landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+              }
+            ]
+          }
+        ],
+        "minor": []
+      }
+    },
+    "replan": {
+      "available": true,
+      "context": "#fsApp",
+      "counts": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 2,
+        "minor": 0
+      },
+      "buckets": {
+        "critical": [],
+        "serious": [],
+        "moderate": [
+          {
+            "id": "landmark-main-is-top-level",
+            "help": "Main landmark should not be contained in another landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+              }
+            ]
+          },
+          {
+            "id": "landmark-no-duplicate-main",
+            "help": "Document should not have more than one main landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+              }
+            ]
+          }
+        ],
+        "minor": []
+      }
+    },
+    "consent": {
+      "available": true,
+      "context": "#fsApp",
+      "counts": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 2,
+        "minor": 0
+      },
+      "buckets": {
+        "critical": [],
+        "serious": [],
+        "moderate": [
+          {
+            "id": "landmark-main-is-top-level",
+            "help": "Main landmark should not be contained in another landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+              }
+            ]
+          },
+          {
+            "id": "landmark-no-duplicate-main",
+            "help": "Document should not have more than one main landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+              }
+            ]
+          }
+        ],
+        "minor": []
+      }
+    },
+    "final": {
+      "available": true,
+      "context": "#fsApp",
+      "counts": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 2,
+        "minor": 0
+      },
+      "buckets": {
+        "critical": [],
+        "serious": [],
+        "moderate": [
+          {
+            "id": "landmark-main-is-top-level",
+            "help": "Main landmark should not be contained in another landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+              }
+            ]
+          },
+          {
+            "id": "landmark-no-duplicate-main",
+            "help": "Document should not have more than one main landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+              }
+            ]
+          }
+        ],
+        "minor": []
+      }
+    },
+    "fairness": {
+      "available": true,
+      "context": "#fsApp",
+      "counts": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 2,
+        "minor": 0
+      },
+      "buckets": {
+        "critical": [],
+        "serious": [],
+        "moderate": [
+          {
+            "id": "landmark-main-is-top-level",
+            "help": "Main landmark should not be contained in another landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+              }
+            ]
+          },
+          {
+            "id": "landmark-no-duplicate-main",
+            "help": "Document should not have more than one main landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+              }
+            ]
+          }
+        ],
+        "minor": []
+      }
+    },
+    "uncertainty": {
+      "available": true,
+      "context": "#fsApp",
+      "counts": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 2,
+        "minor": 0
+      },
+      "buckets": {
+        "critical": [],
+        "serious": [],
+        "moderate": [
+          {
+            "id": "landmark-main-is-top-level",
+            "help": "Main landmark should not be contained in another landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+              }
+            ]
+          },
+          {
+            "id": "landmark-no-duplicate-main",
+            "help": "Document should not have more than one main landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+              }
+            ]
+          }
+        ],
+        "minor": []
+      }
+    },
+    "resilience": {
+      "available": true,
+      "context": "#fsApp",
+      "counts": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 2,
+        "minor": 0
+      },
+      "buckets": {
+        "critical": [],
+        "serious": [],
+        "moderate": [
+          {
+            "id": "landmark-main-is-top-level",
+            "help": "Main landmark should not be contained in another landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+              }
+            ]
+          },
+          {
+            "id": "landmark-no-duplicate-main",
+            "help": "Document should not have more than one main landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+              }
+            ]
+          }
+        ],
+        "minor": []
+      }
+    },
+    "data": {
+      "available": true,
+      "context": "#fsApp",
+      "counts": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 2,
+        "minor": 0
+      },
+      "buckets": {
+        "critical": [],
+        "serious": [],
+        "moderate": [
+          {
+            "id": "landmark-main-is-top-level",
+            "help": "Main landmark should not be contained in another landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+              }
+            ]
+          },
+          {
+            "id": "landmark-no-duplicate-main",
+            "help": "Document should not have more than one main landmark",
+            "nodes": 1,
+            "samples": [
+              {
+                "target": [
+                  "#fsMain"
+                ],
+                "html": "<main class=\"fs-main\" id=\"fsMain\">",
+                "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+              }
+            ]
+          }
+        ],
+        "minor": []
+      }
+    }
+  },
+  "totals": {
+    "critical": 0,
+    "serious": 0
+  },
+  "missing_or_unscanned": []
+}

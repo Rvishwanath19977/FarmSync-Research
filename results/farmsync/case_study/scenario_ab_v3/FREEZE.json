@@ -1,0 +1,70 @@
+{
+  "all_verification_checks_pass": true,
+  "boundary": "Controlled deterministic case study. Scenario B uses constructed behavioural inputs and does not estimate empirical farmer response probabilities or causal effects in a real farmer population.",
+  "dataset_hash": "1f271676f5317088",
+  "files": [
+    {
+      "deterministic_scientific_artifact": true,
+      "path": "scenario_ab_v3_comparison.csv",
+      "role": "headline_ab_comparison",
+      "sha256": "c06d2d12a7bba12f994753746f610cc0a9f21263de069edc9a058c06d28b3745"
+    },
+    {
+      "deterministic_scientific_artifact": true,
+      "path": "scenario_ab_v3_initial_manifest.csv",
+      "role": "constructed_initial_action_manifest",
+      "sha256": "97801c9039f84364a0ee7228de04d1619ce0fcc6c0984ae9d5cbd97748c462f6"
+    },
+    {
+      "deterministic_scientific_artifact": true,
+      "path": "scenario_ab_v3_protocol.json",
+      "role": "protocol_and_provenance",
+      "sha256": "e99f9fb8103f2b6fac8880bab6023ba70d130c708a79cba464061b3d5cbf460e"
+    },
+    {
+      "deterministic_scientific_artifact": false,
+      "path": "scenario_ab_v3_pytest.txt",
+      "role": "execution_test_evidence",
+      "sha256": "21fffec9e04d0b5bbb6cd814d0aaaba676763ac4c879355977e9b28eb2517e4a"
+    },
+    {
+      "deterministic_scientific_artifact": true,
+      "path": "scenario_ab_v3_renewed_manifest.csv",
+      "role": "renewed_consent_manifest",
+      "sha256": "5212fd56782b035ff96065da63057e7883d96a52578fb2bb345e0104f03b738e"
+    },
+    {
+      "deterministic_scientific_artifact": true,
+      "path": "scenario_ab_v3_result.json",
+      "role": "full_sanitized_scientific_result",
+      "sha256": "a6784223a1773cf6ca4a534c9fcd541bf2f6fef0382377ee79ade8fcf12d9c90"
+    },
+    {
+      "deterministic_scientific_artifact": true,
+      "path": "scenario_ab_v3_summary.json",
+      "role": "concise_scientific_summary",
+      "sha256": "c11a8aca545ede110163690d08885818f77b6d5ff28d6a3a7382566a207162d3"
+    },
+    {
+      "deterministic_scientific_artifact": true,
+      "path": "scenario_ab_v3_verification.json",
+      "role": "machine_readable_verification",
+      "sha256": "3f33e7d83663fad97d17c799d418be50625bb30bf61861c189ac8d59d640c389"
+    },
+    {
+      "deterministic_scientific_artifact": true,
+      "path": "scenario_ab_v3_withdrawn_farmers.csv",
+      "role": "farmer_cycle_withdrawal_manifest",
+      "sha256": "7aed73e19daeb8a6d6cf185d0d7045f150cdf65343c7ed13fea5362172178ec8"
+    }
+  ],
+  "freeze_version": "scenario-ab-freeze-v1",
+  "initial_manifest_hash_a": "3a08bd6441c1752f",
+  "initial_manifest_hash_b": "cb8c6ac3931f8815",
+  "protocol_version": "scenario-ab-v3",
+  "renewed_manifest_hash_a": "8aca968db352a36c",
+  "renewed_manifest_hash_b": "7cc49321a602bc25",
+  "scenario_a_final_plan_hash": "0fe59eeb7c68a1a2",
+  "scenario_b_final_plan_hash": "1dd4988e70547369",
+  "source_commit": "d19e1d51c4d7f204e77cac3cdf506e5fcd238439"
+}

@@ -1,0 +1,61 @@
+{
+  "parser_version": "ingest-v1.0",
+  "five_states": [
+    "Punjab",
+    "Maharashtra",
+    "West Bengal",
+    "Rajasthan",
+    "Karnataka"
+  ],
+  "sources": [
+    {
+      "name": "DES Area-Production-Yield",
+      "org": "Directorate of Economics & Statistics, GoI",
+      "url": "https://data.desagri.gov.in/website/crops-apy-report-web",
+      "file": "horizontal_crop_vertical_year_report.xls",
+      "period": "2021-22, 2022-23",
+      "orig_units": "Area ha, Production tonnes, Yield tonne/ha",
+      "transformation": "state yield = SUM(prod)/SUM(area) x1000 -> kg/ha; cotton lint->kapas /0.35",
+      "sha16": "77f9de2764334885"
+    },
+    {
+      "name": "Cost of Cultivation",
+      "org": "DES, GoI (primary); India Data Portal (distribution)",
+      "url": "https://desagri.gov.in/document-report-category/cost-of-cultivation-production-estimates/",
+      "distribution_url": "https://indiadataportal.com/p/cost-of-cultivation/r/moafw-cost_of_cultivation-st-yr-dvq",
+      "file": "cost-of-cultivation.csv",
+      "period": "2021-22",
+      "orig_units": "cul_cost_* Rs/ha; human labour Man_Hours/ha",
+      "transformation": "A2+FL & C2 kept separate; labour man-hrs/ha \u00f78 -> person-days/ha",
+      "sha16": "8419c53ce27e4cfe"
+    },
+    {
+      "name": "AGMARKNET price & arrivals",
+      "org": "DMI, Ministry of Agriculture, GoI",
+      "url": "https://agmarknet.gov.in/",
+      "files": [
+        "All_Type_of_Report__All_Grades__14-08-2026_02-49-13_PM.csv",
+        "All_Type_of_Report__All_Grades__14-08-2026_02-56-15_PM.csv",
+        "All_Type_of_Report__All_Grades__14-08-2026_03-01-10_PM.csv",
+        "All_Type_of_Report__All_Grades__14-08-2026_03-03-54_PM.csv",
+        "All_Type_of_Report__All_Grades__14-08-2026_06-19-55_PM.csv"
+      ],
+      "period": "Jan-2023 to Dec-2025 (monthly)",
+      "orig_units": "Modal Rs/Quintal; Arrival Metric Tonnes",
+      "transformation": "median monthly modal, >3xIQR dropped, Rs/q->Rs/kg; arrivals->absorption proxy (NOT demand)",
+      "sha16_list": [
+        "aa3c30277710f515",
+        "b6f4b401cc536fb6",
+        "9b177688e3268518",
+        "758e970e07e4c489",
+        "4d8a1c584885d20c"
+      ]
+    }
+  ],
+  "counts": {
+    "yield_rows": 100,
+    "cost_rows": 41,
+    "price_rows": 62,
+    "crops_priced": 14
+  }
+}

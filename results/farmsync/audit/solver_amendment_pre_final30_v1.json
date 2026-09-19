@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-19",
+  "dev_validation": {
+    "publication_seeds_used": false,
+    "seed": 20260812,
+    "u0_control_gapRel_1e_6": {
+      "B1": 14644537.0,
+      "B2": 13822731.0,
+      "B3": 13142166.0,
+      "FINAL_REALIZED": 12362577.0,
+      "INITIAL_REALIZED": 11953688.0,
+      "PLANNED": 13142166.0,
+      "RECOMMENDED_REVISED": 12586101.0,
+      "concentration_status": "Optimal",
+      "consent_coverage_final": 1.0,
+      "matches_historical_u0_checkpoint": true,
+      "reopt_status": "Optimal"
+    },
+    "uj_gapRel_1e_4_current_observation": {
+      "B2": 12545252.0,
+      "B3": 11930351.0,
+      "FINAL_REALIZED": 11165176.0
+    },
+    "uj_gapRel_1e_6": {
+      "B1": 13158690.0,
+      "B2": 12545988.0,
+      "B3": 11930066.0,
+      "FINAL_REALIZED": 11208694.0,
+      "INITIAL_REALIZED": 10716058.0,
+      "PLANNED": 11930066.0,
+      "RECOMMENDED_REVISED": 11315824.0,
+      "concentration_status": "Optimal",
+      "consent_coverage_final": 1.0,
+      "full_pipeline_all_identical": true,
+      "full_pipeline_repeat_runs": 3,
+      "initial_actions": {
+        "ACCEPT": 285,
+        "MODIFY": 19,
+        "NO_RESPONSE": 10,
+        "REJECT": 16,
+        "WITHDRAW": 8
+      },
+      "renewed_actions": {
+        "ACCEPT": 40,
+        "NO_RESPONSE": 2,
+        "REJECT": 10
+      },
+      "renewed_prompts": 52,
+      "reopt_status": "Optimal"
+    },
+    "uj_historical_checkpoint_gapRel_1e_4": {
+      "B1": 13158690.0,
+      "B2": 12545978.0,
+      "B3": 11930066.0,
+      "FINAL_REALIZED": 11208457.0,
+      "INITIAL_REALIZED": 10716058.0,
+      "PLANNED": 11930066.0,
+      "RECOMMENDED_REVISED": 11315587.0
+    },
+    "uj_realisation_hash": "daf331e3d0b2a1fc"
+  },
+  "effective_solver": {
+    "cbc_version": "2.10.3",
+    "engine": "CBC",
+    "gapRel": 1e-06,
+    "pulp_version": "3.3.2",
+    "threads_policy": {
+      "Windows": 0,
+      "non_Windows": 1
+    },
+    "timeLimit_s": 120
+  },
+  "final30_cells_executed_before_amendment": 0,
+  "frozen_design_unchanged": {
+    "action_protocol": "action-consent-v1",
+    "alpha": 0.4,
+    "epsilon": 0.95,
+    "experiment_matrix_sha256": "b339a43ab581a0d481da230b84918363bc82f771b993f575c50ea903cdecc0f0",
+    "fairness": "fairness-v2",
+    "historical_provenance_manifest_sha256": "e92d6db3fcd316fde7c9a9c24cd62980c771e55bc6eebe5692269f289b83d4f8",
+    "lambda": 0.05,
+    "replication_seeds_sha256": "7224b558c8afc0071152f0b9d3bcc4d9972452f52a480ef333233facc981bf40",
+    "rng_streams_sha256": "3bd23959a9e93e0fdf87c580c9a0c9f140de5a9889f28b859144862f4c257ec9",
+    "seed_count": 30,
+    "uncertainty_protocol": "uncertainty-v1"
+  },
+  "historical_artifacts_rewritten": false,
+  "original_solver": {
+    "cbc_version": "2.10.3",
+    "engine": "CBC",
+    "gapRel": 0.0001,
+    "pulp_version": "3.3.2",
+    "threads_policy": {
+      "Windows": 0,
+      "non_Windows": 1
+    },
+    "timeLimit_s": 120
+  },
+  "publication_experiment_matrix_changed": false,
+  "reason": "DEV-only diagnostics before any Final30 publication execution showed that gapRel=1e-4 could admit different near-optimal CBC incumbents reported as Optimal. Tightening to gapRel=1e-6 produced repeatable full UJ results while leaving the U0 DEV control unchanged.",
+  "schema": "farmsync-solver-amendment-v1",
+  "scientific_design_changed": false,
+  "scope": "numerical_reproducibility",
+  "status": "FROZEN_BEFORE_FINAL30"
+}

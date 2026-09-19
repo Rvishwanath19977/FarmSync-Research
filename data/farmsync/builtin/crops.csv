@@ -1,0 +1,15 @@
+crop_id,crop_name,crop_group,seasons,duration_days,rotation_group,perishability,synthetic
+C01,rice,cereal,kharif,,cereal,,True
+C02,wheat,cereal,rabi,,cereal,,True
+C03,maize,cereal,kharif|rabi,,cereal,,True
+C04,sorghum,cereal,kharif|rabi,,cereal,,True
+C05,pearl_millet,cereal,kharif,,cereal,,True
+C06,chickpea,pulse,rabi,,legume,,True
+C07,pigeon_pea,pulse,kharif,,legume,,True
+C08,groundnut,oilseed,kharif,,legume,,True
+C09,soybean,oilseed,kharif,,legume,,True
+C10,mustard,oilseed,rabi,,oilseed,,True
+C11,cotton,fibre,kharif,,fibre,,True
+C12,potato,tuber,rabi,,tuber,moderate,True
+C13,onion,vegetable,kharif|rabi,,vegetable,high,True
+C14,tomato,vegetable,kharif|rabi,,vegetable,high,True

@@ -1,0 +1,30 @@
+{
+  "node_check": {
+    "pass": true,
+    "rc": 0
+  },
+  "tests/test_farmsync_browser.py": {
+    "expected": 43,
+    "match": true,
+    "passed": 43,
+    "rc": 0
+  },
+  "tests/test_farmsync_ilp_v2.py": {
+    "expected": 6,
+    "match": true,
+    "passed": 6,
+    "rc": 0
+  },
+  "tests/test_farmsync_qa_backend.py": {
+    "expected": 19,
+    "match": true,
+    "passed": 19,
+    "rc": 0
+  },
+  "tests/test_farmsync_ui.py": {
+    "expected": 183,
+    "match": true,
+    "passed": 183,
+    "rc": 0
+  }
+}

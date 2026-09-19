@@ -1,0 +1,21 @@
+{
+  "playwright": "1.56.0",
+  "python": "3.12.8",
+  "mode": "real",
+  "requested_browsers": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "browser_versions": {
+    "playwright": "1.56.0",
+    "chromium": "141.0.7390.37",
+    "firefox": "142.0.1",
+    "webkit": "26.0"
+  },
+  "browsers_executed": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ]
+}

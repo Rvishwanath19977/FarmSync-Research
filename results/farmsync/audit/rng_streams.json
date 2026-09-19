@@ -1,0 +1,223 @@
+{
+  "derivation": "sha256('{master}:{stream}') mod 2^31",
+  "streams": [
+    "farmer_response",
+    "participation_scenario",
+    "weather_hazard",
+    "market_shock",
+    "resource_shock"
+  ],
+  "pairing_rule": "same (master,stream) -> same realization across ALL model variants; a Proposed variant never gets a different scenario than its comparator",
+  "per_seed_substreams": {
+    "52314": {
+      "farmer_response": 2113636148,
+      "participation_scenario": 797266414,
+      "weather_hazard": 2112959849,
+      "market_shock": 801525405,
+      "resource_shock": 476976620
+    },
+    "57684": {
+      "farmer_response": 1727281554,
+      "participation_scenario": 103754510,
+      "weather_hazard": 695372445,
+      "market_shock": 349673993,
+      "resource_shock": 251449483
+    },
+    "65693": {
+      "farmer_response": 1767086737,
+      "participation_scenario": 2009974028,
+      "weather_hazard": 327006869,
+      "market_shock": 1011431359,
+      "resource_shock": 228664887
+    },
+    "80120": {
+      "farmer_response": 799451172,
+      "participation_scenario": 1707999706,
+      "weather_hazard": 921465814,
+      "market_shock": 446594241,
+      "resource_shock": 1777152174
+    },
+    "192338": {
+      "farmer_response": 1447819257,
+      "participation_scenario": 1096502559,
+      "weather_hazard": 1464827379,
+      "market_shock": 595916901,
+      "resource_shock": 261471343
+    },
+    "196157": {
+      "farmer_response": 579971794,
+      "participation_scenario": 1355074894,
+      "weather_hazard": 1127730210,
+      "market_shock": 1445778704,
+      "resource_shock": 1291875825
+    },
+    "200768": {
+      "farmer_response": 448575725,
+      "participation_scenario": 526875043,
+      "weather_hazard": 2018256585,
+      "market_shock": 1653093771,
+      "resource_shock": 1928084028
+    },
+    "222335": {
+      "farmer_response": 1002876313,
+      "participation_scenario": 1739419394,
+      "weather_hazard": 1617732144,
+      "market_shock": 2019293170,
+      "resource_shock": 1979143922
+    },
+    "262122": {
+      "farmer_response": 1370659644,
+      "participation_scenario": 1922773895,
+      "weather_hazard": 1530572414,
+      "market_shock": 762213084,
+      "resource_shock": 38792505
+    },
+    "288572": {
+      "farmer_response": 1005916361,
+      "participation_scenario": 1617828626,
+      "weather_hazard": 1960741955,
+      "market_shock": 1118431197,
+      "resource_shock": 1596309221
+    },
+    "320290": {
+      "farmer_response": 1048988073,
+      "participation_scenario": 129670473,
+      "weather_hazard": 954649077,
+      "market_shock": 249669580,
+      "resource_shock": 1574048074
+    },
+    "321611": {
+      "farmer_response": 260906984,
+      "participation_scenario": 1855854428,
+      "weather_hazard": 292728410,
+      "market_shock": 845465697,
+      "resource_shock": 684810043
+    },
+    "331297": {
+      "farmer_response": 2061672639,
+      "participation_scenario": 752261648,
+      "weather_hazard": 691633874,
+      "market_shock": 1651741064,
+      "resource_shock": 262784464
+    },
+    "385101": {
+      "farmer_response": 181431846,
+      "participation_scenario": 838420821,
+      "weather_hazard": 323462415,
+      "market_shock": 1227108555,
+      "resource_shock": 1514283255
+    },
+    "449132": {
+      "farmer_response": 1902082814,
+      "participation_scenario": 1010717811,
+      "weather_hazard": 320327571,
+      "market_shock": 1858038710,
+      "resource_shock": 1572074988
+    },
+    "496928": {
+      "farmer_response": 1258375161,
+      "participation_scenario": 1252715002,
+      "weather_hazard": 489792635,
+      "market_shock": 1095766990,
+      "resource_shock": 661533032
+    },
+    "514942": {
+      "farmer_response": 261782086,
+      "participation_scenario": 1482245701,
+      "weather_hazard": 523673133,
+      "market_shock": 157591933,
+      "resource_shock": 1352775421
+    },
+    "621609": {
+      "farmer_response": 1172119318,
+      "participation_scenario": 217095840,
+      "weather_hazard": 422395187,
+      "market_shock": 473153480,
+      "resource_shock": 202921057
+    },
+    "627177": {
+      "farmer_response": 20738909,
+      "participation_scenario": 1199357563,
+      "weather_hazard": 1950813381,
+      "market_shock": 597013049,
+      "resource_shock": 1820821780
+    },
+    "637394": {
+      "farmer_response": 678030971,
+      "participation_scenario": 1597774222,
+      "weather_hazard": 902675259,
+      "market_shock": 792665233,
+      "resource_shock": 1375879508
+    },
+    "651976": {
+      "farmer_response": 1665454344,
+      "participation_scenario": 833176216,
+      "weather_hazard": 1140863591,
+      "market_shock": 831910922,
+      "resource_shock": 1595154409
+    },
+    "679242": {
+      "farmer_response": 617396655,
+      "participation_scenario": 909551756,
+      "weather_hazard": 1421522824,
+      "market_shock": 955312503,
+      "resource_shock": 1266928352
+    },
+    "720982": {
+      "farmer_response": 1765002547,
+      "participation_scenario": 1627219286,
+      "weather_hazard": 824363918,
+      "market_shock": 1684644670,
+      "resource_shock": 1898763000
+    },
+    "737579": {
+      "farmer_response": 1142431823,
+      "participation_scenario": 458122968,
+      "weather_hazard": 1488722091,
+      "market_shock": 175167044,
+      "resource_shock": 647841806
+    },
+    "750647": {
+      "farmer_response": 979028209,
+      "participation_scenario": 1555685455,
+      "weather_hazard": 544770638,
+      "market_shock": 1230030760,
+      "resource_shock": 732157015
+    },
+    "803466": {
+      "farmer_response": 979244614,
+      "participation_scenario": 729131270,
+      "weather_hazard": 1141504909,
+      "market_shock": 337282738,
+      "resource_shock": 437435665
+    },
+    "870215": {
+      "farmer_response": 1989740863,
+      "participation_scenario": 2086168957,
+      "weather_hazard": 2121692087,
+      "market_shock": 863924533,
+      "resource_shock": 462374664
+    },
+    "885219": {
+      "farmer_response": 1489107783,
+      "participation_scenario": 213247935,
+      "weather_hazard": 574691445,
+      "market_shock": 1579719962,
+      "resource_shock": 123301365
+    },
+    "908270": {
+      "farmer_response": 2045000014,
+      "participation_scenario": 1051166896,
+      "weather_hazard": 923291397,
+      "market_shock": 748945336,
+      "resource_shock": 1192854099
+    },
+    "947906": {
+      "farmer_response": 1587792264,
+      "participation_scenario": 1554619476,
+      "weather_hazard": 807074493,
+      "market_shock": 145926821,
+      "resource_shock": 1740142488
+    }
+  }
+}

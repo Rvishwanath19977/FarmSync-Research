@@ -1,0 +1,18 @@
+{
+  "phase": "proposed_p7",
+  "model": "mock-llm",
+  "sdk_api_path": "openai-compatible (Groq/OpenAI); lazy import; NOT executed live",
+  "live_evaluation": false,
+  "evaluation_status": "MOCK_ONLY \u2014 live LLM parse accuracy NOT RUN (no API access in environment)",
+  "schema_version": "farmsync-farmer-request-v1",
+  "prompt_version": "p7-parse-v1",
+  "case_set_hash": "9b408d5d013ac284",
+  "master_seed": 20260812,
+  "instance_hash": "5ea24037c2d9cb6a",
+  "n_dev_cases": 41,
+  "api_key_persisted": false,
+  "note": "DEVELOPMENT / prompt-engineering set; NOT the >=300-case publication benchmark; final 30-rep experiment NOT run",
+  "correction": "source_text application-authoritative (removed from model schema); TRUE execution-level outcome equivalence over cloned states",
+  "correction_live_readiness": "strict schema all-required; smoke-test single call; boundary_state_execution_equivalence naming; action-aware explanations",
+  "correction_live_gate": "REJECT consent=False; smoke-test assertion gate; deterministic source-text authority detector (UNSUPPORTED_AUTHORITY_INSTRUCTION)"
+}

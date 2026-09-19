@@ -1,0 +1,209 @@
+{
+  "run": "PROPOSED_PHASE5_resilience",
+  "run_id": "p5_dev",
+  "status": "development/checkpoint (counterfactual stress test) \u2014 CORRECTED",
+  "master_seed": 20260812,
+  "instance_hash": "5ea24037c2d9cb6a",
+  "lambda_dev_reference": 0.05,
+  "alphas_evaluated": [
+    1.0,
+    0.4,
+    0.33
+  ],
+  "labels": "alpha & lambda are DEVELOPMENT references, NOT publication-selected",
+  "shock_provenance": "COUNTERFACTUAL/experimental stress tests; not observed disasters or probabilities",
+  "hazard_zone_provenance": "existing Plot.hazard_zone (region+spatial cluster, synthetic correlated-failure unit); reused as-is; 15 zones, 14 non-empty in plan",
+  "scenario_accounting": {
+    "total_attempted": 66,
+    "nminus1_attempted": 24,
+    "nminus1_optimal_backup": 24,
+    "nminus1_infeasible": 0,
+    "hazard_attempted": 42,
+    "hazard_optimal_backup": 40,
+    "hazard_infeasible": 2,
+    "total_optimal_backup": 64,
+    "total_infeasible": 2
+  },
+  "correction_note": "PRIOR REPORTING BUG: PROGRESS claimed every backup solve returned Optimal and 0 violations across all 66 scenarios. In fact 2 hazard backups are genuinely INFEASIBLE and 6 hazard backups hit a numerical knife-edge. Corrected: constraint/hard-lock/violation checks are claimed ONLY for the 64 extracted Optimal backup plans; immediate post-shock loss is valid for all 66 attempted. Prior hazard mean-immediate-loss used an Optimal-only denominator (bug); now averaged over all attempted with explicit denominators. N-1 numbers unchanged.",
+  "eight_flagged_cases_diagnosis": [
+    {
+      "zone": "R3-HZ1",
+      "alpha": 1.0,
+      "failed_stage": "final_backup",
+      "cbc_status_exact_tol": "Infeasible",
+      "cause": "B_numerical_knife_edge",
+      "explanation": "E*_shock and t_floor_shock both Optimal => a plan satisfying E>=0.95E* AND min_norm>=t_floor provably exists; exact-tolerance final solve rejects it at a max-attained-floor knife-edge",
+      "resolution": "RESILIENCE_FLOOR_NUMERIC_TOL=1e-7 (CBC feasibility scale) extracts the provably-feasible plan; achieved min_norm within ~2.5e-6 of exact floor (relative ~5e-9), verified numerical not substantive => now Optimal"
+    },
+    {
+      "zone": "R3-HZ3",
+      "alpha": 1.0,
+      "failed_stage": "final_backup",
+      "cbc_status_exact_tol": "Infeasible",
+      "cause": "B_numerical_knife_edge",
+      "explanation": "E*_shock and t_floor_shock both Optimal => a plan satisfying E>=0.95E* AND min_norm>=t_floor provably exists; exact-tolerance final solve rejects it at a max-attained-floor knife-edge",
+      "resolution": "RESILIENCE_FLOOR_NUMERIC_TOL=1e-7 (CBC feasibility scale) extracts the provably-feasible plan; achieved min_norm within ~2.5e-6 of exact floor (relative ~5e-9), verified numerical not substantive => now Optimal"
+    },
+    {
+      "zone": "R3-HZ1",
+      "alpha": 0.4,
+      "failed_stage": "final_backup",
+      "cbc_status_exact_tol": "Infeasible",
+      "cause": "B_numerical_knife_edge",
+      "explanation": "E*_shock and t_floor_shock both Optimal => a plan satisfying E>=0.95E* AND min_norm>=t_floor provably exists; exact-tolerance final solve rejects it at a max-attained-floor knife-edge",
+      "resolution": "RESILIENCE_FLOOR_NUMERIC_TOL=1e-7 (CBC feasibility scale) extracts the provably-feasible plan; achieved min_norm within ~2.5e-6 of exact floor (relative ~5e-9), verified numerical not substantive => now Optimal"
+    },
+    {
+      "zone": "R3-HZ3",
+      "alpha": 0.4,
+      "failed_stage": "final_backup",
+      "cbc_status_exact_tol": "Infeasible",
+      "cause": "B_numerical_knife_edge",
+      "explanation": "E*_shock and t_floor_shock both Optimal => a plan satisfying E>=0.95E* AND min_norm>=t_floor provably exists; exact-tolerance final solve rejects it at a max-attained-floor knife-edge",
+      "resolution": "RESILIENCE_FLOOR_NUMERIC_TOL=1e-7 (CBC feasibility scale) extracts the provably-feasible plan; achieved min_norm within ~2.5e-6 of exact floor (relative ~5e-9), verified numerical not substantive => now Optimal"
+    },
+    {
+      "zone": "R5-HZ1",
+      "alpha": 0.4,
+      "failed_stage": "E*_shock",
+      "cbc_status": "Infeasible",
+      "cause": "A_genuine_infeasible",
+      "explanation": "concentration cap + surviving hard locks leave no feasible economic plan after this zone outage (feasible at alpha=1.0 => concentration is the binding cause)",
+      "resolution": "preserved as INFEASIBLE (real resilience vulnerability); no backup fabricated"
+    },
+    {
+      "zone": "R3-HZ1",
+      "alpha": 0.33,
+      "failed_stage": "final_backup",
+      "cbc_status_exact_tol": "Infeasible",
+      "cause": "B_numerical_knife_edge",
+      "explanation": "E*_shock and t_floor_shock both Optimal => a plan satisfying E>=0.95E* AND min_norm>=t_floor provably exists; exact-tolerance final solve rejects it at a max-attained-floor knife-edge",
+      "resolution": "RESILIENCE_FLOOR_NUMERIC_TOL=1e-7 (CBC feasibility scale) extracts the provably-feasible plan; achieved min_norm within ~2.5e-6 of exact floor (relative ~5e-9), verified numerical not substantive => now Optimal"
+    },
+    {
+      "zone": "R3-HZ3",
+      "alpha": 0.33,
+      "failed_stage": "final_backup",
+      "cbc_status_exact_tol": "Infeasible",
+      "cause": "B_numerical_knife_edge",
+      "explanation": "E*_shock and t_floor_shock both Optimal => a plan satisfying E>=0.95E* AND min_norm>=t_floor provably exists; exact-tolerance final solve rejects it at a max-attained-floor knife-edge",
+      "resolution": "RESILIENCE_FLOOR_NUMERIC_TOL=1e-7 (CBC feasibility scale) extracts the provably-feasible plan; achieved min_norm within ~2.5e-6 of exact floor (relative ~5e-9), verified numerical not substantive => now Optimal"
+    },
+    {
+      "zone": "R5-HZ1",
+      "alpha": 0.33,
+      "failed_stage": "E*_shock",
+      "cbc_status": "Infeasible",
+      "cause": "A_genuine_infeasible",
+      "explanation": "concentration cap + surviving hard locks leave no feasible economic plan after this zone outage (feasible at alpha=1.0 => concentration is the binding cause)",
+      "resolution": "preserved as INFEASIBLE (real resilience vulnerability); no backup fabricated"
+    }
+  ],
+  "numerical_tolerance": {
+    "post_shock_floor_tol": 1e-07,
+    "basis": "CBC native feasibility-tolerance scale",
+    "verified_numerical": "achieved min_norm within ~2.5e-6 of exact floor on affected cases; N-1 (all Optimal at exact 0) numerically unchanged under 1e-7",
+    "not_applied_to_genuine_infeasibility": "R5-HZ1 fails at E*_shock, before any fairness floor, so tolerance cannot and does not mask it"
+  },
+  "N1_definition": "per active crop: farmer with largest expected production fails; ALL their allocations unavailable; target crop recorded",
+  "failure_semantics": "failed farmer/zone plots FAILED_UNAVAILABLE (incl hard locks = exogenous loss, NOT lock violation); surviving hard locks immutable; failed plots never reused",
+  "post_shock_formulation": "recompute E*_shock and t_floor_shock; enforce E>=0.95*E*_shock AND capable min-norm>=t_floor_shock (post-shock numerical floor tol 1e-7); same concentration alpha; never extract non-Optimal",
+  "invariant_LPS_equals_immediate_loss": true,
+  "nminus1_summary": [
+    {
+      "alpha": 1.0,
+      "pre_shock_cash": 12340519,
+      "attempted": 8,
+      "optimal_backup": 8,
+      "infeasible_backup": 0,
+      "mean_target_immediate_loss_over_attempted": 0.2092,
+      "worst_target_immediate_loss_over_attempted": 0.529,
+      "mean_cash_loss_over_attempted": 265261,
+      "worst_cash_loss_over_attempted": 957199,
+      "immediate_denominator": 8,
+      "mean_recovery_frac_over_optimal": 0.0,
+      "worst_recovery_frac_over_optimal": 0.0,
+      "recovery_denominator": 8,
+      "all_lps_match": true,
+      "surviving_hardlock_changes_all_0": true,
+      "any_failed_reuse": false
+    },
+    {
+      "alpha": 0.4,
+      "pre_shock_cash": 12285254,
+      "attempted": 8,
+      "optimal_backup": 8,
+      "infeasible_backup": 0,
+      "mean_target_immediate_loss_over_attempted": 0.1941,
+      "worst_target_immediate_loss_over_attempted": 0.3988,
+      "mean_cash_loss_over_attempted": 265261,
+      "worst_cash_loss_over_attempted": 957199,
+      "immediate_denominator": 8,
+      "mean_recovery_frac_over_optimal": 0.0812,
+      "worst_recovery_frac_over_optimal": 0.0,
+      "recovery_denominator": 8,
+      "all_lps_match": true,
+      "surviving_hardlock_changes_all_0": true,
+      "any_failed_reuse": false
+    },
+    {
+      "alpha": 0.33,
+      "pre_shock_cash": 12235846,
+      "attempted": 8,
+      "optimal_backup": 8,
+      "infeasible_backup": 0,
+      "mean_target_immediate_loss_over_attempted": 0.1857,
+      "worst_target_immediate_loss_over_attempted": 0.3297,
+      "mean_cash_loss_over_attempted": 265261,
+      "worst_cash_loss_over_attempted": 957199,
+      "immediate_denominator": 8,
+      "mean_recovery_frac_over_optimal": 0.1827,
+      "worst_recovery_frac_over_optimal": 0.0,
+      "recovery_denominator": 8,
+      "all_lps_match": true,
+      "surviving_hardlock_changes_all_0": true,
+      "any_failed_reuse": false
+    }
+  ],
+  "hazard_summary": [
+    {
+      "alpha": 1.0,
+      "attempted": 14,
+      "optimal_backup": 14,
+      "infeasible_backup": 0,
+      "mean_immediate_loss_over_attempted": 881466,
+      "worst_immediate_loss_over_attempted": 3604702,
+      "immediate_loss_denominator": 14,
+      "mean_recovery_frac_over_optimal": 0.0107,
+      "recovery_denominator": 14
+    },
+    {
+      "alpha": 0.4,
+      "attempted": 14,
+      "optimal_backup": 13,
+      "infeasible_backup": 1,
+      "mean_immediate_loss_over_attempted": 877518,
+      "worst_immediate_loss_over_attempted": 3601263,
+      "immediate_loss_denominator": 14,
+      "mean_recovery_frac_over_optimal": 0.0084,
+      "recovery_denominator": 13
+    },
+    {
+      "alpha": 0.33,
+      "attempted": 14,
+      "optimal_backup": 13,
+      "infeasible_backup": 1,
+      "mean_immediate_loss_over_attempted": 873989,
+      "worst_immediate_loss_over_attempted": 3597892,
+      "immediate_loss_denominator": 14,
+      "mean_recovery_frac_over_optimal": 0.004,
+      "recovery_denominator": 13
+    }
+  ],
+  "validity_scope": "surviving-hard-lock, failed-plot-reuse, concentration and hard-constraint checks verified for the 64 Optimal backup plans ONLY (0 changes / 0 reuse / 0 violations there); NOT claimed for the 2 infeasible cases",
+  "key_distinction": "EXPOSURE REDUCTION (lower alpha lowers immediate single-producer & worst-zone loss) is real; POST-SHOCK RECOVERY CAPABILITY is low and NON-monotonic in alpha \u2014 and under strong concentration (alpha<=0.40) one correlated zone outage (R5-HZ1) has NO feasible recovery plan at all (a concentration-vs-recoverability trade-off)",
+  "evidence_chain": "Phase-4 REVISED PLAN -> simulated shock -> IMMEDIATE POST-SHOCK STATE -> POST-SHOCK REVISED BACKUP PLAN (or documented INFEASIBLE)",
+  "interpretation": "backup outputs are REVISED/COUNTERFACTUAL recommendations, NOT realised adoption/income; require renewed consent; no second acceptance round ran",
+  "scientific_conclusions_changed": "Qualitative conclusions UNCHANGED (concentration reduces exposure; recovery low, esp. correlated). NEW finding: strong concentration can render some correlated-outage recovery INFEASIBLE. Corrected hazard immediate-loss denominators; N-1 numbers identical.",
+  "revised_requires_renewed_consent": true
+}

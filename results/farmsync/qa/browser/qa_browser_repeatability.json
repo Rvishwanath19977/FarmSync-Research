@@ -1,0 +1,39 @@
+{
+  "run1": {
+    "realised": 379,
+    "not_realised": 532,
+    "final_cash": 12968501,
+    "comp": {
+      "cotton": 7,
+      "groundnut": 48,
+      "maize": 117,
+      "onion": 44,
+      "pearl_millet": 6,
+      "pigeon_pea": 12,
+      "rice": 81,
+      "sorghum": 24,
+      "soybean": 40
+    },
+    "gini": 0.8421079279710122,
+    "hhi": 0.1865
+  },
+  "run2": {
+    "realised": 379,
+    "not_realised": 532,
+    "final_cash": 12968501,
+    "comp": {
+      "cotton": 7,
+      "groundnut": 48,
+      "maize": 117,
+      "onion": 44,
+      "pearl_millet": 6,
+      "pigeon_pea": 12,
+      "rice": 81,
+      "sorghum": 24,
+      "soybean": 40
+    },
+    "gini": 0.8421079279710122,
+    "hhi": 0.1865
+  },
+  "match": true
+}

@@ -1,0 +1,36 @@
+{
+  "dataset_hash": "9984aa9948740c06",
+  "budget_tightness": "base",
+  "baselines": {
+    "B1": {
+      "land_utilisation_pct": 41.2,
+      "total_cash_return": 14493650.0,
+      "total_return": 7743090.0,
+      "mean_farmer_return": 28987.0,
+      "median_farmer_return": 16826.0,
+      "min_farmer_return": 422.0,
+      "gini_farmer_return": 0.704,
+      "crop_diversity": 8
+    },
+    "B2": {
+      "land_utilisation_pct": 43.7,
+      "total_cash_return": 13779096.0,
+      "total_return": 6878469.0,
+      "mean_farmer_return": 27558.0,
+      "median_farmer_return": 14355.0,
+      "min_farmer_return": 227.0,
+      "gini_farmer_return": 0.741,
+      "crop_diversity": 8
+    },
+    "B3": {
+      "land_utilisation_pct": 42.3,
+      "total_cash_return": 12864876.0,
+      "total_return": 6338055.0,
+      "mean_farmer_return": 25730.0,
+      "median_farmer_return": 16416.0,
+      "min_farmer_return": 309.0,
+      "gini_farmer_return": 0.694,
+      "crop_diversity": 8
+    }
+  }
+}

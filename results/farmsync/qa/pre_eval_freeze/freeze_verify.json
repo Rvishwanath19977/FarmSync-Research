@@ -1,0 +1,24 @@
+{
+  "artifact_diff": {
+    "added": [
+      "farmsync/proposed/llm_service.py",
+      "tests/test_farmsync_llm_service.py"
+    ],
+    "modified": [],
+    "removed": []
+  },
+  "current_in_scope_count": 155,
+  "manifest_core_sha256_ok": true,
+  "pass": false,
+  "recorded_artifact_count": 153,
+  "rediscovered_scope_counts": {
+    "authoritative_reports": 3,
+    "datasets": 20,
+    "frozen_artifacts": 52,
+    "qa_authority": 7,
+    "routes_templates_static": 4,
+    "scientific_source": 44,
+    "scientific_tests": 23,
+    "seed_rng_manifest": 2
+  }
+}

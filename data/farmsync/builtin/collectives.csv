@@ -1,0 +1,11 @@
+collective_id,collective_name,region_id,season,description,active,synthetic
+C01,Sunrise Collective,R1,kharif,Synthetic kharif collective in Indo-Gangetic Plain,True,True
+C02,Riverbend Collective,R2,kharif,Synthetic kharif collective in Deccan Plateau,True,True
+C03,Greenfield Collective,R3,kharif,Synthetic kharif collective in Eastern Delta,True,True
+C04,Highland Collective,R4,kharif,Synthetic kharif collective in Semi-arid West,True,True
+C05,Meadow Collective,R5,kharif,Synthetic kharif collective in Southern Peninsula,True,True
+C06,Delta Collective,R1,kharif,Synthetic kharif collective in Indo-Gangetic Plain,True,True
+C07,Prairie Collective,R2,kharif,Synthetic kharif collective in Deccan Plateau,True,True
+C08,Orchard Collective,R3,kharif,Synthetic kharif collective in Eastern Delta,True,True
+C09,Terrace Collective,R4,kharif,Synthetic kharif collective in Semi-arid West,True,True
+C10,Harvest Collective,R5,kharif,Synthetic kharif collective in Southern Peninsula,True,True

@@ -1,0 +1,166 @@
+{
+  "total_requests": 27,
+  "by_method": {
+    "GET": 25,
+    "POST": 2
+  },
+  "responses_5xx": [],
+  "failed_requests": [],
+  "external_requests": [
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYTkntBJ.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYTkntBJ.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYTkntBJ.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYTkntBJ.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYTkntBJ.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqUYTkntBJ2fk.woff2",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqUYTkntBJ2fk.woff2",
+    "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2"
+  ],
+  "external_request_count": 11,
+  "allowed_external_hosts": [
+    "fonts.googleapis.com",
+    "fonts.gstatic.com"
+  ],
+  "unexpected_external_requests": [],
+  "unexpected_external_request_count": 0,
+  "all_requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/farm-sync",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/style.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/chatbot.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/main.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/css/farmsync.css",
+      "resource_type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/chatbot.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/js/farmsync.js",
+      "resource_type": "script"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYTkntBJ.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYTkntBJ.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYTkntBJ.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYTkntBJ.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/dataset-summary",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/overview",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/images/apple-touch-icon.png",
+      "resource_type": "image"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/static/images/favicon-16.png",
+      "resource_type": "image"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/select-builtin",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:48930/api/farmsync/working-plan/start",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYTkntBJ.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqUYTkntBJ2fk.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqUYTkntBJ2fk.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+      "resource_type": "font"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/explore-validation",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/explore-tables",
+      "resource_type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:48930/api/farmsync/explore/climate_scenarios?page=1&q=",
+      "resource_type": "fetch"
+    }
+  ]
+}

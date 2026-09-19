@@ -1,0 +1,811 @@
+/* FarmSync research workbench.
+   Uses the shared portfolio theme (style.css): tokens, .hero-bg/.hero-gradient/.hero-grid,
+   .section-container, .section-tag, .gradient-text, .animate-fade-up are ALL owned by style.css and
+   are NOT redefined here. This file only styles FarmSync-specific pieces (workbench nav, panels,
+   metrics, steppers, tables) and the scientific semantic colours. Theme-aware in light AND dark. */
+.fs-app{
+  --card:var(--bg-card,#fff);
+  --card-2:color-mix(in srgb,var(--ink) 3.5%,var(--card,#fff));
+  --card-mud:var(--bg-tertiary,#ebe4db);
+  --card-h:var(--bg-card-hover,#fff8f3);
+  --ink:var(--text-primary,#1a1a1a);
+  --ink-2:var(--text-secondary,#5c5c5c);
+  --mut:var(--text-muted,#8c8c8c);
+  --line:var(--border-color,rgba(0,0,0,.08));
+  --line-2:var(--border-hover,rgba(0,0,0,.15));
+  --acc:var(--accent-primary,#d97706);
+  --glow:var(--accent-glow,rgba(217,119,6,.15));
+  --glow-s:var(--accent-glow-strong,rgba(217,119,6,.25));
+  --shadow-glow:var(--shadow-glow,0 0 60px rgba(217,119,6,.25));
+  --grad:var(--gradient-primary,linear-gradient(135deg,#fb923c,#ea580c,#dc2626));
+  --rsm:var(--radius-sm,8px); --rmd:var(--radius-md,12px); --rlg:var(--radius-lg,20px); --rxl:var(--radius-xl,28px);
+  --tb:var(--transition-base,300ms cubic-bezier(.4,0,.2,1));
+  --font:var(--font-display,"Outfit",system-ui,sans-serif);
+  --shadow:0 1px 2px rgba(0,0,0,.04),0 14px 36px rgba(0,0,0,.06);
+  /* scientific semantics — transparency-based so they read in light AND dark */
+  --sci-green:#1f9d6b; --sci-green-s:color-mix(in srgb,#1f9d6b 15%,transparent);
+  --sci-blue:#3b82f6;  --sci-blue-s:color-mix(in srgb,#3b82f6 15%,transparent);
+  --sci-amber:#e08a1e; --sci-amber-s:color-mix(in srgb,#e08a1e 16%,transparent);
+  --sci-red:#e0533d;   --sci-red-s:color-mix(in srgb,#e0533d 15%,transparent);
+  --sci-violet:#8b5cf6;--sci-violet-s:color-mix(in srgb,#8b5cf6 15%,transparent);
+  color:var(--ink);font:14.5px/1.55 var(--font);display:block;
+}
+/* Light mode semantic colours — bright, clean light hues per the house palette
+   (recordsinsight.css). Dark mode (:root above) is unchanged. */
+[data-theme="light"] .fs-app{
+  /* A11y (WCAG AA): the shared muted token resolves to #8c8c8c on the light background = 3.36:1 for the
+     small-text muted UI labels/badges. Darken the FarmSync-scoped muted token to ~5:1 on light while
+     keeping it clearly muted vs --ink. Scoped to [data-theme="light"] .fs-app only — dark theme and the
+     site-wide --text-muted are untouched. */
+  --mut:#6a6a6a;
+  --sci-green:#16a34a; --sci-green-s:color-mix(in srgb,#4ade80 20%,transparent);
+  --sci-blue:#ea580c;  --sci-blue-s:rgba(234,88,12,.14);
+  --sci-amber:#d97706; --sci-amber-s:color-mix(in srgb,#fbbf24 22%,transparent);
+  --sci-red:#e0483a;   --sci-red-s:color-mix(in srgb,#f87171 22%,transparent);
+  --sci-violet:#c2410c;--sci-violet-s:rgba(194,65,12,.14);
+  /* Deterministic/optimal/status family — warm rust, NOT green. Green is reserved
+     for actual ACCEPT/pass verdicts only, so it doesn't dominate the page. */
+  --sci-optimal:#b45309; --sci-optimal-s:rgba(180,83,9,.13);
+}
+/* Light mode: do NOT darken semantic text with ink — keep the bright hue readable. */
+[data-theme="light"] .fs-app .fs-chip.det{color:var(--sci-optimal);background:var(--sci-optimal-s)}
+[data-theme="light"] .fs-app .fs-chip.beh{color:var(--sci-blue)}
+[data-theme="light"] .fs-app .fs-act.ACCEPT,[data-theme="light"] .fs-app .fs-verdict.pass{color:var(--sci-green)}
+[data-theme="light"] .fs-app .fs-state.initial,[data-theme="light"] .fs-app .fs-state.final,[data-theme="light"] .fs-app .fs-rung.flex,[data-theme="light"] .fs-app .fs-run.optimal{color:var(--sci-optimal);background:var(--sci-optimal-s)}
+[data-theme="light"] .fs-app .fs-act.MODIFY,[data-theme="light"] .fs-app .fs-state.revised{color:var(--sci-blue)}
+[data-theme="light"] .fs-app .fs-act.NO_RESPONSE,[data-theme="light"] .fs-app .fs-rung.soft,[data-theme="light"] .fs-app .fs-prov,[data-theme="light"] .fs-app .fs-badge-dev{color:color-mix(in srgb,var(--sci-amber) 45%,var(--ink))}
+[data-theme="light"] .fs-app .fs-act.REJECT,[data-theme="light"] .fs-app .fs-run.infeasible{color:var(--sci-red)}
+[data-theme="light"] .fs-app .fs-act.WITHDRAW,[data-theme="light"] .fs-app .fs-rung.hard{color:var(--sci-violet)}
+[data-theme="light"] .fs-app .fs-vstep-ind.det,[data-theme="light"] .fs-app .fs-vstep-body .tag.det{color:var(--sci-optimal);background:var(--sci-optimal-s)}
+[data-theme="light"] .fs-app .fs-vstep-ind.det{border-color:color-mix(in srgb,var(--sci-optimal) 34%,transparent)}
+[data-theme="light"] .fs-app .fs-vstep-ind.beh,[data-theme="light"] .fs-app .fs-vstep-body .tag.beh{color:var(--sci-blue)}
+[data-theme="light"] .fs-app .fs-note-box.warn{color:color-mix(in srgb,var(--sci-amber) 70%,var(--ink))}
+[data-theme="light"] .fs-app .fs-note-box.info{color:color-mix(in srgb,var(--sci-blue) 65%,var(--ink))}
+[data-theme="light"] .fs-app .fs-note-box.caveat{color:color-mix(in srgb,var(--sci-violet) 68%,var(--ink))}
+[data-theme="light"] .fs-app table.fs-tbl tbody tr.fs-row-best{background:var(--sci-optimal-s)}
+[data-theme="light"] .fs-app table.fs-tbl tbody tr.fs-row-best td{color:color-mix(in srgb,var(--sci-optimal) 82%,var(--ink))}
+[data-theme="light"] .fs-app table.fs-tbl tbody tr.fs-row-best:hover{background:var(--sci-optimal-s)}
+.fs-app *{box-sizing:border-box}
+.fs-app h1,.fs-app h2,.fs-app h3{margin:0;font-weight:700;letter-spacing:-.02em;color:var(--ink);font-family:var(--font)}
+.mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+/* workspace sections receive programmatic-free focus; never show the global focus box on them */
+.fs-app section:focus,.fs-app section:focus-visible,.fs-ws:focus,.fs-ws:focus-visible,.fs-main:focus,.fs-main:focus-visible{outline:none!important;outline-offset:0!important;box-shadow:none!important}
+
+/* ===== HERO (background grid/gradient come from style.css .hero-bg/.hero-grid/.hero-gradient) ===== */
+.farmsync-hero{position:relative;overflow:hidden;text-align:center;
+  padding:calc(var(--space-4xl,6rem) + 72px) var(--space-xl,2rem) var(--space-2xl,3rem)}
+/* particle layer (style.css has no .forge-particle; keep a light one here) */
+.forge-particles{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.forge-particle{position:absolute;top:100%;width:4px;height:4px;background:var(--acc);border-radius:50%;opacity:0;will-change:transform,opacity;animation:fsParticleFloat 8s linear infinite}
+@keyframes fsParticleFloat{0%{opacity:0;transform:translate3d(0,12px,0) scale(.25)}10%{opacity:.58}90%{opacity:.58}100%{opacity:0;transform:translate3d(0,-120vh,0) scale(1)}}
+.farmsync-hero .section-container{position:relative;z-index:1}
+.farmsync-hero-content{max-width:840px;margin:0 auto}
+.farmsync-title{font-size:clamp(2.4rem,6vw,4rem);font-weight:800;letter-spacing:-.03em;line-height:1.06;margin:28px 0 0}
+.farmsync-title .title-line{display:block;color:var(--ink)}
+.farmsync-title .title-highlight{display:block;font-size:clamp(1.35rem,3.3vw,2.2rem);margin-top:6px}
+.farmsync-subtitle{font-size:1.1rem;color:var(--ink-2);max-width:660px;margin:28px auto 30px;line-height:1.75}
+.farmsync-features{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.feature-chip{display:inline-flex;align-items:center;gap:9px;padding:9px 16px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-full,9999px);font-size:.85rem;font-weight:550;color:var(--ink-2);transition:all var(--tb)}
+.feature-chip:hover{border-color:var(--acc);color:var(--acc);box-shadow:0 4px 16px var(--glow)}
+.feature-chip svg{width:16px;height:16px;color:var(--acc);flex:none}
+.farmsync-hero-badges{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:22px}
+
+/* ===== MAIN (full-width, like atsforge-main) ===== */
+.farmsync-main{padding:4px var(--space-xl,2rem) var(--space-4xl,6rem)}
+.fs-badge{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:7px 13px;border-radius:var(--radius-full,9999px);border:1px solid transparent}
+.fs-badge-dev{background:var(--sci-amber-s);color:color-mix(in srgb,var(--sci-amber) 88%,var(--ink));border-color:color-mix(in srgb,var(--sci-amber) 34%,transparent)}
+.fs-badge-dev::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--sci-amber);margin-right:6px;vertical-align:1px;animation:fspulse 2s infinite}
+@keyframes fspulse{0%,100%{opacity:1}50%{opacity:.3}}
+.fs-badge-muted{background:var(--card-2);color:var(--mut);border-color:var(--line)}
+
+/* workbench layout */
+.fs-body{display:grid;grid-template-columns:232px 1fr;gap:28px;align-items:start;margin-top:8px}
+.fs-nav{position:sticky;top:100px}
+.fs-nav ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
+.fs-navbtn{width:100%;text-align:left;background:transparent;border:1px solid transparent;border-radius:var(--rmd);padding:11px 15px;font-size:14px;color:var(--mut);cursor:pointer;font-weight:550;transition:all var(--tb);display:flex;align-items:center;gap:10px;font-family:var(--font)}
+.fs-navbtn::before{content:"";width:3px;height:17px;border-radius:3px;background:transparent;transition:all var(--tb)}
+.fs-navbtn:hover{background:var(--card-2);color:var(--ink)}
+.fs-navbtn.is-active{background:color-mix(in srgb,var(--acc) 12%,transparent);color:var(--acc);font-weight:700}
+.fs-navbtn.is-active::before{background:var(--acc)}
+.fs-navbtn:focus-visible{outline:none;box-shadow:0 0 0 4px var(--glow)}
+
+.fs-main{min-width:0}
+.fs-ws{display:none;animation:fsfade .24s ease}
+.fs-ws.is-active{display:block}
+@keyframes fsfade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+
+/* panels — opaque cards on the ambient grid background */
+.fs-panel{background:var(--card);border:1px solid var(--line);border-radius:var(--rlg);box-shadow:var(--shadow);padding:24px;margin-bottom:20px;transition:box-shadow var(--tb),border-color var(--tb)}
+.fs-panel>h2{font-size:18px;margin-bottom:5px}
+.fs-panel .fs-lede{color:var(--mut);font-size:13.5px;margin:0 0 16px;max-width:74ch;line-height:1.55}
+.fs-h-eyebrow{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);display:block;margin-bottom:4px}
+
+/* metric grid — hover RAISES (glow shadow), does not move */
+.fs-metrics{display:grid;grid-template-columns:repeat(auto-fill,minmax(164px,1fr));gap:14px}
+.fs-metric{background:var(--card-2);border:1px solid var(--line-2);border-radius:var(--rmd);padding:16px 17px;transition:box-shadow var(--tb),border-color var(--tb)}
+.fs-metric:hover{border-color:var(--acc);box-shadow:0 6px 22px var(--glow)}
+.fs-metric .k{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em;font-weight:650}
+.fs-metric .v{font-size:23px;font-weight:750;margin-top:5px;letter-spacing:-.02em;word-break:break-word;color:var(--ink)}
+.fs-metric .v.small{font-size:14px;font-family:"JetBrains Mono",ui-monospace,monospace;font-weight:600}
+.fs-metric .sub{font-size:11.5px;color:var(--mut);margin-top:3px}
+
+/* pipeline chips */
+.fs-pipe{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.fs-chip{font-size:11.5px;font-weight:650;padding:8px 12px;border-radius:var(--rsm);border:1px solid var(--line);background:var(--card-2);transition:all var(--tb)}
+.fs-chip.det{background:var(--sci-green-s);border-color:transparent;color:color-mix(in srgb,var(--sci-green) 80%,var(--ink))}
+.fs-chip.beh{background:var(--sci-blue-s);border-color:transparent;color:color-mix(in srgb,var(--sci-blue) 80%,var(--ink))}
+.fs-arrow{color:var(--mut);font-size:13px}
+.fs-legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:14px;font-size:12.5px;color:var(--mut)}
+.fs-legend .sw{display:inline-block;width:11px;height:11px;border-radius:3px;vertical-align:-1px;margin-right:6px}
+
+/* STEPPER */
+.fs-stepper{position:relative;margin:8px 0 4px;padding:6px 0}
+.fs-stepper-track{position:absolute;top:24px;left:24px;right:24px;height:3px;background:var(--line);border-radius:999px;z-index:0}
+.fs-stepper-progress{height:100%;background:var(--grad);border-radius:999px;transition:width .6s cubic-bezier(.4,0,.2,1)}
+.fs-stepper-steps{display:flex;justify-content:space-between;position:relative;z-index:1;gap:6px}
+.fs-step{display:flex;flex-direction:column;align-items:center;gap:9px;flex:1;min-width:0}
+.fs-step-ind{width:36px;height:36px;border-radius:50%;background:var(--card);border:2px solid var(--line);display:grid;place-items:center;transition:all var(--tb);font-size:12.5px;font-weight:700;color:var(--mut);flex:none}
+.fs-step.done .fs-step-ind{background:var(--grad);border-color:transparent;color:#fff}
+.fs-step.current .fs-step-ind{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 14%,transparent);color:var(--acc);box-shadow:0 0 0 5px var(--glow)}
+.fs-step-label{font-size:11px;color:var(--mut);text-align:center;line-height:1.25;max-width:98px;font-weight:600}
+.fs-step.done .fs-step-label,.fs-step.current .fs-step-label{color:var(--ink-2)}
+.fs-step-sub{font-size:10px;color:var(--mut)}
+.fs-vstep{display:flex;flex-direction:column;gap:0;margin-top:8px}
+.fs-vstep-row{display:grid;grid-template-columns:38px 1fr;gap:16px;position:relative;padding-bottom:18px}
+.fs-vstep-row:not(:last-child)::before{content:"";position:absolute;left:18px;top:36px;bottom:-2px;width:2px;background:var(--line)}
+.fs-vstep-row.beh:not(:last-child)::before{background:linear-gradient(var(--sci-blue),var(--line))}
+.fs-vstep-ind{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:14px;flex:none;z-index:1}
+.fs-vstep-ind.det{background:var(--sci-green-s);color:color-mix(in srgb,var(--sci-green) 82%,var(--ink));border:2px solid color-mix(in srgb,var(--sci-green) 34%,transparent)}
+.fs-vstep-ind.beh{background:var(--sci-blue-s);color:color-mix(in srgb,var(--sci-blue) 82%,var(--ink));border:2px solid color-mix(in srgb,var(--sci-blue) 34%,transparent)}
+.fs-vstep-body{padding-top:6px}
+.fs-vstep-body .t{font-weight:700;font-size:14px}
+.fs-vstep-body .d{color:var(--mut);font-size:12.5px;margin-top:2px;line-height:1.5}
+.fs-vstep-body .tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:2px 8px;border-radius:6px;margin-left:8px}
+.fs-vstep-body .tag.det{background:var(--sci-green-s);color:color-mix(in srgb,var(--sci-green) 82%,var(--ink))}
+.fs-vstep-body .tag.beh{background:var(--sci-blue-s);color:color-mix(in srgb,var(--sci-blue) 82%,var(--ink))}
+
+/* tables */
+.fs-tablewrap{overflow:auto;border:1px solid var(--line);border-radius:var(--rmd)}
+table.fs-tbl{border-collapse:collapse;width:100%;font-size:13px}
+table.fs-tbl th,table.fs-tbl td{padding:10px 13px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+table.fs-tbl thead th{background:var(--card-2);color:var(--mut);font-weight:700;text-transform:uppercase;font-size:10.5px;letter-spacing:.05em;position:sticky;top:0}
+table.fs-tbl tbody tr{transition:background var(--tb)}
+table.fs-tbl tbody tr:hover{background:var(--card-2)}
+table.fs-tbl tbody tr:last-child td{border-bottom:none}
+table.fs-tbl td.num{text-align:right;font-variant-numeric:tabular-nums}
+table.fs-tbl tbody tr.fs-row-best{background:var(--sci-green-s)}
+table.fs-tbl tbody tr.fs-row-best td{color:color-mix(in srgb,var(--sci-green) 78%,var(--ink));font-weight:650}
+table.fs-tbl tbody tr.fs-row-best:hover{background:var(--sci-green-s)}
+
+/* tier / state badges */
+.fs-state{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;padding:5px 11px;border-radius:var(--rsm);border:1px solid transparent}
+.fs-state.planned{background:var(--card-2);color:var(--ink-2);border-color:var(--line)}
+.fs-state.initial{background:var(--sci-green-s);color:color-mix(in srgb,var(--sci-green) 82%,var(--ink))}
+.fs-state.revised{background:var(--sci-blue-s);color:color-mix(in srgb,var(--sci-blue) 82%,var(--ink));border-color:var(--sci-blue);border-style:dashed}
+.fs-state.final{background:color-mix(in srgb,var(--sci-green) 24%,transparent);color:color-mix(in srgb,var(--sci-green) 86%,var(--ink))}
+.fs-state.na{background:var(--card-2);color:var(--mut)}
+.fs-realised-key{font-size:12.5px;color:var(--mut);margin-top:12px}
+.fs-realised-key .dash{border:1px dashed var(--sci-blue);border-radius:6px;padding:1px 8px;color:var(--sci-blue);font-weight:650}
+
+/* action pills */
+.fs-act{font-size:11px;font-weight:700;padding:4px 10px;border-radius:6px;letter-spacing:.02em}
+.fs-act.ACCEPT{background:var(--sci-green-s);color:color-mix(in srgb,var(--sci-green) 82%,var(--ink))}
+.fs-act.REJECT{background:var(--sci-red-s);color:color-mix(in srgb,var(--sci-red) 82%,var(--ink))}
+.fs-act.MODIFY{background:var(--sci-blue-s);color:color-mix(in srgb,var(--sci-blue) 82%,var(--ink))}
+.fs-act.NO_RESPONSE{background:var(--sci-amber-s);color:color-mix(in srgb,var(--sci-amber) 82%,var(--ink))}
+.fs-act.WITHDRAW{background:var(--sci-violet-s);color:color-mix(in srgb,var(--sci-violet) 82%,var(--ink))}
+
+/* lock rungs */
+.fs-ladder{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.fs-rung{font-size:12px;padding:8px 12px;border-radius:var(--rsm);border:1px solid var(--line);background:var(--card-2);font-weight:650}
+.fs-rung.flex{border-color:transparent;background:var(--sci-green-s);color:color-mix(in srgb,var(--sci-green) 82%,var(--ink))}
+.fs-rung.soft{border-color:transparent;background:var(--sci-amber-s);color:color-mix(in srgb,var(--sci-amber) 82%,var(--ink))}
+.fs-rung.hard{border-color:transparent;background:var(--sci-violet-s);color:color-mix(in srgb,var(--sci-violet) 82%,var(--ink))}
+
+/* callouts */
+.fs-note-box{border-radius:var(--rmd);padding:13px 15px;font-size:13px;margin:14px 0 20px;border:1px solid;line-height:1.55}
+.fs-note-box.warn{background:var(--sci-amber-s);border-color:color-mix(in srgb,var(--sci-amber) 30%,transparent);color:color-mix(in srgb,var(--sci-amber) 86%,var(--ink))}
+.fs-note-box.info{background:var(--sci-blue-s);border-color:color-mix(in srgb,var(--sci-blue) 30%,transparent);color:color-mix(in srgb,var(--sci-blue) 86%,var(--ink))}
+.fs-note-box.caveat{background:var(--sci-violet-s);border-color:color-mix(in srgb,var(--sci-violet) 30%,transparent);color:color-mix(in srgb,var(--sci-violet) 86%,var(--ink))}
+.fs-note-box b{font-weight:700}
+
+/* provenance + drawer */
+.fs-prov{font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:6px 10px;border-radius:6px;background:var(--sci-amber-s);color:color-mix(in srgb,var(--sci-amber) 86%,var(--ink));border:1px solid color-mix(in srgb,var(--sci-amber) 30%,transparent);display:inline-block;line-height:1.45;width:fit-content;max-width:100%}
+h2 .fs-prov{vertical-align:middle;margin-left:8px;position:relative;top:-2px}
+details.fs-drawer{border:1px solid var(--line);border-radius:var(--rmd);background:var(--card-2);margin-top:12px;transition:border-color var(--tb)}
+details.fs-drawer[open]{border-color:var(--acc)}
+details.fs-drawer>summary{cursor:pointer;padding:11px 14px;font-weight:650;font-size:13px;list-style:none;display:flex;align-items:center;gap:9px}
+details.fs-drawer>summary::-webkit-details-marker{display:none}
+details.fs-drawer>summary::before{content:"\25B8";color:var(--acc);transition:transform var(--tb)}
+details.fs-drawer[open]>summary::before{transform:rotate(90deg)}
+details.fs-drawer .fs-drawer-body{padding:0 14px 14px;font-size:12.8px;color:var(--mut);line-height:1.6}
+
+/* run-status labels */
+.fs-run{font-size:11px;font-weight:700;padding:4px 10px;border-radius:6px;display:inline-block}
+.fs-run.notrun{background:var(--card-2);color:var(--mut);border:1px solid var(--line)}
+.fs-run.optimal{background:var(--sci-green-s);color:color-mix(in srgb,var(--sci-green) 82%,var(--ink))}
+.fs-run.infeasible{background:var(--sci-red-s);color:color-mix(in srgb,var(--sci-red) 82%,var(--ink))}
+
+/* buttons — RAISE on hover (scale + glow shadow), matching the portfolio .btn-primary */
+.fs-btn{appearance:none;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:10px 18px;border-radius:var(--rmd);font-size:13.5px;font-weight:650;cursor:pointer;transition:all var(--tb);font-family:var(--font)}
+.fs-btn:hover{border-color:var(--acc);color:var(--acc);box-shadow:0 4px 16px var(--glow)}
+.fs-btn:focus-visible{outline:none;box-shadow:0 0 0 4px var(--glow)}
+.fs-btn-primary{background:var(--grad);border-color:transparent;color:#fff;box-shadow:0 4px 20px var(--glow)}
+.fs-btn-primary:hover{color:#fff;transform:scale(1.02);box-shadow:var(--shadow-glow)}
+.fs-btn:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
+.fs-modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(256px,1fr));gap:16px;align-items:stretch}
+.fs-card{background:var(--card-2);border:1px solid var(--line-2);border-radius:var(--rlg);padding:18px;transition:border-color var(--tb),box-shadow var(--tb);display:flex;flex-direction:column}
+.fs-card:hover{border-color:var(--acc);box-shadow:0 8px 24px var(--glow)}
+.fs-card h3{font-size:15px;margin-bottom:7px}
+.fs-card p{color:var(--mut);font-size:13px;margin:0 0 13px;line-height:1.5}
+.fs-card-actions{margin-top:auto;padding-top:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.fs-file{display:inline-block;margin:0}
+.fs-replace{margin-top:16px}
+.fs-replace summary{cursor:pointer;color:var(--mut);font-size:13px}
+.fs-replace-body{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.fs-verdict{font-weight:700}.fs-verdict.pass{color:color-mix(in srgb,var(--sci-green) 82%,var(--ink))}.fs-verdict.fail{color:var(--sci-red)}
+.fs-inspect-head{display:flex;gap:11px;margin:14px 0;flex-wrap:wrap}
+.fs-inspect-head select,.fs-inspect-head input,.fs-app select,.fs-app textarea,.fs-replace-body select{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:9px 12px;border:1px solid var(--line);border-radius:var(--rsm);font-size:13.5px;background:var(--card);color:var(--ink);font-family:var(--font)}
+.fs-app select,.fs-replace-body select{min-width:170px;height:40px;padding-right:34px;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238c8c8c' stroke-width='2.5'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+.fs-app select:hover{border-color:var(--line-2)}
+.fs-app select:disabled{opacity:.55;cursor:not-allowed;background-image:none}
+.fs-app textarea:focus,.fs-app input:focus,.fs-app select:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 4px var(--glow)}
+.fs-pager{display:flex;gap:11px;align-items:center;margin-top:11px;font-size:13px;color:var(--mut)}
+.fs-report{margin-top:18px}.fs-inspect{margin-top:18px}
+.fs-report-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.fs-source{color:var(--mut);font-size:12.5px}
+.fs-actions{display:flex;gap:13px;align-items:center;margin-top:16px;flex-wrap:wrap}
+.fs-active{color:var(--mut);font-size:13px}
+
+/* states */
+.fs-loading,.fs-empty{padding:30px;text-align:center;color:var(--mut);font-size:13.5px}
+.fs-spinner{width:18px;height:18px;border:2px solid var(--line);border-top-color:var(--acc);border-radius:50%;display:inline-block;animation:fsspin .7s linear infinite;vertical-align:-3px;margin-right:8px}
+@keyframes fsspin{to{transform:rotate(360deg)}}
+.fs-errbox{background:var(--sci-red-s);border:1px solid color-mix(in srgb,var(--sci-red) 35%,transparent);color:color-mix(in srgb,var(--sci-red) 82%,var(--ink));border-radius:var(--rmd);padding:13px 15px;font-size:13px}
+
+.fs-foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:12.5px;text-align:center}
+.fs-tt{border-bottom:1px dotted var(--mut);cursor:help}
+
+/* responsive */
+@media (max-width:900px){
+  .fs-body{grid-template-columns:1fr}
+  .fs-nav{position:static}
+  .fs-nav ul{flex-direction:row;overflow:auto;padding-bottom:6px;gap:6px;-webkit-overflow-scrolling:touch}
+  .fs-navbtn{white-space:nowrap}
+  .fs-navbtn::before{display:none}
+  .fs-navbtn.is-active{background:var(--grad);color:#fff}
+}
+@media (max-width:560px){
+  .farmsync-title{font-size:clamp(2rem,8vw,2.6rem)}
+  .fs-step-label{font-size:9.5px}
+  .fs-stepper-steps{gap:2px}
+  .fs-metrics{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+  .fs-panel{padding:16px}
+
+  .fs-ai-response-head{
+    align-items:flex-start;
+  }
+
+  .fs-ai-provenance{
+    width:fit-content;
+    max-width:100%;
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  .fs-app *{animation:none!important;transition:none!important}
+}
+/* ============================================================
+   Guided-workbench components (added). All colours come from the
+   existing theme-scoped variables — no --sci-* variable is changed
+   and no theme-dependent colour is hard-coded here. Light/dark stay
+   separate because these vars are already theme-scoped above.
+   ============================================================ */
+
+/* workflow stepper (top of main) */
+.fs-workflow{margin:0 0 22px;scroll-margin-top:112px}
+.fs-workflow .fs-stepper{padding:4px 0}
+.fs-workflow .fs-step{background:none;border:none;cursor:pointer;font-family:var(--font)}
+.fs-workflow .fs-step:focus-visible{outline:none}
+.fs-workflow .fs-step:focus-visible .fs-step-ind{box-shadow:0 0 0 4px var(--glow)}
+
+/* grouped nav */
+.fs-navgroup{margin-bottom:16px}
+.fs-navgroup-h{display:block;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);padding:0 13px 6px}
+.fs-navgroup ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:3px}
+
+/* CTA rows */
+.fs-cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.fs-cta{font-size:14.5px;padding:12px 22px}
+.fs-muted{color:var(--mut);font-weight:500;font-size:.88em}
+
+/* plan: fields + radios */
+.fs-field{margin:18px 0}
+.fs-field-h{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--mut);margin-bottom:10px}
+.fs-radios{display:flex;flex-direction:column;gap:10px}
+.fs-radios-row{flex-direction:row;flex-wrap:wrap}
+.fs-radio{display:flex;align-items:flex-start;gap:12px;text-align:left;background:var(--card-2);border:1px solid var(--line);border-radius:var(--rmd);padding:14px 16px;cursor:pointer;transition:all var(--tb);font-family:var(--font);color:var(--ink);width:100%}
+.fs-radio:hover{border-color:var(--acc)}
+.fs-radio.sel{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 8%,var(--card))}
+.fs-radio-dot{width:18px;height:18px;border-radius:50%;border:2px solid var(--line-2);flex:none;margin-top:2px;transition:all var(--tb);position:relative}
+.fs-radio.sel .fs-radio-dot{border-color:var(--acc)}
+.fs-radio.sel .fs-radio-dot::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--acc)}
+.fs-radio-t{display:block;font-weight:650;font-size:14px}
+.fs-radio-d{display:block;color:var(--mut);font-size:12.5px;margin-top:2px}
+.fs-radio-pill{width:auto;align-items:center;padding:10px 18px;border-radius:var(--radius-full,9999px);font-weight:600}
+.fs-radio-pill.sel{color:var(--acc)}
+.fs-hint{margin:10px 0 0;font-size:12.5px}
+.fs-tag-lock::before{content:"\01F512  ";}
+.fs-tag-lock{display:inline-block;font-size:12px;font-weight:650;padding:5px 12px;border-radius:var(--radius-full,9999px);background:var(--sci-amber-s);color:var(--sci-amber);border:1px solid color-mix(in srgb,var(--sci-amber) 30%,transparent)}
+.fs-tag-explore{display:inline-block;font-size:12px;font-weight:650;padding:5px 12px;border-radius:var(--radius-full,9999px);background:color-mix(in srgb,var(--acc) 10%,transparent);color:var(--acc);border:1px solid color-mix(in srgb,var(--acc) 28%,transparent)}
+.fs-plan-summary h2{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+
+/* farmer interaction */
+.fs-farmer-layout{display:grid;grid-template-columns:270px 1fr;gap:20px;margin-top:8px;align-items:start}
+.fs-farmer-list{display:flex;flex-direction:column;gap:6px;max-height:520px;overflow:auto;padding-right:4px}
+.fs-farmer-list input[type=search]{position:sticky;top:0;width:100%;margin-bottom:4px}
+.fs-farmer-item{display:flex;align-items:center;gap:8px;justify-content:space-between;text-align:left;background:var(--card-2);border:1px solid var(--line);border-radius:var(--rsm);padding:9px 11px;cursor:pointer;transition:all var(--tb);font-family:var(--font);color:var(--ink);font-size:12.5px}
+.fs-farmer-item:hover{border-color:var(--acc)}
+.fs-farmer-item.sel{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 8%,var(--card))}
+.fs-farmer-detail{min-height:200px}
+.fs-farmer-head{display:flex;gap:24px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:14px;font-size:13px}
+.fs-farmer-head .fs-muted{font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+.fs-farmer-id{font-size:17px;font-weight:700}
+.fs-reco-box{background:var(--card-2);border:1px solid var(--line);border-radius:var(--rmd);padding:16px 18px}
+.fs-reco-crop{font-size:24px;font-weight:750;letter-spacing:-.02em;text-transform:capitalize}
+.fs-reco-cash{color:var(--mut);font-size:13px;margin-top:2px}
+.fs-action-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:6px}
+.fs-action-btn.is-recorded{border-color:var(--acc);color:var(--acc);font-weight:700}
+.fs-action-btn.is-active{background:color-mix(in srgb,var(--acc) 10%,var(--card));border-color:var(--acc)}
+.fs-outcome{margin-top:14px;padding:14px 16px;background:var(--card-2);border:1px solid var(--line);border-radius:var(--rmd)}
+.fs-outcome p{margin:8px 0 0;color:var(--ink-2);font-size:13px;line-height:1.55}
+.fs-askai{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.fs-ai-convo{margin-top:12px}
+.fs-ai-msg{padding:11px 14px;border-radius:var(--rmd);font-size:13px;max-width:80%}
+.fs-ai-user{background:color-mix(in srgb,var(--acc) 10%,var(--card));border:1px solid color-mix(in srgb,var(--acc) 22%,transparent);margin-left:auto}
+.fs-ai-understood{margin-top:14px;background:var(--card-2);border:1px solid var(--line);border-radius:var(--rmd);padding:14px 16px}
+.fs-card-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:auto}
+.fs-card{display:flex;flex-direction:column}
+
+@media (max-width:900px){
+  .fs-farmer-layout{grid-template-columns:1fr}
+  .fs-farmer-list{max-height:none;flex-direction:row;overflow:auto;flex-wrap:nowrap}
+  .fs-farmer-item{white-space:nowrap}
+}
+
+/* ============================================================
+   Progressive-disclosure UX additions. Theme-scoped variables only;
+   no --sci-* variable changed, no theme-dependent colour hard-coded.
+   ============================================================ */
+
+/* locked nav items */
+.fs-navbtn.is-locked{color:var(--mut);opacity:.6;cursor:not-allowed}
+.fs-navbtn.is-locked:hover{background:transparent;color:var(--mut)}
+.fs-navbtn.is-locked .fs-nav-lock{margin-left:auto;display:inline-flex;opacity:.8}
+.fs-nav-lock .fs-lockico,.fs-step .fs-lockico{vertical-align:-1px}
+.fs-locked-shake{animation:fsShake .4s}
+@keyframes fsShake{0%,100%{transform:translateX(0)}25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}
+
+/* locked / future workflow steps */
+.fs-workflow .fs-step.future .fs-step-ind{opacity:.55}
+.fs-workflow .fs-step.future .fs-step-label{color:var(--mut)}
+.fs-workflow .fs-step.locked{cursor:not-allowed}
+.fs-workflow .fs-step.locked .fs-step-ind{opacity:.5}
+.fs-workflow .fs-step:not(.locked){cursor:pointer}
+
+/* Home — three entry paths */
+.fs-paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:14px}
+.fs-path{position:relative;background:var(--card-2);border:1px solid var(--line);border-radius:var(--rlg);padding:18px;display:flex;flex-direction:column;transition:border-color var(--tb),box-shadow var(--tb)}
+.fs-path:hover{border-color:var(--acc);box-shadow:0 8px 24px var(--glow)}
+.fs-path h3{font-size:15.5px;margin-bottom:7px}
+.fs-path p{color:var(--mut);font-size:13px;margin:0 0 12px;line-height:1.5}
+.fs-path-primary{border-color:color-mix(in srgb,var(--acc) 45%,var(--line));background:color-mix(in srgb,var(--acc) 6%,var(--card))}
+.fs-path-badge{position:absolute;top:-10px;left:16px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:var(--radius-full,9999px);background:var(--grad);color:#fff}
+.fs-path-secondary{opacity:.92}
+.fs-path-stat{font-size:13px;color:var(--ink-2);margin-bottom:10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.fs-path-flow{font-size:11.5px !important;color:var(--acc) !important;font-weight:600;letter-spacing:.01em}
+.fs-path .fs-card-actions{margin-top:auto}
+.fs-disclose{padding:14px 18px}
+.fs-disclose-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12.5px}
+
+/* data requirements */
+.fs-req{margin-top:14px;padding:16px;background:var(--card-2);border:1px solid var(--line);border-radius:var(--rmd)}
+.fs-req-mode{padding:12px 0;border-bottom:1px solid var(--line)}
+.fs-req-mode:last-of-type{border-bottom:none}
+.fs-req-mode p{color:var(--mut);font-size:12.5px;margin:4px 0 8px}
+.fs-req-files{display:flex;gap:6px;flex-wrap:wrap}
+.fs-req-core{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:1px 5px;border-radius:4px;background:color-mix(in srgb,var(--acc) 14%,transparent);color:var(--acc);margin-left:4px}
+
+/* recorded vs illustrative outcome */
+.fs-outcome.is-recorded{border-color:color-mix(in srgb,var(--acc) 30%,var(--line))}
+.fs-outcome.is-illustrative{border-style:dashed}
+.fs-outcome-tag{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:3px 9px;border-radius:6px;margin-left:6px}
+.fs-outcome-tag.recorded{background:color-mix(in srgb,var(--acc) 12%,transparent);color:var(--acc);border:1px solid color-mix(in srgb,var(--acc) 28%,transparent)}
+.fs-outcome-tag.illustrative{background:var(--card-mud);color:var(--mut);border:1px dashed var(--line-2)}
+
+/* ============================================================
+   Product-journey / causal-UX additions. Theme-scoped variables only;
+   no --sci-* variable changed, no theme-dependent colour hard-coded.
+   ============================================================ */
+
+/* per-stage teaching block (what / why / result / meaning) */
+.fs-teach{display:flex;flex-direction:column;gap:8px;margin:14px 0;padding:14px 16px;background:var(--card-2);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:var(--rmd)}
+.fs-teach-row{display:grid;grid-template-columns:110px 1fr;gap:12px;font-size:13px;line-height:1.5}
+.fs-teach-k{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);padding-top:2px}
+.fs-teach-row span:last-child{color:var(--ink-2)}
+
+/* explicit "next" CTA row */
+.fs-next{align-items:center;margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}
+.fs-next-k{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-right:4px}
+
+/* AI-role ordering strip (LLM -> validator -> optimiser -> LLM) */
+.fs-ai-role{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:6px 0 12px;padding:10px 12px;background:var(--card-2);border:1px solid var(--line);border-radius:var(--rmd);font-size:12px}
+.fs-ai-role-item{color:var(--ink-2)}
+.fs-ai-role-item b{color:var(--ink)}
+.fs-ai-arrow{color:var(--acc);font-weight:700}
+/* AI response provenance — parser interprets; FarmSync grounds evidence */
+.fs-ai-response-head{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  flex-wrap:wrap;
+  max-width:100%;
+}
+
+.fs-ai-provenance{
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+  flex-wrap:wrap;
+  max-width:100%;
+  white-space:normal;
+  padding:5px 9px;
+  border:1px solid var(--line);
+  border-radius:var(--radius-full,9999px);
+  background:var(--card-2);
+  color:var(--mut);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.05em;
+  line-height:1.25;
+  text-transform:uppercase;
+}
+
+.fs-ai-prov-sep{
+  flex:none;
+  color:var(--acc);
+}
+.fs-ai-input{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.fs-ai-input input[type=text]{flex:1;min-width:220px;padding:10px 13px;border:1px solid var(--line);border-radius:var(--rsm);background:var(--card);color:var(--ink);font-family:var(--font);font-size:13.5px}
+.fs-ai-input input[type=text]:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 4px var(--glow)}
+.fs-ai-roles{margin-top:10px;display:flex;flex-direction:column;gap:5px;font-size:12.5px;color:var(--ink-2)}
+.fs-ai-roles b{color:var(--ink)}
+.fs-fi-ids{display:flex;flex-direction:column;gap:1px;line-height:1.25}
+
+/* PLANNED->...->FINAL progression strip */
+.fs-prog{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.fs-prog-step{display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.fs-prog-v{font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+
+/* ============================================================
+   Manual-QA closure + interactive-run components. Theme-scoped
+   variables only; no --sci-* changed, no colour hex hard-coded.
+   ============================================================ */
+.fs-mode-banner{border-radius:var(--rmd);padding:11px 15px;font-size:13px;margin-bottom:14px;border:1px solid;line-height:1.5}
+.fs-mode-banner.interactive{background:color-mix(in srgb,var(--acc) 9%,var(--card));border-color:color-mix(in srgb,var(--acc) 32%,transparent);color:var(--ink-2)}
+.fs-mode-banner.replay{background:var(--card-2);border-color:var(--line);color:var(--mut)}
+.fs-mode-banner b{color:var(--ink)}
+.fs-consent-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:space-between;padding:9px 12px;border:1px solid var(--line);border-radius:var(--rsm);background:var(--card-2);margin-bottom:6px;font-size:13px}
+.fs-consent-state{display:flex;gap:6px}
+
+/* ============================================================
+   ONE-flow correction: dataset context bar, working-plan save
+   states, advanced nav. Theme-scoped variables only; no --sci-*
+   change, no colour hex in JS.
+   ============================================================ */
+.fs-dataset-ctx{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:8px 14px;margin:0 0 10px;border:1px solid var(--line);border-radius:var(--rmd);background:var(--card-2);font-size:13px}
+.fs-dataset-ctx[hidden]{display:none}
+.fs-dsctx-k{font-weight:600;color:var(--ink)}
+.fs-dsctx-meta{color:var(--mut)}
+.fs-dataset-ctx .fs-btn-sm{margin-left:auto}
+.fs-btn-sm{padding:4px 10px;font-size:12px}
+.fs-navgroup-advanced .fs-navgroup-h{opacity:1}
+/* A11y (WCAG AA, light theme only): accent amber #d97706 as small-bold TEXT is ~3.2:1 on light
+   surfaces. Darken the amber TEXT for these specific labels to >=4.5:1 while keeping the amber family;
+   --acc itself is unchanged so borders/glows/backgrounds are unaffected. */
+[data-theme="light"] .fs-app .fs-h-eyebrow,
+[data-theme="light"] .fs-app .fs-navbtn.is-active,
+[data-theme="light"] .fs-app .fs-filter.is-active{color:color-mix(in srgb,var(--acc) 52%,var(--ink))}
+[data-theme="light"] .fs-app .fs-path-flow{color:color-mix(in srgb,var(--acc) 52%,var(--ink)) !important}
+[data-theme="light"] .fs-app .fs-run.optimal{color:color-mix(in srgb,var(--sci-optimal, var(--acc)) 55%,var(--ink))}
+/* A11y: pure --sci-green (#16a34a) as small-bold TEXT is ~3:1 on light. Darken these green-text labels to
+   AA while keeping the green semantic family (backgrounds/borders keep --sci-green). */
+[data-theme="light"] .fs-app .fs-act.ACCEPT,[data-theme="light"] .fs-app .fs-verdict.pass{color:color-mix(in srgb,var(--sci-green) 62%,var(--ink))}
+.fs-edited{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;padding:1px 6px;border-radius:999px;background:color-mix(in srgb,var(--acc) 16%,transparent);color:var(--acc);vertical-align:middle}
+.fs-save-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
+.fs-save-msg{font-size:13px}
+.fs-saved-ok{color:var(--ok,var(--acc));font-weight:600}
+.fs-action-btn.is-saved{border-color:var(--acc);box-shadow:inset 0 0 0 1px var(--acc)}
+
+/* Start/data-source UX patch: inline source line + Home selected state (theme vars only). */
+.fs-source-line{font-size:12.5px;margin:0 0 10px}
+.fs-dataset-picked{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:14px;margin-top:6px}
+
+/* Final state-integrity + UX polish: upload feedback, explorer spacing, saved-crop styles. */
+.fs-uploading{display:flex;align-items:center;gap:10px;padding:14px;color:var(--mut);font-size:14px}
+.fs-spin{width:16px;height:16px;border:2px solid var(--line);border-top-color:var(--acc);border-radius:50%;display:inline-block;animation:fs-spin 0.8s linear infinite}
+@keyframes fs-spin{to{transform:rotate(360deg)}}
+.fs-file span.is-selected{border-color:var(--acc);color:var(--acc);box-shadow:inset 0 0 0 1px var(--acc)}
+.fs-explorer-mount{margin-top:20px}
+.fs-explorer-headline{font-size:14px;padding:10px 12px;border:1px solid var(--line);border-radius:var(--rsm);background:var(--card-2)}
+.fs-reco-crop-inline{font-weight:600;color:var(--ink);text-transform:capitalize}
+
+/* --- Manual QA follow-up: saved crop clarity + grounded Ask Why + explorer validation --- */
+.fs-saved-request-card{margin-top:12px;padding:14px 16px;border:1px solid var(--acc);border-radius:var(--rmd);background:var(--acc-soft,rgba(255,126,38,.08));display:flex;justify-content:space-between;gap:18px;align-items:flex-start}
+.fs-saved-request-crop{font-size:23px;font-weight:750;letter-spacing:-.02em;text-transform:capitalize;margin-top:2px}
+.fs-saved-request-note{max-width:360px;color:var(--mut);font-size:12.5px;line-height:1.55}
+.fs-saved-request-mini{margin:0 0 8px;padding:10px 12px;border:1px solid var(--acc);border-radius:var(--rsm);background:var(--acc-soft,rgba(255,126,38,.07));display:grid;grid-template-columns:auto auto;gap:2px 10px;align-items:baseline}
+.fs-saved-request-mini>span{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);font-weight:700}
+.fs-saved-request-mini>b{font-size:15px;text-transform:capitalize}
+.fs-saved-request-mini>small{grid-column:1/-1;color:var(--mut);font-size:11.5px}
+.fs-why-card{margin-top:10px;border:1px solid var(--line);border-radius:var(--rmd);background:var(--card-2);padding:14px 16px}
+.fs-why-title{font-weight:750;font-size:15px;margin-bottom:6px}
+.fs-why-summary{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.fs-evidence-block{padding-top:11px;margin-top:11px;border-top:1px solid var(--line)}
+.fs-evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:7px}
+.fs-evidence-item{border:1px solid var(--line);border-radius:var(--rsm);padding:8px 10px;background:var(--card)}
+.fs-evidence-item span{display:block;color:var(--mut);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px}
+.fs-evidence-item b{font-size:12.5px;overflow-wrap:anywhere}
+.fs-check-list{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+.fs-check-chip{border:1px solid var(--line);border-radius:999px;padding:5px 8px;background:var(--card);font-size:11.5px}
+.fs-exclusion-row{display:grid;grid-template-columns:minmax(110px,.35fr) 1fr;gap:10px;border-top:1px solid var(--line);padding:7px 0;font-size:12px}
+.fs-exclusion-row:first-of-type{border-top:0}
+.fs-exclusion-row b{text-transform:capitalize}
+.fs-exclusion-row span{color:var(--mut)}
+.fs-explorer-validation{margin-top:16px;padding:14px;border:1px solid var(--line);border-radius:var(--rmd);background:var(--card-2)}
+.fs-validation-title{font-weight:750;font-size:18px;margin:12px 0 10px}
+.fs-explorer-provenance{margin-top:12px;padding-top:10px;border-top:1px solid var(--line);font-size:11.5px;overflow-wrap:anywhere}
+@media(max-width:760px){.fs-saved-request-card{display:block}.fs-saved-request-note{max-width:none;margin-top:8px}.fs-evidence-grid{grid-template-columns:1fr}.fs-exclusion-row{grid-template-columns:1fr;gap:2px}}
+
+/* Full Renewed Consent UX: original -> prominent revised recommendation cards (theme vars only). */
+.fs-consent-card{border:1px solid var(--line);border-radius:var(--rmd);background:var(--card-2);padding:14px;margin-bottom:12px}
+.fs-consent-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.fs-consent-crops{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.fs-cc-old{opacity:.72}
+.fs-cc-oldcrop{font-size:15px;text-decoration:line-through;text-transform:capitalize;color:var(--mut)}
+.fs-cc-arrow{font-size:22px;color:var(--mut)}
+.fs-cc-new{border-left:3px solid var(--acc);padding:4px 0 4px 12px}
+.fs-cc-newcrop{font-size:22px;font-weight:700;color:var(--ink);text-transform:capitalize;line-height:1.1}
+.fs-cc-cash{font-size:13px;color:var(--acc);font-weight:600}
+.fs-consent-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.fs-consent-extra{display:flex;gap:8px;margin-top:8px}
+.fs-consent-out{margin-top:8px}
+
+/* Dynamic Analyse: overview grid (theme vars only). */
+.fs-analyse-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+
+/* Pre-QA UX closure: Final Plan filter tabs + consent original-return (theme vars only). */
+.fs-filter-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.fs-filter.is-active{border-color:var(--acc);color:var(--acc);box-shadow:inset 0 0 0 1px var(--acc)}
+.fs-consent-orig{margin-top:8px;padding:8px 10px;border:1px dashed var(--line);border-radius:var(--rsm);font-size:13px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.fs-consent-why{margin-top:8px}
+
+/* A11y: keyboard focus indicator for scrollable table regions made focusable (scrollable-region-focusable).
+   Uses existing theme tokens (--acc/--glow) to match the house focus style; appends only — no prior
+   declaration changed. */
+.fs-tablewrap[tabindex]:focus-visible{outline:none;border-color:var(--acc);box-shadow:0 0 0 4px var(--glow)}
+
+/* ============================================================================================
+   A11y — COMPLETE light-theme color-contrast closure (WCAG AA >=4.5:1 for small/normal text).
+   The earlier light overrides set several semantic labels to RAW bright hues (too weak as small text)
+   and a .fs-cc-old opacity dimmed muted text below AA. These appended, higher-in-cascade text-only
+   overrides darken the FOREGROUND toward --ink while preserving the semantic colour family, backgrounds,
+   borders and layout. Scoped to [data-theme="light"] .fs-app only; dark theme + the tokens themselves
+   (used for borders/backgrounds/glows) are untouched. ============================================ */
+[data-theme="light"] .fs-app .fs-act.MODIFY,
+[data-theme="light"] .fs-app .fs-state.revised{color:color-mix(in srgb,var(--sci-blue) 58%,var(--ink))}
+[data-theme="light"] .fs-app .fs-state.initial,
+[data-theme="light"] .fs-app .fs-state.final,
+[data-theme="light"] .fs-app .fs-rung.flex{color:color-mix(in srgb,var(--sci-optimal) 50%,var(--ink))}
+[data-theme="light"] .fs-app .fs-act.REJECT,
+[data-theme="light"] .fs-app .fs-run.infeasible{color:color-mix(in srgb,var(--sci-red) 58%,var(--ink))}
+[data-theme="light"] .fs-app .fs-cc-cash,
+[data-theme="light"] .fs-app .fs-teach-k{color:color-mix(in srgb,var(--acc) 52%,var(--ink))}
+/* the struck-through original-crop group dimmed muted text below AA via opacity; the strikethrough
+   already de-emphasises it, so drop the extra opacity in light theme (muted --mut #6a6a6a = ~4.9:1). */
+[data-theme="light"] .fs-app .fs-cc-old{opacity:1}
+
+/* Phase-2 Windows authority closure — targeted contrast fixes only.
+   Evidence: light .fs-edited orange-on-soft-orange failed AA; dark muted token failed AA on dark cards/nav;
+   dark info callout blue text was 4.35:1. Scientific semantic backgrounds/tokens otherwise unchanged. */
+[data-theme="light"] .fs-app .fs-edited{color:color-mix(in srgb,var(--acc) 52%,var(--ink))}
+[data-theme="dark"] .fs-app{--mut:#8c8c96}
+[data-theme="dark"] .fs-app .fs-note-box.info{color:color-mix(in srgb,var(--sci-blue) 82%,var(--ink))}
+/* Phase-2 final Windows dark-theme contrast closure — evidence-driven, text-only overrides.
+   Latest populated axe scan left four serious color-contrast rule families:
+   REJECT action pills (4.41:1), consent original group dimmed by opacity (3.13:1),
+   final-state pills (4.33:1), and fairness caveat text (4.31:1).
+   Only foreground/opacity presentation changes; semantics, data and scientific logic are untouched. */
+[data-theme="dark"] .fs-app .fs-act.REJECT{color:color-mix(in srgb,var(--sci-red) 78%,var(--ink))}
+[data-theme="dark"] .fs-app .fs-cc-old{opacity:1}
+[data-theme="dark"] .fs-app .fs-state.final{color:color-mix(in srgb,var(--sci-green) 80%,var(--ink))}
+[data-theme="dark"] .fs-app .fs-note-box.caveat{color:color-mix(in srgb,var(--sci-violet) 80%,var(--ink))}
+
+
+/* Final30 publication-results presentation */
+.fs-badge-final{background:var(--sci-green-s);color:color-mix(in srgb,var(--sci-green) 82%,var(--ink));border:1px solid color-mix(in srgb,var(--sci-green) 30%,transparent)}
+/* In light mode, FINAL30 uses the former Development Checkpoint amber family; green is dark-mode only. */
+[data-theme="light"] .fs-app .fs-badge-final{background:var(--sci-amber-s);color:color-mix(in srgb,var(--sci-amber) 45%,var(--ink));border-color:color-mix(in srgb,var(--sci-amber) 34%,transparent)}
+.fs-result-figure{margin:16px 0 0;padding:14px;border:1px solid var(--line);border-radius:var(--rmd);background:var(--card-2)}
+.fs-result-figure img{display:block;width:100%;height:auto;border-radius:var(--rsm);background:var(--card)}
+.fs-result-figure figcaption{margin-top:8px;color:var(--mut);font-size:12px;line-height:1.45}
+.fs-result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.fs-result-grid .fs-panel{margin-bottom:0}
+.fs-stat-note{font-size:12px;color:var(--mut);line-height:1.5;margin-top:8px}
+@media (max-width:720px){.fs-workflow{scroll-margin-top:88px}.fs-result-grid{grid-template-columns:1fr}}
+
+.fs-results-details{padding:0;overflow:hidden}
+.fs-results-details>summary{cursor:pointer;padding:16px 20px;font-weight:700;color:var(--ink);background:var(--card);list-style-position:inside}
+.fs-results-details[open]>summary{border-bottom:1px solid var(--line)}
+.fs-results-details-body{padding:16px}
+
+
+/* FarmSync confirmation / workflow modal — exact Records Insight product-modal geometry and motion. */
+.fs-modal-overlay{
+  position:fixed;
+  inset:0;
+  z-index:10050;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(0,0,0,0);
+  backdrop-filter:blur(0px);
+  -webkit-backdrop-filter:blur(0px);
+  transition:background var(--transition-smooth),backdrop-filter var(--transition-smooth);
+  padding:var(--space-lg);
+  box-sizing:border-box;
+}
+.fs-modal-overlay.fs-modal-visible{
+  background:rgba(0,0,0,.5);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+}
+.fs-modal-overlay.fs-modal-exiting{
+  background:rgba(0,0,0,0);
+  backdrop-filter:blur(0px);
+  -webkit-backdrop-filter:blur(0px);
+}
+.fs-modal-card{
+  position:relative;
+  overflow:hidden;
+  background:var(--bg-card);
+  border:2px solid var(--border-color);
+  border-radius:var(--radius-xl);
+  padding:40px 36px 32px;
+  max-width:420px;
+  width:100%;
+  text-align:center;
+  box-shadow:var(--shadow-card);
+  transform:scale(.88) translateY(30px);
+  opacity:0;
+  transition:all var(--transition-smooth);
+  box-sizing:border-box;
+}
+.fs-modal-visible .fs-modal-card{
+  transform:scale(1) translateY(0);
+  opacity:1;
+  border-color:var(--accent-primary);
+  box-shadow:var(--shadow-glow);
+}
+.fs-modal-exiting .fs-modal-card{
+  transform:scale(.92) translateY(20px);
+  opacity:0;
+  border-color:var(--border-color);
+  box-shadow:var(--shadow-card);
+}
+.fs-modal-accent-bar{
+  position:absolute;
+  top:0;left:0;right:0;
+  height:4px;
+  background:var(--gradient-primary);
+  transform:scaleX(0);
+  transform-origin:center;
+  transition:transform var(--transition-smooth);
+}
+.fs-modal-visible .fs-modal-accent-bar{transform:scaleX(1)}
+.fs-modal-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:52px;
+  height:52px;
+  border-radius:var(--radius-md);
+  margin-bottom:var(--space-md);
+}
+.fs-modal-icon.info{
+  background:var(--accent-glow);
+  border:1px solid var(--accent-primary);
+  color:var(--accent-primary);
+}
+.fs-modal-icon.warning{
+  background:rgba(245,158,11,.10);
+  border:1px solid rgba(245,158,11,.25);
+  color:#f59e0b;
+}
+.fs-modal-icon svg{width:28px;height:28px}
+.fs-modal-title{
+  font-size:1.2rem!important;
+  font-weight:700;
+  color:var(--text-primary);
+  margin:0 0 var(--space-xs)!important;
+}
+.fs-modal-text{
+  font-size:.9rem;
+  color:var(--text-secondary);
+  line-height:1.65;
+  margin:0 0 var(--space-xl);
+  white-space:pre-line;
+  overflow-wrap:anywhere;
+}
+.fs-modal-btn{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:140px;
+  border-radius:15px;
+  padding:var(--space-md) var(--space-2xl);
+  font-size:.95rem;
+  font-weight:600;
+  background:var(--gradient-primary);
+  color:var(--bg-primary);
+  border:none;
+  cursor:pointer;
+  box-shadow:0 4px 20px var(--accent-glow);
+  transition:all var(--transition-base);
+  overflow:hidden;
+  isolation:isolate;
+  font-family:inherit;
+  box-sizing:border-box;
+}
+.fs-modal-btn:hover{transform:scale(1.02);box-shadow:var(--shadow-glow)}
+.fs-modal-btn:active{transform:scale(.98)}
+.fs-modal-actions{
+  display:flex;
+  gap:var(--space-sm);
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.fs-modal-btn-ghost{
+  background:transparent!important;
+  border:1px solid var(--border-color)!important;
+  color:var(--text-secondary)!important;
+  box-shadow:none!important;
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+}
+.fs-modal-btn-ghost::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);
+  transform:translateX(-100%);
+  transition:transform .6s;
+}
+.fs-modal-btn-ghost:hover::before{transform:translateX(100%)}
+.fs-modal-btn-ghost:hover{
+  border-color:var(--accent-primary)!important;
+  color:var(--accent-primary)!important;
+  transform:scale(1.025);
+}
+.fs-modal-btn-ghost:active{transform:scale(.97)}
+/* Advanced-result continuation: preserve the original Scenario A/B neutral button treatment. */
+.fs-advanced-next{margin-top:12px}
+
+/* Mobile: tighten space above the FarmSync hero label. */
+@media (max-width: 600px) {
+  .farmsync-hero {
+    padding-top: calc(var(--space-2xl, 2rem) + 44px);
+  }
+}

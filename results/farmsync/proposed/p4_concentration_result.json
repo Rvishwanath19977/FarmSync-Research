@@ -1,0 +1,561 @@
+{
+  "run": "PROPOSED_PHASE4_concentration",
+  "run_id": "p4_dev",
+  "status": "development/checkpoint",
+  "master_seed": 20260812,
+  "instance_hash": "5ea24037c2d9cb6a",
+  "lambda_dev_reference": 0.05,
+  "lambda_note": "0.05 is a DEVELOPMENT REFERENCE only; not optimal/publication-selected",
+  "also_lambda0_ablation": true,
+  "scenario_id": "P3_MIXED_V1",
+  "phase1_realised_cash": 11464341,
+  "rejection_loss": 1677825,
+  "p3_lambda005_ref_cash": 12340519,
+  "concentration_definition": "q_fc = expected_yield_kg_ha(op_yield_value) * allocated_area_ha; constraint q_fc <= alpha*Q_c per farmer&crop",
+  "distinct_from_absorption_cap": "absorption cap = arrivals throughput proxy (NOT demand); Phase-4 alpha = producer concentration / pre-failure exposure",
+  "alpha_sweep": [
+    {
+      "alpha": 1.0,
+      "lambda": 0.05,
+      "status": "Optimal",
+      "runtime_s": 0.09,
+      "revised_cash": 12340519,
+      "change_vs_p3_lambda005": 0,
+      "economic_retention_pct": 100.0,
+      "recovery_vs_p1": 876178,
+      "recovery_fraction_of_loss": 0.5222,
+      "area": 292.0,
+      "changed_soft": 13,
+      "changed_soft_area": 3.0,
+      "changed_flex": 17,
+      "changed_flex_area": 8.2,
+      "total_changed": 30,
+      "hard_lock_changes": 0,
+      "hard_lock_ok": true,
+      "rejected_recovered": 18,
+      "max_LPS": 0.529,
+      "mean_HHI": 0.1178,
+      "median_HHI": 0.1117,
+      "target_violations": 0,
+      "n_active_crops": 8,
+      "active_crops": [
+        "cotton",
+        "groundnut",
+        "maize",
+        "onion",
+        "pigeon_pea",
+        "rice",
+        "sorghum",
+        "soybean"
+      ],
+      "dropped_vs_p3": [],
+      "introduced_vs_p3": [],
+      "per_ha_gini_all": 0.7294,
+      "participation_pct": 54.6,
+      "hard_violations": 0,
+      "e_star_alpha": 12359219.0,
+      "t_floor_alpha": 333.8595,
+      "crop_concentration": {
+        "onion": {
+          "Q_c": 616175.3,
+          "producers": 49,
+          "LPS": 0.152,
+          "top3_share": 0.3677,
+          "HHI": 0.0691,
+          "effective_producers": 14.48
+        },
+        "groundnut": {
+          "Q_c": 54768.9,
+          "producers": 35,
+          "LPS": 0.217,
+          "top3_share": 0.5057,
+          "HHI": 0.1117,
+          "effective_producers": 8.95
+        },
+        "maize": {
+          "Q_c": 372636.0,
+          "producers": 93,
+          "LPS": 0.0597,
+          "top3_share": 0.1625,
+          "HHI": 0.0241,
+          "effective_producers": 41.49
+        },
+        "soybean": {
+          "Q_c": 46431.3,
+          "producers": 36,
+          "LPS": 0.1181,
+          "top3_share": 0.2939,
+          "HHI": 0.0546,
+          "effective_producers": 18.31
+        },
+        "pigeon_pea": {
+          "Q_c": 12873.6,
+          "producers": 14,
+          "LPS": 0.2248,
+          "top3_share": 0.5529,
+          "HHI": 0.1319,
+          "effective_producers": 7.58
+        },
+        "rice": {
+          "Q_c": 149013.0,
+          "producers": 60,
+          "LPS": 0.0663,
+          "top3_share": 0.1903,
+          "HHI": 0.032,
+          "effective_producers": 31.29
+        },
+        "sorghum": {
+          "Q_c": 23474.5,
+          "producers": 16,
+          "LPS": 0.3063,
+          "top3_share": 0.5533,
+          "HHI": 0.1494,
+          "effective_producers": 6.69
+        },
+        "cotton": {
+          "Q_c": 2321.7,
+          "producers": 4,
+          "LPS": 0.529,
+          "top3_share": 0.9155,
+          "HHI": 0.3698,
+          "effective_producers": 2.7
+        }
+      }
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.05,
+      "status": "Optimal",
+      "runtime_s": 0.18,
+      "revised_cash": 12340519,
+      "change_vs_p3_lambda005": 0,
+      "economic_retention_pct": 100.0,
+      "recovery_vs_p1": 876178,
+      "recovery_fraction_of_loss": 0.5222,
+      "area": 292.0,
+      "changed_soft": 13,
+      "changed_soft_area": 3.0,
+      "changed_flex": 17,
+      "changed_flex_area": 8.2,
+      "total_changed": 30,
+      "hard_lock_changes": 0,
+      "hard_lock_ok": true,
+      "rejected_recovered": 18,
+      "max_LPS": 0.529,
+      "mean_HHI": 0.1178,
+      "median_HHI": 0.1117,
+      "target_violations": 0,
+      "n_active_crops": 8,
+      "active_crops": [
+        "cotton",
+        "groundnut",
+        "maize",
+        "onion",
+        "pigeon_pea",
+        "rice",
+        "sorghum",
+        "soybean"
+      ],
+      "dropped_vs_p3": [],
+      "introduced_vs_p3": [],
+      "per_ha_gini_all": 0.7294,
+      "participation_pct": 54.6,
+      "hard_violations": 0,
+      "e_star_alpha": 12359219.0,
+      "t_floor_alpha": 333.8595,
+      "crop_concentration": {
+        "onion": {
+          "Q_c": 616175.3,
+          "producers": 49,
+          "LPS": 0.152,
+          "top3_share": 0.3677,
+          "HHI": 0.0691,
+          "effective_producers": 14.48
+        },
+        "groundnut": {
+          "Q_c": 54768.9,
+          "producers": 35,
+          "LPS": 0.217,
+          "top3_share": 0.5057,
+          "HHI": 0.1117,
+          "effective_producers": 8.95
+        },
+        "maize": {
+          "Q_c": 372636.0,
+          "producers": 93,
+          "LPS": 0.0597,
+          "top3_share": 0.1625,
+          "HHI": 0.0241,
+          "effective_producers": 41.49
+        },
+        "soybean": {
+          "Q_c": 46431.3,
+          "producers": 36,
+          "LPS": 0.1181,
+          "top3_share": 0.2939,
+          "HHI": 0.0546,
+          "effective_producers": 18.31
+        },
+        "pigeon_pea": {
+          "Q_c": 12873.6,
+          "producers": 14,
+          "LPS": 0.2248,
+          "top3_share": 0.5529,
+          "HHI": 0.1319,
+          "effective_producers": 7.58
+        },
+        "rice": {
+          "Q_c": 149013.0,
+          "producers": 60,
+          "LPS": 0.0663,
+          "top3_share": 0.1903,
+          "HHI": 0.032,
+          "effective_producers": 31.29
+        },
+        "sorghum": {
+          "Q_c": 23474.5,
+          "producers": 16,
+          "LPS": 0.3063,
+          "top3_share": 0.5533,
+          "HHI": 0.1494,
+          "effective_producers": 6.69
+        },
+        "cotton": {
+          "Q_c": 2321.7,
+          "producers": 4,
+          "LPS": 0.529,
+          "top3_share": 0.9155,
+          "HHI": 0.3698,
+          "effective_producers": 2.7
+        }
+      }
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.05,
+      "status": "Optimal",
+      "runtime_s": 0.21,
+      "revised_cash": 12328480,
+      "change_vs_p3_lambda005": -12039,
+      "economic_retention_pct": 99.9,
+      "recovery_vs_p1": 864139,
+      "recovery_fraction_of_loss": 0.515,
+      "area": 292.0,
+      "changed_soft": 14,
+      "changed_soft_area": 3.1,
+      "changed_flex": 17,
+      "changed_flex_area": 8.2,
+      "total_changed": 31,
+      "hard_lock_changes": 0,
+      "hard_lock_ok": true,
+      "rejected_recovered": 18,
+      "max_LPS": 0.4954,
+      "mean_HHI": 0.1127,
+      "median_HHI": 0.1117,
+      "target_violations": 0,
+      "n_active_crops": 8,
+      "active_crops": [
+        "cotton",
+        "groundnut",
+        "maize",
+        "onion",
+        "pigeon_pea",
+        "rice",
+        "sorghum",
+        "soybean"
+      ],
+      "dropped_vs_p3": [],
+      "introduced_vs_p3": [],
+      "per_ha_gini_all": 0.7292,
+      "participation_pct": 54.6,
+      "hard_violations": 0,
+      "e_star_alpha": 12347180.0,
+      "t_floor_alpha": 333.8595,
+      "crop_concentration": {
+        "onion": {
+          "Q_c": 614519.3,
+          "producers": 49,
+          "LPS": 0.1524,
+          "top3_share": 0.3687,
+          "HHI": 0.0694,
+          "effective_producers": 14.42
+        },
+        "groundnut": {
+          "Q_c": 54768.9,
+          "producers": 35,
+          "LPS": 0.217,
+          "top3_share": 0.5057,
+          "HHI": 0.1117,
+          "effective_producers": 8.95
+        },
+        "maize": {
+          "Q_c": 372636.0,
+          "producers": 93,
+          "LPS": 0.0597,
+          "top3_share": 0.1625,
+          "HHI": 0.0241,
+          "effective_producers": 41.49
+        },
+        "soybean": {
+          "Q_c": 46431.3,
+          "producers": 36,
+          "LPS": 0.1181,
+          "top3_share": 0.2939,
+          "HHI": 0.0546,
+          "effective_producers": 18.31
+        },
+        "pigeon_pea": {
+          "Q_c": 12873.6,
+          "producers": 14,
+          "LPS": 0.2248,
+          "top3_share": 0.5529,
+          "HHI": 0.1319,
+          "effective_producers": 7.58
+        },
+        "rice": {
+          "Q_c": 149013.0,
+          "producers": 60,
+          "LPS": 0.0663,
+          "top3_share": 0.1903,
+          "HHI": 0.032,
+          "effective_producers": 31.29
+        },
+        "sorghum": {
+          "Q_c": 23474.5,
+          "producers": 16,
+          "LPS": 0.3063,
+          "top3_share": 0.5533,
+          "HHI": 0.1494,
+          "effective_producers": 6.69
+        },
+        "cotton": {
+          "Q_c": 2478.8,
+          "producers": 5,
+          "LPS": 0.4954,
+          "top3_share": 0.8575,
+          "HHI": 0.3284,
+          "effective_producers": 3.04
+        }
+      }
+    },
+    {
+      "alpha": 0.4,
+      "lambda": 0.05,
+      "status": "Optimal",
+      "runtime_s": 0.19,
+      "revised_cash": 12285254,
+      "change_vs_p3_lambda005": -55265,
+      "economic_retention_pct": 99.55,
+      "recovery_vs_p1": 820913,
+      "recovery_fraction_of_loss": 0.4893,
+      "area": 292.0,
+      "changed_soft": 13,
+      "changed_soft_area": 3.0,
+      "changed_flex": 17,
+      "changed_flex_area": 8.2,
+      "total_changed": 30,
+      "hard_lock_changes": 0,
+      "hard_lock_ok": true,
+      "rejected_recovered": 18,
+      "max_LPS": 0.3988,
+      "mean_HHI": 0.1067,
+      "median_HHI": 0.1117,
+      "target_violations": 0,
+      "n_active_crops": 8,
+      "active_crops": [
+        "cotton",
+        "groundnut",
+        "maize",
+        "onion",
+        "pigeon_pea",
+        "rice",
+        "sorghum",
+        "soybean"
+      ],
+      "dropped_vs_p3": [],
+      "introduced_vs_p3": [],
+      "per_ha_gini_all": 0.7281,
+      "participation_pct": 54.6,
+      "hard_violations": 0,
+      "e_star_alpha": 12303954.0,
+      "t_floor_alpha": 333.8595,
+      "crop_concentration": {
+        "onion": {
+          "Q_c": 610001.8,
+          "producers": 48,
+          "LPS": 0.1536,
+          "top3_share": 0.3714,
+          "HHI": 0.0704,
+          "effective_producers": 14.21
+        },
+        "groundnut": {
+          "Q_c": 54768.9,
+          "producers": 35,
+          "LPS": 0.217,
+          "top3_share": 0.5057,
+          "HHI": 0.1117,
+          "effective_producers": 8.95
+        },
+        "maize": {
+          "Q_c": 374026.8,
+          "producers": 94,
+          "LPS": 0.0594,
+          "top3_share": 0.1619,
+          "HHI": 0.0239,
+          "effective_producers": 41.78
+        },
+        "soybean": {
+          "Q_c": 46431.3,
+          "producers": 36,
+          "LPS": 0.1181,
+          "top3_share": 0.2939,
+          "HHI": 0.0546,
+          "effective_producers": 18.31
+        },
+        "pigeon_pea": {
+          "Q_c": 12410.6,
+          "producers": 13,
+          "LPS": 0.2331,
+          "top3_share": 0.5735,
+          "HHI": 0.1406,
+          "effective_producers": 7.11
+        },
+        "rice": {
+          "Q_c": 149013.0,
+          "producers": 60,
+          "LPS": 0.0663,
+          "top3_share": 0.1903,
+          "HHI": 0.032,
+          "effective_producers": 31.29
+        },
+        "sorghum": {
+          "Q_c": 23474.5,
+          "producers": 16,
+          "LPS": 0.3063,
+          "top3_share": 0.5533,
+          "HHI": 0.1494,
+          "effective_producers": 6.69
+        },
+        "cotton": {
+          "Q_c": 3079.7,
+          "producers": 5,
+          "LPS": 0.3988,
+          "top3_share": 0.8388,
+          "HHI": 0.2708,
+          "effective_producers": 3.69
+        }
+      }
+    },
+    {
+      "alpha": 0.33,
+      "lambda": 0.05,
+      "status": "Optimal",
+      "runtime_s": 0.2,
+      "revised_cash": 12235846,
+      "change_vs_p3_lambda005": -104673,
+      "economic_retention_pct": 99.15,
+      "recovery_vs_p1": 771505,
+      "recovery_fraction_of_loss": 0.4598,
+      "area": 292.0,
+      "changed_soft": 14,
+      "changed_soft_area": 3.1,
+      "changed_flex": 18,
+      "changed_flex_area": 8.6,
+      "total_changed": 32,
+      "hard_lock_changes": 0,
+      "hard_lock_ok": true,
+      "rejected_recovered": 18,
+      "max_LPS": 0.3297,
+      "mean_HHI": 0.0981,
+      "median_HHI": 0.1117,
+      "target_violations": 0,
+      "n_active_crops": 8,
+      "active_crops": [
+        "cotton",
+        "groundnut",
+        "maize",
+        "onion",
+        "pigeon_pea",
+        "rice",
+        "sorghum",
+        "soybean"
+      ],
+      "dropped_vs_p3": [],
+      "introduced_vs_p3": [],
+      "per_ha_gini_all": 0.7286,
+      "participation_pct": 54.6,
+      "hard_violations": 0,
+      "e_star_alpha": 12253283.0,
+      "t_floor_alpha": 333.8595,
+      "crop_concentration": {
+        "onion": {
+          "Q_c": 603205.6,
+          "producers": 46,
+          "LPS": 0.1553,
+          "top3_share": 0.3756,
+          "HHI": 0.0718,
+          "effective_producers": 13.93
+        },
+        "groundnut": {
+          "Q_c": 54768.9,
+          "producers": 35,
+          "LPS": 0.217,
+          "top3_share": 0.5057,
+          "HHI": 0.1117,
+          "effective_producers": 8.95
+        },
+        "maize": {
+          "Q_c": 374026.8,
+          "producers": 94,
+          "LPS": 0.0594,
+          "top3_share": 0.1619,
+          "HHI": 0.0239,
+          "effective_producers": 41.78
+        },
+        "soybean": {
+          "Q_c": 46431.3,
+          "producers": 36,
+          "LPS": 0.1181,
+          "top3_share": 0.2939,
+          "HHI": 0.0546,
+          "effective_producers": 18.31
+        },
+        "pigeon_pea": {
+          "Q_c": 12410.6,
+          "producers": 13,
+          "LPS": 0.2331,
+          "top3_share": 0.5735,
+          "HHI": 0.1406,
+          "effective_producers": 7.11
+        },
+        "rice": {
+          "Q_c": 149013.0,
+          "producers": 60,
+          "LPS": 0.0663,
+          "top3_share": 0.1903,
+          "HHI": 0.032,
+          "effective_producers": 31.29
+        },
+        "sorghum": {
+          "Q_c": 23474.5,
+          "producers": 16,
+          "LPS": 0.3063,
+          "top3_share": 0.5533,
+          "HHI": 0.1494,
+          "effective_producers": 6.69
+        },
+        "cotton": {
+          "Q_c": 3724.5,
+          "producers": 8,
+          "LPS": 0.3297,
+          "top3_share": 0.6936,
+          "HHI": 0.2012,
+          "effective_producers": 4.97
+        }
+      }
+    }
+  ],
+  "alpha1_reproduces_p3_lambda005": true,
+  "interpretation": "REVISED PLANS / recommendations only; LPS/HHI are PRE-FAILURE EXPOSURE, not demonstrated disaster resilience; changed/new recommendations require renewed consent",
+  "revised_requires_renewed_consent": true
+}

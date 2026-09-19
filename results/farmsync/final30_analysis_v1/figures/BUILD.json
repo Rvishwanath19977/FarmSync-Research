@@ -1,0 +1,32 @@
+{
+  "dpi_png": 300,
+  "figure_count": 10,
+  "files": [
+    "figure_01_primary_workflow_cash.png",
+    "figure_01_primary_workflow_cash.pdf",
+    "figure_02_uncertainty_final_cash.png",
+    "figure_02_uncertainty_final_cash.pdf",
+    "figure_03_epsilon_b3_cash.png",
+    "figure_03_epsilon_b3_cash.pdf",
+    "figure_04_lambda_final_cash.png",
+    "figure_04_lambda_final_cash.pdf",
+    "figure_05_lambda_disruption.png",
+    "figure_05_lambda_disruption.pdf",
+    "figure_06_alpha_final_cash.png",
+    "figure_06_alpha_final_cash.pdf",
+    "figure_07_alpha_max_lps.png",
+    "figure_07_alpha_max_lps.pdf",
+    "figure_08_action_final_cash.png",
+    "figure_08_action_final_cash.pdf",
+    "figure_09_scalability_feasibility.png",
+    "figure_09_scalability_feasibility.pdf",
+    "figure_10_scalability_runtime.png",
+    "figure_10_scalability_runtime.pdf"
+  ],
+  "matplotlib": "3.11.2",
+  "schema": "farmsync-final30-figure-build-v1",
+  "source_statistics": [
+    "bootstrap_confidence_intervals.csv",
+    "reliability_inference.csv"
+  ]
+}

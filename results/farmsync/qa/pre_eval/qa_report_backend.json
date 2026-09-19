@@ -1,0 +1,1786 @@
+{
+  "phase": "backend",
+  "generated": "2026-09-06T15:38:22Z",
+  "categories": {
+    "environment": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "core packages importable",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "farmsync_routes import OK",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "config_hash_seeds": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "epsilon==0.95",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "lambda==0.05",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "alpha==0.40",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "fairness-v2",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "action-consent-v1",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "uncertainty-v1",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "instance_hash==5ea24037c2d9cb6a (got 5ea24037c2d9cb6a)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "prehash": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "protected artifacts hashed (60)",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "existing_tests": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "test_farmsync_actions.py: 44 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_b1.py: 10 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_climate.py: 8 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_data.py: 11 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_dataset_manager.py: 11 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_economics.py: 5 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_feasibility.py: 11 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_ilp_v2.py: 6 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_ingest.py: 4 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_ingest_real.py: 8 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_params.py: 7 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_portability.py: 7 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_proposed_p1.py: 9 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_proposed_p2.py: 9 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_proposed_p3.py: 8 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_proposed_p4.py: 10 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_proposed_p5.py: 16 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_proposed_p6.py: 12 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_proposed_p7.py: 46 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_qa_backend.py: 19 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_ui.py: 178 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_uncertainty.py: 22 passed",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "test_farmsync_yield.py: 9 passed",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "universe_911": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "farmers==500",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "plots==911",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "offered+no_offer==911",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "scenario_selection": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "scenario A_untouched_accept selectable+predicate-proven",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "scenario B_accept_modify_renewaccept selectable+predicate-proven",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "scenario C_changed_renewreject selectable+predicate-proven",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "scenario D_changed_renewnoresp selectable+predicate-proven",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "scenario E_no_response selectable+predicate-proven",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "scenario F_withdraw selectable+predicate-proven",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "scenario G_reject_revised_renewaccept selectable+predicate-proven",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "scenario H_modify_feasible selectable+predicate-proven",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "scenario I_modify_infeasible selectable+predicate-proven",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "scenario J_multi_alt selectable+predicate-proven",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "scenario L_reject_no_orig_return selectable+predicate-proven",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "G is a GENUINE recorded REJECT",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "L is a GENUINE recorded REJECT",
+          "defect": false
+        }
+      ],
+      "detail": "BUILTIN_CAPABILITY: K_NOT_PRESENT \u2014 of 120 built-in offered rows probed, 0 have an original crop that passes /validate-crop. Stored p1 recommendation crops are not re-feasible under the working-plan canonical rules. Return-to-original semantics are covered by the isolated consent_original_branch fixture instead."
+    },
+    "farmer_response_semantics": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "invalid plot for valid farmer -> 400",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "invalid farmer -> 400",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "real response edit bumps response_rev",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "working override does not alter recorded response",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "idempotency": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "identical response save does not bump response_rev",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "response_count_deltas": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "exact ACCEPT delta: expected 324, got 324",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "exact REJECT delta: expected 53, got 53",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "exact MODIFY delta: expected 2, got 2",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "exact NO_RESPONSE delta: expected 1, got 1",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "exact WITHDRAW delta: expected 1, got 1",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "replan_semantics": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "GET/view does not mutate/replan",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "explicit replan succeeds",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "replan_anchor==response_rev",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "changed rows require renewed consent",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "replan not marked realised",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "consent_alternative": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "alt never the current revised crop",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no duplicate candidate before exhaustion",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "alt never the current revised crop",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no duplicate candidate before exhaustion",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "alt never the current revised crop",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no duplicate candidate before exhaustion",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "alt never the current revised crop",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no duplicate candidate before exhaustion",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "alt never the current revised crop",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no duplicate candidate before exhaustion",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "consent-alternative is read-only",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "J: current revised crop excluded",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "J: no duplicate before exhaustion",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "J: current revised crop excluded",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "J: no duplicate before exhaustion",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "J: current revised crop excluded",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "J: no duplicate before exhaustion",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "J: current revised crop excluded",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "J: no duplicate before exhaustion",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "J: exhaustion reached",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "J: consent-alternative read-only",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "L: original_option absent for recorded REJECT",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "L: rejected original never appears as candidate",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "stale_anchor_consent": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "upstream edit stales replan",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "stale consent POST refused",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "stale bulk consent refused",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "stale select refused",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "consent_for_crop==revised (same crop)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "old anchor != new replan_anchor",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "same-crop-after-new-replan is PENDING",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "renewed_consent_backend": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "invalid consent enum -> 400",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "consent ACCEPT POST succeeds",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "renewed_response == ACCEPT",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "ACCEPT: consent_for_crop == exact revised_crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "ACCEPT: consent_for_replan_anchor == current replan_anchor",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "consent REJECT POST succeeds",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "renewed_response == REJECT",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "REJECT: consent_for_crop == exact revised_crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "REJECT: consent_for_replan_anchor == current replan_anchor",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "consent NO_RESPONSE POST succeeds",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "renewed_response == NO_RESPONSE",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "NO_RESPONSE: consent_for_crop == exact revised_crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "NO_RESPONSE: consent_for_replan_anchor == current replan_anchor",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "repeated identical consent does not corrupt response_rev",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "consent on non-required row refused (server contract)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "bulk ACCEPT preserves existing REJECT/NO_RESPONSE",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "bulk ACCEPT sets only pending -> ACCEPT",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "bulk REJECT preserves existing ACCEPT (pending-only)",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "finalisation_gating": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "finalise refused while pending",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "pending==0 after bulk accept",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "final view/pagination does not finalise",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "explicit finalise succeeds when ready",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "independent_final_ledger": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "independent ledger matches actual final rows (0 mismatch)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "final_accounting_911": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "all filter has 911 rows",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "all IDs unique (no dupes/omissions)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "filter rows respect realised flag",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "realised+not==all==911",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "final_filter_pagination_api": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "boundary 'page=0' safe (200)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "boundary 'page=0' must not 500",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "boundary 'page=-1' safe (200)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "boundary 'page=-1' must not 500",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "boundary 'page=999999' safe (200)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "boundary 'page=999999' must not 500",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "boundary 'page=abc' safe (200)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "boundary 'page=abc' must not 500",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "boundary 'filter=bogus' safe (200)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "boundary 'filter=bogus' must not 500",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "analyse_reconciliation": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "analysis available at final_current",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "realised+not==total==911",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "offered+no_offer==total",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "initial history==offer rows",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "renewed==requires",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "reasons==not_realised",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "composition==realised",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "farmer split==total",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "analysis rev==run rev",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "integrity.ok",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "consent_realisation_metrics": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "realisation_rate_offered",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "realisation_rate_all_plots",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "affirmative coverage==finalise coverage",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "fairness_math": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "n_farmers==500",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "participants+zero==500",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "independent abs Gini matches (0.845549 vs 0.845549)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "independent per-ha Gini matches (0.704513 vs 0.704513)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "independent participant per-ha Gini matches",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "all_farmer_abs_cash_gini finite in [0,1]",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "all_farmer_per_ha_gini finite in [0,1]",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "participant_only_per_ha_gini finite in [0,1]",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "concentration_math": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "independent HHI (area basis) matches (0.184400 vs 0.184428)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "max share matches (area basis)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "shares sum to 1 (area basis)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "each share in [0,1]",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "active crops matches",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "alpha reference only == 0.40",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "uncertainty_unavailable": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "uncertainty honest unavailable",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "resilience_unavailable": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "resilience honest unavailable",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "select_recommendation": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "valid candidate becomes exact revised_crop",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "prior renewed consent cleared",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "consent_for_crop cleared",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "consent_for_replan_anchor cleared",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "row becomes PENDING (choosing != consenting)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "unknown/infeasible crop refused",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "stale selection refused",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "consent_original_branch": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "MODIFY fixture: original_option exists",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "original_option.crop == original crop (groundnut)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "label == 'Return to original plan'",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "original crop not offered as a normal new candidate",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "consent_alternative is read-only",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "REJECT-origin: original_option absent",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "REJECT-origin: rejected original never in candidate cycle",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "invalid_request_matrix": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "GET BADRUN -> 404 (want (404,))",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no 500 for BADRUN",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "POST response -> 400 (want (400,))",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no 500 for response",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "POST response -> 400 (want (400,))",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no 500 for response",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "POST response -> 400 (want (400,))",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no 500 for response",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "POST response -> 400 (want (400,))",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no 500 for response",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "POST consent -> 400 (want (400,))",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no 500 for consent",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "POST select-recommendation -> 400 (want (400,))",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no 500 for select-recommendation",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "POST finalise -> 400 (want (400,))",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no 500 for finalise",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "malformed JSON handled (400)",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "malformed JSON no 500",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "invalid ops did not mutate run state",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "malformed_pagination_routes": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "/api/farmsync/explore/<table> malformed page must not 500 (line 313) -> 200",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "/api/farmsync/explore/<table> malformed page did not mutate state",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "/api/farmsync/inspect/<table> malformed page must not 500 (line 329) -> 200",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "/api/farmsync/inspect/<table> malformed page did not mutate state",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "/api/farmsync/inspect/<table> malformed size must not 500 (line 330) -> 200",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "/api/farmsync/inspect/<table> malformed size did not mutate state",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "/api/farmsync/working-plan/<run_id>/final-rows malformed page must not 500 (line 590) -> 200",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "/api/farmsync/working-plan/<run_id>/final-rows malformed page did not mutate state",
+          "defect": false
+        }
+      ],
+      "detail": "discovered 4 page-parse site(s); affected(500): none"
+    },
+    "no_solver_on_reads": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "no CBC/PuLP imported by read endpoints",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "no_live_llm": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "no live LLM (openai/groq) imported",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "state_invalidation": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "finalised: final_current + analyse unlocked",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "pure GET revisit does not mutate",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "upstream edit stales replan/final/analyse",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "analysis unavailable when stale",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "re-finalise yields new current revision",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "state_isolation": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "pre-existing sentinel run survives QA cleanup",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "sentinel SHA256 unchanged (byte-identical)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "pre-existing runtime state byte-identical (added=0 removed=0 modified=0)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "custom_data_matrix": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "incomplete upload rejected: farmers only",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "incomplete upload rejected: farmers+plots",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "incomplete upload rejected: plots+collectives",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "minimal custom: valid but not ready",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "activation blocked when not ready-to-plan",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "agronomy custom: ready to plan",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "activation succeeds; planning_source==custom",
+          "defect": false
+        }
+      ],
+      "detail": ""
+    },
+    "dataset_isolation": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "custom IDs drive plan",
+          "defect": false
+        },
+        {
+          "ok": true,
+          "msg": "no built-in Fxxxx leakage",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "dataset switch detaches (F-only, no QA)",
+          "defect": true
+        },
+        {
+          "ok": true,
+          "msg": "explorer reads do not set planning source",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "dataset_security": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "dataset_manager security suite passed (11 passed)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "backend_repeatability": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "substantive results identical across two clean runs",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "warning_audit": {
+      "status": "KNOWN_WARNINGS",
+      "kind": "product",
+      "checks": [],
+      "detail": "363 warnings across all suites (all known families)"
+    },
+    "posthash": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [
+        {
+          "ok": true,
+          "msg": "frozen artifacts byte-identical (added=0 removed=0 modified=0)",
+          "defect": true
+        }
+      ],
+      "detail": ""
+    },
+    "suite_completeness": {
+      "status": "PASS",
+      "kind": "product",
+      "checks": [],
+      "detail": "all 23 discovered suites completed"
+    }
+  },
+  "failures": [],
+  "artifact_diff": {
+    "added_protected_artifacts": [],
+    "removed_protected_artifacts": [],
+    "modified_protected_artifacts": []
+  },
+  "full_suite_coverage": "YES",
+  "discovered_modules": [
+    "test_farmsync_actions.py",
+    "test_farmsync_b1.py",
+    "test_farmsync_climate.py",
+    "test_farmsync_data.py",
+    "test_farmsync_dataset_manager.py",
+    "test_farmsync_economics.py",
+    "test_farmsync_feasibility.py",
+    "test_farmsync_ilp_v2.py",
+    "test_farmsync_ingest.py",
+    "test_farmsync_ingest_real.py",
+    "test_farmsync_params.py",
+    "test_farmsync_portability.py",
+    "test_farmsync_proposed_p1.py",
+    "test_farmsync_proposed_p2.py",
+    "test_farmsync_proposed_p3.py",
+    "test_farmsync_proposed_p4.py",
+    "test_farmsync_proposed_p5.py",
+    "test_farmsync_proposed_p6.py",
+    "test_farmsync_proposed_p7.py",
+    "test_farmsync_qa_backend.py",
+    "test_farmsync_ui.py",
+    "test_farmsync_uncertainty.py",
+    "test_farmsync_yield.py"
+  ],
+  "completed_modules": [
+    "test_farmsync_actions.py",
+    "test_farmsync_b1.py",
+    "test_farmsync_climate.py",
+    "test_farmsync_data.py",
+    "test_farmsync_dataset_manager.py",
+    "test_farmsync_economics.py",
+    "test_farmsync_feasibility.py",
+    "test_farmsync_ilp_v2.py",
+    "test_farmsync_ingest.py",
+    "test_farmsync_ingest_real.py",
+    "test_farmsync_params.py",
+    "test_farmsync_portability.py",
+    "test_farmsync_proposed_p1.py",
+    "test_farmsync_proposed_p2.py",
+    "test_farmsync_proposed_p3.py",
+    "test_farmsync_proposed_p4.py",
+    "test_farmsync_proposed_p5.py",
+    "test_farmsync_proposed_p6.py",
+    "test_farmsync_proposed_p7.py",
+    "test_farmsync_qa_backend.py",
+    "test_farmsync_ui.py",
+    "test_farmsync_uncertainty.py",
+    "test_farmsync_yield.py"
+  ],
+  "timed_out_modules": [],
+  "missing_required_categories": [],
+  "config": {
+    "epsilon": 0.95,
+    "lambda": 0.05,
+    "alpha": 0.4,
+    "fairness_version": "fairness-v2",
+    "action_policy_version": "action-consent-v1",
+    "uncertainty_version": "uncertainty-v1",
+    "instance_hash": "5ea24037c2d9cb6a",
+    "replication_seeds_present": true,
+    "replication_seeds_sha256": "7224b558c8afc0071152f0b9d3bcc4d9972452f52a480ef333233facc981bf40"
+  },
+  "test_suites": {
+    "all": {
+      "test_farmsync_actions.py": {
+        "passed": 44,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 16,
+        "duration": 318.43,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_b1.py": {
+        "passed": 10,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 0,
+        "duration": 2.43,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_climate.py": {
+        "passed": 8,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 0,
+        "duration": 0.41,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_data.py": {
+        "passed": 11,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 0,
+        "duration": 0.53,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_dataset_manager.py": {
+        "passed": 11,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 0,
+        "duration": 1.11,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_economics.py": {
+        "passed": 5,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 0,
+        "duration": 0.41,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_feasibility.py": {
+        "passed": 11,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 0,
+        "duration": 0.84,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_ilp_v2.py": {
+        "passed": 6,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 20,
+        "duration": 25.02,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_ingest.py": {
+        "passed": 4,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 0,
+        "duration": 0.8,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_ingest_real.py": {
+        "passed": 8,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 8,
+        "duration": 13.33,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_params.py": {
+        "passed": 7,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 0,
+        "duration": 0.42,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_portability.py": {
+        "passed": 7,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 0,
+        "duration": 4.12,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_proposed_p1.py": {
+        "passed": 9,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 32,
+        "duration": 32.83,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_proposed_p2.py": {
+        "passed": 9,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 0,
+        "duration": 7.79,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_proposed_p3.py": {
+        "passed": 8,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 12,
+        "duration": 18.48,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_proposed_p4.py": {
+        "passed": 10,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 33,
+        "duration": 40.44,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_proposed_p5.py": {
+        "passed": 16,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 10,
+        "duration": 52.24,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_proposed_p6.py": {
+        "passed": 12,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 6,
+        "duration": 41.68,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_proposed_p7.py": {
+        "passed": 46,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 12,
+        "duration": 4.97,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_qa_backend.py": {
+        "passed": 19,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 3,
+        "duration": 4.44,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_ui.py": {
+        "passed": 178,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 178,
+        "duration": 41.27,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_uncertainty.py": {
+        "passed": 22,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 13,
+        "duration": 279.13,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      },
+      "test_farmsync_yield.py": {
+        "passed": 9,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 0,
+        "duration": 0.44,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      }
+    },
+    "ilp": {
+      "test_farmsync_ilp_v2.py": {
+        "passed": 6,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0,
+        "warnings": 20,
+        "duration": 25.02,
+        "returncode": 0,
+        "timed_out": false,
+        "classification": "PASS"
+      }
+    }
+  },
+  "phase1_status": "PASS",
+  "ready_for_phase_2": "YES",
+  "existing_tests_state": "COMPLETE"
+}

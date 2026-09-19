@@ -1,0 +1,1037 @@
+{
+  "phase": "5 \u2014 agricultural parameter sourcing",
+  "primary_water_source": {
+    "source": "FAO Irrigation & Drainage Paper 56 (Allen et al. 1998), Tables 11-12",
+    "url": "https://www.fao.org/4/x0490e/x0490e0b.htm"
+  },
+  "summary": {
+    "total_parameter_records": 233,
+    "grounded_or_observed": 96,
+    "open_sourcing_obligations": 137,
+    "crops_with_water_block": 14,
+    "regions_with_sourced_et0": 5,
+    "crops_with_msp_price": 11,
+    "crops_price_requires_sourcing": [
+      "potato",
+      "onion",
+      "tomato"
+    ],
+    "crops_with_yield": 14,
+    "crops_yield_requires_sourcing": []
+  },
+  "water_and_duration_block": {
+    "rice": {
+      "kc": [
+        1.05,
+        1.2,
+        0.9
+      ],
+      "duration_days": 150,
+      "provenance": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    "wheat": {
+      "kc": [
+        0.3,
+        1.15,
+        0.3
+      ],
+      "duration_days": 120,
+      "provenance": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    "maize": {
+      "kc": [
+        0.3,
+        1.2,
+        0.35
+      ],
+      "duration_days": 125,
+      "provenance": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    "sorghum": {
+      "kc": [
+        0.3,
+        1.05,
+        0.55
+      ],
+      "duration_days": 130,
+      "provenance": "OBSERVED",
+      "confidence": "MEDIUM"
+    },
+    "pearl_millet": {
+      "kc": [
+        0.3,
+        1.0,
+        0.3
+      ],
+      "duration_days": 105,
+      "provenance": "OBSERVED",
+      "confidence": "MEDIUM"
+    },
+    "chickpea": {
+      "kc": [
+        0.4,
+        1.0,
+        0.35
+      ],
+      "duration_days": 150,
+      "provenance": "SYNTHETIC_GROUNDED",
+      "confidence": "MEDIUM"
+    },
+    "pigeon_pea": {
+      "kc": [
+        0.4,
+        1.15,
+        0.55
+      ],
+      "duration_days": 180,
+      "provenance": "SYNTHETIC_GROUNDED",
+      "confidence": "LOW"
+    },
+    "groundnut": {
+      "kc": [
+        0.4,
+        1.15,
+        0.6
+      ],
+      "duration_days": 130,
+      "provenance": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    "soybean": {
+      "kc": [
+        0.4,
+        1.15,
+        0.5
+      ],
+      "duration_days": 137,
+      "provenance": "OBSERVED",
+      "confidence": "MEDIUM"
+    },
+    "mustard": {
+      "kc": [
+        0.35,
+        1.1,
+        0.35
+      ],
+      "duration_days": 130,
+      "provenance": "SYNTHETIC_GROUNDED",
+      "confidence": "MEDIUM"
+    },
+    "cotton": {
+      "kc": [
+        0.35,
+        1.18,
+        0.6
+      ],
+      "duration_days": 195,
+      "provenance": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    "potato": {
+      "kc": [
+        0.5,
+        1.15,
+        0.75
+      ],
+      "duration_days": 130,
+      "provenance": "OBSERVED",
+      "confidence": "MEDIUM"
+    },
+    "onion": {
+      "kc": [
+        0.7,
+        1.05,
+        0.75
+      ],
+      "duration_days": 150,
+      "provenance": "OBSERVED",
+      "confidence": "HIGH"
+    },
+    "tomato": {
+      "kc": [
+        0.6,
+        1.15,
+        0.8
+      ],
+      "duration_days": 135,
+      "provenance": "OBSERVED",
+      "confidence": "HIGH"
+    }
+  },
+  "region_et0_coverage": {
+    "R1": {
+      "kharif_mm_day": 6.2,
+      "rabi_mm_day": 4.1,
+      "confidence": "MEDIUM",
+      "cwr_computed": true,
+      "source": "Central Punjab (Ludhiana) FAO-PM ET0 study"
+    },
+    "R2": {
+      "kharif_mm_day": 6.23,
+      "rabi_mm_day": 4.29,
+      "confidence": "HIGH",
+      "cwr_computed": true,
+      "source": "Phad et al. (2020) MAUSAM 71(1), IMD (Govt. of India), Parbhani"
+    },
+    "R3": {
+      "kharif_mm_day": 4.2,
+      "rabi_mm_day": 3.5,
+      "confidence": "LOW",
+      "cwr_computed": true,
+      "source": "Rao et al. ET0 over India (Penman-Monteith spatial characterisation); Bihar/Patna annual 4.1 mm/day supporting anchor"
+    },
+    "R4": {
+      "kharif_mm_day": 6.5,
+      "rabi_mm_day": 4.5,
+      "confidence": "MEDIUM",
+      "cwr_computed": true,
+      "source": "Rao et al. ET0 over India (southern Rajasthan among highest, summer 7-13 mm/day); arid-Rajasthan CWR studies supporting"
+    },
+    "R5": {
+      "kharif_mm_day": 5.0,
+      "rabi_mm_day": 4.3,
+      "confidence": "LOW",
+      "cwr_computed": true,
+      "source": "Rao et al. ET0 over India (western Karnataka 5-6 mm/day)"
+    }
+  },
+  "open_obligations": [
+    {
+      "crop": null,
+      "parameter": "climate.ET0_by_region_stage",
+      "unit": "mm/day",
+      "plan": "Reference evapotranspiration per region/season/stage required to turn Kc into a crop water requirement. Source: IMD / CROPWAT / FAO CLIMWAT. Not yet sourced \u2014 CWR is computed on demand and refused without it."
+    },
+    {
+      "crop": null,
+      "parameter": "climate.rainfall_effectiveness",
+      "unit": "fraction",
+      "plan": "FAO/USDA effective-rainfall fraction, simplified to a fixed ratio; experimental parameter for sensitivity analysis."
+    },
+    {
+      "crop": "potato",
+      "parameter": "crop.price_per_kg",
+      "unit": "INR/kg",
+      "plan": "No MSP; AGMARKNET modal price required. Derive from AGMARKNET modal prices with a documented aggregation rule."
+    },
+    {
+      "crop": "onion",
+      "parameter": "crop.price_per_kg",
+      "unit": "INR/kg",
+      "plan": "No MSP; AGMARKNET modal price required. Derive from AGMARKNET modal prices with a documented aggregation rule."
+    },
+    {
+      "crop": "tomato",
+      "parameter": "crop.price_per_kg",
+      "unit": "INR/kg",
+      "plan": "No MSP; AGMARKNET modal price required. Derive from AGMARKNET modal prices with a documented aggregation rule."
+    },
+    {
+      "crop": null,
+      "parameter": "crop.cultivation_cost_per_ha",
+      "unit": "INR/ha",
+      "plan": "Will be DERIVED as cost_per_quintal x yield_q_per_ha once yield is sourced on a consistent CACP basis; not fabricated. Prefer DES Cost of Cultivation (A2+FL or C2, stated) over deriving from MSP cost."
+    },
+    {
+      "crop": "pearl_millet",
+      "parameter": "crop.yield_response_factor_ky",
+      "unit": "Ky (dimensionless)",
+      "plan": "No FAO-33 Ky; handled as an experimental scenario parameter (default 1.0), varied in sensitivity analysis per project directive."
+    },
+    {
+      "crop": "chickpea",
+      "parameter": "crop.yield_response_factor_ky",
+      "unit": "Ky (dimensionless)",
+      "plan": "No FAO-33 Ky; handled as an experimental scenario parameter (default 1.0), varied in sensitivity analysis per project directive."
+    },
+    {
+      "crop": "pigeon_pea",
+      "parameter": "crop.yield_response_factor_ky",
+      "unit": "Ky (dimensionless)",
+      "plan": "No FAO-33 Ky; handled as an experimental scenario parameter (default 1.0), varied in sensitivity analysis per project directive."
+    },
+    {
+      "crop": "mustard",
+      "parameter": "crop.yield_response_factor_ky",
+      "unit": "Ky (dimensionless)",
+      "plan": "No FAO-33 Ky; handled as an experimental scenario parameter (default 1.0), varied in sensitivity analysis per project directive."
+    },
+    {
+      "crop": null,
+      "parameter": "crop.market_price_per_kg",
+      "unit": "INR/kg",
+      "plan": "Grain/pulse/oilseed operational market prices via AGMARKNET (documented protocol) remain to be ingested for the FINAL experiment; MSP is the reference anchor meanwhile."
+    },
+    {
+      "crop": "rice",
+      "parameter": "crop.expected_yield",
+      "unit": "kg/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Agricultural Statistics at a Glance / district-season yield. DERIVATION: Use district- or state-and-season-specific yield where available; do NOT fall back to national yield when finer data exists. Record year + geography."
+    },
+    {
+      "crop": "rice",
+      "parameter": "crop.cultivation_cost",
+      "unit": "currency/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Cost of Cultivation / Cultivation Practices surveys (CACP CoC). DERIVATION: Use paid-out cost (A2) or A2+FL per study design; state which. State/season specific."
+    },
+    {
+      "crop": "rice",
+      "parameter": "crop.price",
+      "unit": "currency/kg",
+      "plan": "PLANNED SOURCE: AGMARKNET modal mandi price (MSP from CACP for MSP-notified crops as a floor anchor). DERIVATION: Derive representative price from historical modal prices via a documented aggregation rule (e.g. season-median of monthly modal prices over N years, specified market set). Do NOT invent from a range. For MSP crops, record MSP separately as a policy floor, not as the market price."
+    },
+    {
+      "crop": "rice",
+      "parameter": "crop.price_variability",
+      "unit": "coefficient of variation",
+      "plan": "PLANNED SOURCE: AGMARKNET price series. DERIVATION: CV of the same aggregated price series used for `price`. Document window."
+    },
+    {
+      "crop": "rice",
+      "parameter": "crop.market_absorption_proxy",
+      "unit": "index (labelled proxy)",
+      "plan": "PLANNED SOURCE: AGMARKNET arrivals + processing/consumption studies. DERIVATION: EXPLICITLY a proxy for market-clearing capacity, NOT demand. Derive from arrivals capacity with a documented transformation; never label arrivals 'demand'."
+    },
+    {
+      "crop": "rice",
+      "parameter": "crop.labour_requirement",
+      "unit": "person-days/ha",
+      "plan": "PLANNED SOURCE: ICAR / SAU package-of-practices; DES CoC labour component. DERIVATION: Crop-and-operation specific; state/season where available."
+    },
+    {
+      "crop": "rice",
+      "parameter": "crop.drought_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed water-stress response (FAO-33 Ky as fallback). DERIVATION: Prefer crop-specific Ky (yield response factor) from FAO-33 or ICAR trials. If defensible crop-specific values are unavailable, represent the shock via documented experimental scenario parameters + sensitivity analysis rather than pretending a coefficient is observed. (spec directive)"
+    },
+    {
+      "crop": "rice",
+      "parameter": "crop.heat_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed heat-stress studies. DERIVATION: Same rule as drought_sensitivity: sourced Ky-style value, or explicit experimental scenario parameter \u2014 never a fabricated observed coefficient."
+    },
+    {
+      "crop": "rice",
+      "parameter": "crop.waterlogging_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed waterlogging studies. DERIVATION: Same rule; many crops lack defensible values -> likely scenario parameter."
+    },
+    {
+      "crop": "wheat",
+      "parameter": "crop.expected_yield",
+      "unit": "kg/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Agricultural Statistics at a Glance / district-season yield. DERIVATION: Use district- or state-and-season-specific yield where available; do NOT fall back to national yield when finer data exists. Record year + geography."
+    },
+    {
+      "crop": "wheat",
+      "parameter": "crop.cultivation_cost",
+      "unit": "currency/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Cost of Cultivation / Cultivation Practices surveys (CACP CoC). DERIVATION: Use paid-out cost (A2) or A2+FL per study design; state which. State/season specific."
+    },
+    {
+      "crop": "wheat",
+      "parameter": "crop.price",
+      "unit": "currency/kg",
+      "plan": "PLANNED SOURCE: AGMARKNET modal mandi price (MSP from CACP for MSP-notified crops as a floor anchor). DERIVATION: Derive representative price from historical modal prices via a documented aggregation rule (e.g. season-median of monthly modal prices over N years, specified market set). Do NOT invent from a range. For MSP crops, record MSP separately as a policy floor, not as the market price."
+    },
+    {
+      "crop": "wheat",
+      "parameter": "crop.price_variability",
+      "unit": "coefficient of variation",
+      "plan": "PLANNED SOURCE: AGMARKNET price series. DERIVATION: CV of the same aggregated price series used for `price`. Document window."
+    },
+    {
+      "crop": "wheat",
+      "parameter": "crop.market_absorption_proxy",
+      "unit": "index (labelled proxy)",
+      "plan": "PLANNED SOURCE: AGMARKNET arrivals + processing/consumption studies. DERIVATION: EXPLICITLY a proxy for market-clearing capacity, NOT demand. Derive from arrivals capacity with a documented transformation; never label arrivals 'demand'."
+    },
+    {
+      "crop": "wheat",
+      "parameter": "crop.labour_requirement",
+      "unit": "person-days/ha",
+      "plan": "PLANNED SOURCE: ICAR / SAU package-of-practices; DES CoC labour component. DERIVATION: Crop-and-operation specific; state/season where available."
+    },
+    {
+      "crop": "wheat",
+      "parameter": "crop.drought_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed water-stress response (FAO-33 Ky as fallback). DERIVATION: Prefer crop-specific Ky (yield response factor) from FAO-33 or ICAR trials. If defensible crop-specific values are unavailable, represent the shock via documented experimental scenario parameters + sensitivity analysis rather than pretending a coefficient is observed. (spec directive)"
+    },
+    {
+      "crop": "wheat",
+      "parameter": "crop.heat_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed heat-stress studies. DERIVATION: Same rule as drought_sensitivity: sourced Ky-style value, or explicit experimental scenario parameter \u2014 never a fabricated observed coefficient."
+    },
+    {
+      "crop": "wheat",
+      "parameter": "crop.waterlogging_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed waterlogging studies. DERIVATION: Same rule; many crops lack defensible values -> likely scenario parameter."
+    },
+    {
+      "crop": "maize",
+      "parameter": "crop.expected_yield",
+      "unit": "kg/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Agricultural Statistics at a Glance / district-season yield. DERIVATION: Use district- or state-and-season-specific yield where available; do NOT fall back to national yield when finer data exists. Record year + geography."
+    },
+    {
+      "crop": "maize",
+      "parameter": "crop.cultivation_cost",
+      "unit": "currency/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Cost of Cultivation / Cultivation Practices surveys (CACP CoC). DERIVATION: Use paid-out cost (A2) or A2+FL per study design; state which. State/season specific."
+    },
+    {
+      "crop": "maize",
+      "parameter": "crop.price",
+      "unit": "currency/kg",
+      "plan": "PLANNED SOURCE: AGMARKNET modal mandi price (MSP from CACP for MSP-notified crops as a floor anchor). DERIVATION: Derive representative price from historical modal prices via a documented aggregation rule (e.g. season-median of monthly modal prices over N years, specified market set). Do NOT invent from a range. For MSP crops, record MSP separately as a policy floor, not as the market price."
+    },
+    {
+      "crop": "maize",
+      "parameter": "crop.price_variability",
+      "unit": "coefficient of variation",
+      "plan": "PLANNED SOURCE: AGMARKNET price series. DERIVATION: CV of the same aggregated price series used for `price`. Document window."
+    },
+    {
+      "crop": "maize",
+      "parameter": "crop.market_absorption_proxy",
+      "unit": "index (labelled proxy)",
+      "plan": "PLANNED SOURCE: AGMARKNET arrivals + processing/consumption studies. DERIVATION: EXPLICITLY a proxy for market-clearing capacity, NOT demand. Derive from arrivals capacity with a documented transformation; never label arrivals 'demand'."
+    },
+    {
+      "crop": "maize",
+      "parameter": "crop.labour_requirement",
+      "unit": "person-days/ha",
+      "plan": "PLANNED SOURCE: ICAR / SAU package-of-practices; DES CoC labour component. DERIVATION: Crop-and-operation specific; state/season where available."
+    },
+    {
+      "crop": "maize",
+      "parameter": "crop.drought_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed water-stress response (FAO-33 Ky as fallback). DERIVATION: Prefer crop-specific Ky (yield response factor) from FAO-33 or ICAR trials. If defensible crop-specific values are unavailable, represent the shock via documented experimental scenario parameters + sensitivity analysis rather than pretending a coefficient is observed. (spec directive)"
+    },
+    {
+      "crop": "maize",
+      "parameter": "crop.heat_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed heat-stress studies. DERIVATION: Same rule as drought_sensitivity: sourced Ky-style value, or explicit experimental scenario parameter \u2014 never a fabricated observed coefficient."
+    },
+    {
+      "crop": "maize",
+      "parameter": "crop.waterlogging_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed waterlogging studies. DERIVATION: Same rule; many crops lack defensible values -> likely scenario parameter."
+    },
+    {
+      "crop": "sorghum",
+      "parameter": "crop.expected_yield",
+      "unit": "kg/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Agricultural Statistics at a Glance / district-season yield. DERIVATION: Use district- or state-and-season-specific yield where available; do NOT fall back to national yield when finer data exists. Record year + geography."
+    },
+    {
+      "crop": "sorghum",
+      "parameter": "crop.cultivation_cost",
+      "unit": "currency/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Cost of Cultivation / Cultivation Practices surveys (CACP CoC). DERIVATION: Use paid-out cost (A2) or A2+FL per study design; state which. State/season specific."
+    },
+    {
+      "crop": "sorghum",
+      "parameter": "crop.price",
+      "unit": "currency/kg",
+      "plan": "PLANNED SOURCE: AGMARKNET modal mandi price (MSP from CACP for MSP-notified crops as a floor anchor). DERIVATION: Derive representative price from historical modal prices via a documented aggregation rule (e.g. season-median of monthly modal prices over N years, specified market set). Do NOT invent from a range. For MSP crops, record MSP separately as a policy floor, not as the market price."
+    },
+    {
+      "crop": "sorghum",
+      "parameter": "crop.price_variability",
+      "unit": "coefficient of variation",
+      "plan": "PLANNED SOURCE: AGMARKNET price series. DERIVATION: CV of the same aggregated price series used for `price`. Document window."
+    },
+    {
+      "crop": "sorghum",
+      "parameter": "crop.market_absorption_proxy",
+      "unit": "index (labelled proxy)",
+      "plan": "PLANNED SOURCE: AGMARKNET arrivals + processing/consumption studies. DERIVATION: EXPLICITLY a proxy for market-clearing capacity, NOT demand. Derive from arrivals capacity with a documented transformation; never label arrivals 'demand'."
+    },
+    {
+      "crop": "sorghum",
+      "parameter": "crop.labour_requirement",
+      "unit": "person-days/ha",
+      "plan": "PLANNED SOURCE: ICAR / SAU package-of-practices; DES CoC labour component. DERIVATION: Crop-and-operation specific; state/season where available."
+    },
+    {
+      "crop": "sorghum",
+      "parameter": "crop.drought_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed water-stress response (FAO-33 Ky as fallback). DERIVATION: Prefer crop-specific Ky (yield response factor) from FAO-33 or ICAR trials. If defensible crop-specific values are unavailable, represent the shock via documented experimental scenario parameters + sensitivity analysis rather than pretending a coefficient is observed. (spec directive)"
+    },
+    {
+      "crop": "sorghum",
+      "parameter": "crop.heat_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed heat-stress studies. DERIVATION: Same rule as drought_sensitivity: sourced Ky-style value, or explicit experimental scenario parameter \u2014 never a fabricated observed coefficient."
+    },
+    {
+      "crop": "sorghum",
+      "parameter": "crop.waterlogging_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed waterlogging studies. DERIVATION: Same rule; many crops lack defensible values -> likely scenario parameter."
+    },
+    {
+      "crop": "pearl_millet",
+      "parameter": "crop.expected_yield",
+      "unit": "kg/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Agricultural Statistics at a Glance / district-season yield. DERIVATION: Use district- or state-and-season-specific yield where available; do NOT fall back to national yield when finer data exists. Record year + geography."
+    },
+    {
+      "crop": "pearl_millet",
+      "parameter": "crop.cultivation_cost",
+      "unit": "currency/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Cost of Cultivation / Cultivation Practices surveys (CACP CoC). DERIVATION: Use paid-out cost (A2) or A2+FL per study design; state which. State/season specific."
+    },
+    {
+      "crop": "pearl_millet",
+      "parameter": "crop.price",
+      "unit": "currency/kg",
+      "plan": "PLANNED SOURCE: AGMARKNET modal mandi price (MSP from CACP for MSP-notified crops as a floor anchor). DERIVATION: Derive representative price from historical modal prices via a documented aggregation rule (e.g. season-median of monthly modal prices over N years, specified market set). Do NOT invent from a range. For MSP crops, record MSP separately as a policy floor, not as the market price."
+    },
+    {
+      "crop": "pearl_millet",
+      "parameter": "crop.price_variability",
+      "unit": "coefficient of variation",
+      "plan": "PLANNED SOURCE: AGMARKNET price series. DERIVATION: CV of the same aggregated price series used for `price`. Document window."
+    },
+    {
+      "crop": "pearl_millet",
+      "parameter": "crop.market_absorption_proxy",
+      "unit": "index (labelled proxy)",
+      "plan": "PLANNED SOURCE: AGMARKNET arrivals + processing/consumption studies. DERIVATION: EXPLICITLY a proxy for market-clearing capacity, NOT demand. Derive from arrivals capacity with a documented transformation; never label arrivals 'demand'."
+    },
+    {
+      "crop": "pearl_millet",
+      "parameter": "crop.labour_requirement",
+      "unit": "person-days/ha",
+      "plan": "PLANNED SOURCE: ICAR / SAU package-of-practices; DES CoC labour component. DERIVATION: Crop-and-operation specific; state/season where available."
+    },
+    {
+      "crop": "pearl_millet",
+      "parameter": "crop.drought_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed water-stress response (FAO-33 Ky as fallback). DERIVATION: Prefer crop-specific Ky (yield response factor) from FAO-33 or ICAR trials. If defensible crop-specific values are unavailable, represent the shock via documented experimental scenario parameters + sensitivity analysis rather than pretending a coefficient is observed. (spec directive)"
+    },
+    {
+      "crop": "pearl_millet",
+      "parameter": "crop.heat_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed heat-stress studies. DERIVATION: Same rule as drought_sensitivity: sourced Ky-style value, or explicit experimental scenario parameter \u2014 never a fabricated observed coefficient."
+    },
+    {
+      "crop": "pearl_millet",
+      "parameter": "crop.waterlogging_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed waterlogging studies. DERIVATION: Same rule; many crops lack defensible values -> likely scenario parameter."
+    },
+    {
+      "crop": "chickpea",
+      "parameter": "crop.expected_yield",
+      "unit": "kg/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Agricultural Statistics at a Glance / district-season yield. DERIVATION: Use district- or state-and-season-specific yield where available; do NOT fall back to national yield when finer data exists. Record year + geography."
+    },
+    {
+      "crop": "chickpea",
+      "parameter": "crop.cultivation_cost",
+      "unit": "currency/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Cost of Cultivation / Cultivation Practices surveys (CACP CoC). DERIVATION: Use paid-out cost (A2) or A2+FL per study design; state which. State/season specific."
+    },
+    {
+      "crop": "chickpea",
+      "parameter": "crop.price",
+      "unit": "currency/kg",
+      "plan": "PLANNED SOURCE: AGMARKNET modal mandi price (MSP from CACP for MSP-notified crops as a floor anchor). DERIVATION: Derive representative price from historical modal prices via a documented aggregation rule (e.g. season-median of monthly modal prices over N years, specified market set). Do NOT invent from a range. For MSP crops, record MSP separately as a policy floor, not as the market price."
+    },
+    {
+      "crop": "chickpea",
+      "parameter": "crop.price_variability",
+      "unit": "coefficient of variation",
+      "plan": "PLANNED SOURCE: AGMARKNET price series. DERIVATION: CV of the same aggregated price series used for `price`. Document window."
+    },
+    {
+      "crop": "chickpea",
+      "parameter": "crop.market_absorption_proxy",
+      "unit": "index (labelled proxy)",
+      "plan": "PLANNED SOURCE: AGMARKNET arrivals + processing/consumption studies. DERIVATION: EXPLICITLY a proxy for market-clearing capacity, NOT demand. Derive from arrivals capacity with a documented transformation; never label arrivals 'demand'."
+    },
+    {
+      "crop": "chickpea",
+      "parameter": "crop.labour_requirement",
+      "unit": "person-days/ha",
+      "plan": "PLANNED SOURCE: ICAR / SAU package-of-practices; DES CoC labour component. DERIVATION: Crop-and-operation specific; state/season where available."
+    },
+    {
+      "crop": "chickpea",
+      "parameter": "crop.drought_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed water-stress response (FAO-33 Ky as fallback). DERIVATION: Prefer crop-specific Ky (yield response factor) from FAO-33 or ICAR trials. If defensible crop-specific values are unavailable, represent the shock via documented experimental scenario parameters + sensitivity analysis rather than pretending a coefficient is observed. (spec directive)"
+    },
+    {
+      "crop": "chickpea",
+      "parameter": "crop.heat_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed heat-stress studies. DERIVATION: Same rule as drought_sensitivity: sourced Ky-style value, or explicit experimental scenario parameter \u2014 never a fabricated observed coefficient."
+    },
+    {
+      "crop": "chickpea",
+      "parameter": "crop.waterlogging_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed waterlogging studies. DERIVATION: Same rule; many crops lack defensible values -> likely scenario parameter."
+    },
+    {
+      "crop": "pigeon_pea",
+      "parameter": "crop.expected_yield",
+      "unit": "kg/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Agricultural Statistics at a Glance / district-season yield. DERIVATION: Use district- or state-and-season-specific yield where available; do NOT fall back to national yield when finer data exists. Record year + geography."
+    },
+    {
+      "crop": "pigeon_pea",
+      "parameter": "crop.cultivation_cost",
+      "unit": "currency/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Cost of Cultivation / Cultivation Practices surveys (CACP CoC). DERIVATION: Use paid-out cost (A2) or A2+FL per study design; state which. State/season specific."
+    },
+    {
+      "crop": "pigeon_pea",
+      "parameter": "crop.price",
+      "unit": "currency/kg",
+      "plan": "PLANNED SOURCE: AGMARKNET modal mandi price (MSP from CACP for MSP-notified crops as a floor anchor). DERIVATION: Derive representative price from historical modal prices via a documented aggregation rule (e.g. season-median of monthly modal prices over N years, specified market set). Do NOT invent from a range. For MSP crops, record MSP separately as a policy floor, not as the market price."
+    },
+    {
+      "crop": "pigeon_pea",
+      "parameter": "crop.price_variability",
+      "unit": "coefficient of variation",
+      "plan": "PLANNED SOURCE: AGMARKNET price series. DERIVATION: CV of the same aggregated price series used for `price`. Document window."
+    },
+    {
+      "crop": "pigeon_pea",
+      "parameter": "crop.market_absorption_proxy",
+      "unit": "index (labelled proxy)",
+      "plan": "PLANNED SOURCE: AGMARKNET arrivals + processing/consumption studies. DERIVATION: EXPLICITLY a proxy for market-clearing capacity, NOT demand. Derive from arrivals capacity with a documented transformation; never label arrivals 'demand'."
+    },
+    {
+      "crop": "pigeon_pea",
+      "parameter": "crop.labour_requirement",
+      "unit": "person-days/ha",
+      "plan": "PLANNED SOURCE: ICAR / SAU package-of-practices; DES CoC labour component. DERIVATION: Crop-and-operation specific; state/season where available."
+    },
+    {
+      "crop": "pigeon_pea",
+      "parameter": "crop.drought_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed water-stress response (FAO-33 Ky as fallback). DERIVATION: Prefer crop-specific Ky (yield response factor) from FAO-33 or ICAR trials. If defensible crop-specific values are unavailable, represent the shock via documented experimental scenario parameters + sensitivity analysis rather than pretending a coefficient is observed. (spec directive)"
+    },
+    {
+      "crop": "pigeon_pea",
+      "parameter": "crop.heat_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed heat-stress studies. DERIVATION: Same rule as drought_sensitivity: sourced Ky-style value, or explicit experimental scenario parameter \u2014 never a fabricated observed coefficient."
+    },
+    {
+      "crop": "pigeon_pea",
+      "parameter": "crop.waterlogging_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed waterlogging studies. DERIVATION: Same rule; many crops lack defensible values -> likely scenario parameter."
+    },
+    {
+      "crop": "groundnut",
+      "parameter": "crop.expected_yield",
+      "unit": "kg/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Agricultural Statistics at a Glance / district-season yield. DERIVATION: Use district- or state-and-season-specific yield where available; do NOT fall back to national yield when finer data exists. Record year + geography."
+    },
+    {
+      "crop": "groundnut",
+      "parameter": "crop.cultivation_cost",
+      "unit": "currency/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Cost of Cultivation / Cultivation Practices surveys (CACP CoC). DERIVATION: Use paid-out cost (A2) or A2+FL per study design; state which. State/season specific."
+    },
+    {
+      "crop": "groundnut",
+      "parameter": "crop.price",
+      "unit": "currency/kg",
+      "plan": "PLANNED SOURCE: AGMARKNET modal mandi price (MSP from CACP for MSP-notified crops as a floor anchor). DERIVATION: Derive representative price from historical modal prices via a documented aggregation rule (e.g. season-median of monthly modal prices over N years, specified market set). Do NOT invent from a range. For MSP crops, record MSP separately as a policy floor, not as the market price."
+    },
+    {
+      "crop": "groundnut",
+      "parameter": "crop.price_variability",
+      "unit": "coefficient of variation",
+      "plan": "PLANNED SOURCE: AGMARKNET price series. DERIVATION: CV of the same aggregated price series used for `price`. Document window."
+    },
+    {
+      "crop": "groundnut",
+      "parameter": "crop.market_absorption_proxy",
+      "unit": "index (labelled proxy)",
+      "plan": "PLANNED SOURCE: AGMARKNET arrivals + processing/consumption studies. DERIVATION: EXPLICITLY a proxy for market-clearing capacity, NOT demand. Derive from arrivals capacity with a documented transformation; never label arrivals 'demand'."
+    },
+    {
+      "crop": "groundnut",
+      "parameter": "crop.labour_requirement",
+      "unit": "person-days/ha",
+      "plan": "PLANNED SOURCE: ICAR / SAU package-of-practices; DES CoC labour component. DERIVATION: Crop-and-operation specific; state/season where available."
+    },
+    {
+      "crop": "groundnut",
+      "parameter": "crop.drought_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed water-stress response (FAO-33 Ky as fallback). DERIVATION: Prefer crop-specific Ky (yield response factor) from FAO-33 or ICAR trials. If defensible crop-specific values are unavailable, represent the shock via documented experimental scenario parameters + sensitivity analysis rather than pretending a coefficient is observed. (spec directive)"
+    },
+    {
+      "crop": "groundnut",
+      "parameter": "crop.heat_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed heat-stress studies. DERIVATION: Same rule as drought_sensitivity: sourced Ky-style value, or explicit experimental scenario parameter \u2014 never a fabricated observed coefficient."
+    },
+    {
+      "crop": "groundnut",
+      "parameter": "crop.waterlogging_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed waterlogging studies. DERIVATION: Same rule; many crops lack defensible values -> likely scenario parameter."
+    },
+    {
+      "crop": "soybean",
+      "parameter": "crop.expected_yield",
+      "unit": "kg/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Agricultural Statistics at a Glance / district-season yield. DERIVATION: Use district- or state-and-season-specific yield where available; do NOT fall back to national yield when finer data exists. Record year + geography."
+    },
+    {
+      "crop": "soybean",
+      "parameter": "crop.cultivation_cost",
+      "unit": "currency/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Cost of Cultivation / Cultivation Practices surveys (CACP CoC). DERIVATION: Use paid-out cost (A2) or A2+FL per study design; state which. State/season specific."
+    },
+    {
+      "crop": "soybean",
+      "parameter": "crop.price",
+      "unit": "currency/kg",
+      "plan": "PLANNED SOURCE: AGMARKNET modal mandi price (MSP from CACP for MSP-notified crops as a floor anchor). DERIVATION: Derive representative price from historical modal prices via a documented aggregation rule (e.g. season-median of monthly modal prices over N years, specified market set). Do NOT invent from a range. For MSP crops, record MSP separately as a policy floor, not as the market price."
+    },
+    {
+      "crop": "soybean",
+      "parameter": "crop.price_variability",
+      "unit": "coefficient of variation",
+      "plan": "PLANNED SOURCE: AGMARKNET price series. DERIVATION: CV of the same aggregated price series used for `price`. Document window."
+    },
+    {
+      "crop": "soybean",
+      "parameter": "crop.market_absorption_proxy",
+      "unit": "index (labelled proxy)",
+      "plan": "PLANNED SOURCE: AGMARKNET arrivals + processing/consumption studies. DERIVATION: EXPLICITLY a proxy for market-clearing capacity, NOT demand. Derive from arrivals capacity with a documented transformation; never label arrivals 'demand'."
+    },
+    {
+      "crop": "soybean",
+      "parameter": "crop.labour_requirement",
+      "unit": "person-days/ha",
+      "plan": "PLANNED SOURCE: ICAR / SAU package-of-practices; DES CoC labour component. DERIVATION: Crop-and-operation specific; state/season where available."
+    },
+    {
+      "crop": "soybean",
+      "parameter": "crop.drought_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed water-stress response (FAO-33 Ky as fallback). DERIVATION: Prefer crop-specific Ky (yield response factor) from FAO-33 or ICAR trials. If defensible crop-specific values are unavailable, represent the shock via documented experimental scenario parameters + sensitivity analysis rather than pretending a coefficient is observed. (spec directive)"
+    },
+    {
+      "crop": "soybean",
+      "parameter": "crop.heat_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed heat-stress studies. DERIVATION: Same rule as drought_sensitivity: sourced Ky-style value, or explicit experimental scenario parameter \u2014 never a fabricated observed coefficient."
+    },
+    {
+      "crop": "soybean",
+      "parameter": "crop.waterlogging_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed waterlogging studies. DERIVATION: Same rule; many crops lack defensible values -> likely scenario parameter."
+    },
+    {
+      "crop": "mustard",
+      "parameter": "crop.expected_yield",
+      "unit": "kg/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Agricultural Statistics at a Glance / district-season yield. DERIVATION: Use district- or state-and-season-specific yield where available; do NOT fall back to national yield when finer data exists. Record year + geography."
+    },
+    {
+      "crop": "mustard",
+      "parameter": "crop.cultivation_cost",
+      "unit": "currency/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Cost of Cultivation / Cultivation Practices surveys (CACP CoC). DERIVATION: Use paid-out cost (A2) or A2+FL per study design; state which. State/season specific."
+    },
+    {
+      "crop": "mustard",
+      "parameter": "crop.price",
+      "unit": "currency/kg",
+      "plan": "PLANNED SOURCE: AGMARKNET modal mandi price (MSP from CACP for MSP-notified crops as a floor anchor). DERIVATION: Derive representative price from historical modal prices via a documented aggregation rule (e.g. season-median of monthly modal prices over N years, specified market set). Do NOT invent from a range. For MSP crops, record MSP separately as a policy floor, not as the market price."
+    },
+    {
+      "crop": "mustard",
+      "parameter": "crop.price_variability",
+      "unit": "coefficient of variation",
+      "plan": "PLANNED SOURCE: AGMARKNET price series. DERIVATION: CV of the same aggregated price series used for `price`. Document window."
+    },
+    {
+      "crop": "mustard",
+      "parameter": "crop.market_absorption_proxy",
+      "unit": "index (labelled proxy)",
+      "plan": "PLANNED SOURCE: AGMARKNET arrivals + processing/consumption studies. DERIVATION: EXPLICITLY a proxy for market-clearing capacity, NOT demand. Derive from arrivals capacity with a documented transformation; never label arrivals 'demand'."
+    },
+    {
+      "crop": "mustard",
+      "parameter": "crop.labour_requirement",
+      "unit": "person-days/ha",
+      "plan": "PLANNED SOURCE: ICAR / SAU package-of-practices; DES CoC labour component. DERIVATION: Crop-and-operation specific; state/season where available."
+    },
+    {
+      "crop": "mustard",
+      "parameter": "crop.drought_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed water-stress response (FAO-33 Ky as fallback). DERIVATION: Prefer crop-specific Ky (yield response factor) from FAO-33 or ICAR trials. If defensible crop-specific values are unavailable, represent the shock via documented experimental scenario parameters + sensitivity analysis rather than pretending a coefficient is observed. (spec directive)"
+    },
+    {
+      "crop": "mustard",
+      "parameter": "crop.heat_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed heat-stress studies. DERIVATION: Same rule as drought_sensitivity: sourced Ky-style value, or explicit experimental scenario parameter \u2014 never a fabricated observed coefficient."
+    },
+    {
+      "crop": "mustard",
+      "parameter": "crop.waterlogging_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed waterlogging studies. DERIVATION: Same rule; many crops lack defensible values -> likely scenario parameter."
+    },
+    {
+      "crop": "cotton",
+      "parameter": "crop.expected_yield",
+      "unit": "kg/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Agricultural Statistics at a Glance / district-season yield. DERIVATION: Use district- or state-and-season-specific yield where available; do NOT fall back to national yield when finer data exists. Record year + geography."
+    },
+    {
+      "crop": "cotton",
+      "parameter": "crop.cultivation_cost",
+      "unit": "currency/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Cost of Cultivation / Cultivation Practices surveys (CACP CoC). DERIVATION: Use paid-out cost (A2) or A2+FL per study design; state which. State/season specific."
+    },
+    {
+      "crop": "cotton",
+      "parameter": "crop.price",
+      "unit": "currency/kg",
+      "plan": "PLANNED SOURCE: AGMARKNET modal mandi price (MSP from CACP for MSP-notified crops as a floor anchor). DERIVATION: Derive representative price from historical modal prices via a documented aggregation rule (e.g. season-median of monthly modal prices over N years, specified market set). Do NOT invent from a range. For MSP crops, record MSP separately as a policy floor, not as the market price."
+    },
+    {
+      "crop": "cotton",
+      "parameter": "crop.price_variability",
+      "unit": "coefficient of variation",
+      "plan": "PLANNED SOURCE: AGMARKNET price series. DERIVATION: CV of the same aggregated price series used for `price`. Document window."
+    },
+    {
+      "crop": "cotton",
+      "parameter": "crop.market_absorption_proxy",
+      "unit": "index (labelled proxy)",
+      "plan": "PLANNED SOURCE: AGMARKNET arrivals + processing/consumption studies. DERIVATION: EXPLICITLY a proxy for market-clearing capacity, NOT demand. Derive from arrivals capacity with a documented transformation; never label arrivals 'demand'."
+    },
+    {
+      "crop": "cotton",
+      "parameter": "crop.labour_requirement",
+      "unit": "person-days/ha",
+      "plan": "PLANNED SOURCE: ICAR / SAU package-of-practices; DES CoC labour component. DERIVATION: Crop-and-operation specific; state/season where available."
+    },
+    {
+      "crop": "cotton",
+      "parameter": "crop.drought_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed water-stress response (FAO-33 Ky as fallback). DERIVATION: Prefer crop-specific Ky (yield response factor) from FAO-33 or ICAR trials. If defensible crop-specific values are unavailable, represent the shock via documented experimental scenario parameters + sensitivity analysis rather than pretending a coefficient is observed. (spec directive)"
+    },
+    {
+      "crop": "cotton",
+      "parameter": "crop.heat_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed heat-stress studies. DERIVATION: Same rule as drought_sensitivity: sourced Ky-style value, or explicit experimental scenario parameter \u2014 never a fabricated observed coefficient."
+    },
+    {
+      "crop": "cotton",
+      "parameter": "crop.waterlogging_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed waterlogging studies. DERIVATION: Same rule; many crops lack defensible values -> likely scenario parameter."
+    },
+    {
+      "crop": "potato",
+      "parameter": "crop.expected_yield",
+      "unit": "kg/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Agricultural Statistics at a Glance / district-season yield. DERIVATION: Use district- or state-and-season-specific yield where available; do NOT fall back to national yield when finer data exists. Record year + geography."
+    },
+    {
+      "crop": "potato",
+      "parameter": "crop.cultivation_cost",
+      "unit": "currency/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Cost of Cultivation / Cultivation Practices surveys (CACP CoC). DERIVATION: Use paid-out cost (A2) or A2+FL per study design; state which. State/season specific."
+    },
+    {
+      "crop": "potato",
+      "parameter": "crop.price",
+      "unit": "currency/kg",
+      "plan": "PLANNED SOURCE: AGMARKNET modal mandi price (MSP from CACP for MSP-notified crops as a floor anchor). DERIVATION: Derive representative price from historical modal prices via a documented aggregation rule (e.g. season-median of monthly modal prices over N years, specified market set). Do NOT invent from a range. For MSP crops, record MSP separately as a policy floor, not as the market price."
+    },
+    {
+      "crop": "potato",
+      "parameter": "crop.price_variability",
+      "unit": "coefficient of variation",
+      "plan": "PLANNED SOURCE: AGMARKNET price series. DERIVATION: CV of the same aggregated price series used for `price`. Document window."
+    },
+    {
+      "crop": "potato",
+      "parameter": "crop.market_absorption_proxy",
+      "unit": "index (labelled proxy)",
+      "plan": "PLANNED SOURCE: AGMARKNET arrivals + processing/consumption studies. DERIVATION: EXPLICITLY a proxy for market-clearing capacity, NOT demand. Derive from arrivals capacity with a documented transformation; never label arrivals 'demand'."
+    },
+    {
+      "crop": "potato",
+      "parameter": "crop.labour_requirement",
+      "unit": "person-days/ha",
+      "plan": "PLANNED SOURCE: ICAR / SAU package-of-practices; DES CoC labour component. DERIVATION: Crop-and-operation specific; state/season where available."
+    },
+    {
+      "crop": "potato",
+      "parameter": "crop.drought_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed water-stress response (FAO-33 Ky as fallback). DERIVATION: Prefer crop-specific Ky (yield response factor) from FAO-33 or ICAR trials. If defensible crop-specific values are unavailable, represent the shock via documented experimental scenario parameters + sensitivity analysis rather than pretending a coefficient is observed. (spec directive)"
+    },
+    {
+      "crop": "potato",
+      "parameter": "crop.heat_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed heat-stress studies. DERIVATION: Same rule as drought_sensitivity: sourced Ky-style value, or explicit experimental scenario parameter \u2014 never a fabricated observed coefficient."
+    },
+    {
+      "crop": "potato",
+      "parameter": "crop.waterlogging_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed waterlogging studies. DERIVATION: Same rule; many crops lack defensible values -> likely scenario parameter."
+    },
+    {
+      "crop": "onion",
+      "parameter": "crop.expected_yield",
+      "unit": "kg/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Agricultural Statistics at a Glance / district-season yield. DERIVATION: Use district- or state-and-season-specific yield where available; do NOT fall back to national yield when finer data exists. Record year + geography."
+    },
+    {
+      "crop": "onion",
+      "parameter": "crop.cultivation_cost",
+      "unit": "currency/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Cost of Cultivation / Cultivation Practices surveys (CACP CoC). DERIVATION: Use paid-out cost (A2) or A2+FL per study design; state which. State/season specific."
+    },
+    {
+      "crop": "onion",
+      "parameter": "crop.price",
+      "unit": "currency/kg",
+      "plan": "PLANNED SOURCE: AGMARKNET modal mandi price (MSP from CACP for MSP-notified crops as a floor anchor). DERIVATION: Derive representative price from historical modal prices via a documented aggregation rule (e.g. season-median of monthly modal prices over N years, specified market set). Do NOT invent from a range. For MSP crops, record MSP separately as a policy floor, not as the market price."
+    },
+    {
+      "crop": "onion",
+      "parameter": "crop.price_variability",
+      "unit": "coefficient of variation",
+      "plan": "PLANNED SOURCE: AGMARKNET price series. DERIVATION: CV of the same aggregated price series used for `price`. Document window."
+    },
+    {
+      "crop": "onion",
+      "parameter": "crop.market_absorption_proxy",
+      "unit": "index (labelled proxy)",
+      "plan": "PLANNED SOURCE: AGMARKNET arrivals + processing/consumption studies. DERIVATION: EXPLICITLY a proxy for market-clearing capacity, NOT demand. Derive from arrivals capacity with a documented transformation; never label arrivals 'demand'."
+    },
+    {
+      "crop": "onion",
+      "parameter": "crop.labour_requirement",
+      "unit": "person-days/ha",
+      "plan": "PLANNED SOURCE: ICAR / SAU package-of-practices; DES CoC labour component. DERIVATION: Crop-and-operation specific; state/season where available."
+    },
+    {
+      "crop": "onion",
+      "parameter": "crop.drought_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed water-stress response (FAO-33 Ky as fallback). DERIVATION: Prefer crop-specific Ky (yield response factor) from FAO-33 or ICAR trials. If defensible crop-specific values are unavailable, represent the shock via documented experimental scenario parameters + sensitivity analysis rather than pretending a coefficient is observed. (spec directive)"
+    },
+    {
+      "crop": "onion",
+      "parameter": "crop.heat_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed heat-stress studies. DERIVATION: Same rule as drought_sensitivity: sourced Ky-style value, or explicit experimental scenario parameter \u2014 never a fabricated observed coefficient."
+    },
+    {
+      "crop": "onion",
+      "parameter": "crop.waterlogging_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed waterlogging studies. DERIVATION: Same rule; many crops lack defensible values -> likely scenario parameter."
+    },
+    {
+      "crop": "tomato",
+      "parameter": "crop.expected_yield",
+      "unit": "kg/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Agricultural Statistics at a Glance / district-season yield. DERIVATION: Use district- or state-and-season-specific yield where available; do NOT fall back to national yield when finer data exists. Record year + geography."
+    },
+    {
+      "crop": "tomato",
+      "parameter": "crop.cultivation_cost",
+      "unit": "currency/ha",
+      "plan": "PLANNED SOURCE: GoI DES \u2014 Cost of Cultivation / Cultivation Practices surveys (CACP CoC). DERIVATION: Use paid-out cost (A2) or A2+FL per study design; state which. State/season specific."
+    },
+    {
+      "crop": "tomato",
+      "parameter": "crop.price",
+      "unit": "currency/kg",
+      "plan": "PLANNED SOURCE: AGMARKNET modal mandi price (MSP from CACP for MSP-notified crops as a floor anchor). DERIVATION: Derive representative price from historical modal prices via a documented aggregation rule (e.g. season-median of monthly modal prices over N years, specified market set). Do NOT invent from a range. For MSP crops, record MSP separately as a policy floor, not as the market price."
+    },
+    {
+      "crop": "tomato",
+      "parameter": "crop.price_variability",
+      "unit": "coefficient of variation",
+      "plan": "PLANNED SOURCE: AGMARKNET price series. DERIVATION: CV of the same aggregated price series used for `price`. Document window."
+    },
+    {
+      "crop": "tomato",
+      "parameter": "crop.market_absorption_proxy",
+      "unit": "index (labelled proxy)",
+      "plan": "PLANNED SOURCE: AGMARKNET arrivals + processing/consumption studies. DERIVATION: EXPLICITLY a proxy for market-clearing capacity, NOT demand. Derive from arrivals capacity with a documented transformation; never label arrivals 'demand'."
+    },
+    {
+      "crop": "tomato",
+      "parameter": "crop.labour_requirement",
+      "unit": "person-days/ha",
+      "plan": "PLANNED SOURCE: ICAR / SAU package-of-practices; DES CoC labour component. DERIVATION: Crop-and-operation specific; state/season where available."
+    },
+    {
+      "crop": "tomato",
+      "parameter": "crop.drought_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed water-stress response (FAO-33 Ky as fallback). DERIVATION: Prefer crop-specific Ky (yield response factor) from FAO-33 or ICAR trials. If defensible crop-specific values are unavailable, represent the shock via documented experimental scenario parameters + sensitivity analysis rather than pretending a coefficient is observed. (spec directive)"
+    },
+    {
+      "crop": "tomato",
+      "parameter": "crop.heat_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed heat-stress studies. DERIVATION: Same rule as drought_sensitivity: sourced Ky-style value, or explicit experimental scenario parameter \u2014 never a fabricated observed coefficient."
+    },
+    {
+      "crop": "tomato",
+      "parameter": "crop.waterlogging_sensitivity",
+      "unit": "yield-response index",
+      "plan": "PLANNED SOURCE: ICAR / peer-reviewed waterlogging studies. DERIVATION: Same rule; many crops lack defensible values -> likely scenario parameter."
+    }
+  ],
+  "gate": {
+    "optimiser_may_use_water_block": true,
+    "optimiser_may_use_cwr_for_regions": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "optimiser_may_use_economics": false,
+    "reason": "Economic/market/sensitivity parameters remain REQUIRES_SOURCING; per integrity rules they must not enter the optimiser until sourced. CWR is available only for regions with sourced ET0."
+  }
+}

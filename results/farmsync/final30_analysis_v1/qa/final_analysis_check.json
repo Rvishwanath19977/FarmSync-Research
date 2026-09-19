@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "action_primary_reuse": true,
+    "alpha_primary_reuse": true,
+    "comparison_boundary_respected": true,
+    "expected_10_pdf": true,
+    "expected_10_png": true,
+    "lambda_primary_reuse": true,
+    "missing_manuscript_inputs": true,
+    "missing_tables": true,
+    "primary_consistency": true,
+    "raw_hash_match": true,
+    "raw_integrity_pass": true,
+    "scalability_500_primary_reuse": true,
+    "uncertainty_consistency": true,
+    "zero_imputation_used": false
+  },
+  "figure_index_sha256": "432da150bad086fad2be817e592542ae24f787be4db6a047255f1829d6baa97b",
+  "figure_pdf_count": 10,
+  "figure_png_count": 10,
+  "final_analysis_qa_pass": true,
+  "generated_utc": "2026-09-19T09:24:17+00:00",
+  "manuscript_numbers_sha256": "a3265bc93f30eac767d635020a68f8bc357d9ce036ac6a0e48c646fdea2491ff",
+  "manuscript_tables_sha256": "11730e885302fc9adf75a40e651a41076ce0e73bd76445ed8e1a9f9dc2297a6a",
+  "missing_manuscript_inputs": [],
+  "missing_tables": [],
+  "reproducibility_statement_sha256": "1ed15407f54d6eaa913126a6181a3cc33ce00c2184f3d8b830c4965d2ffb3007",
+  "schema": "farmsync-final30-analysis-final-qa-v1"
+}

@@ -1,0 +1,69 @@
+{
+  "optimality_gap": {
+    "B1_150": {
+      "20260812": 0.7,
+      "101": 0.08,
+      "202": 0.96,
+      "303": 0.62
+    },
+    "B2_150": {
+      "20260812": 0.35,
+      "101": 3.34,
+      "202": 0.56,
+      "303": 0.01
+    },
+    "B1_500": 1.03,
+    "B2_500": 0.32,
+    "B2_ilp_500_seconds": 1.4,
+    "B2_ilp_500_status": "Optimal"
+  },
+  "fairness_500_base": {
+    "abs_gini": {
+      "B1": 0.826,
+      "B2": 0.852,
+      "B3": 0.82
+    },
+    "per_ha_gini_participants": {
+      "B1": 0.459,
+      "B2": 0.514,
+      "B3": 0.475
+    },
+    "participating": {
+      "B1": 294,
+      "B2": 286,
+      "B3": 294
+    },
+    "bottom_quartile_mean": {
+      "B1": 0,
+      "B2": 0,
+      "B3": 0
+    },
+    "vs_B1_better_worse": {
+      "B2": [
+        9,
+        44
+      ],
+      "B3": [
+        7,
+        35
+      ]
+    }
+  },
+  "coverage_alternatives": {
+    "R1_kharif": 2,
+    "R1_rabi": 3,
+    "R2_kharif": 9,
+    "R2_rabi": 5,
+    "R3_kharif": 2,
+    "R3_rabi": 3,
+    "R4_kharif": 7,
+    "R4_rabi": 6,
+    "R5_kharif": 8,
+    "R5_rabi": 5
+  },
+  "freeze": {
+    "dataset_hash": "9984aa9948740c06",
+    "budget_tightness": "base",
+    "n_replications": 30
+  }
+}

@@ -1,0 +1,5 @@
+epsilon,total_runs,optimal_runs,nonoptimal_runs,optimal_rate_pct,failure_status_counts_json
+0.8,30,30,0,100.0,{}
+0.9,30,30,0,100.0,{}
+0.95,30,30,0,100.0,{}
+1.0,30,28,2,93.3333,"{""Not Solved"": 2}"

@@ -1,0 +1,14 @@
+file,field,description
+farmers.csv,farmer_id,Synthetic farmer identifier
+farmers.csv,collective_id,Collective the farmer belongs to
+farmers.csv,total_area_ha,"Aggregate landholding (ha), sums plot areas"
+plots.csv,plot_id,Synthetic plot identifier
+plots.csv,available_water_m3,Seasonal water available to the plot
+plots.csv,hazard_zone,Correlated-failure zone identifier
+collectives.csv,collective_id,Collective identifier
+collectives.csv,region_id,Region the collective operates in
+collectives.csv,season,Season context (kharif/rabi)
+crop_region_season_params.csv,crop_water_requirement_mm,FAO-56 Kc x regional ET0 (derived)
+crop_region_season_params.csv,expected_yield_kg_ha,REQUIRES_SOURCING (DES district-season)
+parameter_provenance.csv,provenance_type,OBSERVED / DERIVED / SYNTHETIC_GROUNDED / SYNTHETIC_EXPERIMENTAL
+parameter_provenance.csv,confidence,HIGH/MEDIUM/LOW or REQUIRES_SOURCING

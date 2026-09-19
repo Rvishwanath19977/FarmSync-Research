@@ -1,0 +1,4 @@
+alpha,pre_shock_cash,attempted,optimal_backup,infeasible_backup,mean_target_immediate_loss_over_attempted,worst_target_immediate_loss_over_attempted,mean_cash_loss_over_attempted,worst_cash_loss_over_attempted,immediate_denominator,mean_recovery_frac_over_optimal,worst_recovery_frac_over_optimal,recovery_denominator,all_lps_match,surviving_hardlock_changes_all_0,any_failed_reuse
+1.0,12340519,8,8,0,0.2092,0.529,265261,957199,8,0.0,0.0,8,True,True,False
+0.4,12285254,8,8,0,0.1941,0.3988,265261,957199,8,0.0812,0.0,8,True,True,False
+0.33,12235846,8,8,0,0.1857,0.3297,265261,957199,8,0.1827,0.0,8,True,True,False

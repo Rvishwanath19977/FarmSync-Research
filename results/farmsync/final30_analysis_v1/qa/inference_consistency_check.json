@@ -1,0 +1,16 @@
+{
+  "bootstrap_interval": "percentile_95",
+  "bootstrap_replicates": 10000,
+  "bootstrap_rows": 62,
+  "bootstrap_seed": 20260812,
+  "comparison_boundary_respected": true,
+  "forbidden_baseline_planned_vs_proposed_final_tests": [],
+  "generated_utc": "2026-09-19T09:16:58+00:00",
+  "mcnemar_tests": 13,
+  "nonoptimal_performance_values_excluded": true,
+  "paired_wilcoxon_tests": 7,
+  "reliability_analyzed_separately": true,
+  "reliability_ci_rows": 30,
+  "schema": "farmsync-statistical-inference-qa-v1",
+  "zero_imputation_used": false
+}

@@ -1,0 +1,57 @@
+# FarmSync Phase-7 integration — POST-COPY COMMAND CHECKLIST (Windows PowerShell)
+# Run these AFTER copying the package contents over your PORTFOLIO project root.
+
+# 1. Go to project root (edit path to your actual location)
+cd C:\path\to\PORTFOLIO
+
+# 2. Activate existing virtual environment
+.\venv\Scripts\Activate.ps1
+
+# 3. Verify Python
+python --version
+
+# 4. Upgrade pip
+python -m pip install --upgrade pip
+
+# 5. Install merged requirements (adds pulp, xlrd, pytest; keeps all AskVish deps)
+python -m pip install -r requirements.txt
+
+# 6. Verify imports
+python -c "import farmsync; import farmsync_routes; print('FarmSync imports OK')"
+
+# 7. Run FarmSync Phase-7 tests (fast)
+python -m pytest tests/test_farmsync_proposed_p7.py -q
+
+# 8. Run the full FarmSync suite IN CHUNKS (Phase 5/6 solves are heavy; run separately)
+python -m pytest tests/ -q --ignore=tests/test_farmsync_proposed_p5.py --ignore=tests/test_farmsync_proposed_p6.py
+python -m pytest tests/test_farmsync_proposed_p5.py -q
+python -m pytest tests/test_farmsync_proposed_p6.py -q
+
+# 9. Start AskVish
+python app.py
+
+# 10. AskVish home in your browser
+#     http://127.0.0.1:5000
+
+# 11. FarmSync UI (Dataset Manager)
+#     http://127.0.0.1:5000/farm-sync
+
+# 12. After visually confirming FarmSync loads, stop Flask:
+#     Ctrl+C
+
+# 13. Run the LIVE Phase-7 smoke test (uses your existing PORTFOLIO\.env automatically)
+python scripts/p7_live_smoketest.py
+
+# 14. Expected "status" in the JSON output:
+#     PASSED  -> all 5 probes met expectations (exit 0)
+#     FAILED  -> at least one probe failed (exit non-zero); send the JSON for review
+#     SKIPPED -> no API key / provider / network available (exit 0); nothing was called
+
+# 15. EXACT NEXT STEP AFTER "PASSED":
+#     STOP and send the smoke-test JSON output back for review.
+#     The LIVE 41-case development evaluation is the NEXT phase and is NOT part of this
+#     checkpoint — its runner is wired only after the smoke-test output has been reviewed.
+#     ###########################################################################
+#     # DO NOT RUN ANY LIVE 41-CASE / >=300-CASE / 30-REP STEP UNTIL SMOKE-TEST
+#     # OUTPUT HAS BEEN REVIEWED AND THE LIVE RUNNER HAS BEEN EXPLICITLY ENABLED.
+#     ###########################################################################

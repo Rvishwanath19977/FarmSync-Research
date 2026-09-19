@@ -1,0 +1,6 @@
+scenario,participation_rate,non_response_rate,withdrawal_rate,note
+full,1.0,,,experimental level
+high,0.9,,,experimental level
+moderate,0.75,,,experimental level
+low,0.6,,,experimental level
+very_low,0.4,,,experimental level

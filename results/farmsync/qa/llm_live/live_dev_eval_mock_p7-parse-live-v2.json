@@ -1,0 +1,210 @@
+{
+  "evaluation": "LIVE DEVELOPMENT EVALUATION - NOT THE >=300 BENCHMARK",
+  "mode": "mock",
+  "model_requested": "gpt-5.6-terra",
+  "schema_version": "farmsync-farmer-request-v1",
+  "frozen_prompt_version": "p7-parse-v1",
+  "integration_prompt_version": "p7-parse-live-v2",
+  "expected_case_file_sha256": "46a005d5089aaf9a2db4f922806ef503d3b9bd7bb8b2a1867ce639f75b2530fe",
+  "expected_semantic_case_set_hash": "da556e3923daec5a",
+  "legacy_manifest_case_set_hash": "9b408d5d013ac284",
+  "case_set_hash_discrepancy_note": "Inherited P7 metadata inconsistency: frozen p7_llm_manifest.json records case_set_hash 9b408d5d013ac284, but the frozen case_set_hash() over the authentic on-disk p7_dev_cases.jsonl yields da556e3923daec5a. The historical cause of the recorded manifest value is UNKNOWN (not established). The case file is authentic (byte SHA-256 matches RESULT_FROZEN PACKAGE_MANIFEST). No frozen artifact was modified; the evaluator gates on the byte SHA-256 + the actual semantic hash and records the legacy manifest value for reference only.",
+  "master_seed": 20260812,
+  "status": "COMPLETE",
+  "live": false,
+  "case_set_identity": {
+    "case_file": "results/farmsync/proposed/p7_dev_cases.jsonl",
+    "case_file_sha256": "46a005d5089aaf9a2db4f922806ef503d3b9bd7bb8b2a1867ce639f75b2530fe",
+    "case_file_sha256_expected": "46a005d5089aaf9a2db4f922806ef503d3b9bd7bb8b2a1867ce639f75b2530fe",
+    "case_file_sha256_match": true,
+    "semantic_case_set_hash": "da556e3923daec5a",
+    "semantic_case_set_hash_expected": "da556e3923daec5a",
+    "semantic_case_set_hash_match": true,
+    "legacy_manifest_case_set_hash": "9b408d5d013ac284",
+    "legacy_manifest_case_set_hash_in_manifest": "9b408d5d013ac284",
+    "legacy_matches_actual": false,
+    "discrepancy_note": "Inherited P7 metadata inconsistency: frozen p7_llm_manifest.json records case_set_hash 9b408d5d013ac284, but the frozen case_set_hash() over the authentic on-disk p7_dev_cases.jsonl yields da556e3923daec5a. The historical cause of the recorded manifest value is UNKNOWN (not established). The case file is authentic (byte SHA-256 matches RESULT_FROZEN PACKAGE_MANIFEST). No frozen artifact was modified; the evaluator gates on the byte SHA-256 + the actual semantic hash and records the legacy manifest value for reference only.",
+    "frozen_case_file_byte_identity_verified": true
+  },
+  "raw_historical_reproduction": {
+    "recomputed_equivalence": {
+      "validated_payload_equivalence_rate": 0.9512,
+      "validated_payload_equivalence_denominator": 41,
+      "boundary_state_execution_equivalence_rate": 1.0,
+      "boundary_state_execution_equivalence_denominator": 12,
+      "boundary_state_execution_equivalence_true": 12,
+      "outcome_equivalence_not_applicable": 29,
+      "note": "EXECUTION-level equivalence over the minimal BoundaryState executor (action applied to independent cloned plan state), NOT the full FarmSync optimiser/reoptimisation handler. Full deterministic FarmSync outcome equivalence (running the actual reopt handler) is a publication-evaluation strengthening item, not built here. Payload equivalence is separate/weaker."
+    },
+    "n_cases": 41,
+    "raw_historical_compatibility_pass": true,
+    "deterministic_boundary_frozen_match": true,
+    "n_cases_frozen_match": true,
+    "validated_payload_equivalence_rate": 0.9512,
+    "validated_payload_equivalence_denominator": 41,
+    "boundary_state_execution_equivalence_rate": 1.0,
+    "boundary_state_execution_equivalence_denominator": 12,
+    "outcome_equivalence_not_applicable": 29,
+    "expected_profile": {
+      "n_cases": 41,
+      "payload_rate": 0.9512,
+      "payload_denominator": 41,
+      "execution_rate": 1.0,
+      "execution_denominator": 12,
+      "outcome_na": 29
+    }
+  },
+  "current_semantics_projection": {
+    "current_semantics_projection_pass": true,
+    "validated_payload_equivalence_rate": 1.0,
+    "validated_payload_equivalence_denominator": 41,
+    "boundary_state_execution_equivalence_rate": 1.0,
+    "boundary_state_execution_equivalence_denominator": 12,
+    "withdraw_execution_not_applicable": true,
+    "recomputed_equivalence": {
+      "validated_payload_equivalence_rate": 1.0,
+      "validated_payload_equivalence_denominator": 41,
+      "boundary_state_execution_equivalence_rate": 1.0,
+      "boundary_state_execution_equivalence_denominator": 12,
+      "boundary_state_execution_equivalence_true": 12,
+      "outcome_equivalence_not_applicable": 29,
+      "note": "EXECUTION-level equivalence over the minimal BoundaryState executor (action applied to independent cloned plan state), NOT the full FarmSync optimiser/reoptimisation handler. Full deterministic FarmSync outcome equivalence (running the actual reopt handler) is a publication-evaluation strengthening item, not built here. Payload equivalence is separate/weaker."
+    }
+  },
+  "reconciliation": {
+    "reconciliation_ids": [
+      "wd0",
+      "wd1"
+    ],
+    "divergent_ids": [
+      "wd0",
+      "wd1"
+    ],
+    "reconciled_cases": [
+      {
+        "id": "wd0",
+        "category": "withdraw_parsing",
+        "legacy_gold_validation_outcome": "NOT_IMPLEMENTED",
+        "legacy_reason_codes": [
+          "WITHDRAW_REQUIRES_POLICY"
+        ],
+        "legacy_gold_payload": null,
+        "current_authoritative_validation_outcome": "VALIDATED",
+        "current_authoritative_payload": {
+          "action": "WITHDRAW",
+          "farmer_id": "F0001",
+          "plot_id": "F0001-P03",
+          "scope": "CYCLE_PARTICIPATION",
+          "administrative_only": false,
+          "physical_crop_immutable": false,
+          "removes_flexible_land_from_decision_set": true,
+          "invalidates_active_consent_for_final_realized": true
+        },
+        "current_reason_codes": [
+          "WITHDRAW_CYCLE_PARTICIPATION"
+        ],
+        "derivation": "frozen validate_request (not hard-coded)",
+        "note": "Legacy Phase-7 WITHDRAW reference (NOT_IMPLEMENTED / WITHDRAW_REQUIRES_POLICY / payload None) predates the action-consent-v1 deterministic withdrawal policy now implemented by the frozen validator; earlier P7 artifacts are intentionally preserved and NOT modified."
+      },
+      {
+        "id": "wd1",
+        "category": "withdraw_parsing",
+        "legacy_gold_validation_outcome": "NOT_IMPLEMENTED",
+        "legacy_reason_codes": [
+          "WITHDRAW_REQUIRES_POLICY"
+        ],
+        "legacy_gold_payload": null,
+        "current_authoritative_validation_outcome": "VALIDATED",
+        "current_authoritative_payload": {
+          "action": "WITHDRAW",
+          "farmer_id": "F0001",
+          "plot_id": "F0001-P03",
+          "scope": "CYCLE_PARTICIPATION",
+          "administrative_only": false,
+          "physical_crop_immutable": false,
+          "removes_flexible_land_from_decision_set": true,
+          "invalidates_active_consent_for_final_realized": true
+        },
+        "current_reason_codes": [
+          "WITHDRAW_CYCLE_PARTICIPATION"
+        ],
+        "derivation": "frozen validate_request (not hard-coded)",
+        "note": "Legacy Phase-7 WITHDRAW reference (NOT_IMPLEMENTED / WITHDRAW_REQUIRES_POLICY / payload None) predates the action-consent-v1 deterministic withdrawal policy now implemented by the frozen validator; earlier P7 artifacts are intentionally preserved and NOT modified."
+      }
+    ],
+    "evaluation_projection_id": "0104854b00e5e8e9",
+    "evaluation_projection_sha256": "0104854b00e5e8e9a47939d248be1b9bdaab30d524dafe5d0a11d4a8caf287ba"
+  },
+  "n_cases": 41,
+  "duration_s": 0.037,
+  "fixture": {
+    "instance_hash": "5ea24037c2d9cb6a",
+    "instance_hash_verified": true,
+    "processed_dir_readonly": true
+  },
+  "boundary_gate": {
+    "boundary_integrity_pass": true,
+    "validated_payload_equivalence_rate": 1.0,
+    "validated_payload_equivalence_denominator": 41,
+    "boundary_state_execution_equivalence_rate": 1.0,
+    "boundary_state_execution_equivalence_denominator": 12
+  },
+  "reliability": {
+    "n_cases": 41,
+    "OK": 41,
+    "API_ERROR": 0,
+    "MODEL_REFUSAL": 0,
+    "SCHEMA_INVALID": 0,
+    "other_status": 0,
+    "schema_valid": 41,
+    "schema_invalid": 0,
+    "reconciles": true
+  },
+  "latency_ms_summary": null,
+  "metrics": {
+    "n_cases": 41,
+    "live_evaluation": false,
+    "client": "mock",
+    "api_failures": 0,
+    "api_success": 41,
+    "_group_deterministic_boundary": {
+      "invalid_action_rejection_rate": 1.0,
+      "hard_lock_rejection_rate": 1.0,
+      "unsupported_constraint_handled_rate": 1.0,
+      "source_text_authoritative_rate": 1.0
+    },
+    "_group_equivalence": {
+      "validated_payload_equivalence_rate": 1.0,
+      "validated_payload_equivalence_denominator": 41,
+      "boundary_state_execution_equivalence_rate": 1.0,
+      "boundary_state_execution_equivalence_denominator": 12,
+      "boundary_state_execution_equivalence_true": 12,
+      "outcome_equivalence_not_applicable": 29,
+      "note": "EXECUTION-level equivalence over the minimal BoundaryState executor (action applied to independent cloned plan state), NOT the full FarmSync optimiser/reoptimisation handler. Full deterministic FarmSync outcome equivalence (running the actual reopt handler) is a publication-evaluation strengthening item, not built here. Payload equivalence is separate/weaker."
+    },
+    "_group_explanation": {
+      "explanation_groundedness_rate": 1.0,
+      "numerical_consistency_rate": 1.0,
+      "unsupported_explanation_rate": 0.0
+    },
+    "note": "MOCK development reproduction (architecture validation); not live accuracy.",
+    "model": "gpt-5.6-terra",
+    "scorer_provenance": "farmsync.proposed.llm_eval._metrics (frozen; formulas reused, not modified)",
+    "_group_parse_metrics_MOCK_development": {
+      "schema_valid_rate": 1.0,
+      "action_exact_match": 1.0,
+      "field_precision": 1.0,
+      "field_recall": 1.0,
+      "field_f1": 1.0,
+      "crop_extraction_accuracy": 1.0,
+      "farmer_extraction_accuracy": 1.0,
+      "plot_extraction_accuracy": 1.0,
+      "numeric_extraction_accuracy": 1.0,
+      "unit_accuracy": 1.0,
+      "clarification_precision": 1.0,
+      "clarification_recall": 1.0
+    }
+  },
+  "api_key_persisted": false,
+  "raw_text_persisted": false
+}

@@ -1,0 +1,22 @@
+{
+  "390x844": {
+    "horizontal_overflow_stages": [],
+    "zero_size_controls": 0,
+    "clipped_primary": 0
+  },
+  "768x1024": {
+    "horizontal_overflow_stages": [],
+    "zero_size_controls": 0,
+    "clipped_primary": 0
+  },
+  "1366x768": {
+    "horizontal_overflow_stages": [],
+    "zero_size_controls": 0,
+    "clipped_primary": 0
+  },
+  "1920x1080": {
+    "horizontal_overflow_stages": [],
+    "zero_size_controls": 0,
+    "clipped_primary": 0
+  }
+}

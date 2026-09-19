@@ -1,0 +1,41 @@
+{
+  "analysis_file_count": 83,
+  "analysis_manifest_sha256": "eaec4dfaac62e4f744833045aaf8202631debd959f0da4eab6d6f10291cf88a4",
+  "analysis_runtime": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.4.1",
+    "python": "3.12.8",
+    "scipy": "1.18.1"
+  },
+  "analysis_set_sha256": "2d5641c4a2e93321707a7f0400d9ad1e61e966bdc31147bb6c591b74f35b1df2",
+  "analysis_source": "results/farmsync/final30_analysis_v1",
+  "dataset_attestation_sha256": "fd42123f24a6823484dc0fa0f5d34192c8c23ea9a03e45d4674e42515bb3514e",
+  "figure_index_sha256": "432da150bad086fad2be817e592542ae24f787be4db6a047255f1829d6baa97b",
+  "final_analysis_qa_sha256": "4b47e25583968128ca9bf729db7e88e3ea9c41f17243b1421c9791a73c841a3d",
+  "immutability": {
+    "analysis_directory_frozen": true,
+    "derived_from_sealed_raw": true,
+    "modify_after_seal": false
+  },
+  "manuscript_numbers_sha256": "a3265bc93f30eac767d635020a68f8bc357d9ce036ac6a0e48c646fdea2491ff",
+  "manuscript_tables_sha256": "11730e885302fc9adf75a40e651a41076ce0e73bd76445ed8e1a9f9dc2297a6a",
+  "matrix_sha256": "b339a43ab581a0d481da230b84918363bc82f771b993f575c50ea903cdecc0f0",
+  "raw_cell_count": 900,
+  "raw_freeze_source": null,
+  "raw_source": "results/farmsync/final30_v1",
+  "reproducibility_statement_sha256": "1ed15407f54d6eaa913126a6181a3cc33ce00c2184f3d8b830c4965d2ffb3007",
+  "schema": "farmsync-final30-analysis-freeze-v1",
+  "sealed_utc": "2026-09-19T09:25:29+00:00",
+  "solver_amendment_sha256": "1d42d59e3c1ba404d13f5c557560e943c222030b1a21ec65094534140cf865b8",
+  "source_commit": "86129ec71998288db29bf562a7e1b1a9bcc2c9ae",
+  "status": "SEALED",
+  "top_level_file_counts": {
+    "MANIFEST.json": 1,
+    "figures": 21,
+    "manuscript_inputs": 4,
+    "qa": 9,
+    "statistics": 25,
+    "summaries": 5,
+    "tables": 18
+  }
+}

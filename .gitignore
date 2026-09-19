@@ -1,0 +1,51 @@
+# ------------------------------------------------------------------
+# Secrets / local configuration
+# ------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# ------------------------------------------------------------------
+# Python virtual environments
+# ------------------------------------------------------------------
+.venv/
+venv/
+env/
+
+# ------------------------------------------------------------------
+# Python generated files
+# ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ------------------------------------------------------------------
+# Coverage / test artefacts
+# ------------------------------------------------------------------
+.coverage
+.coverage.*
+htmlcov/
+playwright-report/
+test-results/
+
+# Large local browser trace generated during QA.
+# Publication evidence/results are NOT broadly ignored.
+results/farmsync/qa/browser/traces/chromium_trace.zip
+
+# ------------------------------------------------------------------
+# Local logs / temporary files
+# ------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+
+# ------------------------------------------------------------------
+# IDE / OS metadata
+# ------------------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

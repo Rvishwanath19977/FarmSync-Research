@@ -1,0 +1,36 @@
+{
+  "completion": "COMPLETE",
+  "dataset_attestation_sha256": "fd42123f24a6823484dc0fa0f5d34192c8c23ea9a03e45d4674e42515bb3514e",
+  "family": "ACTION_ROBUSTNESS",
+  "matrix_sha256": "b339a43ab581a0d481da230b84918363bc82f771b993f575c50ea903cdecc0f0",
+  "parameters": {
+    "alpha_fixed": 0.4,
+    "lambda_fixed": 0.05,
+    "profile": "S2"
+  },
+  "payload": {
+    "consent_coverage_final": null,
+    "disruption": {
+      "changed_soft_area": null,
+      "disruption_rate": null,
+      "soft_lock_area": null
+    },
+    "profile": "S2",
+    "proposed": {
+      "alpha": 0.4,
+      "failed_stage": "proposed.reopt_phase3",
+      "lambda": 0.05,
+      "optimal": false,
+      "profile": "S2",
+      "runtime_s": 10.573855099995853,
+      "status": "Infeasible",
+      "tiers": null
+    },
+    "tiers": null
+  },
+  "reused_from": null,
+  "schema": "farmsync-final30-cell-v1",
+  "seed": 627177,
+  "source_commit": "86129ec71998288db29bf562a7e1b1a9bcc2c9ae",
+  "written_utc": "2026-09-18T23:33:53+00:00"
+}

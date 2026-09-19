@@ -1,0 +1,2244 @@
+{
+  "cells": [
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ACTION_ROBUSTNESS",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda_fixed": 0.05,
+        "profile": "PRIMARY"
+      },
+      "relative_path": "action_robustness/seed_196157__profile=PRIMARY.json",
+      "runtime_s": 10.287327900005039,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ACTION_ROBUSTNESS",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda_fixed": 0.05,
+        "profile": "S1"
+      },
+      "relative_path": "action_robustness/seed_196157__profile=S1.json",
+      "runtime_s": 10.3058704000141,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ACTION_ROBUSTNESS",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda_fixed": 0.05,
+        "profile": "S2"
+      },
+      "relative_path": "action_robustness/seed_196157__profile=S2.json",
+      "runtime_s": 10.265540099993814,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ACTION_ROBUSTNESS",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda_fixed": 0.05,
+        "profile": "S2"
+      },
+      "relative_path": "action_robustness/seed_331297__profile=S2.json",
+      "runtime_s": 11.691087499988498,
+      "seed": 331297,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ACTION_ROBUSTNESS",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda_fixed": 0.05,
+        "profile": "PRIMARY"
+      },
+      "relative_path": "action_robustness/seed_496928__profile=PRIMARY.json",
+      "runtime_s": 11.639262899989262,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ACTION_ROBUSTNESS",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda_fixed": 0.05,
+        "profile": "S1"
+      },
+      "relative_path": "action_robustness/seed_496928__profile=S1.json",
+      "runtime_s": 12.198560999997426,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ACTION_ROBUSTNESS",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda_fixed": 0.05,
+        "profile": "S2"
+      },
+      "relative_path": "action_robustness/seed_496928__profile=S2.json",
+      "runtime_s": 12.10218420001911,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ACTION_ROBUSTNESS",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda_fixed": 0.05,
+        "profile": "PRIMARY"
+      },
+      "relative_path": "action_robustness/seed_621609__profile=PRIMARY.json",
+      "runtime_s": 11.882910700020147,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ACTION_ROBUSTNESS",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda_fixed": 0.05,
+        "profile": "S1"
+      },
+      "relative_path": "action_robustness/seed_621609__profile=S1.json",
+      "runtime_s": 11.569296899979236,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ACTION_ROBUSTNESS",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda_fixed": 0.05,
+        "profile": "S2"
+      },
+      "relative_path": "action_robustness/seed_621609__profile=S2.json",
+      "runtime_s": 11.879009199998109,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ACTION_ROBUSTNESS",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda_fixed": 0.05,
+        "profile": "PRIMARY"
+      },
+      "relative_path": "action_robustness/seed_627177__profile=PRIMARY.json",
+      "runtime_s": 10.635544499993557,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ACTION_ROBUSTNESS",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda_fixed": 0.05,
+        "profile": "S2"
+      },
+      "relative_path": "action_robustness/seed_627177__profile=S2.json",
+      "runtime_s": 10.573855099995853,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.33,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_196157__alpha=0.33.json",
+      "runtime_s": 10.311796399997547,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.4,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_196157__alpha=0.40.json",
+      "runtime_s": 10.287327900005039,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.5,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_196157__alpha=0.50.json",
+      "runtime_s": 10.288466000027256,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.6,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_196157__alpha=0.60.json",
+      "runtime_s": 10.292744300008053,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 1.0,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_196157__alpha=1.00.json",
+      "runtime_s": 10.453552399994805,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.33,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_496928__alpha=0.33.json",
+      "runtime_s": 12.525314999977127,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.4,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_496928__alpha=0.40.json",
+      "runtime_s": 11.639262899989262,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.5,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_496928__alpha=0.50.json",
+      "runtime_s": 12.37168500002008,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.6,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_496928__alpha=0.60.json",
+      "runtime_s": 12.71562560001621,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 1.0,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_496928__alpha=1.00.json",
+      "runtime_s": 12.217557299998589,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.33,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_621609__alpha=0.33.json",
+      "runtime_s": 11.821318200003589,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.4,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_621609__alpha=0.40.json",
+      "runtime_s": 11.882910700020147,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.5,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_621609__alpha=0.50.json",
+      "runtime_s": 11.87574499999755,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.6,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_621609__alpha=0.60.json",
+      "runtime_s": 11.52099140000064,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 1.0,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_621609__alpha=1.00.json",
+      "runtime_s": 11.705667500005802,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.33,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_627177__alpha=0.33.json",
+      "runtime_s": 10.54063849998056,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.4,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_627177__alpha=0.40.json",
+      "runtime_s": 10.635544499993557,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.5,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_627177__alpha=0.50.json",
+      "runtime_s": 10.552090499986662,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 0.6,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_627177__alpha=0.60.json",
+      "runtime_s": 10.371274200006155,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "ALPHA_CONCENTRATION",
+      "parameters": {
+        "alpha": 1.0,
+        "lambda_fixed": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "alpha_concentration/seed_627177__alpha=1.00.json",
+      "runtime_s": 10.510207600018475,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": null,
+      "family": "EPSILON_SENSITIVITY",
+      "parameters": {
+        "epsilon": 1.0
+      },
+      "relative_path": "epsilon_sensitivity/seed_321611__epsilon=1.00.json",
+      "runtime_s": 120.06,
+      "seed": 321611,
+      "status": "Not Solved",
+      "target": "B3"
+    },
+    {
+      "failed_stage": null,
+      "family": "EPSILON_SENSITIVITY",
+      "parameters": {
+        "epsilon": 1.0
+      },
+      "relative_path": "epsilon_sensitivity/seed_737579__epsilon=1.00.json",
+      "runtime_s": 120.05,
+      "seed": 737579,
+      "status": "Not Solved",
+      "target": "B3"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.0,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_196157__lambda=0.00.json",
+      "runtime_s": 10.405556700017769,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_196157__lambda=0.05.json",
+      "runtime_s": 10.287327900005039,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.1,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_196157__lambda=0.10.json",
+      "runtime_s": 10.320381800003815,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.25,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_196157__lambda=0.25.json",
+      "runtime_s": 10.34721740000532,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.5,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_196157__lambda=0.50.json",
+      "runtime_s": 10.177228999993531,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 1.0,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_196157__lambda=1.00.json",
+      "runtime_s": 10.374708400020609,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.0,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_496928__lambda=0.00.json",
+      "runtime_s": 11.477700499992352,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_496928__lambda=0.05.json",
+      "runtime_s": 11.639262899989262,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.1,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_496928__lambda=0.10.json",
+      "runtime_s": 11.556153299985453,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.25,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_496928__lambda=0.25.json",
+      "runtime_s": 11.83267020000494,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.5,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_496928__lambda=0.50.json",
+      "runtime_s": 11.191842200001702,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 1.0,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_496928__lambda=1.00.json",
+      "runtime_s": 12.449929199996404,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.0,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_621609__lambda=0.00.json",
+      "runtime_s": 11.918784199981019,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_621609__lambda=0.05.json",
+      "runtime_s": 11.882910700020147,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.1,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_621609__lambda=0.10.json",
+      "runtime_s": 11.83037239999976,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.25,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_621609__lambda=0.25.json",
+      "runtime_s": 12.359065699973144,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.5,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_621609__lambda=0.50.json",
+      "runtime_s": 12.684380699996836,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 1.0,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_621609__lambda=1.00.json",
+      "runtime_s": 13.483894200006034,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.0,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_627177__lambda=0.00.json",
+      "runtime_s": 10.301578599988716,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.05,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_627177__lambda=0.05.json",
+      "runtime_s": 10.635544499993557,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.1,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_627177__lambda=0.10.json",
+      "runtime_s": 10.525873900012812,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.25,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_627177__lambda=0.25.json",
+      "runtime_s": 10.363609299995005,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 0.5,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_627177__lambda=0.50.json",
+      "runtime_s": 10.48853770000278,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "LAMBDA_STABILITY",
+      "parameters": {
+        "alpha_fixed": 0.4,
+        "lambda": 1.0,
+        "profile_fixed": "PRIMARY"
+      },
+      "relative_path": "lambda_stability/seed_627177__lambda=1.00.json",
+      "runtime_s": 10.47484660000191,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "PRIMARY",
+      "parameters": {},
+      "relative_path": "primary/seed_196157.json",
+      "runtime_s": 10.287327900005039,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "PRIMARY",
+      "parameters": {},
+      "relative_path": "primary/seed_496928.json",
+      "runtime_s": 11.639262899989262,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "PRIMARY",
+      "parameters": {},
+      "relative_path": "primary/seed_621609.json",
+      "runtime_s": 11.882910700020147,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "PRIMARY",
+      "parameters": {},
+      "relative_path": "primary/seed_627177.json",
+      "runtime_s": 10.635544499993557,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_192338__n_farmers=100.json",
+      "runtime_s": 2.2553358000004664,
+      "seed": 192338,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_192338__n_farmers=25.json",
+      "runtime_s": 0.7392075000097975,
+      "seed": 192338,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 500,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_196157__n_farmers=500.json",
+      "runtime_s": 10.287327900005039,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_200768__n_farmers=100.json",
+      "runtime_s": 4.313415999989957,
+      "seed": 200768,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_200768__n_farmers=25.json",
+      "runtime_s": 1.122243800025899,
+      "seed": 200768,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_200768__n_farmers=50.json",
+      "runtime_s": 1.5011932000052184,
+      "seed": 200768,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase3_e_star",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_222335__n_farmers=25.json",
+      "runtime_s": 0.6950017999915872,
+      "seed": 222335,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_222335__n_farmers=50.json",
+      "runtime_s": 1.5699496000015642,
+      "seed": 222335,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_262122__n_farmers=50.json",
+      "runtime_s": 1.4633857999870088,
+      "seed": 262122,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_288572__n_farmers=100.json",
+      "runtime_s": 2.5332259999995586,
+      "seed": 288572,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_288572__n_farmers=25.json",
+      "runtime_s": 0.6832703999825753,
+      "seed": 288572,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_288572__n_farmers=50.json",
+      "runtime_s": 1.4577194000012241,
+      "seed": 288572,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_320290__n_farmers=100.json",
+      "runtime_s": 2.275533899985021,
+      "seed": 320290,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_320290__n_farmers=25.json",
+      "runtime_s": 0.7364044999994803,
+      "seed": 320290,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_320290__n_farmers=50.json",
+      "runtime_s": 1.3920822000072803,
+      "seed": 320290,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_321611__n_farmers=100.json",
+      "runtime_s": 2.8738047999795526,
+      "seed": 321611,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_321611__n_farmers=25.json",
+      "runtime_s": 0.746956399991177,
+      "seed": 321611,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_321611__n_farmers=50.json",
+      "runtime_s": 1.436506099998951,
+      "seed": 321611,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_331297__n_farmers=100.json",
+      "runtime_s": 2.095674699987285,
+      "seed": 331297,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_331297__n_farmers=25.json",
+      "runtime_s": 0.7988589000015054,
+      "seed": 331297,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 250,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_331297__n_farmers=250.json",
+      "runtime_s": 5.4864258999878075,
+      "seed": 331297,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_331297__n_farmers=50.json",
+      "runtime_s": 1.3774827999877743,
+      "seed": 331297,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_385101__n_farmers=100.json",
+      "runtime_s": 2.2980413000041153,
+      "seed": 385101,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_385101__n_farmers=25.json",
+      "runtime_s": 0.7814837999758311,
+      "seed": 385101,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 250,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_385101__n_farmers=250.json",
+      "runtime_s": 6.335476100008236,
+      "seed": 385101,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_385101__n_farmers=50.json",
+      "runtime_s": 1.085194599989336,
+      "seed": 385101,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_449132__n_farmers=100.json",
+      "runtime_s": 2.5382246999943163,
+      "seed": 449132,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_449132__n_farmers=25.json",
+      "runtime_s": 0.8577549000037834,
+      "seed": 449132,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_449132__n_farmers=50.json",
+      "runtime_s": 1.4627669000183232,
+      "seed": 449132,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_496928__n_farmers=100.json",
+      "runtime_s": 2.1161646000109613,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_496928__n_farmers=25.json",
+      "runtime_s": 0.7217393000028096,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_496928__n_farmers=50.json",
+      "runtime_s": 1.174031600006856,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 500,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_496928__n_farmers=500.json",
+      "runtime_s": 11.639262899989262,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_514942__n_farmers=25.json",
+      "runtime_s": 0.8763136000197846,
+      "seed": 514942,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_514942__n_farmers=50.json",
+      "runtime_s": 1.227329000015743,
+      "seed": 514942,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_52314__n_farmers=100.json",
+      "runtime_s": 2.2383254999876954,
+      "seed": 52314,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_52314__n_farmers=25.json",
+      "runtime_s": 1.1431921000184957,
+      "seed": 52314,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 250,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_52314__n_farmers=250.json",
+      "runtime_s": 14.020197000005282,
+      "seed": 52314,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_52314__n_farmers=50.json",
+      "runtime_s": 1.2185524000087753,
+      "seed": 52314,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_57684__n_farmers=100.json",
+      "runtime_s": 5.850136000022758,
+      "seed": 57684,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_57684__n_farmers=25.json",
+      "runtime_s": 1.6088782000006177,
+      "seed": 57684,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_57684__n_farmers=50.json",
+      "runtime_s": 2.6853603000054136,
+      "seed": 57684,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_621609__n_farmers=25.json",
+      "runtime_s": 0.8887036999803968,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 250,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_621609__n_farmers=250.json",
+      "runtime_s": 5.950859600008698,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_621609__n_farmers=50.json",
+      "runtime_s": 1.5978143000102136,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 500,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_621609__n_farmers=500.json",
+      "runtime_s": 11.882910700020147,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_627177__n_farmers=25.json",
+      "runtime_s": 0.6959756999858655,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_627177__n_farmers=50.json",
+      "runtime_s": 1.129668200010201,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 500,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_627177__n_farmers=500.json",
+      "runtime_s": 10.635544499993557,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_637394__n_farmers=100.json",
+      "runtime_s": 2.2324616000114474,
+      "seed": 637394,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_637394__n_farmers=25.json",
+      "runtime_s": 0.7554072000202723,
+      "seed": 637394,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_637394__n_farmers=50.json",
+      "runtime_s": 1.2319884000171442,
+      "seed": 637394,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_651976__n_farmers=100.json",
+      "runtime_s": 2.762171699985629,
+      "seed": 651976,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_651976__n_farmers=25.json",
+      "runtime_s": 0.9866693000076339,
+      "seed": 651976,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_651976__n_farmers=50.json",
+      "runtime_s": 1.6326009999902453,
+      "seed": 651976,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_65693__n_farmers=100.json",
+      "runtime_s": 2.1951176000002306,
+      "seed": 65693,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_65693__n_farmers=25.json",
+      "runtime_s": 0.6971474000019953,
+      "seed": 65693,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_679242__n_farmers=25.json",
+      "runtime_s": 0.7434869999997318,
+      "seed": 679242,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_679242__n_farmers=50.json",
+      "runtime_s": 1.2781853000051342,
+      "seed": 679242,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_720982__n_farmers=100.json",
+      "runtime_s": 2.662345299992012,
+      "seed": 720982,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_720982__n_farmers=25.json",
+      "runtime_s": 0.6931661999842618,
+      "seed": 720982,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_720982__n_farmers=50.json",
+      "runtime_s": 1.159212700003991,
+      "seed": 720982,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_737579__n_farmers=100.json",
+      "runtime_s": 2.541614399990067,
+      "seed": 737579,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_737579__n_farmers=25.json",
+      "runtime_s": 0.7755786999769043,
+      "seed": 737579,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_737579__n_farmers=50.json",
+      "runtime_s": 1.148975199990673,
+      "seed": 737579,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_750647__n_farmers=25.json",
+      "runtime_s": 0.7715416999999434,
+      "seed": 750647,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_750647__n_farmers=50.json",
+      "runtime_s": 1.3380096000037156,
+      "seed": 750647,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_80120__n_farmers=100.json",
+      "runtime_s": 1.8796799999836367,
+      "seed": 80120,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_80120__n_farmers=25.json",
+      "runtime_s": 0.9333009000110906,
+      "seed": 80120,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_80120__n_farmers=50.json",
+      "runtime_s": 1.2144307999988087,
+      "seed": 80120,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_803466__n_farmers=25.json",
+      "runtime_s": 0.9967946999822743,
+      "seed": 803466,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_870215__n_farmers=25.json",
+      "runtime_s": 0.8720035000005737,
+      "seed": 870215,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_870215__n_farmers=50.json",
+      "runtime_s": 1.5114959999918938,
+      "seed": 870215,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_885219__n_farmers=100.json",
+      "runtime_s": 2.6173062000016216,
+      "seed": 885219,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_885219__n_farmers=25.json",
+      "runtime_s": 0.9522514999844134,
+      "seed": 885219,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_885219__n_farmers=50.json",
+      "runtime_s": 1.3915548000077251,
+      "seed": 885219,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_908270__n_farmers=100.json",
+      "runtime_s": 2.2339116999937687,
+      "seed": 908270,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_908270__n_farmers=25.json",
+      "runtime_s": 0.6873179999820422,
+      "seed": 908270,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_908270__n_farmers=50.json",
+      "runtime_s": 1.1708275999990292,
+      "seed": 908270,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 100,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_947906__n_farmers=100.json",
+      "runtime_s": 2.3932559000095353,
+      "seed": 947906,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 25,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_947906__n_farmers=25.json",
+      "runtime_s": 0.7481366000138223,
+      "seed": 947906,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "SCALABILITY",
+      "parameters": {
+        "n_farmers": 50,
+        "population_semantics": "total generated synthetic farmers"
+      },
+      "relative_path": "scalability/seed_947906__n_farmers=50.json",
+      "runtime_s": 1.3258037000196055,
+      "seed": 947906,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "U0"
+      },
+      "relative_path": "uncertainty/seed_196157__condition=U0.json",
+      "runtime_s": null,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UP"
+      },
+      "relative_path": "uncertainty/seed_196157__condition=UP.json",
+      "runtime_s": null,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UR"
+      },
+      "relative_path": "uncertainty/seed_196157__condition=UR.json",
+      "runtime_s": null,
+      "seed": 196157,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UM"
+      },
+      "relative_path": "uncertainty/seed_320290__condition=UM.json",
+      "runtime_s": null,
+      "seed": 320290,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UJ"
+      },
+      "relative_path": "uncertainty/seed_331297__condition=UJ.json",
+      "runtime_s": null,
+      "seed": 331297,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UP"
+      },
+      "relative_path": "uncertainty/seed_331297__condition=UP.json",
+      "runtime_s": null,
+      "seed": 331297,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UJ"
+      },
+      "relative_path": "uncertainty/seed_449132__condition=UJ.json",
+      "runtime_s": null,
+      "seed": 449132,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UM"
+      },
+      "relative_path": "uncertainty/seed_449132__condition=UM.json",
+      "runtime_s": null,
+      "seed": 449132,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "U0"
+      },
+      "relative_path": "uncertainty/seed_496928__condition=U0.json",
+      "runtime_s": null,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UM"
+      },
+      "relative_path": "uncertainty/seed_496928__condition=UM.json",
+      "runtime_s": null,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UP"
+      },
+      "relative_path": "uncertainty/seed_496928__condition=UP.json",
+      "runtime_s": null,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UR"
+      },
+      "relative_path": "uncertainty/seed_496928__condition=UR.json",
+      "runtime_s": null,
+      "seed": 496928,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UJ"
+      },
+      "relative_path": "uncertainty/seed_514942__condition=UJ.json",
+      "runtime_s": null,
+      "seed": 514942,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UJ"
+      },
+      "relative_path": "uncertainty/seed_52314__condition=UJ.json",
+      "runtime_s": null,
+      "seed": 52314,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "U0"
+      },
+      "relative_path": "uncertainty/seed_621609__condition=U0.json",
+      "runtime_s": null,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UJ"
+      },
+      "relative_path": "uncertainty/seed_621609__condition=UJ.json",
+      "runtime_s": null,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UM"
+      },
+      "relative_path": "uncertainty/seed_621609__condition=UM.json",
+      "runtime_s": null,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UP"
+      },
+      "relative_path": "uncertainty/seed_621609__condition=UP.json",
+      "runtime_s": null,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UR"
+      },
+      "relative_path": "uncertainty/seed_621609__condition=UR.json",
+      "runtime_s": null,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UW"
+      },
+      "relative_path": "uncertainty/seed_621609__condition=UW.json",
+      "runtime_s": null,
+      "seed": 621609,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "U0"
+      },
+      "relative_path": "uncertainty/seed_627177__condition=U0.json",
+      "runtime_s": null,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UM"
+      },
+      "relative_path": "uncertainty/seed_627177__condition=UM.json",
+      "runtime_s": null,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UP"
+      },
+      "relative_path": "uncertainty/seed_627177__condition=UP.json",
+      "runtime_s": null,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UR"
+      },
+      "relative_path": "uncertainty/seed_627177__condition=UR.json",
+      "runtime_s": null,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UW"
+      },
+      "relative_path": "uncertainty/seed_627177__condition=UW.json",
+      "runtime_s": null,
+      "seed": 627177,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.phase4_e_star_alpha",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UM"
+      },
+      "relative_path": "uncertainty/seed_65693__condition=UM.json",
+      "runtime_s": null,
+      "seed": 65693,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    },
+    {
+      "failed_stage": "proposed.reopt_phase3",
+      "family": "UNCERTAINTY",
+      "parameters": {
+        "condition": "UW"
+      },
+      "relative_path": "uncertainty/seed_80120__condition=UW.json",
+      "runtime_s": null,
+      "seed": 80120,
+      "status": "Infeasible",
+      "target": "PROPOSED"
+    }
+  ],
+  "count": 171,
+  "schema": "farmsync-final30-nonoptimal-cells-v1"
+}

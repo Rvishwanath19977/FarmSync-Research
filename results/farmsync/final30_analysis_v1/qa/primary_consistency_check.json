@@ -1,0 +1,54 @@
+{
+  "b3_equals_proposed_planned_for_feasible_runs": true,
+  "baseline_all_optimal": true,
+  "comparison_boundary": {
+    "baseline_state": "PLANNED",
+    "proposed_states": [
+      "PLANNED",
+      "INITIAL_REALIZED",
+      "RECOMMENDED_REVISED",
+      "FINAL_REALIZED"
+    ],
+    "rule": "Do not interpret baseline PLANNED cash and Proposed FINAL_REALIZED cash as equivalent treatment states."
+  },
+  "consistency_errors": [],
+  "generated_utc": "2026-09-19T09:08:35+00:00",
+  "primary_cells": 30,
+  "proposed_nonoptimal_count": 4,
+  "proposed_nonoptimal_seeds": [
+    196157,
+    496928,
+    621609,
+    627177
+  ],
+  "proposed_optimal_count": 26,
+  "proposed_optimal_seeds": [
+    192338,
+    200768,
+    222335,
+    262122,
+    288572,
+    320290,
+    321611,
+    331297,
+    385101,
+    449132,
+    514942,
+    52314,
+    57684,
+    637394,
+    651976,
+    65693,
+    679242,
+    720982,
+    737579,
+    750647,
+    80120,
+    803466,
+    870215,
+    885219,
+    908270,
+    947906
+  ],
+  "schema": "farmsync-primary-consistency-check-v1"
+}

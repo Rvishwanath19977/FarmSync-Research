@@ -1,0 +1,85 @@
+{
+  "run": "B1_ILP_v2",
+  "metadata": {
+    "model": "B1_ILP_v2",
+    "epsilon": null,
+    "fairness_version": "fairness-v2",
+    "formulation_version": "ilp-ref-v1",
+    "seed": 20260812,
+    "instance_tightness": "base",
+    "solver_status": "Optimal",
+    "runtime_s": 1.6,
+    "min_normalized_return": null,
+    "tstar": null,
+    "solver": {
+      "status": "Optimal",
+      "runtime_s": 1.6,
+      "pulp": "3.3.2",
+      "engine": "CBC",
+      "cbc": "2.10.3",
+      "gapRel": 0.0001,
+      "threads": 1,
+      "timeLimit_s": 120
+    }
+  },
+  "hard_constraints_satisfied": true,
+  "metrics_core": {
+    "total_return": 7814131.0,
+    "total_cash_return": 14644537.0,
+    "gini_farmer_return": 0.706,
+    "mean_farmer_return": 29289.0,
+    "median_farmer_return": 16826.0,
+    "min_farmer_return": 423.0,
+    "plots_allocated": 394,
+    "plots_fallow": 517,
+    "land_utilisation_pct": 42.0,
+    "crop_diversity": 8,
+    "crop_area_ha": {
+      "maize": 120.1,
+      "soybean": 51.8,
+      "onion": 49.8,
+      "rice": 39.8,
+      "groundnut": 39.2,
+      "pigeon_pea": 21.0,
+      "sorghum": 4.7,
+      "cotton": 0.5
+    }
+  },
+  "fairness_v2": {
+    "impl_version": "fairness-v2",
+    "primary": {
+      "per_ha_gini_all": 0.6845,
+      "participation_rate_pct": 58.8,
+      "n_participating": 294,
+      "n_farmers": 500,
+      "fixed_cohort_mean_cash": {
+        "bottom_50_B1ref": 0.0,
+        "bottom_125_B1ref": 0.0
+      },
+      "benefit_loss_vs_b1": {
+        "better": 0,
+        "worse": 0,
+        "unchanged": 500,
+        "mean_delta": 0,
+        "median_delta": 0,
+        "p10_delta": 0,
+        "p90_delta": 0,
+        "tolerance": 1.0
+      }
+    },
+    "supporting": {
+      "abs_gini_all": 0.8269,
+      "per_ha_gini_participants": 0.4634,
+      "abs_gini_participant_only": 0.7056
+    },
+    "efficiency": {
+      "return_per_allocated_ha": 44800.1,
+      "total_cash_return": 14644537.0
+    },
+    "denominators": {
+      "per_ha_gini_all": "farmer cash / total operated area, all 500 incl zeros",
+      "abs_gini_participant_only": "participating farmers only (== legacy frozen gini basis)"
+    }
+  },
+  "legacy_gini_note": "frozen greedy gini_farmer_return was PARTICIPANT-ONLY; preserved in b*_final.json"
+}

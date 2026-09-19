@@ -1,0 +1,6 @@
+alpha,lambda,status,revised_cash,change_vs_p3_lambda005,economic_retention_pct,recovery_vs_p1,recovery_fraction_of_loss,area,total_changed,changed_soft,changed_flex,hard_lock_ok,max_LPS,mean_HHI,median_HHI,target_violations,n_active_crops,per_ha_gini_all,e_star_alpha,t_floor_alpha,runtime_s
+1.0,0.05,Optimal,12340519,0,100.0,876178,0.5222,292.0,30,13,17,True,0.529,0.1178,0.1117,0,8,0.7294,12359219.0,333.8595,0.09
+0.6,0.05,Optimal,12340519,0,100.0,876178,0.5222,292.0,30,13,17,True,0.529,0.1178,0.1117,0,8,0.7294,12359219.0,333.8595,0.18
+0.5,0.05,Optimal,12328480,-12039,99.9,864139,0.515,292.0,31,14,17,True,0.4954,0.1127,0.1117,0,8,0.7292,12347180.0,333.8595,0.21
+0.4,0.05,Optimal,12285254,-55265,99.55,820913,0.4893,292.0,30,13,17,True,0.3988,0.1067,0.1117,0,8,0.7281,12303954.0,333.8595,0.19
+0.33,0.05,Optimal,12235846,-104673,99.15,771505,0.4598,292.0,32,14,18,True,0.3297,0.0981,0.1117,0,8,0.7286,12253283.0,333.8595,0.2

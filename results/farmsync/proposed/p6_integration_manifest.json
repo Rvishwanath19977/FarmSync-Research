@@ -1,0 +1,41 @@
+{
+  "run_id": "p6_dev",
+  "master_seed": 20260812,
+  "instance_hash": "5ea24037c2d9cb6a",
+  "dev_config": {
+    "epsilon": 0.95,
+    "lambda_dev_ref": 0.05,
+    "alpha_dev_ref": 0.4,
+    "fairness_floor_tol": 0.0,
+    "resilience_floor_tol": 1e-07,
+    "scenario_id": "P3_MIXED_V1"
+  },
+  "stage_order": [
+    "stage0_instance",
+    "stage1_static_plan",
+    "stage2_initial_response",
+    "stage3_commitment",
+    "stage4_stability_reopt",
+    "stage5_concentration",
+    "stage6_resilience_demo"
+  ],
+  "referenced_phase_artifacts": {
+    "p1_participation_result.json": "54e38b9288d18ccd",
+    "p2_commitment_result.json": "d67ac99f4564cdfb",
+    "p3_reopt_result.json": "cb32575a5e26b3d3",
+    "p4_concentration_result.json": "8cc8b4e68b2d99d0",
+    "p5_resilience_result.json": "38b9084a8e2da5fd",
+    "b3_ilp_v2.json": "4e1b604ac6df92a2",
+    "baseline_comparison_ilp_v2.json": "826e3cdcdc50da9f"
+  },
+  "reproduction": {
+    "stage2_matches_p1": true,
+    "stage4_matches_p3_lambda005": true,
+    "stage5_matches_p4_alpha040": true
+  },
+  "all_invariants_pass": true,
+  "ledger_size": 1833,
+  "note": "Phase-6 integration references Phase 1-5 artifacts by hash; does not duplicate them",
+  "phase6_traceability_correction": "stage4 ledger added; stage5 crop_before=stage4 crop; allocation-specific consent; economics unchanged",
+  "n_invariants": 20
+}

@@ -1,0 +1,6 @@
+n_farmers,total_runs,proposed_optimal_runs,proposed_nonoptimal_runs,proposed_optimal_rate_pct,failure_types_json
+25,30,2,28,6.6667,"{""Infeasible|proposed.phase3_e_star"": 1, ""Infeasible|proposed.phase4_e_star_alpha"": 23, ""Infeasible|proposed.reopt_phase3"": 4}"
+50,30,4,26,13.3333,"{""Infeasible|proposed.phase4_e_star_alpha"": 22, ""Infeasible|proposed.reopt_phase3"": 4}"
+100,30,10,20,33.3333,"{""Infeasible|proposed.phase4_e_star_alpha"": 17, ""Infeasible|proposed.reopt_phase3"": 3}"
+250,30,26,4,86.6667,"{""Infeasible|proposed.phase4_e_star_alpha"": 2, ""Infeasible|proposed.reopt_phase3"": 2}"
+500,30,26,4,86.6667,"{""Infeasible|proposed.reopt_phase3"": 4}"

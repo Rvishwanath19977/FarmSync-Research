@@ -1,0 +1,10 @@
+{
+  "alpha_0_40_matches_primary": true,
+  "alpha_cells": 150,
+  "consistency_errors": [],
+  "epsilon_cells": 120,
+  "generated_utc": "2026-09-19T09:10:20+00:00",
+  "lambda_0_05_matches_primary": true,
+  "lambda_cells": 180,
+  "schema": "farmsync-sensitivity-consistency-v1"
+}

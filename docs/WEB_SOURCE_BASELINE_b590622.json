@@ -1,0 +1,38 @@
+{
+  "schema": "farmsync-web-source-baseline-v1",
+  "project": "FarmSync-Research",
+  "source_repository": "https://github.com/Rvishwanath19977/ai-powered-portfolio.git",
+  "source_commit": "b590622",
+  "created_at_utc": "2026-09-19T17:33:57.328451+00:00",
+  "purpose": "Records the original FarmSync-specific Flask/template/CSS/JS files before standalone web adaptation.",
+  "files": [
+    {
+      "path": "farmsync_routes.py",
+      "size_bytes": 45363,
+      "sha256": "7c466e358ec612375075eb1daa2bb9abc4346b651922a3b0a4bcba697dbbb3a2",
+      "source_commit": "b590622",
+      "status": "copied_byte_identically_before_standalone_adaptation"
+    },
+    {
+      "path": "templates/farmsync.html",
+      "size_bytes": 10517,
+      "sha256": "520154726c2b4bc44f756314f958b8685c46a921249bdcdb5ff91d148a47c1de",
+      "source_commit": "b590622",
+      "status": "copied_byte_identically_before_standalone_adaptation"
+    },
+    {
+      "path": "static/css/farmsync.css",
+      "size_bytes": 55513,
+      "sha256": "df3b05d4e29b7dcc348f2f208d3ba07c6be994d1cf33b919f52b44bc583ec39b",
+      "source_commit": "b590622",
+      "status": "copied_byte_identically_before_standalone_adaptation"
+    },
+    {
+      "path": "static/js/farmsync.js",
+      "size_bytes": 200787,
+      "sha256": "63822ec365a239f7f6e10609ba1d9e8528b981a23d1edee9048bc95e9a9a5d27",
+      "source_commit": "b590622",
+      "status": "copied_byte_identically_before_standalone_adaptation"
+    }
+  ]
+}
