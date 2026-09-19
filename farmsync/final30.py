@@ -139,6 +139,126 @@ def current_commit() -> str:
     return git_output("rev-parse", "HEAD")
 
 
+STANDALONE_SOURCE_ORIGIN_REL = Path("docs") / "SOURCE_ORIGIN.json"
+STANDALONE_BASELINE_REL = (
+    Path("docs") / "EXTRACTION_BASELINE_b590622.json"
+)
+
+EXPECTED_SOURCE_REPOSITORY = (
+    "https://github.com/Rvishwanath19977/"
+    "ai-powered-portfolio.git"
+)
+EXPECTED_SOURCE_COMMIT = "b590622"
+EXPECTED_SOURCE_SNAPSHOT = "farmsync_source_audit_b590622.zip"
+EXPECTED_SOURCE_SNAPSHOT_SHA256 = (
+    "6bdd8e67b32f56163a5179d860f3852"
+    "b5d8e1c589ae039bcaf34a9f02b854669"
+)
+EXPECTED_EXTRACTION_BASELINE_SHA256 = (
+    "af26bad6bba82393db6572d9592eee917"
+    "81a34e31d9c2cf69fcc9c364f88165c"
+)
+
+
+def _sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def verify_source_provenance() -> dict:
+    """
+    Verify the provenance path appropriate to the current repository.
+
+    Original portfolio checkouts prove provenance through historical
+    Git ancestry.
+
+    The standalone FarmSync-Research repository has an independent Git
+    history, so it proves extraction provenance using the pinned
+    SOURCE_ORIGIN record and the immutable extraction-baseline manifest.
+
+    This function does not alter or regenerate any scientific artefact.
+    """
+    matrix_in_history = is_ancestor(MATRIX_FREEZE_COMMIT)
+    implementation_in_history = is_ancestor(
+        REQUIRED_IMPLEMENTATION_BASE_COMMIT
+    )
+
+    if matrix_in_history and implementation_in_history:
+        return {
+            "verified": True,
+            "mode": "historical_git_ancestry",
+            "matrix_freeze_commit": MATRIX_FREEZE_COMMIT,
+            "implementation_base_commit": (
+                REQUIRED_IMPLEMENTATION_BASE_COMMIT
+            ),
+        }
+
+    origin_path = project_root() / STANDALONE_SOURCE_ORIGIN_REL
+    baseline_path = project_root() / STANDALONE_BASELINE_REL
+
+    if not origin_path.is_file():
+        raise RuntimeError(
+            "Historical Git ancestry is unavailable and standalone "
+            "SOURCE_ORIGIN.json is missing"
+        )
+
+    if not baseline_path.is_file():
+        raise RuntimeError(
+            "Historical Git ancestry is unavailable and standalone "
+            "extraction-baseline manifest is missing"
+        )
+
+    origin = json.loads(origin_path.read_text(encoding="utf-8"))
+
+    expected_origin = {
+        "project": "FarmSync-Research",
+        "source_repository": EXPECTED_SOURCE_REPOSITORY,
+        "source_commit": EXPECTED_SOURCE_COMMIT,
+        "source_snapshot": EXPECTED_SOURCE_SNAPSHOT,
+        "source_snapshot_sha256": EXPECTED_SOURCE_SNAPSHOT_SHA256,
+    }
+
+    mismatches = {
+        key: {
+            "expected": expected,
+            "actual": origin.get(key),
+        }
+        for key, expected in expected_origin.items()
+        if origin.get(key) != expected
+    }
+
+    if mismatches:
+        raise RuntimeError(
+            "Standalone source-origin provenance does not match the "
+            f"pinned extraction record: {mismatches}"
+        )
+
+    baseline_sha256 = _sha256_file(baseline_path)
+
+    if baseline_sha256 != EXPECTED_EXTRACTION_BASELINE_SHA256:
+        raise RuntimeError(
+            "Standalone extraction-baseline manifest hash mismatch: "
+            f"{baseline_sha256}"
+        )
+
+    return {
+        "verified": True,
+        "mode": "standalone_extraction",
+        "historical_matrix_freeze_commit": MATRIX_FREEZE_COMMIT,
+        "historical_implementation_base_commit": (
+            REQUIRED_IMPLEMENTATION_BASE_COMMIT
+        ),
+        "source_repository": origin["source_repository"],
+        "source_commit": origin["source_commit"],
+        "source_snapshot": origin["source_snapshot"],
+        "source_snapshot_sha256": origin["source_snapshot_sha256"],
+        "extraction_baseline_sha256": baseline_sha256,
+    }
+
+
 def is_ancestor(commit: str) -> bool:
     p = subprocess.run(
         ["git", "merge-base", "--is-ancestor", commit, "HEAD"],
@@ -530,17 +650,7 @@ def validate_environment(
     datasets = verify_frozen_datasets()
     solver_amendment = verify_pre_final30_solver_amendment()
 
-    if not is_ancestor(MATRIX_FREEZE_COMMIT):
-        raise RuntimeError(
-            "Current branch does not contain the frozen "
-            "experiment-matrix commit"
-        )
-
-    if not is_ancestor(REQUIRED_IMPLEMENTATION_BASE_COMMIT):
-        raise RuntimeError(
-            "Current branch does not contain the required "
-            "Final30 scientific API implementation commit"
-        )
+    source_provenance = verify_source_provenance()
 
     clean = tracked_tree_clean()
 
@@ -558,6 +668,7 @@ def validate_environment(
         "reproducibility": repro,
         "datasets": datasets,
         "solver_amendment": solver_amendment,
+        "source_provenance": source_provenance,
         "planned_cells": planned_cell_count(m),
     }
 

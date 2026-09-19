@@ -57,14 +57,36 @@ def test_frozen_dataset_subset_matches_pre_eval_freeze():
     assert len(out["dataset_attestation_sha256"]) == 64
 
 
-def test_required_commits_are_in_history():
-    assert final30.is_ancestor(
-        final30.MATRIX_FREEZE_COMMIT
-    )
+def test_required_source_provenance_is_verified():
+    out = final30.verify_source_provenance()
 
-    assert final30.is_ancestor(
-        final30.REQUIRED_IMPLEMENTATION_BASE_COMMIT
-    )
+    assert out["verified"] is True
+
+    assert out["mode"] in {
+        "historical_git_ancestry",
+        "standalone_extraction",
+    }
+
+    if out["mode"] == "historical_git_ancestry":
+        assert final30.is_ancestor(
+            final30.MATRIX_FREEZE_COMMIT
+        )
+        assert final30.is_ancestor(
+            final30.REQUIRED_IMPLEMENTATION_BASE_COMMIT
+        )
+    else:
+        assert (
+            out["source_commit"]
+            == final30.EXPECTED_SOURCE_COMMIT
+        )
+        assert (
+            out["source_snapshot_sha256"]
+            == final30.EXPECTED_SOURCE_SNAPSHOT_SHA256
+        )
+        assert (
+            out["extraction_baseline_sha256"]
+            == final30.EXPECTED_EXTRACTION_BASELINE_SHA256
+        )
 
 
 def test_action_layer_has_publication_parameter_hooks():
