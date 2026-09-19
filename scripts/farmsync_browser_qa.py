@@ -301,6 +301,69 @@ def _farmer_action_ui(page, server, bqa, cat, action):
     return rid, fid, pid
 
 
+
+def _farmer_open_with_alternative(page, server):
+    """Open a Farmer row that has a deterministic alternative."""
+    rid = _browser_changed_run(page, server)
+
+    click_ws(page, "farmer")
+    page.wait_for_timeout(400)
+
+    st, run = L.api(
+        server,
+        "GET",
+        "/api/farmsync/working-plan/%s" % rid,
+    )
+
+    from farmsync import exploratory_run as xr
+
+    resolved = xr._resolve_objects(run)
+
+    if resolved:
+        plots_by_id, farmer_by_id, crops = resolved
+
+        for rec in run.get("recommendations", []):
+            fid = rec.get("farmer_id")
+            pid = rec.get("plot_id")
+
+            plot = plots_by_id.get(pid)
+            farmer = farmer_by_id.get(fid)
+
+            if plot is None or farmer is None:
+                continue
+
+            exclude = list(
+                rec.get("rejected_alternatives") or []
+            )
+
+            if rec.get("crop"):
+                exclude.append(rec["crop"])
+
+            ranked = xr._eligible_options(
+                plot,
+                farmer,
+                crops,
+                exclude=exclude,
+            )
+
+            if not ranked:
+                continue
+
+            loc = page.locator(
+                '#farmerList .fs-farmer-item'
+                '[data-fid="%s"][data-pid="%s"]'
+                % (fid, pid)
+            )
+
+            if loc.count():
+                loc.first.click()
+                page.wait_for_timeout(300)
+
+                return rid, fid, pid
+
+    return _farmer_open_first(page, server)
+
+
 def _farmer_response_ui(page, server, rid, bqa, bn, shots):
     """Produces all Farmer split categories via real product selectors and real UI mutations."""
     bqa.cat("farmer_exact_plot_binding")
@@ -310,7 +373,7 @@ def _farmer_response_ui(page, server, rid, bqa, bn, shots):
 
     # MODIFY: ask the existing Farmer AI UI for a canonical alternative, then click its real data-ai-use.
     mcat = bqa.cat("farmer_modify_ui")
-    mrid, mfid, mpid = _farmer_open_first(page, server)
+    mrid, mfid, mpid = _farmer_open_with_alternative(page, server)
     if not mfid:
         bqa.set(mcat, "INCOMPLETE", "no farmer item for MODIFY")
     elif page.locator("#aiMsg").count() == 0 or page.locator("#askAiBtn").count() == 0:
@@ -362,7 +425,7 @@ def _farmer_response_ui(page, server, rid, bqa, bn, shots):
 
     # Farmer Ask Why through the REAL UI and scoped candidate explanation; must be read-only.
     ar = bqa.cat("farmer_askwhy_readonly")
-    arid, afid, apid = _farmer_open_first(page, server)
+    arid, afid, apid = _farmer_open_with_alternative(page, server)
     if afid and page.locator("#aiMsg").count() and page.locator("#askAiBtn").count():
         page.fill("#aiMsg", "What else can I grow?")
         page.click("#askAiBtn")
@@ -539,25 +602,132 @@ def _consent_alt_and_askwhy(page, server, bqa, bn, shots):
         bqa.set(whycur, "INCOMPLETE", "no current ask-why context")
         return
     # revised crop of the first card (backend truth) to check exclusion
-    st, run = L.api(server, "GET", "/api/farmsync/working-plan/%s" % rid)
-    first_card = page.locator(".fs-consent-card").first
-    pid = first_card.get_attribute("data-pid")
-    rec = next((r for r in run["recommendations"] if r["plot_id"] == pid), None)
-    revised = rec["revised_crop"] if rec else None
-    first_card.locator('[data-explore]').first.click(); page.wait_for_timeout(500)
-    cand = page.locator('[data-why-candidate]')
-    bqa.check(ca, cand.count() >= 1, "explore renders a candidate")
-    if cand.count():
-        cand_crop = cand.first.get_attribute("data-why-candidate")
-        bqa.check(ca, cand_crop != revised, "candidate != current revised crop (%s vs %s)" % (cand_crop, revised), defect=True)
-        # candidate Ask Why — read ONLY the scoped explanation host inside the card
-        cand.first.click(); page.wait_for_timeout(500)
-        host = first_card.locator(".fs-consent-why")
-        host_txt = host.inner_text() if host.count() else ""
-        bqa.check(whyc, cand_crop and cand_crop.lower() in host_txt.lower(), "candidate Ask Why host names exact candidate crop (%s)" % cand_crop, defect=True)
-        bqa.check(whyc, not (revised and revised != cand_crop and (" %s " % revised.lower()) in host_txt.lower() and cand_crop.lower() not in host_txt.lower()), "candidate Ask Why did not substitute current revised crop", defect=True)
-        shot(page, "%s_explored_candidate" % bn) if shots else None
-    # current Ask Why — scoped host
+    st, run = L.api(
+        server,
+        "GET",
+        "/api/farmsync/working-plan/%s" % rid,
+    )
+
+    cards = page.locator(".fs-consent-card")
+
+    first_card = None
+    rec = None
+    cand = None
+
+    for i in range(cards.count()):
+        card = cards.nth(i)
+        explore = card.locator('[data-explore]')
+
+        if explore.count() == 0:
+            continue
+
+        explore.first.click()
+        page.wait_for_timeout(250)
+
+        scoped = card.locator(
+            '[data-why-candidate]'
+        )
+
+        if scoped.count():
+            first_card = card
+            cand = scoped
+
+            pid = card.get_attribute("data-pid")
+
+            rec = next(
+                (
+                    r
+                    for r in run["recommendations"]
+                    if r["plot_id"] == pid
+                ),
+                None,
+            )
+
+            break
+
+    bqa.check(
+        ca,
+        first_card is not None,
+        "at least one eligible consent card renders a candidate",
+        defect=True,
+    )
+
+    if first_card is None:
+        bqa.set(
+            whyc,
+            "INCOMPLETE",
+            "no eligible consent candidate rendered",
+        )
+
+        bqa.set(
+            whycur,
+            "INCOMPLETE",
+            "no eligible consent card selected",
+        )
+
+        return
+
+    revised = (
+        rec.get("revised_crop")
+        if rec
+        else None
+    )
+
+    cand_crop = cand.first.get_attribute(
+        "data-why-candidate"
+    )
+
+    bqa.check(
+        ca,
+        cand_crop != revised,
+        "candidate != current revised crop (%s vs %s)"
+        % (cand_crop, revised),
+        defect=True,
+    )
+
+    cand.first.click()
+    page.wait_for_timeout(500)
+
+    host = first_card.locator(
+        ".fs-consent-why"
+    )
+
+    host_txt = (
+        host.inner_text()
+        if host.count()
+        else ""
+    )
+
+    bqa.check(
+        whyc,
+        cand_crop
+        and cand_crop.lower()
+        in host_txt.lower(),
+        "candidate Ask Why host names exact candidate crop (%s)"
+        % cand_crop,
+        defect=True,
+    )
+
+    bqa.check(
+        whyc,
+        not (
+            revised
+            and revised != cand_crop
+            and (
+                " %s " % revised.lower()
+            ) in host_txt.lower()
+            and cand_crop.lower()
+            not in host_txt.lower()
+        ),
+        "candidate Ask Why did not substitute current revised crop",
+        defect=True,
+    )
+
+    shot(
+        page,
+        "%s_explored_candidate" % bn,
+    ) if shots else None
+
     if first_card.locator('[data-why-current]').count():
         first_card.locator('[data-why-current]').first.click(); page.wait_for_timeout(500)
         out = first_card.locator(".fs-consent-out")
@@ -573,8 +743,51 @@ def _use_buttons(page, server, bqa, bn):
     if page.locator('[data-explore]').count() == 0:
         bqa.set(cat, "INCOMPLETE", "no explore control to reach a Use button")
         return
-    card = page.locator(".fs-consent-card").first
-    card.locator('[data-explore]').first.click(); page.wait_for_timeout(500)
+    cards = page.locator(".fs-consent-card")
+    card = None
+
+    for i in range(cards.count()):
+        candidate_card = cards.nth(i)
+
+        explore = candidate_card.locator(
+            '[data-explore]'
+        )
+
+        if explore.count() == 0:
+            continue
+
+        explore.first.click()
+        page.wait_for_timeout(250)
+
+        if candidate_card.locator(
+            '[data-use]'
+        ).count():
+            card = candidate_card
+            break
+
+    bqa.check(
+        cat,
+        card is not None,
+        "at least one eligible consent card exposes a Use candidate",
+        defect=True,
+    )
+
+    if card is None:
+        return
+
+    # Preserve the exact consent-card identity. Candidate crops are
+    # plot-specific, so isolated exercises must re-render this same plot.
+    pid = card.get_attribute("data-pid")
+
+    bqa.check(
+        cat,
+        bool(pid),
+        "eligible consent card has an exact plot identity",
+        defect=True,
+    )
+
+    if not pid:
+        return
 
     crops = []
     guard = 0
@@ -597,11 +810,35 @@ def _use_buttons(page, server, bqa, bn):
     for crop in crops:
         rid2 = _browser_changed_run(page, server)
         click_ws(page, "consent"); page.wait_for_timeout(400)
-        c2 = page.locator(".fs-consent-card").first
-        p2 = c2.get_attribute("data-pid")
-        if c2.locator('[data-explore]').count() == 0:
+        c2 = page.locator(
+            '.fs-consent-card[data-pid="%s"]' % pid
+        )
+
+        bqa.check(
+            cat,
+            c2.count() > 0,
+            "isolated scenario re-renders selected plot %s" % pid,
+            defect=True,
+        )
+
+        if c2.count() == 0:
             continue
-        c2.locator('[data-explore]').first.click(); page.wait_for_timeout(300)
+
+        c2 = c2.first
+        p2 = c2.get_attribute("data-pid")
+
+        if c2.locator('[data-explore]').count() == 0:
+            bqa.check(
+                cat,
+                False,
+                "selected plot %s has no Explore control in isolated scenario"
+                % pid,
+                defect=True,
+            )
+            continue
+
+        c2.locator('[data-explore]').first.click()
+        page.wait_for_timeout(300)
 
         target = None
         guard = 0
@@ -840,13 +1077,159 @@ def _analyse_ui(page, server, bqa, bn, shots):
         bqa.check(conc, cc["alpha_reference"] == 0.40, "alpha 0.40 reference only")
         bqa.check(conc, ("Area share" in dom or "Plot share" in dom), "concentration basis label visible")
     shot(page, "%s_analyse_fairness" % bn) if shots else None
-    # uncertainty + resilience unavailable
-    click_ws(page, "uncertainty"); page.wait_for_timeout(400)
-    bqa.check(ur_u, "Not available" in page.content(), "Uncertainty honestly unavailable", defect=True)
-    shot(page, "%s_uncertainty" % bn) if shots else None
-    click_ws(page, "resilience"); page.wait_for_timeout(400)
-    bqa.check(ur_r, "Not available" in page.content(), "Resilience honestly unavailable", defect=True)
-    shot(page, "%s_resilience" % bn) if shots else None
+    # Interactive analysis is explicit-action only.
+    # Opening these tabs must NOT silently execute the engines.
+    click_ws(page, "uncertainty")
+    page.wait_for_timeout(500)
+
+    st, before = L.api(
+        server,
+        "GET",
+        "/api/farmsync/working-plan/%s/analysis" % rid,
+    )
+
+    u0 = (
+        before.get("uncertainty", {})
+        if isinstance(before, dict)
+        else {}
+    )
+
+    bqa.check(
+        ur_u,
+        not bool(u0.get("available"))
+        and u0.get("status") in ("NOT_RUN", "STALE"),
+        "uncertainty is explicitly NOT_RUN/STALE before user execution",
+        defect=True,
+    )
+
+    run_btn = page.locator('[data-run-analysis]')
+
+    bqa.check(
+        ur_u,
+        run_btn.count() == 1,
+        "Uncertainty exposes exactly one explicit Run Analysis control",
+        defect=True,
+    )
+
+    bqa.check(
+        ur_u,
+        "Uncertainty sensitivity of the realised plan"
+        in page.content(),
+        "Uncertainty target view rendered before execution",
+        defect=True,
+    )
+
+    if run_btn.count() != 1:
+        bqa.set(
+            ur_r,
+            "INCOMPLETE",
+            "interactive analysis could not be explicitly executed",
+        )
+        return
+
+    # This is the ONLY action in this check that executes the
+    # interactive scientific analysis bundle.
+    run_btn.first.click()
+
+    try:
+        run_btn.first.wait_for(
+            state="detached",
+            timeout=20000,
+        )
+    except Exception:
+        # The authoritative backend state below decides PASS/FAIL.
+        pass
+
+    page.wait_for_timeout(700)
+
+    st, after = L.api(
+        server,
+        "GET",
+        "/api/farmsync/working-plan/%s/analysis" % rid,
+    )
+
+    u1 = (
+        after.get("uncertainty", {})
+        if isinstance(after, dict)
+        else {}
+    )
+
+    rr1 = (
+        after.get("resilience", {})
+        if isinstance(after, dict)
+        else {}
+    )
+
+    bqa.check(
+        ur_u,
+        bool(u1.get("available"))
+        and u1.get("status") == "CURRENT",
+        "explicit Run Analysis makes uncertainty CURRENT",
+        defect=True,
+    )
+
+    bqa.check(
+        ur_u,
+        "Uncertainty sensitivity of the realised plan"
+        in page.content(),
+        "current uncertainty result rendered",
+        defect=True,
+    )
+
+    shot(
+        page,
+        "%s_uncertainty" % bn,
+    ) if shots else None
+
+    # The POST executes one identity-bound analysis bundle containing
+    # both uncertainty and resilience for the same final-plan revision.
+    click_ws(page, "resilience")
+    page.wait_for_timeout(500)
+
+    st, after_resilience = L.api(
+        server,
+        "GET",
+        "/api/farmsync/working-plan/%s/analysis" % rid,
+    )
+
+    rr2 = (
+        after_resilience.get("resilience", {})
+        if isinstance(after_resilience, dict)
+        else {}
+    )
+
+    bqa.check(
+        ur_r,
+        bool(rr1.get("available"))
+        and rr1.get("status") == "CURRENT"
+        and bool(rr2.get("available"))
+        and rr2.get("status") == "CURRENT",
+        "explicit analysis bundle makes resilience CURRENT",
+        defect=True,
+    )
+
+    bqa.check(
+        ur_r,
+        "Immediate resilience exposure"
+        in page.content(),
+        "current resilience result rendered",
+        defect=True,
+    )
+
+    # Once CURRENT, resilience should not offer another Run Analysis
+    # button for the same unchanged final-plan revision.
+    bqa.check(
+        ur_r,
+        page.locator('[data-run-analysis]').count() == 0,
+        "CURRENT resilience does not request duplicate analysis execution",
+        defect=True,
+    )
+
+    shot(
+        page,
+        "%s_resilience" % bn,
+    ) if shots else None
+
 
 
 def _data_explorer(page, server, bqa, bn, shots):
