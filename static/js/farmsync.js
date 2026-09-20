@@ -1381,11 +1381,30 @@
   }
 
   function consentUseRecommendation(fid, pid, crop, el) {
-    // server revalidates feasibility; replaces the pending revised crop; clears old consent -> PENDING
-    fetch("/api/farmsync/working-plan/" + WORK.runId + "/select-recommendation", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ farmer_id: fid, plot_id: pid, crop: crop }) })
-      .then(r => r.json()).then(res => {
-        if (!res.available) return;
-        return refreshWorkingRun().then(run => renderConsentStage(el, run, run.workflow || {}));
+    // Server revalidates feasibility; replaces the pending revised crop; clears old consent -> PENDING.
+    // Any server rejection must be visible to the farmer instead of looking like an inert button.
+    fetch("/api/farmsync/working-plan/" + WORK.runId + "/select-recommendation", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ farmer_id: fid, plot_id: pid, crop: crop })
+    })
+      .then(r => r.json().then(res => ({ ok: r.ok, res: res })))
+      .then(x => {
+        if (!x.ok || !x.res.available) {
+          throw new Error(x.res.error || "could not select recommendation");
+        }
+        return refreshWorkingRun().then(run =>
+          renderConsentStage(el, run, run.workflow || {})
+        );
+      })
+      .catch(e => {
+        const card = Array.from(el.querySelectorAll(".fs-consent-card"))
+          .find(c => c.dataset.fid === fid && c.dataset.pid === pid);
+        const out = card && card.querySelector(".fs-consent-out");
+        if (out) {
+          out.innerHTML =
+            '<div class="fs-errbox">' + esc(e.message) + '</div>';
+        }
       });
   }
 

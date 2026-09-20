@@ -62,6 +62,57 @@ Those decisions remain under deterministic FarmSync logic.
 
 The core scientific experiments require no LLM and no API key.
 
+## Live LLM interface (opt-in runtime mode)
+
+FarmSync supports a live LLM interface for natural-language interaction
+with the working-plan demonstrator. Live API access is disabled by default
+and must be enabled explicitly at runtime.
+
+When enabled, the LLM is restricted to:
+
+- parsing farmer natural language into supported structured requests, and
+- verbalising grounded deterministic FarmSync results.
+
+The LLM does not independently choose crops, determine feasibility, approve
+actions, assign locks, enforce fairness, optimise allocations, grant consent,
+perform execution, or override deterministic FarmSync authority.
+
+Enable live mode in PowerShell only when required:
+
+```powershell
+$env:FARMSYNC_LLM_MODE="live"
+$env:FARMSYNC_LLM_MODEL="gpt-5.6-terra"
+$env:OPENAI_API_KEY="<your-key>"
+
+python app.py
+```
+
+Never commit an API key. After live work, clear it from the current
+PowerShell environment.
+
+The bounded live smoke can be run with:
+
+```powershell
+python scripts/farmsync_llm_live_smoke.py
+```
+
+## Interactive demonstrator and scientific optimiser
+
+The publication experiments evaluate FarmSync's coupled collective
+reoptimization, where a farmer response may alter recommendations for other
+participants through shared market, resource, and fairness constraints.
+Every subsequently changed recommendation requires renewed consent.
+
+The interactive web working-plan demonstrator is intentionally lighter. It
+uses deterministic action-consent handling plus canonical per-plot
+feasibility for responsive exploration and does **not** rerun the full
+collective MILP after every UI edit.
+
+Accordingly, an interactive row change must not be interpreted as an
+automatic publication-scale recomputation of every other farmer's economics.
+The frozen Final30 scientific evaluation and the interactive demonstrator
+remain distinct evidence pathways.
+
 ## Frozen publication evaluation
 
 The final evaluation contains:
@@ -261,11 +312,31 @@ applicable Wiley publishing agreement and Creative Commons licence.
 
 ## Citation
 
-See:
+For reproducibility of the frozen scientific software release, cite the
+exact archived version:
 
-```text
-CITATION.cff
-```
+- release: `v1.0.0-paper`
+- publication date: `2026-09-20`
+- version DOI: `10.5281/zenodo.22864429`
+
+Zenodo also provides the concept DOI for all FarmSync software versions:
+
+- concept/all-versions DOI: `10.5281/zenodo.22864428`
+
+The concept DOI resolves to the latest archived version, whereas the version
+DOI above identifies the exact `v1.0.0-paper` archive used for frozen-release
+reproducibility.
+
+See [`CITATION.cff`](CITATION.cff) for the machine-readable software citation.
+
+The current `main` branch may contain documented post-release interactive
+demonstrator corrections that are not present in the immutable
+`v1.0.0-paper` archive. These corrections do not modify the frozen Final30
+scientific artifacts.
+
+See
+[`docs/farmsync/LIVE_RELEASE_VALIDATION_2026-09-21.md`](docs/farmsync/LIVE_RELEASE_VALIDATION_2026-09-21.md)
+for the post-release live validation record.
 
 ## Status
 

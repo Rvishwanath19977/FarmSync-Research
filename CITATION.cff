@@ -9,7 +9,9 @@ authors:
 repository-code: "https://github.com/Rvishwanath19977/FarmSync-Research"
 url: "https://github.com/Rvishwanath19977/FarmSync-Research"
 license: "Apache-2.0"
-version: "1.0.0"
+version: "v1.0.0-paper"
+date-released: 2026-09-20
+doi: "10.5281/zenodo.22864429"
 keywords:
   - agriculture
   - optimization

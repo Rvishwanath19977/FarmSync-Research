@@ -2386,21 +2386,88 @@ def test_consent_alt_ask_why_is_read_only(client):
 
 
 def test_consent_alt_original_use_backend_selects_exact_crop(client):
-    # #2 (backend): selecting the original crop via /select-recommendation uses that EXACT crop when feasible;
-    # infeasible original -> refused (server revalidation). Guardrails (crop+anchor consent) unchanged.
-    rid = _setup_changed(client)
-    A, _ = _changed_row(client, rid)
+    # A real "Return to original plan" option exists only for MODIFY.
+    # Find a changed MODIFY row where consent-alternative explicitly offers
+    # original_option, then require that exact button target to be selectable.
+    rid = _setup_changed(client, action="MODIFY", n=12)
+    run = client.get(f"/api/farmsync/working-plan/{rid}").get_json()
+
+    chosen = None
+    for A in run["recommendations"]:
+        if not (A.get("changed") and A.get("requires_renewed_consent")):
+            continue
+        r = client.post(
+            f"/api/farmsync/working-plan/{rid}/consent-alternative",
+            json={"farmer_id": A["farmer_id"], "plot_id": A["plot_id"]},
+        )
+        j = r.get_json()
+        if r.status_code == 200 and j.get("original_option"):
+            chosen = (A, j["original_option"])
+            break
+
+    assert chosen is not None, "expected at least one feasible MODIFY original-return option"
+
+    A, original_option = chosen
     orig = A["crop"]
-    res = client.post(f"/api/farmsync/working-plan/{rid}/select-recommendation", json={"farmer_id": A["farmer_id"], "plot_id": A["plot_id"], "crop": orig})
+    assert original_option["crop"] == orig
+    assert original_option["label"] == "Return to original plan"
+
+    res = client.post(
+        f"/api/farmsync/working-plan/{rid}/select-recommendation",
+        json={"farmer_id": A["farmer_id"], "plot_id": A["plot_id"], "crop": orig},
+    )
+    assert res.status_code == 200, res.get_json()
+
     j = res.get_json()
-    if res.status_code == 200:
-        assert j["revised_crop"] == orig                              # exact original crop selected
-        run = client.get(f"/api/farmsync/working-plan/{rid}").get_json()
-        row = next(r for r in run["recommendations"] if r["plot_id"] == A["plot_id"])
-        assert row["renewed_response"] is None and row["consent_for_crop"] is None   # choosing != consent -> PENDING
-    else:
-        assert res.status_code == 400 and "not a feasible" in j["error"].lower()      # infeasible -> refused
+    assert j["available"] is True
+    assert j["revised_crop"] == orig
+
+    run2 = client.get(f"/api/farmsync/working-plan/{rid}").get_json()
+    row = next(r for r in run2["recommendations"] if r["plot_id"] == A["plot_id"])
+
+    assert row["revised_crop"] == orig
+    assert row["renewed_response"] is None
+    assert row["consent_for_crop"] is None
+    assert row["consent_for_replan_anchor"] is None
+    assert row["requires_renewed_consent"] is True
+    assert run2["workflow"]["n_consent_pending"] > 0
+
     _clean_wp()
+
+
+def test_consent_alt_original_return_refused_for_reject(client):
+    # REJECT semantics must remain unchanged: the rejected original crop
+    # cannot be restored through the renewed-consent selector.
+    rid = _setup_changed(client, action="REJECT", n=12)
+    A, _ = _changed_row(client, rid)
+
+    res = client.post(
+        f"/api/farmsync/working-plan/{rid}/select-recommendation",
+        json={"farmer_id": A["farmer_id"], "plot_id": A["plot_id"], "crop": A["crop"]},
+    )
+
+    assert res.status_code == 400
+    j = res.get_json()
+    assert j["available"] is False
+    assert (
+        "rejected" in j["error"].lower()
+        or "modify" in j["error"].lower()
+    )
+
+    _clean_wp()
+
+
+def test_consent_use_recommendation_surfaces_server_error(client):
+    # A failed Use action must never look like an inert button.
+    j = js()
+    block = j.split("function consentUseRecommendation", 1)[1].split(
+        "function bulkConsent", 1
+    )[0]
+
+    assert "if (!x.ok || !x.res.available)" in block
+    assert 'throw new Error(x.res.error || "could not select recommendation")' in block
+    assert "fs-errbox" in block
+    assert ".catch" in block
 
 
 # ============= CONSENT ASK-WHY EVENT-COLLISION FIX =============

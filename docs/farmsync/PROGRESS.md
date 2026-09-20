@@ -7735,3 +7735,247 @@ Build the controlled **Scenario A vs Scenario B end-to-end case-study runner**:
 
 This controlled A/B demonstration is illustrative end-to-end evidence and does not replace the
 frozen Final30 experiment.
+
+---
+
+## 2026-09-21 — Live release validation + renewed-consent original-return closure
+
+### Scope
+
+Completed live validation of the already-published `v1.0.0-paper` release
+through a disposable QA clone using the live GPT-5.6-Terra interface and
+deterministic FarmSync authority.
+
+This work did not rerun Final30, regenerate frozen scientific artifacts, alter
+the publication configuration, or constitute real-farmer/field validation.
+
+Detailed validation record:
+
+`docs/farmsync/LIVE_RELEASE_VALIDATION_2026-09-21.md`
+
+### Renewed-consent defect discovered
+
+The Renewed Consent UI exposed:
+
+`Return to original plan -> Use this`
+
+but the backend candidate-selection pathway excluded the original crop
+unconditionally.
+
+Consequences:
+
+- a valid original-return option could be displayed by the UI;
+- selecting it returned HTTP 400;
+- the frontend silently swallowed the failed selection and appeared inert.
+
+A normal alternative-selection POST succeeded, isolating the defect to the
+original-return branch.
+
+### Correction
+
+Corrected files:
+
+- `farmsync/exploratory_run.py`
+- `static/js/farmsync.js`
+- `tests/test_farmsync_ui.py`
+
+Backend behaviour now:
+
+- evaluates the original crop and effective farmer action;
+- permits return to a feasible original crop only for a valid MODIFY pathway;
+- preserves persistent rejected alternatives;
+- continues to block original return for REJECT-origin cases;
+- does not treat crop selection as consent.
+
+Frontend behaviour now:
+
+- checks HTTP response status;
+- displays selection errors visibly in the relevant consent card;
+- no longer silently ignores failed selections;
+- refreshes authoritative working-run state after successful selection.
+
+Regression coverage now requires successful exact-crop original return for a
+valid MODIFY case while preserving pending renewed-consent state.
+
+### Manual browser validation
+
+Verified in the patched disposable clone:
+
+- `F0001-P03`: Soybean -> original Onion succeeded and remained PENDING;
+- `F0001-P03`: Soybean could then be reselected and remained PENDING;
+- explicit renewed ACCEPT produced Soybean acceptance;
+- `F0017-P03`: explicit renewed REJECT;
+- `F0025-P01`: explicit renewed NO_RESPONSE;
+- bulk acceptance affected remaining pending rows without overwriting the
+  explicit ACCEPT, REJECT, or NO_RESPONSE decisions.
+
+Final renewed-consent accounting:
+
+- changed recommendations: 20;
+- pending: 0;
+- accepted: 18;
+- rejected: 1;
+- no response: 1.
+
+Read-only API verification after finalisation confirmed:
+
+- `consent_complete = True`;
+- `n_changed = 20`;
+- `n_consent_pending = 0`;
+- `final_current = True`;
+- `final_stale = False`;
+- `stages.final = True`;
+- `stages.analyse = True`.
+
+Explicit rows remained:
+
+- `F0001-P03` -> Soybean -> ACCEPT;
+- `F0017-P03` -> Pigeon_pea -> REJECT;
+- `F0025-P01` -> Sorghum -> NO_RESPONSE.
+
+### Finalisation validation
+
+The Final Plan was first opened in a ready-to-finalise state and did not
+auto-finalise.
+
+Explicit `Finalise Consent-Verified Plan` execution produced:
+
+- status: `FINAL_REALIZED`;
+- total plots: 911;
+- initially allocated/offered: 381;
+- no initial allocation: 530;
+- finally realised: 348;
+- not realised: 563;
+- projected realised cash: `₹1,17,10,382`.
+
+Explicit mixed outcomes were verified:
+
+- `F0001-P03`: Soybean, renewed ACCEPT, realised;
+- `F0017-P03`: renewed REJECT, not realised;
+- `F0025-P01`: renewed NO_RESPONSE, not realised.
+
+### Current working-plan analysis validation
+
+The current `FINAL_REALIZED` plan was evaluated separately from frozen Final30.
+
+Validated current-plan pages included:
+
+- fairness and concentration;
+- `interactive-stress-v1` uncertainty;
+- `interactive-resilience-v1` resilience.
+
+The UI explicitly preserves the distinction between the interactive working
+plan and the publication-scale scientific optimiser.
+
+The interactive demonstrator uses deterministic action-consent plus canonical
+per-plot feasibility for responsive exploration and does not rerun the full
+collective MILP after every UI action.
+
+### Regression verification
+
+Disposable QA clone:
+
+`5 passed, 187 deselected in 3.36s`
+
+`R:\FarmSync-Research` after patch port:
+
+`5 passed, 187 deselected in 4.42s`
+
+`R:\portfolio` after patch port:
+
+`5 passed, 187 deselected in 2.57s`
+
+`git diff --check` completed without errors in both real repositories.
+
+The three patched files were verified byte-identical across:
+
+- `R:\FarmSync-Live-QA`
+- `R:\FarmSync-Research`
+- `R:\portfolio`
+
+### Screenshot and patch provenance
+
+External validation evidence:
+
+`R:\FarmSync-Live-Captures`
+
+Screenshot SHA-256 manifest:
+
+`FarmSync_live_release_screenshot_manifest_2026-09-21.csv`
+
+Exact QA patch:
+
+`renewed_consent_original_return_fix_2026-09-21.patch`
+
+Patch SHA-256:
+
+`D1CA88BE4DAC05193BB5027139E3333955E239B1EF956826C2FDEA53F5F6E70B`
+
+### Scientific impact
+
+This was an interactive demonstrator/UI-backend correction only.
+
+No changes were made to:
+
+- Final30;
+- frozen seeds;
+- frozen dataset;
+- solver settings;
+- `action-consent-v1`;
+- `uncertainty-v1`;
+- `fairness-v2`;
+- `farmsync-publication-config-v1`;
+- frozen scientific result artifacts.
+
+No Final30 rerun and no 322-case live benchmark rerun were performed.
+
+### Release status
+
+The existing annotated tag remains:
+
+`v1.0.0-paper`
+
+Target:
+
+`c88790de5236167e404ba6caa52de646e5de90fd`
+
+The published tag must remain immutable.
+
+The renewed-consent correction is a post-release main-branch correction and
+must not be described as already contained in the archived `v1.0.0-paper`
+release.
+
+### DOI status
+
+Zenodo metadata was verified directly after the GitHub release.
+
+Verified:
+
+- exact `v1.0.0-paper` version DOI: `10.5281/zenodo.22864429`;
+- concept/all-versions DOI: `10.5281/zenodo.22864428`;
+- publication date: `2026-09-20`;
+- creator: Vishwanath Rajasekaran;
+- resource type: Software;
+- licence: Apache License 2.0.
+
+The exact version DOI is used for frozen-release reproducibility. The concept
+DOI represents all archived FarmSync software versions and resolves to the
+latest archived version.
+
+`CITATION.cff` and README citation metadata were updated using these verified
+roles rather than inferring them from the badge alone.
+
+### Next steps
+
+1. complete final staged review of the standalone repository;
+2. commit the intended standalone code and documentation changes only;
+3. complete the corresponding portfolio-repository closure without staging
+   unrelated files;
+4. push both repositories only after local commit verification;
+5. amend the existing `v1.0.0-paper` GitHub release notes to document the live
+   validation and clearly distinguish the post-release `main`-branch UI
+   correction from the immutable archived release;
+6. explicitly decide whether a corrected `v1.0.1` software release should be
+   published and archived by Zenodo;
+7. only after the software/release state is settled, continue final manuscript
+   and journal-submission preparation.

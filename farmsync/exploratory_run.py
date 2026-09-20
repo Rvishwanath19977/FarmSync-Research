@@ -2130,7 +2130,27 @@ def select_revised_recommendation(run_id, farmer_id, plot_id, crop):
     plot, farmer, crops = _plot_farmer_crops(run, plot_id)
     if plot is None or farmer is None:
         return {"available": False, "error": "cannot resolve plot feasibility for this dataset"}
-    ranked = _eligible_options(plot, farmer, crops, exclude=[rec["crop"]])
+    original = rec.get("crop")
+    effective = _replan_effective(run, rec)
+    rejected = set(rec.get("rejected_alternatives") or [])
+
+    # A return to the original crop is valid only for MODIFY, when that
+    # original crop remains canonically eligible and was not explicitly
+    # rejected. All direct selections must respect persistent rejections.
+    if crop in rejected:
+        return {"available": False,
+                "error": "'%s' was rejected for this plan." % crop}
+
+    if crop == original and effective != "MODIFY":
+        return {"available": False,
+                "error": "original crop can be restored only for a MODIFY response"}
+
+    ranked = _eligible_options(
+        plot,
+        farmer,
+        crops,
+        exclude=list(rejected),
+    )
     match = [(nm, cash) for nm, cash in ranked if nm == crop]
     if not match:
         return {"available": False,
